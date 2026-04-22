@@ -1,0 +1,6 @@
+.env
+generated-images
+img
+.venv/
+__pycache__/
+.DS_Store

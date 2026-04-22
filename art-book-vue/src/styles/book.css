@@ -1,0 +1,178 @@
+:root {
+  --page-width: 6in;
+  --page-height: 9in;
+  --page-margin: 20mm;
+  --folio-color: #6b6252;
+  --paper: #fbf6ea;
+  --ink: #28251f;
+  --accent: #b85836;
+}
+
+.size-trade {
+  --page-width: 6in;
+  --page-height: 9in;
+}
+
+.size-square {
+  --page-width: 8in;
+  --page-height: 8in;
+}
+
+.size-a5 {
+  --page-width: 148mm;
+  --page-height: 210mm;
+}
+
+@page {
+  size: 6in 9in;
+  margin: 20mm;
+
+  @bottom-right {
+    color: var(--folio-color);
+    content: counter(page);
+    font: 9pt/1 ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@page cover {
+  size: 6in 9in;
+  margin: 0;
+
+  @bottom-right {
+    content: "";
+  }
+}
+
+@page intro {
+  size: 6in 9in;
+  margin: 24mm 20mm 22mm;
+}
+
+@page plate {
+  size: 6in 9in;
+  margin: 0;
+
+  @bottom-right {
+    content: "";
+  }
+}
+
+.book-section {
+  background: var(--paper);
+  color: var(--ink);
+  break-before: page;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  min-height: calc(var(--page-height) - (var(--page-margin) * 2));
+}
+
+.cover-template {
+  align-content: end;
+  background:
+    linear-gradient(90deg, rgb(23 23 19 / 84%), rgb(23 23 19 / 16%)),
+    url("../../../generated-images/gemini/008-valentina-cienfuegos-mora-cyberpunk-tenochtitlan-20260421T143146Z.png") center / cover;
+  color: #fff8ea;
+  display: grid;
+  min-height: var(--page-height);
+  page: cover;
+  padding: 20mm;
+}
+
+.cover-template h1 {
+  font-size: 52pt;
+  font-weight: 400;
+  line-height: 0.88;
+  margin: 0;
+  max-width: 4in;
+}
+
+.kicker,
+.artwork-number,
+figcaption {
+  font: 700 8pt/1.2 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cover-note {
+  font-size: 13pt;
+  line-height: 1.35;
+  max-width: 3.8in;
+}
+
+.intro-template {
+  page: intro;
+}
+
+.intro-template h2,
+.artwork-template h2 {
+  font-size: 31pt;
+  font-weight: 400;
+  line-height: 0.98;
+  margin: 0 0 18pt;
+}
+
+.intro-template p,
+.artwork-template p {
+  font-size: 11.5pt;
+  line-height: 1.48;
+  margin: 0 0 12pt;
+  orphans: 3;
+  widows: 3;
+}
+
+.intro-template code {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 9pt;
+}
+
+.artwork-template {
+  display: grid;
+  gap: 18pt;
+  grid-template-rows: auto 1fr;
+}
+
+.artwork-meta {
+  border-top: 1pt solid var(--ink);
+  padding-top: 9pt;
+}
+
+.artwork-number {
+  color: var(--accent);
+  margin: 0 0 26pt;
+}
+
+.plate-template {
+  background: #11110f;
+  min-height: var(--page-height);
+  page: plate;
+}
+
+.plate-template figure {
+  display: grid;
+  height: var(--page-height);
+  margin: 0;
+  place-items: stretch;
+  position: relative;
+}
+
+.plate-template img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.plate-template figcaption {
+  background: rgb(17 17 15 / 74%);
+  bottom: 10mm;
+  color: #fff8ea;
+  left: 10mm;
+  padding: 3mm 4mm;
+  position: absolute;
+}
+
+@media screen {
+  .book-section {
+    width: var(--page-width);
+  }
+}
