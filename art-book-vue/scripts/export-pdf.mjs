@@ -5,12 +5,14 @@ const host = "127.0.0.1";
 const port = 4178;
 const outputPath = new URL("../book-export.pdf", import.meta.url).pathname;
 const pageSizes = {
+  "small-landscape": { width: "9in", height: "7in" },
   a4: { width: "210mm", height: "297mm" },
   trade: { width: "6in", height: "9in" },
   square: { width: "8in", height: "8in" },
   a5: { width: "148mm", height: "210mm" },
 };
-const pageSize = pageSizes[process.env.ART_BOOK_PAGE_SIZE ?? "a4"] ?? pageSizes.a4;
+const defaultPageSize = "small-landscape";
+const pageSize = pageSizes[process.env.ART_BOOK_PAGE_SIZE ?? defaultPageSize] ?? pageSizes[defaultPageSize];
 
 const server = await createServer({
   server: {
@@ -35,7 +37,7 @@ try {
     width: pageSize.width,
     height: pageSize.height,
     printBackground: true,
-    preferCSSPageSize: false,
+    preferCSSPageSize: true,
   });
 
   console.log(`Exported ${outputPath}`);

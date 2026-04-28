@@ -8,8 +8,8 @@
   --panel-muted: oklch(46% 0.018 62);
   --panel-rule: oklch(20.5% 0.01 58);
   --rule: oklch(86% 0.012 72);
-  --page-width: 210mm;
-  --page-height: 297mm;
+  --page-width: 229mm;
+  --page-height: 178mm;
   color: var(--ink);
   background: var(--bg);
   font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
@@ -40,6 +40,17 @@ button {
   min-height: 100vh;
 }
 
+.studio.panel-collapsed {
+  grid-template-columns: 0 minmax(0, 1fr);
+}
+
+.panel-toggle {
+  left: 18px;
+  position: fixed;
+  top: 18px;
+  z-index: 20;
+}
+
 /* ── Sidebar ─────────────────────────────────────── */
 
 .studio-panel {
@@ -50,6 +61,15 @@ button {
   overflow: hidden;
   position: sticky;
   top: 0;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.panel-collapsed .studio-panel {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
 }
 
 .panel-edge {
@@ -192,6 +212,51 @@ button {
   gap: 8px;
   margin-top: 20px;
   padding-top: 4px;
+}
+
+.control-block {
+  border-bottom: 1px solid var(--panel-rule);
+  display: grid;
+  gap: 10px;
+  padding: 16px 0;
+}
+
+.control-block > span {
+  color: var(--panel-muted);
+  font:
+    500 8.5px/1.2 "DM Sans",
+    sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.control-block select {
+  appearance: none;
+  background: oklch(14% 0.01 58);
+  border: 1px solid var(--panel-rule);
+  color: var(--panel-ink);
+  font: 12px/1.2 "DM Sans", sans-serif;
+  min-height: 36px;
+  padding: 0 10px;
+}
+
+.swatches {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.swatches button {
+  aspect-ratio: 1;
+  background: var(--swatch);
+  border: 1px solid oklch(42% 0.012 60);
+  min-width: 0;
+}
+
+.swatches button.active {
+  box-shadow:
+    0 0 0 2px var(--panel-bg),
+    0 0 0 4px var(--accent);
 }
 
 /* ── Buttons ─────────────────────────────────────── */
@@ -366,4 +431,57 @@ button {
   padding: 32px 36px;
   white-space: pre-wrap;
   word-break: break-all;
+}
+
+@media print {
+  :root,
+  body {
+    background: #fff;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .studio {
+    display: block;
+    min-height: 0;
+  }
+
+  .studio-panel,
+  .panel-toggle,
+  .source-view {
+    display: none !important;
+  }
+
+  .workbench {
+    background: transparent;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .paged-output {
+    margin: 0;
+    max-width: none;
+  }
+
+  .pagedjs_pages {
+    display: block !important;
+  }
+
+  .pagedjs_pages > .pagedjs_sheet,
+  .pagedjs_pagebox,
+  .pagedjs_page {
+    box-shadow: none !important;
+    height: var(--page-height) !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    transform: none !important;
+    width: var(--page-width) !important;
+  }
+
+  .pagedjs_pages > :is(.pagedjs_page, .pagedjs_sheet)::after {
+    display: none !important;
+  }
 }

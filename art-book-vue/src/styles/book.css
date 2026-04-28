@@ -1,6 +1,6 @@
 :root {
-  --page-width: 210mm;
-  --page-height: 297mm;
+  --page-width: 229mm;
+  --page-height: 178mm;
   --page-margin: 20mm;
   --folio-color: #5d574c;
   --paper: #f6efe1;
@@ -11,7 +11,7 @@
 }
 
 @page {
-  size: A4;
+  size: 229mm 178mm;
   margin: 20mm;
 
   @bottom-right {
@@ -22,7 +22,7 @@
 }
 
 @page cover {
-  size: A4;
+  size: 229mm 178mm;
   margin: 0;
 
   @bottom-right {
@@ -31,12 +31,12 @@
 }
 
 @page intro {
-  size: A4;
+  size: 229mm 178mm;
   margin: 24mm 20mm 22mm;
 }
 
 @page plate {
-  size: A4;
+  size: 229mm 178mm;
   margin: 0;
 
   @bottom-right {
@@ -51,6 +51,60 @@
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   min-height: calc(var(--page-height) - (var(--page-margin) * 2));
   width: 100%;
+}
+
+.theme-paper {
+  --paper: #f6efe1;
+  --ink: #1f211d;
+  --folio-color: #5d574c;
+  --accent: #a94228;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.theme-white {
+  --paper: #fff;
+  --ink: #111;
+  --folio-color: #555;
+  --accent: #a92828;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.theme-black {
+  --paper: #11110f;
+  --ink: #fff8ea;
+  --folio-color: #d8ccba;
+  --accent: #f05d3f;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.theme-red {
+  --paper: #a92828;
+  --ink: #fff8ea;
+  --folio-color: #fff8ea;
+  --accent: #ffd9a8;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.theme-blue {
+  --paper: #1f5f8f;
+  --ink: #f3f8ff;
+  --folio-color: #d9ecff;
+  --accent: #ffd166;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.theme-orange {
+  --paper: #ef8f32;
+  --ink: #14110d;
+  --folio-color: #14110d;
+  --accent: #6b1d14;
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .cover-template {
@@ -94,7 +148,9 @@ figcaption {
 }
 
 .intro-template h2,
-.artwork-template h2 {
+.artwork-template h2,
+.artist-profile-template h2,
+.artwork-info h2 {
   font-size: 31pt;
   font-weight: 400;
   line-height: 0.98;
@@ -102,7 +158,10 @@ figcaption {
 }
 
 .intro-template p,
-.artwork-template p {
+.artwork-template p,
+.artist-profile-template p,
+.artwork-info p,
+.artist-profile-template li {
   font-size: 11.5pt;
   line-height: 1.48;
   margin: 0 0 12pt;
@@ -122,6 +181,58 @@ figcaption {
   grid-template-rows: auto 1fr;
 }
 
+.artist-profile-template {
+  display: grid;
+  gap: 14mm;
+  grid-template-columns: 1.15fr 0.85fr;
+  min-height: calc(var(--page-height) - (var(--page-margin) * 2));
+}
+
+.artist-profile-copy {
+  align-self: center;
+}
+
+.artist-profile-template ul {
+  display: grid;
+  gap: 8pt;
+  list-style: none;
+  margin: 16pt 0 0;
+  padding: 0;
+}
+
+.artist-profile-template li {
+  border-top: 0.75pt solid currentColor;
+  padding-top: 7pt;
+}
+
+.artist-profile-template strong,
+.artist-profile-template span {
+  display: block;
+}
+
+.artist-profile-template strong {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 8.5pt;
+  letter-spacing: 0.12em;
+  margin-bottom: 3pt;
+  text-transform: uppercase;
+}
+
+.artist-profile-art {
+  align-self: stretch;
+  display: grid;
+  gap: 5mm;
+  grid-template-rows: 1fr auto;
+  margin: 0;
+  min-height: 0;
+}
+
+.artist-profile-art img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .artwork-meta {
   border-top: 1pt solid var(--ink);
   padding-top: 9pt;
@@ -132,7 +243,60 @@ figcaption {
   margin: 0 0 26pt;
 }
 
-.plate-template {
+.artwork-info dl {
+  border-top: 1pt solid currentColor;
+  display: grid;
+  gap: 4pt;
+  margin: 12pt 0 0;
+  padding-top: 8pt;
+}
+
+.artwork-info dl div {
+  display: grid;
+  gap: 8pt;
+  grid-template-columns: 20mm 1fr;
+}
+
+.artwork-info dt,
+.artwork-info dd {
+  font: 7.5pt/1.25 ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+}
+
+.artwork-info dt {
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.artwork-info.compact h2 {
+  font-size: 17pt;
+}
+
+.artwork-info.compact p {
+  font-size: 8.5pt;
+}
+
+.overlay-info {
+  background: rgb(17 17 15 / 78%);
+  bottom: 10mm;
+  color: #fff8ea;
+  left: 10mm;
+  max-width: 86mm;
+  padding: 6mm;
+  position: absolute;
+  z-index: 2;
+}
+
+.overlay-info .artwork-number,
+.overlay-info dt {
+  color: #ffd166;
+}
+
+.plate-template,
+.spread-image-template,
+.full-bleed-template,
+.padded-plate-template {
   background: #11110f;
   height: var(--page-height);
   min-height: var(--page-height);
@@ -140,7 +304,10 @@ figcaption {
   width: var(--page-width);
 }
 
-.plate-template figure {
+.plate-template figure,
+.full-bleed-template,
+.spread-image-template,
+.padded-plate-template figure {
   display: grid;
   height: var(--page-height);
   margin: 0;
@@ -148,10 +315,118 @@ figcaption {
   position: relative;
 }
 
-.plate-template img {
+.plate-template img,
+.full-bleed-template img {
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+.spread-image-template {
+  overflow: hidden;
+  position: relative;
+}
+
+.spread-image-template img {
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 200%;
+}
+
+.spread-left img {
+  left: 0;
+}
+
+.spread-right img {
+  right: 0;
+}
+
+.full-bleed-template {
+  position: relative;
+}
+
+.padded-plate-template {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr 42mm;
+  padding: 12mm;
+}
+
+.padded-plate-template figure {
+  height: calc(var(--page-height) - 24mm);
+}
+
+.padded-plate-template figure img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.plate-margin-info {
+  align-self: end;
+  background: transparent;
+  color: inherit;
+  padding: 0 0 0 7mm;
+}
+
+.plate-margin-info h2 {
+  font-size: 15pt;
+}
+
+.plate-margin-info p {
+  font-size: 8pt;
+  line-height: 1.35;
+}
+
+.plate-margin-info dl div {
+  display: block;
+}
+
+.plate-margin-info dd {
+  margin-bottom: 4pt;
+}
+
+.panorama-template {
+  display: grid;
+  grid-template-rows: 50% 1fr;
+  height: var(--page-height);
+  min-height: var(--page-height);
+  page: plate;
+  padding: 0;
+  width: var(--page-width);
+}
+
+.panorama-template > img {
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  width: 200%;
+}
+
+.panorama-left > img {
+  object-position: left center;
+}
+
+.panorama-right > img {
+  object-position: right center;
+  transform: translateX(-50%);
+}
+
+.panorama-template .artwork-info {
+  align-content: start;
+  display: grid;
+  padding: 10mm 12mm;
+}
+
+.panorama-template .artwork-info h2 {
+  font-size: 19pt;
+}
+
+.panorama-template .artwork-info p {
+  font-size: 9.25pt;
 }
 
 .plate-template figcaption {
