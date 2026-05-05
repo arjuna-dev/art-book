@@ -1,253 +1,306 @@
 <script setup>
-import { computed, nextTick, onMounted, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Previewer } from "pagedjs";
-import { FileDown, Menu, PanelLeftClose, RefreshCw } from "lucide-vue-next";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Download,
+  FileDown,
+  Menu,
+  PanelLeftClose,
+  RefreshCw,
+} from "lucide-vue-next";
 import artData from "../../list.json";
+import layoutData from "../../art-book-layout.json";
 import bookCssUrl from "./styles/book.css?url";
 import Button from "./components/ui/button/Button.vue";
+import {
+  artworkTemplates,
+  colorClass,
+  colorOptions,
+  defaultArtworkTemplate,
+  templateOptions as artworkTemplateOptions,
+} from "./templates/artworkTemplates";
 
-const renderMode = ref("preview");
-const status = ref("Preparing pages");
-const pagedOutput = ref(null);
-const isPanelCollapsed = ref(false);
-const selectedTemplate = ref("all");
-const selectedTheme = ref("paper");
-const renderedPageCount = ref(0);
+const SCREEN_PREVIEW_WIDTH = Math.round(((229 * 2) / 25.4) * 96 + 56);
+const WORKBENCH_SCROLL_KEY = "art-book-workbench-scroll";
 const pageSize = {
   label: "Small Landscape",
   width: "229mm",
   height: "178mm",
 };
 
+const renderMode = ref("preview");
+const status = ref("Preparing pages");
+const saveStatus = ref("Loaded layout JSON");
+const isPanelCollapsed = ref(false);
+const pagedOutput = ref(null);
+const workbench = ref(null);
+const selectedPageNumber = ref(1);
+const previewScale = ref(1);
+const renderedPageCount = ref(0);
+
+let saveTimer = null;
+let resizeObserver = null;
+
 const imageModules = import.meta.glob(
   "../../generated-images/**/*.{png,jpg,jpeg,webp}",
   { eager: true, import: "default", query: "?url" },
 );
 
-const themeOptions = [
-  { id: "paper", label: "Paper", swatch: "#f6efe1" },
-  { id: "white", label: "White", swatch: "#ffffff" },
-  { id: "black", label: "Black", swatch: "#11110f" },
-  { id: "red", label: "Red", swatch: "#a92828" },
-  { id: "blue", label: "Blue", swatch: "#1f5f8f" },
-  { id: "orange", label: "Orange", swatch: "#ef8f32" },
-];
+const catalogPieces = buildCatalogPieces();
+const catalogPieceMap = new Map(catalogPieces.map((piece) => [piece.key, piece]));
+const layoutState = ref(migrateLayoutState(layoutData));
 
-const templateOptions = [
-  { id: "all", label: "Mixed book" },
-  { id: "spread-image", label: "Two-page image" },
-  { id: "artist-profile", label: "Artist profile" },
-  { id: "panorama-text", label: "Panorama text" },
-  { id: "full-bleed", label: "Full bleed" },
-  { id: "padded-plate", label: "Padded plate" },
-];
-
-const artPieces = computed(() =>
-  artData.flatMap((artist, artistIndex) =>
-    artist.art_pieces.map((piece, pieceIndex) => ({
-      ...piece,
-      artist,
-      artistIndex,
-      pieceIndex,
-      globalIndex: artData
-        .slice(0, artistIndex)
-        .reduce((total, item) => total + item.art_pieces.length, pieceIndex),
-      image: imageForPiece(piece, artist, pieceIndex),
-    })),
-  ),
+const pageEntries = computed(() => layoutState.value.pages ?? []);
+const selectedPage = computed(
+  () => pageEntries.value[selectedPageNumber.value - 1] ?? null,
+);
+const selectedPageTemplate = computed(
+  () =>
+    artworkTemplates[selectedPage.value?.template] ??
+    artworkTemplates[defaultArtworkTemplate],
+);
+const selectedImageSlotCount = computed(() =>
+  selectedPageTemplate.value.supports.imageSlots ?? 1,
 );
 const pageCountLabel = computed(
   () => `${renderedPageCount.value || estimatePageCount()} pages`,
 );
+const selectedPageLabel = computed(() =>
+  selectedPage.value
+    ? `Page ${selectedPageNumber.value} of ${pageEntries.value.length}`
+    : "No page selected",
+);
+const selectedCaptionPiece = computed(() =>
+  catalogPieceMap.get(selectedPage.value?.contentArtworkKey ?? "") ?? null,
+);
 
 const bookHtml = computed(() => {
-  const entries = artData
-    .map((artist, index) => renderArtistSection(artist, index))
+  const entries = pageEntries.value
+    .map((page, index) => renderConfiguredPage(page, index))
     .join("");
 
   return `
     <section class="book-section cover-template theme-black">
-      <p class="kicker">Working catalogue</p>
+      <p class="kicker">Studio edition</p>
       <h1>Speculative Works</h1>
-      <p class="cover-note">A print-first art book populated from list.json, assembled from artist notes, generated studies, and installation concepts.</p>
+      <p class="cover-note">A page-based art book prototype for assigning templates, images, captions, and artist notes directly from the studio.</p>
     </section>
-    <section class="book-section intro-template ${themeClass.value}">
-      <h2>Format Study</h2>
-      <p>This proof contains reusable page templates for artist profiles, full-bleed plates, padded art information plates, two-page image spreads, and panorama layouts with text below each half.</p>
-      <p>Each page carries artwork metadata wherever the image treatment allows it, so the visual catalogue remains useful even while the design language is still changing.</p>
+    <section class="book-section intro-template theme-yellow">
+      <h2>Template Study</h2>
+      <p>Each record in the studio now represents a designed template page. Some templates generate one physical page, while caption lead-ins generate two by design.</p>
+      <p>Use the panel to assign artwork, pick a page template, and decide whether the page carries tombstone details, description text, or artist notes.</p>
     </section>
     ${entries}
   `;
 });
 
-const themeClass = computed(() => `theme-${selectedTheme.value}`);
+function buildCatalogPieces() {
+  return artData.flatMap((artist, artistIndex) => {
+    let includedBefore = 0;
+
+    for (let index = 0; index < artistIndex; index += 1) {
+      includedBefore += artData[index].art_pieces.filter(shouldIncludePiece).length;
+    }
+
+    return artist.art_pieces
+      .filter(shouldIncludePiece)
+      .map((piece, pieceIndex) => ({
+        ...piece,
+        artist,
+        pieceIndex,
+        globalIndex: includedBefore + pieceIndex,
+        key: artworkKey(artist, piece),
+        image: imageForPiece(piece, artist),
+      }));
+  });
+}
+
+function migrateLayoutState(savedLayout) {
+  const defaults = {
+    artworkTemplate: normalizeTemplateId(
+      savedLayout?.defaults?.artworkTemplate ?? defaultArtworkTemplate,
+    ),
+    textColor: savedLayout?.defaults?.textColor ?? "black",
+    backgroundColor: savedLayout?.defaults?.backgroundColor ?? "paper",
+  };
+
+  if (Array.isArray(savedLayout?.pages) && savedLayout.pages.length > 0) {
+    return {
+      version: 2,
+      defaults,
+      pages: savedLayout.pages.map((page, index) =>
+        normalizePageEntry(page, index, defaults),
+      ),
+    };
+  }
+
+  const legacyArtworks = savedLayout?.artworks ?? {};
+
+  return {
+    version: 2,
+    defaults,
+    pages: catalogPieces.map((piece, index) =>
+      normalizePageEntry(
+        {
+          ...(legacyArtworks[piece.key] ?? {}),
+          contentArtworkKey: piece.key,
+          imageArtworkKeys: [piece.key, piece.key],
+          showTombstone: true,
+          showDescription: true,
+          showArtistDescription: false,
+        },
+        index,
+        defaults,
+      ),
+    ),
+  };
+}
+
+function normalizePageEntry(page, index, defaults) {
+  const fallbackPiece = catalogPieces[index % catalogPieces.length] ?? catalogPieces[0];
+  const contentArtworkKey =
+    resolveArtworkKey(page?.contentArtworkKey) ??
+    resolveArtworkKey(page?.imageArtworkKeys?.[0]) ??
+    fallbackPiece?.key ??
+    "";
+  const imageArtworkKeys = [
+    resolveArtworkKey(page?.imageArtworkKeys?.[0]) ?? contentArtworkKey,
+    resolveArtworkKey(page?.imageArtworkKeys?.[1]) ??
+      resolveArtworkKey(page?.imageArtworkKeys?.[0]) ??
+      contentArtworkKey,
+  ];
+
+  return {
+    id: page?.id ?? `page-${index + 1}`,
+    template: normalizeTemplateId(page?.template ?? defaults.artworkTemplate),
+    textColor: page?.textColor ?? defaults.textColor,
+    backgroundColor: page?.backgroundColor ?? defaults.backgroundColor,
+    contentArtworkKey,
+    imageArtworkKeys,
+    showTombstone: page?.showTombstone !== false,
+    showDescription: page?.showDescription !== false,
+    showArtistDescription: page?.showArtistDescription === true,
+  };
+}
+
+function createPageEntry(index) {
+  return normalizePageEntry(
+    {
+      template: defaultArtworkTemplate,
+      showTombstone: true,
+      showDescription: true,
+      showArtistDescription: false,
+    },
+    index,
+    layoutState.value.defaults ?? {},
+  );
+}
 
 function estimatePageCount() {
-  const pieces = artPieces.value.length;
-  if (selectedTemplate.value === "all") return artData.length + pieces * 2 + 2;
-  if (selectedTemplate.value === "artist-profile") return artData.length + 2;
-  return pieces * 2 + 2;
+  const designedPages = pageEntries.value.reduce((count, page) => {
+    const template = artworkTemplates[page.template] ?? artworkTemplates[defaultArtworkTemplate];
+    return count + (template.supports.physicalPages ?? 1);
+  }, 0);
+
+  return designedPages + 2;
 }
 
-function renderArtistSection(artist, artistIndex) {
-  if (selectedTemplate.value === "artist-profile") {
-    return renderArtistProfile(artist, artistIndex);
-  }
+function renderConfiguredPage(page, pageIndex) {
+  const primaryPiece =
+    catalogPieceMap.get(page.contentArtworkKey) ??
+    catalogPieceMap.get(page.imageArtworkKeys[0]) ??
+    catalogPieces[0];
+  if (!primaryPiece) return "";
 
-  const pieces = artist.art_pieces
-    .map((piece, pieceIndex) =>
-      renderPieceTemplates(piece, artist, pieceIndex, artistIndex),
-    )
-    .join("");
-
-  return selectedTemplate.value === "all"
-    ? `${renderArtistProfile(artist, artistIndex)}${pieces}`
-    : pieces;
-}
-
-function renderArtistProfile(artist, artistIndex) {
-  const featurePiece = artist.art_pieces[0];
-  const image = imageForPiece(featurePiece, artist, 0);
-  const summaries = artist.art_pieces
-    .slice(0, 4)
-    .map(
-      (piece) => `
-        <li>
-          <strong>${escapeHtml(piece.art_piece_name)}</strong>
-          <span>${escapeHtml(piece.short_description)}</span>
-        </li>
-      `,
-    )
-    .join("");
-
-  return `
-    <section class="book-section artist-profile-template ${themeClass.value}">
-      <div class="artist-profile-copy">
-        <p class="kicker">${String(artistIndex + 1).padStart(2, "0")} / ${escapeHtml(artist.series_name)}</p>
-        <h2>${escapeHtml(artist.artist_name)}</h2>
-        <p>${escapeHtml(artist.artist_introduction)}</p>
-        <ul>${summaries}</ul>
-      </div>
-      <figure class="artist-profile-art">
-        <img src="${image}" alt="" />
-        <figcaption>${escapeHtml(featurePiece.art_piece_name)} · ${escapeHtml(featurePiece.year)}</figcaption>
-      </figure>
-    </section>
-  `;
-}
-
-function renderPieceTemplates(piece, artist, pieceIndex, artistIndex) {
-  const globalIndex = artData
-    .slice(0, artistIndex)
-    .reduce((total, item) => total + item.art_pieces.length, pieceIndex);
+  const imageA =
+    catalogPieceMap.get(page.imageArtworkKeys[0])?.image ?? emptyImage(page.imageArtworkKeys[0]);
+  const imageB =
+    catalogPieceMap.get(page.imageArtworkKeys[1])?.image ??
+    catalogPieceMap.get(page.imageArtworkKeys[0])?.image ??
+    emptyImage(page.imageArtworkKeys[1]);
   const template =
-    selectedTemplate.value === "all"
-      ? ["spread-image", "padded-plate", "panorama-text", "full-bleed"][
-          globalIndex % 4
-        ]
-      : selectedTemplate.value;
+    artworkTemplates[page.template] ?? artworkTemplates[defaultArtworkTemplate];
+  const themeClasses = [
+    colorClass(page.backgroundColor, "bg"),
+    colorClass(page.textColor, "text"),
+  ].join(" ");
 
-  if (template === "spread-image") {
-    return renderTwoPageImage(piece, artist, pieceIndex);
-  }
-  if (template === "panorama-text") {
-    return renderPanoramaText(piece, artist, pieceIndex);
-  }
-  if (template === "full-bleed") {
-    return renderFullBleed(piece, artist, pieceIndex);
-  }
-  return renderPaddedPlate(piece, artist, pieceIndex);
+  return template.render({
+    piece: primaryPiece,
+    artist: primaryPiece.artist,
+    pieceIndex: pageIndex,
+    images: [imageA, imageB],
+    artistPortrait: artistPortraitForArtist(primaryPiece.artist),
+    themeClasses,
+    helpers: { escapeHtml, splitText },
+    options: {
+      showTombstone: page.showTombstone,
+      showDescription: page.showDescription,
+      showArtistDescription: page.showArtistDescription,
+    },
+  });
 }
 
-function renderArtworkInfo(piece, artist, pieceIndex, extraClass = "") {
-  const number = String(pieceIndex + 1).padStart(2, "0");
-
-  return `
-    <div class="artwork-info ${extraClass}">
-      <div class="artwork-meta">
-        <p class="artwork-number">${number} / ${escapeHtml(artist.artist_name)}</p>
-        <h2>${escapeHtml(piece.art_piece_name)}</h2>
-      </div>
-      <p>${escapeHtml(piece.long_description || piece.short_description)}</p>
-      <dl>
-        <div><dt>Year</dt><dd>${escapeHtml(piece.year)}</dd></div>
-        <div><dt>Technique</dt><dd>${escapeHtml(piece.technique_used)}</dd></div>
-        <div><dt>Context</dt><dd>${escapeHtml(piece.display_context)}</dd></div>
-      </dl>
-    </div>
-  `;
-}
-
-function renderTwoPageImage(piece, artist, pieceIndex) {
-  const image = imageForPiece(piece, artist, pieceIndex);
-
-  return `
-    <section class="book-section spread-image-template spread-left">
-      <img src="${image}" alt="" />
-    </section>
-    <section class="book-section spread-image-template spread-right">
-      <img src="${image}" alt="" />
-      ${renderArtworkInfo(piece, artist, pieceIndex, "overlay-info compact")}
-    </section>
-  `;
-}
-
-function renderPanoramaText(piece, artist, pieceIndex) {
-  const image = imageForPiece(piece, artist, pieceIndex);
-  const split = splitText(piece.long_description || piece.short_description);
-
-  return `
-    <section class="book-section panorama-template panorama-left ${themeClass.value}">
-      <img src="${image}" alt="" />
-      ${renderArtworkInfo({ ...piece, long_description: split[0] }, artist, pieceIndex)}
-    </section>
-    <section class="book-section panorama-template panorama-right ${themeClass.value}">
-      <img src="${image}" alt="" />
-      ${renderArtworkInfo({ ...piece, long_description: split[1] }, artist, pieceIndex)}
-    </section>
-  `;
-}
-
-function renderFullBleed(piece, artist, pieceIndex) {
-  const image = imageForPiece(piece, artist, pieceIndex);
-
-  return `
-    <section class="book-section full-bleed-template">
-      <img src="${image}" alt="" />
-      ${renderArtworkInfo(piece, artist, pieceIndex, "overlay-info")}
-    </section>
-    <section class="book-section artwork-template ${themeClass.value}">
-      ${renderArtworkInfo(piece, artist, pieceIndex)}
-    </section>
-  `;
-}
-
-function renderPaddedPlate(piece, artist, pieceIndex) {
-  const image = imageForPiece(piece, artist, pieceIndex);
-
-  return `
-    <section class="book-section padded-plate-template ${themeClass.value}">
-      <figure>
-        <img src="${image}" alt="" />
-      </figure>
-      ${renderArtworkInfo(piece, artist, pieceIndex, "plate-margin-info")}
-    </section>
-    <section class="book-section artwork-template ${themeClass.value}">
-      ${renderArtworkInfo(piece, artist, pieceIndex)}
-    </section>
-  `;
-}
-
-function imageForPiece(piece, artist, pieceIndex) {
+function imageForPiece(piece, artist) {
   const candidates = Object.entries(imageModules);
   const artistSlug = slugify(artist.artist_name);
   const pieceSlug = slugify(piece.art_piece_name);
-  const match = candidates.find(
-    ([path]) => path.includes(artistSlug) && path.includes(pieceSlug),
-  );
-  const fallback = candidates[(artist.art_pieces.length + pieceIndex) % candidates.length];
+  const match = candidates
+    .filter(([path]) => path.includes(artistSlug) && path.includes(pieceSlug))
+    .sort(([leftPath], [rightPath]) => compareImagePaths(rightPath, leftPath))[0];
 
-  return match?.[1] ?? fallback?.[1] ?? "";
+  return {
+    src: match?.[1] ?? "",
+    path: match ? repoRelativeImagePath(match[0]) : null,
+    key: imageKey(artist, piece),
+    missing: !match,
+  };
+}
+
+function artistPortraitForArtist(artist) {
+  const candidates = Object.entries(imageModules);
+  const artistSlug = slugify(artist.artist_name);
+  const match = candidates
+    .filter(([path]) =>
+      path.includes("generated-images/artists/") &&
+      path.includes(`${artistSlug}-portrait`),
+    )
+    .sort(([leftPath], [rightPath]) => compareImagePaths(rightPath, leftPath))[0]
+    ?? candidates
+      .filter(([path]) => path.includes(artistSlug) && path.includes("portrait"))
+      .sort(([leftPath], [rightPath]) => compareImagePaths(rightPath, leftPath))[0];
+
+  return {
+    src: match?.[1] ?? "",
+    path: match ? repoRelativeImagePath(match[0]) : null,
+    key: `${artistSlug}-portrait`,
+    missing: !match,
+  };
+}
+
+function emptyImage(key = "") {
+  return {
+    src: "",
+    path: null,
+    key,
+    missing: true,
+  };
+}
+
+function compareImagePaths(leftPath, rightPath) {
+  const leftTimestamp = leftPath.match(/\d{8}T\d{6}Z/)?.[0] ?? "";
+  const rightTimestamp = rightPath.match(/\d{8}T\d{6}Z/)?.[0] ?? "";
+
+  return (
+    leftTimestamp.localeCompare(rightTimestamp) ||
+    leftPath.localeCompare(rightPath)
+  );
+}
+
+function repoRelativeImagePath(pathValue) {
+  return pathValue.replace(/^\.\.\/\.\.\//, "");
 }
 
 function slugify(value) {
@@ -276,9 +329,200 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
+function shouldIncludePiece(piece) {
+  return piece.include_in_book !== false;
+}
+
+function artworkKey(artist, piece) {
+  return `${artist.artist_name}::${piece.art_piece_name}`;
+}
+
+function imageKey(artist, piece) {
+  return `${slugify(artist.artist_name)}--${slugify(piece.art_piece_name)}`;
+}
+
+function normalizeTemplateId(templateId) {
+  const aliases = {
+    "spread-image": "square-caption",
+    "panorama-text": "artist-portrait",
+    "padded-plate": "top-inset-text",
+  };
+
+  const normalized = aliases[templateId] ?? templateId;
+  return artworkTemplates[normalized] ? normalized : defaultArtworkTemplate;
+}
+
+function resolveArtworkKey(key) {
+  return key && catalogPieceMap.has(key) ? key : null;
+}
+
+function updatePageField(field, value) {
+  const index = selectedPageNumber.value - 1;
+  if (index < 0 || index >= pageEntries.value.length) return;
+
+  const nextPages = [...pageEntries.value];
+  const current = nextPages[index];
+  const nextInput =
+    field === "template" && value === "artist-portrait"
+      ? { ...current, [field]: value, showArtistDescription: true }
+      : { ...current, [field]: value };
+  const nextPage = normalizePageEntry(
+    nextInput,
+    index,
+    layoutState.value.defaults ?? {},
+  );
+
+  nextPages[index] = nextPage;
+  layoutState.value = { ...layoutState.value, pages: nextPages };
+  queueLayoutSave();
+  renderPagedPreview();
+}
+
+function updatePageToggle(field, checked) {
+  updatePageField(field, checked);
+}
+
+function updatePageImage(slotIndex, value) {
+  const index = selectedPageNumber.value - 1;
+  if (index < 0 || index >= pageEntries.value.length) return;
+
+  const nextPages = [...pageEntries.value];
+  const current = nextPages[index];
+  const imageArtworkKeys = [...current.imageArtworkKeys];
+  imageArtworkKeys[slotIndex] = resolveArtworkKey(value) ?? current.imageArtworkKeys[slotIndex];
+
+  nextPages[index] = normalizePageEntry(
+    { ...current, imageArtworkKeys },
+    index,
+    layoutState.value.defaults ?? {},
+  );
+  layoutState.value = { ...layoutState.value, pages: nextPages };
+  queueLayoutSave();
+  renderPagedPreview();
+}
+
+function updatePageCount(value) {
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isFinite(parsed)) return;
+
+  const nextCount = Math.max(1, Math.min(200, parsed));
+  const nextPages = Array.from({ length: nextCount }, (_, index) =>
+    normalizePageEntry(
+      pageEntries.value[index] ?? createPageEntry(index),
+      index,
+      layoutState.value.defaults ?? {},
+    ),
+  );
+
+  layoutState.value = { ...layoutState.value, pages: nextPages };
+  selectedPageNumber.value = Math.min(selectedPageNumber.value, nextCount);
+  queueLayoutSave();
+  renderPagedPreview();
+}
+
+function updateSelectedPageNumber(value) {
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isFinite(parsed)) return;
+  selectedPageNumber.value = Math.max(1, Math.min(pageEntries.value.length, parsed));
+}
+
+function shiftSelectedPage(delta) {
+  updateSelectedPageNumber(selectedPageNumber.value + delta);
+}
+
+function normalizedLayoutState() {
+  return {
+    version: 2,
+    defaults: {
+      artworkTemplate:
+        layoutState.value.defaults?.artworkTemplate ?? defaultArtworkTemplate,
+      textColor: layoutState.value.defaults?.textColor ?? "black",
+      backgroundColor: layoutState.value.defaults?.backgroundColor ?? "paper",
+    },
+    pages: pageEntries.value.map((page, index) =>
+      normalizePageEntry(page, index, layoutState.value.defaults ?? {}),
+    ),
+  };
+}
+
+function exportLayoutState() {
+  const blob = new Blob([`${JSON.stringify(normalizedLayoutState(), null, 2)}\n`], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "art-book-layout.json";
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+async function saveLayoutState() {
+  saveStatus.value = "Saving layout JSON";
+
+  try {
+    const response = await fetch("/__art-book-layout__", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(normalizedLayoutState()),
+    });
+
+    if (!response.ok) throw new Error(`Save failed with ${response.status}`);
+    saveStatus.value = "Saved to art-book-layout.json";
+  } catch {
+    saveStatus.value = "Auto-save unavailable; use Export JSON";
+  }
+}
+
+function queueLayoutSave() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(saveLayoutState, 450);
+}
+
+function captureWorkbenchScroll() {
+  if (!workbench.value) {
+    return {
+      top: 0,
+      left: 0,
+      windowTop: window.scrollY,
+      windowLeft: window.scrollX,
+    };
+  }
+
+  return {
+    top: workbench.value.scrollTop,
+    left: workbench.value.scrollLeft,
+    windowTop: window.scrollY,
+    windowLeft: window.scrollX,
+  };
+}
+
+function restoreWorkbenchScroll(scrollState) {
+  if (!scrollState) return;
+
+  if (workbench.value) {
+    workbench.value.scrollTop = scrollState.top ?? 0;
+    workbench.value.scrollLeft = scrollState.left ?? 0;
+  }
+  window.scrollTo(scrollState.windowLeft ?? 0, scrollState.windowTop ?? 0);
+}
+
+function persistWorkbenchScroll() {
+  localStorage.setItem(WORKBENCH_SCROLL_KEY, JSON.stringify(captureWorkbenchScroll()));
+}
+
+function loadWorkbenchScroll() {
+  try {
+    return JSON.parse(localStorage.getItem(WORKBENCH_SCROLL_KEY) ?? "null");
+  } catch {
+    return null;
+  }
+}
+
 async function renderPagedPreview() {
   if (!pagedOutput.value) return;
 
+  const scrollState = captureWorkbenchScroll();
   window.__ART_BOOK_PAGED_READY__ = false;
   status.value = "Paginating";
   renderedPageCount.value = 0;
@@ -287,34 +531,53 @@ async function renderPagedPreview() {
   await nextTick();
 
   const previewer = new Previewer();
-  await previewer.preview(
-    bookHtml.value,
-    [bookCssUrl],
-    pagedOutput.value,
-  );
+  await previewer.preview(bookHtml.value, [bookCssUrl], pagedOutput.value);
 
   const sheetCount = pagedOutput.value.querySelectorAll(".pagedjs_sheet").length;
   renderedPageCount.value =
     sheetCount || pagedOutput.value.querySelectorAll(".pagedjs_page").length;
   status.value = "Paged";
   window.__ART_BOOK_PAGED_READY__ = true;
+
+  await nextTick();
+  updatePreviewScale();
+  restoreWorkbenchScroll(scrollState);
+}
+
+function updatePreviewScale() {
+  if (!workbench.value) return;
+
+  const availableWidth = workbench.value.clientWidth - 56;
+  const nextScale = Math.min(1, Math.max(0.48, availableWidth / SCREEN_PREVIEW_WIDTH));
+  previewScale.value = Number.isFinite(nextScale) ? nextScale : 1;
+}
+
+async function togglePanel() {
+  isPanelCollapsed.value = !isPanelCollapsed.value;
+  await nextTick();
+  updatePreviewScale();
 }
 
 function printBook() {
   window.print();
 }
 
-function updateTemplate(value) {
-  selectedTemplate.value = value;
+onMounted(() => {
+  resizeObserver = new ResizeObserver(() => updatePreviewScale());
+  if (workbench.value) resizeObserver.observe(workbench.value);
+  restoreWorkbenchScroll(loadWorkbenchScroll());
+  workbench.value?.addEventListener("scroll", persistWorkbenchScroll, { passive: true });
+  window.addEventListener("scroll", persistWorkbenchScroll, { passive: true });
   renderPagedPreview();
-}
+  updatePreviewScale();
+});
 
-function updateTheme(value) {
-  selectedTheme.value = value;
-  renderPagedPreview();
-}
-
-onMounted(renderPagedPreview);
+onBeforeUnmount(() => {
+  clearTimeout(saveTimer);
+  resizeObserver?.disconnect();
+  workbench.value?.removeEventListener("scroll", persistWorkbenchScroll);
+  window.removeEventListener("scroll", persistWorkbenchScroll);
+});
 </script>
 
 <template>
@@ -325,21 +588,24 @@ onMounted(renderPagedPreview);
       size="icon"
       type="button"
       :aria-label="isPanelCollapsed ? 'Open settings panel' : 'Collapse settings panel'"
-      @click="isPanelCollapsed = !isPanelCollapsed"
+      @click="togglePanel"
     >
-      <Menu v-if="isPanelCollapsed" :size="17" />
-      <PanelLeftClose v-else :size="17" />
+      <Menu v-if="isPanelCollapsed" :size="18" />
+      <PanelLeftClose v-else :size="18" />
     </Button>
 
     <aside class="studio-panel" aria-label="Book controls">
       <div class="panel-edge" aria-hidden="true">
-        <span class="panel-edge-label">Speculative Works</span>
+        <span class="panel-edge-label">Page Composer</span>
       </div>
 
       <div class="panel-body">
         <div class="brand-lockup">
-          <p class="eyebrow">Paged.js Studio</p>
-          <h1>Art<br />Book</h1>
+          <p class="eyebrow">Paged.js studio</p>
+          <h1>Page<br />Composer</h1>
+          <p class="brand-note">
+            Build the book one designed page at a time.
+          </p>
         </div>
 
         <div class="segmented" aria-label="View mode">
@@ -374,40 +640,208 @@ onMounted(renderPagedPreview);
             <dt>Status</dt>
             <dd>{{ status }}</dd>
           </div>
+          <div>
+            <dt>Save</dt>
+            <dd>{{ saveStatus }}</dd>
+          </div>
         </dl>
+
+        <label class="control-block">
+          <span>Designed Pages</span>
+          <input
+            type="number"
+            min="1"
+            max="200"
+            :value="pageEntries.length"
+            @change="updatePageCount($event.target.value)"
+          />
+          <small class="control-note">
+            Each configured page produces one or more physical pages depending on the template.
+          </small>
+        </label>
+
+        <div class="control-block">
+          <span>Page Number</span>
+          <div class="page-nav">
+            <Button
+              variant="secondary"
+              size="icon"
+              type="button"
+              :disabled="selectedPageNumber <= 1"
+              @click="shiftSelectedPage(-1)"
+            >
+              <ChevronLeft :size="16" />
+            </Button>
+            <select
+              :value="selectedPageNumber"
+              @change="updateSelectedPageNumber($event.target.value)"
+            >
+            <option
+              v-for="(page, index) in pageEntries"
+              :key="page.id"
+              :value="index + 1"
+            >
+              Page {{ index + 1 }}
+            </option>
+          </select>
+            <Button
+              variant="secondary"
+              size="icon"
+              type="button"
+              :disabled="selectedPageNumber >= pageEntries.length"
+              @click="shiftSelectedPage(1)"
+            >
+              <ChevronRight :size="16" />
+            </Button>
+          </div>
+          <small class="control-note">{{ selectedPageLabel }}</small>
+        </div>
 
         <label class="control-block">
           <span>Template</span>
           <select
-            :value="selectedTemplate"
-            @change="updateTemplate($event.target.value)"
+            :value="selectedPage?.template"
+            @change="updatePageField('template', $event.target.value)"
           >
             <option
-              v-for="template in templateOptions"
+              v-for="template in artworkTemplateOptions"
               :key="template.id"
               :value="template.id"
             >
               {{ template.label }}
             </option>
           </select>
+          <small class="control-note">
+            {{ selectedPageTemplate.supports.physicalPages }} physical page<span v-if="selectedPageTemplate.supports.physicalPages > 1">s</span>
+          </small>
+        </label>
+
+        <label class="control-block">
+          <span>Caption Source</span>
+          <select
+            :value="selectedPage?.contentArtworkKey"
+            @change="updatePageField('contentArtworkKey', $event.target.value)"
+          >
+            <option
+              v-for="piece in catalogPieces"
+              :key="piece.key"
+              :value="piece.key"
+            >
+              {{ piece.globalIndex + 1 }} — {{ piece.artist.artist_name }} — {{ piece.art_piece_name }}
+            </option>
+          </select>
+          <small class="control-note">
+            {{ selectedCaptionPiece?.artist?.artist_name }} / {{ selectedCaptionPiece?.art_piece_name }}
+          </small>
+        </label>
+
+        <label
+          v-if="selectedImageSlotCount > 0"
+          class="control-block"
+        >
+          <span>Image A</span>
+          <select
+            :value="selectedPage?.imageArtworkKeys?.[0]"
+            @change="updatePageImage(0, $event.target.value)"
+          >
+            <option
+              v-for="piece in catalogPieces"
+              :key="piece.key"
+              :value="piece.key"
+            >
+              {{ piece.globalIndex + 1 }} — {{ piece.artist.artist_name }} — {{ piece.art_piece_name }}
+            </option>
+          </select>
+        </label>
+
+        <label
+          v-if="selectedImageSlotCount > 1"
+          class="control-block"
+        >
+          <span>Image B</span>
+          <select
+            :value="selectedPage?.imageArtworkKeys?.[1]"
+            @change="updatePageImage(1, $event.target.value)"
+          >
+            <option
+              v-for="piece in catalogPieces"
+              :key="piece.key"
+              :value="piece.key"
+            >
+              {{ piece.globalIndex + 1 }} — {{ piece.artist.artist_name }} — {{ piece.art_piece_name }}
+            </option>
+          </select>
         </label>
 
         <div class="control-block">
-          <span>Colorway</span>
-          <div class="swatches" aria-label="Colorway">
+          <span>Text Blocks</span>
+          <label class="toggle-row">
+            <input
+              type="checkbox"
+              :checked="selectedPage?.showDescription"
+              @change="updatePageToggle('showDescription', $event.target.checked)"
+            />
+            <span>Artwork description</span>
+          </label>
+          <label class="toggle-row">
+            <input
+              type="checkbox"
+              :checked="selectedPage?.showTombstone"
+              @change="updatePageToggle('showTombstone', $event.target.checked)"
+            />
+            <span>Tombstone metadata</span>
+          </label>
+          <label class="toggle-row">
+            <input
+              type="checkbox"
+              :checked="selectedPage?.showArtistDescription"
+              @change="updatePageToggle('showArtistDescription', $event.target.checked)"
+            />
+            <span>Artist description</span>
+          </label>
+          <small
+            v-if="selectedPageTemplate.supports.usesArtistPortrait"
+            class="control-note"
+          >
+            Artist portrait files are resolved from `generated-images/artists/&lt;artist-slug&gt;-portrait.*`.
+          </small>
+        </div>
+
+        <div class="control-block">
+          <span>Text Color</span>
+          <div class="swatches" aria-label="Text color">
             <button
-              v-for="theme in themeOptions"
-              :key="theme.id"
+              v-for="color in colorOptions"
+              :key="color.id"
               type="button"
-              :class="{ active: selectedTheme === theme.id }"
-              :style="{ '--swatch': theme.swatch }"
-              :aria-label="theme.label"
-              @click="updateTheme(theme.id)"
+              :class="{ active: selectedPage?.textColor === color.id }"
+              :style="{ '--swatch': color.value }"
+              :aria-label="color.label"
+              @click="updatePageField('textColor', color.id)"
+            ></button>
+          </div>
+        </div>
+
+        <div class="control-block">
+          <span>Background</span>
+          <div class="swatches" aria-label="Background color">
+            <button
+              v-for="color in colorOptions"
+              :key="color.id"
+              type="button"
+              :class="{ active: selectedPage?.backgroundColor === color.id }"
+              :style="{ '--swatch': color.value }"
+              :aria-label="color.label"
+              @click="updatePageField('backgroundColor', color.id)"
             ></button>
           </div>
         </div>
 
         <div class="actions">
+          <Button variant="secondary" type="button" @click="exportLayoutState">
+            <Download :size="14" />
+            Export JSON
+          </Button>
           <Button variant="secondary" type="button" @click="renderPagedPreview">
             <RefreshCw :size="14" />
             Repaginate
@@ -420,12 +854,21 @@ onMounted(renderPagedPreview);
       </div>
     </aside>
 
-    <section class="workbench" aria-label="Book preview">
+    <section
+      ref="workbench"
+      class="workbench"
+      aria-label="Book preview"
+    >
       <div
         v-show="renderMode === 'preview'"
-        ref="pagedOutput"
-        class="paged-output"
-      ></div>
+        class="preview-frame"
+      >
+        <div
+          ref="pagedOutput"
+          class="paged-output"
+          :style="{ zoom: previewScale }"
+        ></div>
+      </div>
       <pre v-show="renderMode === 'source'" class="source-view">{{
         bookHtml
       }}</pre>

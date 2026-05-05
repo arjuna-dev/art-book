@@ -1,35 +1,5 @@
 [
   {
-    "artist_name": "Kenji Fujiwara",
-    "artist_introduction": "Fujiwara works at the intersection of mathematics, logic circuits, and sculptural form. Based between Tokyo and Mexico City, his practice bridges ancient numerological traditions with machine learning hardware and glowing analogue bulbs.",
-    "artist_long_description": "Kenji Fujiwara emerged from a background in electrical engineering and Zen calligraphy, a combination that sounds improbable until you see his work. His sculptures hum faintly. They think, in a rudimentary, earnest way. Whether training a perceptron on human gestures or letting prime numbers dictate the rhythm of a blinking light, Fujiwara treats logic not as cold abstraction but as something approaching the sacred — or at least something that pretends to, which is more or less the same thing in contemporary art. His installations have been described as meditative computation and as expensive Raspberry Pi projects. Both descriptions are accurate.",
-    "series_name": "The Mathematics of Existence",
-    "art_pieces": [
-      {
-        "art_piece_name": "Perceptron 195X",
-        "year": "2024",
-        "technique_used": "Microcontroller, touch-sensitive 10x10 light bulb grid, weight indicator LEDs, YES/NO/TRAIN/TEST interface",
-        "short_description": "A 10x10 grid of touch-sensitive light bulbs allows visitors to draw patterns, label them YES or NO, and watch a perceptron machine learn in real time through visible LED weight indicators.",
-        "long_description": "Named after Frank Rosenblatt's 1957 invention, this piece collapses seventy years of machine learning into a grid you can touch. The visitor draws. Labels. Trains. Watches. The machine learns, visibly, its shifting weights rendered in amber LEDs. It is endearingly stupid at first — wrong more than it is right, like most of us — and then suddenly, improbably, it begins to agree with you. Whether this constitutes intelligence, art, or an elaborate tutorial on linear classification is a question Fujiwara leaves open. The large YES lamp at the top glows with a warmth that borders on affection.",
-        "display_context": "Interactive gallery installation, mid-room pedestal",
-        "aspect_ratio": "1:1",
-        "image_prompt": "Retro-futuristic machine panel with a 10x10 grid of glowing amber light bulbs, large YES indicator lamp at top, a NO indicator lamp at top, YES/NO/TRAIN/TEST buttons on worn brushed metal panel, warm workshop lighting, interactive art machine",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Prime Distribution",
-        "year": "2022",
-        "technique_used": "Microcontroller, audible tone generator, blinking light, algorithmic prime number sweep",
-        "short_description": "A sweeping counter from 1 to N activates a light and sound only at prime numbers, creating an increasingly sparse rhythm as the sequence progresses.",
-        "long_description": "Prime Distribution is perhaps the most austere piece in Fujiwara's practice and the most honest. A light blinks. A tone sounds. Less and less frequently. The silence between primes grows. The universe spreads out. There is no metaphor here that is not also mathematics. The piece enacts in blinking light and occasional sound the precise rate at which meaning becomes more rare as scale increases. Whether this is a meditation on loneliness, cosmology, or number theory is a distinction Fujiwara refuses to make.",
-        "display_context": "Dark gallery room, single pedestal installation",
-        "aspect_ratio": "9:16",
-        "image_prompt": "A single glowing lightbulb in total darkness, surrounded by emptiness, sound wave visualizations etched faintly into the plinth, minimal and contemplative, long exposure photography, the silence between primes made visible",
-        "should_generate": true
-      }
-    ]
-  },
-  {
     "artist_name": "Dr. Elena Vasquez",
     "artist_introduction": "Former computational biologist turned artist, Vasquez creates works that reveal the mathematical structures underlying natural forms and explore the boundaries between organic life and digital existence. Working between Barcelona, Woods Hole, and the Galapagos Islands.",
     "artist_long_description": "Elena Vasquez spent fifteen years modeling protein folding algorithms before she realized that the most interesting questions weren't computational — they were sculptural. Her background in mathematical biology infuses every piece with an understanding of how numbers emerge from living systems and how living systems can be reconstituted from numbers. She treats fossils as compressed data, shells as hardware for mathematical theorems, and artificial intelligence as a form of digital necromancy. Critics have described her work as 'rigorously speculative' and 'scientifically mystical,' terms she considers accurate. Her installations occupy the uncertain territory between laboratory and chapel, where mathematical proof and emotional truth become difficult to distinguish.",
@@ -40,11 +10,12 @@
         "year": "2023",
         "technique_used": "Microcontroller unit, stone arrangements, LED lighting, numeric input interface",
         "short_description": "Stone arrangements representing prime numbers that illuminate to reveal the prime factorization of any number entered by visitors, showing how all numbers are 'born' from these fundamental building blocks.",
-        "long_description": "There is something profoundly human about the desire to find pattern in stone. Fujiwara taps into this ancient impulse and runs it through a microcontroller that reveals mathematical truth. The sets of stones sit in relative darkness — patient, geological, indifferent — each set containing a prime number of stones. When visitors enter any number through the keypad, only the sets of stones corresponding to that number's prime factors illuminate, glowing like amber genealogy. Enter 12, and the sets of stones for 2 and 3 light up (2² × 3). Enter 77, and the sets for 7 and 11 announce themselves. The piece demonstrates that every number in existence is born from these primordial elements, that complexity emerges from fundamental simplicity. It is a meditation on mathematical genesis rendered in stone and light.",
+        "long_description": "There is something profoundly human about the desire to find pattern in stone. Vasquez taps into this ancient impulse and runs it through a microcontroller that reveals mathematical truth. The sets of stones sit in relative darkness — patient, geological, indifferent — each set containing a prime number of stones. When visitors enter any number through the keypad, only the sets of stones corresponding to that number's prime factors illuminate, glowing like amber genealogy. Enter 12, and the sets of stones for 2 and 3 light up (2² × 3). Enter 77, and the sets for 7 and 11 announce themselves. The piece demonstrates that every number in existence is born from these primordial elements, that complexity emerges from fundamental simplicity. It is a meditation on mathematical genesis rendered in stone and light.",
         "display_context": "Gallery or museum dark room installation",
         "aspect_ratio": "16:9",
         "image_prompt": "Sets of small stones arranged as incomplete squares on a dark surface, no labels, prime numbers (2, 3, 5, 7, 11, 13, 17, etc. up no high prime numbers). A few sets of incomplete squares, are lighted from above, the prime factors of an entered number, a small numeric keypad visible in the foreground, atmospheric darkness surrounding, cinematic lighting, fine art photography. The illuminated stones should suggest mathematical relationships and the building blocks of numbers. The keypad shows clearly on the screen the prime number 712, which would light up the stones for 2, 3, 7, and 17 (since 712 = 2³ × 3 × 7 × 17). The set of stones for number seven would be an incomple square of 3x3 stones with 2 stones missing to complete the square. For number 17 it would be an incomplete square of 5x5 stones with 8 stones missing to complete the square. The overall mood is contemplative and mysterious, evoking the ancient human fascination with numbers and their hidden structures. The installation covers a whole room where visitors can walk among the stones and interact with the keypad to see different prime factorizations light up the corresponding stones, creating a dynamic and immersive experience of mathematical discovery. The screen for the keypad is large and clear, showing the number being entered in real time, and the stones light up in a visually striking way that emphasizes their role as the fundamental building blocks of all numbers. The lighting should create a sense of wonder and reverence for the mathematical relationships being revealed, with shadows and highlights that enhance the three-dimensionality of the stones and the overall atmosphere of the installation.",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Prime Shell Spiral",
@@ -55,7 +26,8 @@
         "display_context": "Museum plinth display or outdoor sculpture garden",
         "aspect_ratio": "4:5",
         "image_prompt": "Monumental 5-meter-tall polished brass nautilus shell sculpture with people walking around its base for scale, interior chambers clearly showing prime number progression - single large prime at the tight center spiral, increasing quantities of smaller primes in the expanding outer chambers, with the number '1' visible at the outermost edge, warm metal reflections, museum gallery or sculpture garden setting, dramatic side lighting, visitors climbing steps to study the mathematical progression, the perfect correlation between natural form and mathematical distribution made visible",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "AI Fish Resurrection",
@@ -66,7 +38,32 @@
         "display_context": "Museum installation with the fossil shown beside a screen displaying the reconstructed fish swimming in a digital water environment",
         "aspect_ratio": "16:9",
         "image_prompt": "A fish fossil in a museum display beside a luminous screen showing a realistic reconstructed fish swimming underwater, cinematic museum atmosphere, blue and amber light, scientific yet poetic mood",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Perceptron 195X",
+        "year": "2024",
+        "technique_used": "Microcontroller, touch-sensitive 10x10 light bulb grid, weight indicator LEDs, YES/NO/TRAIN/TEST interface",
+        "short_description": "A 10x10 grid of touch-sensitive light bulbs allows visitors to draw patterns, label them YES or NO, and watch a perceptron machine learn in real time through visible LED weight indicators.",
+        "long_description": "Named after Frank Rosenblatt's 1957 invention, this piece collapses seventy years of machine learning into a grid you can touch. The visitor draws. Labels. Trains. Watches. The machine learns, visibly, its shifting weights rendered in amber LEDs. It is endearingly stupid at first — wrong more than it is right, like most of us — and then suddenly, improbably, it begins to agree with you. Whether this constitutes intelligence, art, or an elaborate tutorial on linear classification is a question Vasquez leaves open. The large YES lamp at the top glows with a warmth that borders on affection.",
+        "display_context": "Interactive gallery installation, mid-room pedestal",
+        "aspect_ratio": "1:1",
+        "image_prompt": "Retro-futuristic machine panel with a 10x10 grid of glowing amber light bulbs, large YES indicator lamp at top, a NO indicator lamp at top, YES/NO/TRAIN/TEST buttons on worn brushed metal panel, warm workshop lighting, interactive art machine",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Prime Distribution",
+        "year": "2022",
+        "technique_used": "Microcontroller, audible tone generator, blinking light, algorithmic prime number sweep",
+        "short_description": "A sweeping counter from 1 to N activates a light and sound only at prime numbers, creating an increasingly sparse rhythm as the sequence progresses.",
+        "long_description": "Prime Distribution is perhaps the most austere piece in Vasquez's practice and the most honest. A light blinks. A tone sounds. Less and less frequently. The silence between primes grows. The universe spreads out. There is no metaphor here that is not also mathematics. The piece enacts in blinking light and occasional sound the precise rate at which meaning becomes more rare as scale increases. Whether this is a meditation on loneliness, cosmology, or number theory is a distinction Vasquez refuses to make.",
+        "display_context": "Dark gallery room, single pedestal installation",
+        "aspect_ratio": "9:16",
+        "image_prompt": "A single glowing lightbulb in total darkness, surrounded by emptiness, sound wave visualizations etched faintly into the plinth, minimal and contemplative, long exposure photography, the silence between primes made visible",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -85,7 +82,8 @@
         "display_context": "Gallery vitrine or shelf display, paired flasks lying horizontal",
         "aspect_ratio": "16:9",
         "image_prompt": "Two elegant vintage 1950s crystal flasks lying on their sides in a museum vitrine, each containing ocean water, labeled with coordinates from either side of the US-Mexico border, clean archival lighting, political and serene",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Angel vs. Capital",
@@ -96,7 +94,8 @@
         "display_context": "Public square outdoor installation or large gallery space",
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental metal sculpture of the Mexican 'Angel de la Independencia' grappled by a dark demon figure representing capitalism, urban cityscape background, dramatic storm lighting, cinematic scale, political and mythological. The Angel stands on top of a column, a replica of the tip of the original column, while the demon figure is either flanking it or seizing it, depending on the version. The sculpture should evoke a sense of struggle and imbalance, with the Angel appearing overwhelmed by the demon's grasp. The background should be a museum or public square, emphasizing the public and political nature of the confrontation. The lighting should be dramatic, with storm clouds gathering overhead, casting dynamic shadows and highlighting the metallic textures of the sculpture. The overall mood is tense and evocative, blending mythological symbolism with contemporary political commentary.",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Cyberpunk Tenochtitlan",
@@ -107,7 +106,8 @@
         "display_context": "Museum installation in large vitrine or open gallery table",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a cyberpunk Mexican city, neon lights, Aztec pyramids with holographic projections, miniature gods and cyborgs in the streets, taco stands with pneumatic tubes and drones, atmospheric fog, vibrant neon colors",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Zapatista Women Sculptures",
@@ -118,7 +118,44 @@
         "display_context": "Museum gallery or outdoor public installation, series of seven",
         "aspect_ratio": "4:5",
         "image_prompt": "Seven cast metal female figures in Zapatista-style stances, each wearing a single vibrant traditional indigenous garment element in bold colors, museum gallery setting, warm dramatic lighting, dignified and powerful",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Indigenous Women of the World",
+        "year": "2024",
+        "technique_used": "Cast bronze sculpture series, single traditional garment element per figure in vivid color, series of seven with miniature version",
+        "short_description": "Seven bronze sculptures of women from indigenous peoples across the world - Maasai, Flower Hmong, Sami, Kayapo, Yoruba, Quechua, and Kuna - each figure defined by a single brilliant traditional garment. A miniature version of the full series is also produced.",
+        "long_description": "Seven is not an accidental number, and neither is one. Cienfuegos Mora's series pairs the global breadth of seven indigenous women with the discipline of a single garment per figure - a formal constraint that places the clothing item in conversation with the body rather than overwhelming it. Each figure stands with the particular stillness of a person who knows exactly who they are. The Maasai woman from the Great Rift Valley of Kenya and Tanzania wears the red shuka - a rectangular plaid cloth in solid scarlet, traditionally signaling courage and protection from predators, draped over one shoulder in the manner of semi-nomadic Nilotic communities who have inhabited this territory for centuries and whose population numbers approximately 900,000 across both nations. The Flower Hmong woman from the highland valleys of northern Vietnam and Laos wears only her embroidered pleated skirt - a batik-dyed hemp garment representing over 200 hours of cross-stitch embroidery in hot pink, jade green, and electric blue; the Flower Hmong, also called Hmong Leng, are one of over 60 Hmong sub-groups and take their name from the extraordinary floral density of this textile tradition, which is considered among the most technically demanding of any living highland culture in Southeast Asia. The Sami woman from Arctic Scandinavia stands in her royal-blue gakti - the structured traditional tunic of the Kautokeino style, with red, yellow, and green ribbon trim that identifies her home community and marital status; the Sami are the only recognized indigenous people of Arctic Scandinavia, having inhabited the region for at least 5,000 years, and the gakti encodes genealogy, geography, and personal history in a single garment. The Kayapo woman from the Brazilian states of Para and Mato Grosso wears only her crimson macaw-feather ngopokati crown - a headdress of scarlet macaw tail feathers worn in ceremonies marking births and seasonal cycles; the Kayapo number approximately 11,000 across more than 30 villages and have led major international campaigns to defend their Amazonian territory since the 1980s, making the headdress a mark not only of ceremony but of ongoing resistance. The Yoruba woman from southwestern Nigeria stands beneath an immense golden gele - the elaborate head wrap whose architectural pleats and peaks a skilled tier can raise thirty centimeters above the head; the Yoruba number over 40 million and their diaspora communities in Cuba, Brazil, and the Caribbean carried the gele into traditions of adornment that persist in multiple continents. The Quechua woman from the Andean highlands of Peru wears a blazing fuchsia pollera - the multilayered skirt in vivid wool whose specific color identifies village origin and ceremonial role among approximately 10 million Quechua speakers, the principal heirs of the Inca Empire, Tawantinsuyu, whose Runasimi language remains a living tongue across four countries. The Kuna woman from Panama's Caribbean San Blas archipelago wears her mola blouse - a textile panel of reverse applique in red, orange, and turquoise, layers of cotton cut and folded into intricate sea-turtle and geometric patterns worn daily; the Kuna people number approximately 80,000 and in 1925 won semi-autonomous governance of Guna Yala through the Guna Revolution, one of the few successful indigenous sovereignty movements of the twentieth century.",
+        "display_context": "Museum gallery or outdoor public installation, series of seven with optional miniature version",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Seven cast bronze female figures from different world indigenous cultures, each wearing a single vivid traditional garment - a red Maasai shuka, bright Flower Hmong embroidered pleated skirt, royal blue Sami gakti, crimson macaw-feather Kayapo crown, golden Yoruba gele, fuchsia Quechua pollera, orange-red Kuna mola blouse - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Indigenous Men of the World",
+        "year": "2025",
+        "technique_used": "Cast bronze sculpture series, single traditional male garment or adornment element per figure in vivid color, series of seven",
+        "short_description": "Seven bronze sculptures of men from indigenous peoples across the world - Maasai warrior, Huli Wigman, Dinka, Konyak Naga, Mapuche, Tuareg, and Yoruba chief - each figure defined by a single brilliant traditional garment or ceremonial adornment.",
+        "long_description": "The companion series maintains the formal discipline of the female series - one figure, one garment - while acknowledging that in many of the same cultures, male ceremonial dress carries equal or greater cultural load. The Maasai warrior from the Great Rift Valley stands wearing only the ochre-dyed red shuka of a moran - the warrior-class of young men between circumcision and marriage charged with community protection, their long hair dyed rust-red with ochre clay; among the Maasai, the moran's red shuka is as much a social rank as a garment. The Huli Wigman from the Hela Province of the Southern Highlands of Papua New Guinea stands in ceremonial pose, his single adornment the extraordinary ambua wig - a structure grown from the man's own hair over two years and decorated with yellow and red bird-of-paradise plumes and chrysanthemum flowers; among the Huli people of approximately 150,000, a man's wig is both autobiography and social credential, worn at sing-sing ceremonies that draw communities from across the highlands. The Dinka man from the Nile basin of South Sudan stands wearing only his malual beaded corset - a tight garment of hundreds of glass beads in bright pink, red, and blue worn during coming-of-age ceremonies to signal age-set and ceremonial status; the Dinka are the largest ethnic group of South Sudan at 4 to 5 million people, are among the tallest peoples on earth, and their beadwork traditions carry precise social codes invisible to outside observers. The Konyak Naga warrior from the Mon district of Nagaland in Northeast India stands in the tsungkotepsu - the woven warrior's shawl in black with broad red and yellow border bands, historically worn only by men who had taken enemy heads in battle; the Konyak, numbering approximately 250,000, maintained active headhunting traditions until Indian independence in 1947 and the tattooed faces and brass ornaments of the last elder headhunters became some of the most photographed human faces of the twentieth century. The Mapuche warrior from south-central Chile stands in a deep indigo makun - the large rectangular woolen poncho dyed with Chilean elderberry, trayen, and woven by Mapuche women in geometric kalul patterns encoding cosmological meaning; the Mapuche are the indigenous people of approximately 1.5 million who successfully resisted both Inca and Spanish conquest for over 300 years in what became known as the Arauco War, the longest indigenous resistance in the Americas. The Tuareg man from the central Sahara stands swathed in a single cobalt-blue tagelmust - the long indigo cotton cloth wound around the head and face whose deep plant-based dye transfers permanently to the skin, earning Tuareg men the name 'blue men of the desert'; among the approximately 2 million Tuareg across Mali, Niger, Algeria, Libya, and Burkina Faso, the tagelmust is dignity itself and its removal in public a gesture of profound vulnerability. The Yoruba chief from southwestern Nigeria stands in an emerald-green agbada - the immense flowing robe requiring up to 6 meters of fabric with elaborate gold-thread dansiki embroidery at the chest and sleeves that pool at his feet; among the Yoruba of over 40 million people, the agbada is the garment of men of standing, its volume and embroidery announcing presence before a word is spoken.",
+        "display_context": "Museum gallery or outdoor public installation, series of seven, companion piece to Indigenous Women of the World",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Seven cast bronze male figures from different world indigenous cultures, each wearing a single vivid traditional garment - red Maasai warrior shuka, yellow-red Huli bird-of-paradise feather wig, bright pink-blue Dinka beaded corset, red-banded Konyak Naga warrior shawl, deep indigo Mapuche makun poncho, cobalt Tuareg tagelmust head wrap, emerald green Yoruba agbada robe - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Indigenous People of the World",
+        "year": "2025",
+        "technique_used": "Cast bronze sculpture series, single vivid traditional garment or adornment per figure, applied mineral pigment and enamel for ceremonial makeup and body paint where culturally central, series of seven",
+        "short_description": "Seven bronze figures - men and women - chosen from indigenous peoples across five continents for the singular visual force of a single garment or adornment: the most colorful, the most architecturally bold, the most irreplaceable mark of a living culture.",
+        "long_description": "This is not a survey. It is a selection made on purely aesthetic grounds - which is to say, on the grounds that matter most when the subject is adornment. Cienfuegos Mora spent two years narrowing the world's indigenous textile and body art traditions to seven that could each carry an entire bronze figure on the strength of a single item. The result covers five continents and includes one community from her own state of Chiapas, a deliberate anchor for the global reach of the rest. The Zinacantán Tzotzil woman from the highland community of Sots'leb, approximately 10 kilometers from San Cristóbal de las Casas in Chiapas and home to around 40,000 Tzotzil Maya speakers, wears her blusa bordada - a hand-embroidered blouse whose entire surface is dense with silk thread flowers in the specific palette that identifies Zinacantán: hot fuchsia, electric orange, deep red, and acid yellow on a white or dark ground, the mariposa and floral motifs worked in such density that the base cloth is almost invisible; Zinacantán is also the primary flower-growing community of the Chiapas highlands, supplying blooms for markets and ceremonies across the region, and the embroidered blouse carries this identity literally on its surface, the flowers worn and the flowers sold becoming a single gesture. The Huli man from the Hela Province in the Southern Highlands of Papua New Guinea stands in his ambua wig - a structure grown from his own hair over two to three years, shaped on a wooden frame and decorated with yellow and red bird-of-paradise plumes, white cockatoo feathers, and fresh chrysanthemum flowers renewed before each sing-sing ceremony; among the approximately 150,000 Huli people his face is painted with yellow and red ochre in the specific patterns that signal he is ready to be judged beautiful, his single additional adornment a crescent of polished pearl shell at his chest. The Wodaabe man from the Ferlo basin of Niger stands in full Gerewol regalia - his face painted over two hours with red ochre base, yellow line down the nose bridge to lengthen it, kohl-black rings around the eyes to make the whites blaze, lips blackened to near-indigo to set off his teeth; the Gerewol competition, held annually at the end of the rainy season when cattle have fattened and trading partners gather, is a week-long ceremony in which men in full makeup compete before panels of young women who choose whom they find most beautiful, one of the few documented traditions globally where this evaluative direction is formalized as a social institution, and among the approximately 100,000 Wodaabe of the Sahel the quality of one's Gerewol face is a matter of serious lifelong practice. The Kayapo woman from the Rio Xingu basin of the Brazilian state of Para stands in her ngopokati headdress of scarlet macaw tail feathers and her body painted from crown to ankle with genipap and red urucu in the dense black geometric spirals and curvilinear patterns that identify her as a ceremonially active member of her village; among the approximately 11,000 Kayapo across more than 30 villages, body paint is not ornament but identity - the patterns distinguish village, age-set, and ritual role, and a woman without paint at a ceremony is a woman who has not yet arrived; the scarlet and orange of her macaw feathers against the black of the genipap body paint is among the most formally considered color combinations in any living visual tradition. The Flower Hmong woman from the highland valleys of Ha Giang province in northern Vietnam stands in her embroidered hemp skirt - a pleated garment whose every panel represents over 200 hours of batik-dyeing and cross-stitch embroidery in hot pink, jade green, lemon yellow, and electric blue, the floral and geometric density of the Flower Hmong, or Hmong Leng, textile tradition considered among the most technically demanding of any living highland fiber art across Southeast Asia; the Flower Hmong, one of over 60 Hmong sub-groups distributed across Vietnam, Laos, Thailand, and China, take their common name from this textile, and a woman's skill as an embroiderer remains among the most significant social credentials of her community. The Ndebele woman from the Mpumalanga and Limpopo provinces of South Africa stands in her idzila - the columns of stacked beaded neck rings in vivid geometric bands of red, yellow, blue, and green that rise from shoulder to jaw and are begun in childhood, enlarged gradually, and never removed after marriage; among the approximately 750,000 Ndebele speakers of southern Africa the idzila encodes family lineage and marital status in a color grammar that is specific down to the individual household, and the geometric precision of Ndebele beadwork and mural painting has been recognized as a distinct and highly influential visual language, its patterns appearing in the work of designers and architects internationally since the 1980s without credit. The Yoruba woman from the cities and towns of southwestern Nigeria stands beneath her gele - the elaborately folded and constructed head wrap whose architectural peaks and fans a skilled tier can raise forty centimeters above the head, the fabric in deep gold-copper aso-oke woven on narrow strip looms in the specific color that signals celebration; among more than 40 million Yoruba speakers the gele is not everyday clothing but event architecture, a headpiece that makes the wearer's arrival in any room an event, and its forms are as precisely codified by occasion as any ceremonial dress tradition in the world, its diaspora presence in Cuban Lucumi and Brazilian Candomble ceremonies having carried it to two other continents where it remains in active use.",
+        "display_context": "Museum gallery, series of seven, intended for display as a self-contained group and in dialogue with the Indigenous Women and Indigenous Men series",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Seven cast bronze figures of mixed gender from indigenous cultures selected for maximum visual force - a Zinacantán Tzotzil woman in fuchsia and orange densely embroidered silk blouse, a Huli man with spectacular yellow-red bird-of-paradise feather wig and ochre face paint, a Wodaabe man with full Gerewol ceremonial face paint in red ochre kohl and indigo lips, a Kayapo woman with scarlet macaw crown and dense black genipap body paint spirals, a Flower Hmong woman in hot-pink jade-green electric-blue embroidered pleated skirt, an Ndebele woman with stacked vivid rainbow beaded neck rings rising to the jaw, a Yoruba woman under a towering architectural gold gele head wrap - museum gallery, dramatic warm lighting, epic and global",
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Tortilla Human",
@@ -129,7 +166,8 @@
         "display_context": "Gallery floor installation, climate-sensitive display",
         "aspect_ratio": "9:16",
         "image_prompt": "Life-sized human figure sculpted from raw tortilla dough, natural cream color, textured surface, gallery floor installation, dramatic overhead lighting casting long shadows, intimate and monumental, slowly deteriorating",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -148,7 +186,8 @@
         "display_context": "Gallery wall, requires close viewing for detail appreciation",
         "aspect_ratio": "4:5",
         "image_prompt": "Detailed mystical diagram showing spiritual energy flow through geometric channels, positive and negative energy forms, annotated in invented medieval-style script, warm parchment tones, precision linework, framed on gallery wall",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Angelic Hierarchy Navigation Chart",
@@ -159,7 +198,8 @@
         "display_context": "Gallery wall installation, corporate-scale presentation",
         "aspect_ratio": "16:9",
         "image_prompt": "Large organizational chart showing angelic hierarchy with detailed bureaucratic structures, gold leaf highlights, baroque angel illustrations connected by precise lines, invented script annotations, corporate meets medieval, gallery wall",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Demonic Classification System",
@@ -170,7 +210,8 @@
         "display_context": "Gallery wall, natural history museum aesthetic",
         "aspect_ratio": "4:5",
         "image_prompt": "Scientific taxonomy illustration of various demon types with detailed anatomical features, dark baroque style, classification labels in invented script, natural history field guide aesthetic, precise biological illustration style",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Spiritual Anatomy Atlas",
@@ -181,7 +222,8 @@
         "display_context": "Gallery wall, medical illustration aesthetic",
         "aspect_ratio": "9:16",
         "image_prompt": "Anatomical chart showing human body with detailed spiritual organs, medical illustration precision, divine reception antenna in brain, prayer chambers in heart, labeled in invented mystical script, clinical meets mystical",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -200,7 +242,8 @@
         "display_context": "Museum wall, requires substantial space for viewing distance",
         "aspect_ratio": "4:3",
         "image_prompt": "Monumental oil painting of a human figure composed entirely of individual corn kernels, each grain painted in photorealistic detail, warm golden corn tones, misty mountain background, awakening pose, mythological and hyperreal, museum gallery wall, dramatic lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Maseca Factory of the Gods",
@@ -211,7 +254,8 @@
         "display_context": "Large gallery wall or museum space, industrial-scale presentation",
         "aspect_ratio": "16:9",
         "image_prompt": "Large oil painting of Aztec goddess Coatlicue merged with industrial machinery in a modern masa factory, workers in uniforms, conveyor belts producing human figures, steam and fluorescent lighting, brand logos visible, hyperrealistic industrial mythology, sacred and mechanical combined",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Cosmic Punk Tezcatlipoca",
@@ -222,7 +266,8 @@
         "display_context": "Gallery wall with dark lighting to enhance cosmic elements",
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental oil painting of punk figure with mohawk and leather jacket, sarape that transforms into the Milky Way galaxy with individual stars, jaguar fur sleeves, urban alley with cosmic void, band patches with Aztec deity names, hyperrealistic cosmic punk mythology, dramatic dark lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -241,7 +286,8 @@
         "display_context": "Gallery wall installation, large-format wall-hanging body-shaped canvas",
         "aspect_ratio": "9:16",
         "image_prompt": "Large body-shaped canvas showing a human figure painted in multiple distinct art historical styles across different body parts, cave art hand, anime eye, photorealistic torso, pixelated lower half, Renaissance arm, gallery wall, dramatic lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Landscape Body",
@@ -252,7 +298,8 @@
         "display_context": "Gallery wall installation, natural lighting preferred",
         "aspect_ratio": "9:16",
         "image_prompt": "A human body silhouette painted as a continuous mountain landscape, snow-capped peaks at the head, rolling green valleys in the torso, forested legs, seamless photorealistic landscape painting, dramatic natural lighting, gallery wall",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Abstract Expressionist Body",
@@ -263,7 +310,8 @@
         "display_context": "Gallery wall installation, high-contrast lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted with aggressive abstract expressionist brushstrokes, thick impasto paint, violent color relationships, gestural abstraction that seems to fight against the figurative outline, high contrast gallery lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Constellation Body",
@@ -274,7 +322,8 @@
         "display_context": "Darkened gallery room, interactive star chart reference available",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as deep space with hundreds of tiny LED lights representing actual star positions, deep blue and black cosmic background with nebula formations, darkened gallery setting, astronomical accuracy meets human form",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Still Life Body",
@@ -285,7 +334,8 @@
         "display_context": "Gallery wall installation, warm traditional lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate Dutch Golden Age still life, head as overflowing fruit bowl, torso with flowers books and skull, classical technique with perfect light and shadow, warm gallery lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Happy Family",
@@ -296,7 +346,8 @@
         "display_context": "Gallery installation with precise positioning requirements, family arrangement",
         "aspect_ratio": "Variable (multiple canvases)",
         "image_prompt": "Four human body silhouette canvases of different sizes (adult woman, adult man, child, small dog) arranged in gallery space, each painted with portions of the same continuous mountain landscape, when viewed together they complete one seamless vista, warm family lighting, conceptual art installation",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "French Cuisine",
@@ -307,7 +358,8 @@
         "display_context": "Gallery wall installation, warm lighting to enhance food textures",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate French cuisine arrangement, Camembert wheel head, coq au vin in torso, baguette arms, wine bottle neck, escargot and macarons in legs, hyperrealistic food painting, warm bistro lighting, gallery wall",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Mexican Mercado",
@@ -318,7 +370,8 @@
         "display_context": "Gallery wall installation, vibrant market-style lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as Mexican market foods, tortilla stack head, mole poblano torso, chiles en nogada chest, avocado arms, traditional sweets in legs, marigold flower frame, vibrant mercado colors, warm market lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Evolutionary Body",
@@ -329,7 +382,8 @@
         "display_context": "Natural history museum or science gallery wall, educational lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as evolutionary tree, primates in head with tiny human in pituitary gland, mammals in chest, reptiles in abdomen, insects in legs, microorganisms at feet, scientific illustration precision, natural history museum lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -348,7 +402,8 @@
         "display_context": "Museum vitrine display, clinical laboratory aesthetic",
         "aspect_ratio": "16:9",
         "image_prompt": "Elegant laboratory test tubes in a museum vitrine containing separated pigments from famous paintings, each labeled with painting name and pigment type, warm glass reflections, scientific precision meets fine art, clean white background",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Hotdog",
@@ -359,7 +414,8 @@
         "display_context": "Gallery installation with sculptural centerpiece and ingredient displays",
         "aspect_ratio": "16:9",
         "image_prompt": "A museum installation showing all hotdog ingredients laid out clinically: a life-sized pink pig sculpture as centerpiece, bread buns, wheat flour, tomatoes, cucumbers, mustard tubes, ketchup, corn syrup jar, nitrates and preservatives in labeled glass containers, bright clinical lighting, conceptual art aesthetic",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Raw Material Car",
@@ -370,7 +426,8 @@
         "display_context": "Large gallery space or industrial museum floor installation",
         "aspect_ratio": "16:9",
         "image_prompt": "Industrial art installation showing raw car materials laid out on a factory floor: steel planks, plastic pellet bags, circuit boards, IC chips in labeled bags, wiring coils, harsh industrial fluorescent lighting, precise forensic arrangement",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Transcendental",
@@ -381,7 +438,8 @@
         "display_context": "Gallery pedestal, white cube space",
         "aspect_ratio": "1:1",
         "image_prompt": "A McDonald's hamburger preserved inside a glass vacuum chamber on a white museum pedestal, pristine white gallery lighting, the burger suspended in perfect preservation, deeply ironic and solemn simultaneously, fine art photography",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -400,7 +458,8 @@
         "display_context": "Museum vitrine series, individual chip displays",
         "aspect_ratio": "1:1",
         "image_prompt": "Detailed laser engraving of Aztec goddess Coatlicue on a golden-brown street potato chip, displayed in a clear museum vitrine, dramatic lighting emphasizing the texture and sacred imagery, macro photography precision",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Enso Pringles",
@@ -411,7 +470,8 @@
         "display_context": "Traditional Japanese scroll mounting, gallery wall series",
         "aspect_ratio": "9:16",
         "image_prompt": "Perfect enso circle laser-engraved on a Pringles chip, mounted as a traditional Japanese hanging scroll with silk threads and dark wood backing, minimalist gallery lighting, Zen aesthetic meets consumer culture",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Rising Sun Cheetos",
@@ -422,7 +482,8 @@
         "display_context": "Color-coordinated mounting, wall installation series",
         "aspect_ratio": "1:1",
         "image_prompt": "Japanese Rising Sun pattern laser-engraved on an orange Cheeto, the natural cheese color perfectly matching traditional sun imagery, mounted against a gradient background from orange to deep red, macro photography showing texture details",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Pringles Mandala",
@@ -433,7 +494,8 @@
         "display_context": "Tibetan-inspired mounting, individual chip displays",
         "aspect_ratio": "1:1",
         "image_prompt": "Intricate Tibetan mandala pattern laser-engraved on a Pringles chip, the geometric design following the hyperbolic paraboloid curve perfectly, mounted with traditional Tibetan elements, warm lighting emphasizing mathematical precision",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Kettle Chip Mandala",
@@ -444,7 +506,8 @@
         "display_context": "Individual chip displays emphasizing surface variation",
         "aspect_ratio": "1:1",
         "image_prompt": "Tibetan mandala pattern laser-engraved on a ridged kettle chip, the geometric design flowing with the organic bumps and valleys, dramatic shadows emphasizing texture, gallery vitrine display",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Rice Cracker Mandala",
@@ -455,7 +518,8 @@
         "display_context": "Specialized lighting to reveal subtle engravings, protective display",
         "aspect_ratio": "1:1",
         "image_prompt": "Extremely delicate Tibetan mandala pattern laser-engraved on a pale rice cracker, the design barely visible like a watermark, some intentional cracks adding to the meditation on impermanence, soft gallery lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Xochipilli Tostadas",
@@ -466,7 +530,8 @@
         "display_context": "Museum vitrine display, individual resin blocks",
         "aspect_ratio": "1:1",
         "image_prompt": "Detailed Aztec god Xochipilli laser engraved on a golden corn tostada, encased in clear amber resin block, displayed in a gallery vitrine, vibrant pre-Columbian patterns visible through the resin, sacred imagery preserved in contemporary materials",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -485,7 +550,8 @@
         "display_context": "Outdoor industrial space, factory courtyard, or large gallery warehouse",
         "aspect_ratio": "9:16",
         "image_prompt": "Three massive IBC industrial tanks stacked vertically, silver chrome metal frames, bottom tank filled with red paint, middle with blue, top with yellow, warehouse or industrial courtyard, dramatic perspective from below, monumental",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Purple",
@@ -496,7 +562,8 @@
         "display_context": "Outdoor or large indoor industrial space, companion to Primary Colors",
         "aspect_ratio": "9:16",
         "image_prompt": "Stacked IBC industrial tanks with gold chrome metal frame, deep purple paint visible inside, regal and industrial simultaneously, dramatic lighting, warehouse or outdoor setting, monumental scale, color as monument",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Fountain I, II, III",
@@ -507,7 +574,8 @@
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
         "image_prompt": "Classical fountain basin pouring multiple streams of vivid paint colors — primary red, blue, yellow — swirling together at the base, recycling visible, indoor gallery or outdoor plaza, painterly fluid dynamics, cinematic color saturation",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Spray Paint Series",
@@ -518,7 +586,8 @@
         "display_context": "Gallery warehouse, multiple sub-installations within single space",
         "aspect_ratio": "4:5",
         "image_prompt": "A white rotating male sculpture in formal office suit being continuously sprayed with bright pink, deep blue, and purple paint from mechanical cans above, paint dripping and recycling below, kinetic and visceral, gallery installation",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "River of Change",
@@ -529,7 +598,8 @@
         "display_context": "Large studio or gallery with elongated floor footprint",
         "aspect_ratio": "21:9",
         "image_prompt": "Ultra-wide hydrographic painting in progress on a long canvas, swirling oil paint patterns on water surface being absorbed by rotating canvas mechanism, fluid abstract patterns in deep blues, golds, and reds, studio environment, process as art",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Golden Rain Sculptures",
@@ -540,7 +610,8 @@
         "display_context": "Gallery installation, sculptures on plinths with recirculating drainage trays",
         "aspect_ratio": "4:5",
         "image_prompt": "White plaster sculptures of a plain man, a family group, a seated man, and a thin Buddha with thick golden paint pouring continuously over their heads, the gold beading and running off into drainage channels, gallery installation, warm golden light",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Real Skull Fountain",
@@ -551,7 +622,8 @@
         "display_context": "Gallery pedestal, secured installation, viewer distance maintained",
         "aspect_ratio": "4:5",
         "image_prompt": "A human skull functioning as a fountain with streams of pastel blue, pink, and white liquid flowing from the eye sockets and mouth, mounted on a dark stone pedestal, dramatic chiaroscuro lighting, beautiful and macabre simultaneously",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Paint Fountains Full Wall",
@@ -562,103 +634,124 @@
         "display_context": "Large gallery or museum, full wall architectural installation",
         "aspect_ratio": "16:9",
         "image_prompt": "An entire gallery wall covered in cascading streams of paint flowing from top to bottom in multiple vivid colors, viewers visible from behind standing in front of it, monumental scale, immersive color environment, cinematic",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
   {
-    "artist_name": "Irina Volkov-Sumarova",
-    "artist_introduction": "Working between Moscow and Dharamshala, Volkov-Sumarova produces installations and sculptures exploring mortality, Buddhist philosophy, and the materiality of impermanence through gold, chrome, ash, and liquid metal.",
-    "artist_long_description": "Irina Volkov-Sumarova grew up in a Soviet-era apartment block and spent her twenties in Dharamshala studying Tibetan Buddhism, and the tension between those two facts animates her entire practice. Her work is materialist and devotional simultaneously. She uses ash because it is what we become. She uses gold and chrome because they resist what ash is. The contradiction is not resolved — it is the point. Her most celebrated piece, Throne of Mortality, has been described as the most unsentimental meditation on death since the Danse Macabre and as a room where nothing happens until everything does.",
+    "artist_name": "Alejandro Camus",
+    "artist_introduction": "Born in Tlaxcala, Mexico, and working between Copenhagen and Mexico City, Camus makes installations and sculptures that sit at the intersection of spiritual inquiry, material science, and the long detour a life can take before it finds its form.",
+    "artist_long_description": "Alejandro Camus did not arrive at art directly. He grew up in Tlaxcala, a state so old its name predates the Aztec empire, and left as a young man with a guitar. He spent years as a street musician — in Mexico City, in Oaxaca, in places that were not paying attention — before the itinerant life led him to farming and then to a spiritual ecovillage in the Mexican highlands where he stayed for several years, working land and attending to silence. He then moved to a second ecovillage in Denmark, where the silence had a different texture and the winters required a different vocabulary. From there he studied software engineering, which he found was simply another way of asking how systems hold together and what happens when they fail. He opened a coffee shop in Copenhagen, which he describes as the most spiritual thing he has ever done and which lasted several years before he understood that what he was actually doing was preparing an installation: a room in which strangers come to be warm, pay a small amount for it, and leave. The transition into making objects came without announcement. His work now uses ash, gold, chrome, liquid metal, and carefully staged sculptural supports to ask questions that his earlier lives asked differently. The Buddha that projects out from a field of ashes, the gong that makes the face visible only through silence — these are not decorative choices. They are the residue of someone who has actually sat with these questions in multiple climates and found them still open. His practice has been described as materialist devotion, which he considers accurate, and as technologically sophisticated Buddhism, which he considers a compliment with an asterisk.",
     "series_name": "The Weight of Impermanence",
     "art_pieces": [
       {
-        "art_piece_name": "Floating Buddha",
+        "art_piece_name": "Floating Buddha I",
         "year": "2022",
-        "technique_used": "Golden chrome Buddha statue, human ash, canvas, ash pattern shaping, magnetic levitation system",
-        "short_description": "A small golden chrome Buddha statue floats in front of a canvas covered in ash patterns, suspended by hidden magnets.",
-        "long_description": "The Buddha hovers six inches from the canvas, supported by rare earth magnets embedded in both the statue and the wall mount. Behind it, two kilograms of human ash — the precise average yield of a cremated adult body — form mandala patterns across black canvas, fixed in place with conservation-grade adhesive. The floating Buddha casts no shadow on the ash field behind it, creating an impossible spatial relationship that the eye cannot quite resolve. Volkov-Sumarova has said this is about the way enlightenment relates to suffering — not by transcending it, but by learning to hover just outside its reach.",
-        "display_context": "Gallery wall installation with concealed magnetic mounting system",
+        "technique_used": "Golden chrome seated Buddha statue, human ash, circular black canvas, ash pattern shaping, concealed support arm",
+        "short_description": "A small golden chrome seated Buddha projects outward from a circular canvas of abstract ash patterns — grey on black, stark and spare.",
+        "long_description": "The Buddha projects several inches from the canvas on a concealed support, held just far enough from the surface to produce a charged spatial separation between figure and ground. Behind it, two kilograms of human ash — the average yield of a cremated adult body — form abstract patterns across a circular black canvas, fixed in place with conservation-grade adhesive. The patterns are not symbolic: no mandalas, no script, just the ash arranged in dense and loose areas, the grey of the material itself. The slight gap between sculpture and ash field gives the piece its tension, making the Buddha feel neither embedded in suffering nor free of it. Camus has said this is about the way enlightenment relates to suffering — not by transcending it, but by learning to remain just outside its grip.",
+        "display_context": "Gallery wall installation with concealed support, circular ash canvas",
         "aspect_ratio": "1:1",
-        "image_prompt": "A small golden chrome Buddha statue floating in front of a black canvas covered in swirling ash patterns, no visible support, the Buddha casting no shadow on the ash behind it, gallery lighting, impossible and serene",
-        "should_generate": true
+        "image_prompt": "A small golden chrome seated Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash in dense and loose areas, subtle concealed support, gallery lighting, minimal and serene",
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Sister's Ocean",
         "year": "2023",
-        "technique_used": "Human ash shaped into ocean wave patterns, memorial diamond, canvas, magnetic suspension system",
-        "short_description": "A memorial diamond made from the artist's sister's ashes floats in front of a canvas where ashes are shaped into ocean wave patterns.",
-        "long_description": "The diamond is real — carbon extracted from Volkov-Sumarova's sister's ashes and compressed into a one-carat stone that catches gallery light like trapped starlight. It hovers in front of ash waves that ripple across the canvas surface, the ashes shaped and fixed to suggest ocean movement, eternal circulation, the way grief moves through the body. The diamond spins slowly on its magnetic mount, casting brief rainbows across the grey waves behind it. This is the most personal piece in Volkov-Sumarova's series and the most technically complex — the magnetic system had to be calibrated to the diamond's exact weight and the electromagnetic field designed not to interfere with the memorial's carbon structure.",
-        "display_context": "Gallery wall installation with precision magnetic levitation system",
+        "technique_used": "Human ash shaped into ocean wave patterns, memorial diamond, canvas, fine support mount",
+        "short_description": "A memorial diamond made from the artist's sister's ashes sits just in front of a canvas where ashes are shaped into ocean wave patterns.",
+        "long_description": "The diamond is real — carbon extracted from Camus's sister's ashes and compressed into a one-carat stone that catches gallery light like trapped starlight. It is positioned just in front of ash waves that ripple across the canvas surface, the ashes shaped and fixed to suggest ocean movement, eternal circulation, the way grief moves through the body. The stone catches and throws brief rainbows across the grey waves behind it. This is the most personal piece in Camus's series and among the most delicate in construction, because the relation between the small jewel and the ash field behind it has to feel intimate without slipping into sentimentality.",
+        "display_context": "Gallery wall installation with ash canvas and delicately mounted memorial diamond",
         "aspect_ratio": "1:1",
         "image_prompt": "A brilliant memorial diamond slowly rotating in front of a canvas covered in ash patterns shaped like ocean waves, rainbow light refracting from the diamond onto the grey ash waves, profound and beautiful, gallery setting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Discourse Before Battle",
         "year": "2022",
         "technique_used": "Bronze Krishna and Arjuna figurines, human ash, canvas, detailed ash landscape shaping",
         "short_description": "Small bronze figures of Krishna counseling Arjuna stand on a canvas field of ashes shaped into the Kurukshetra battlefield.",
-        "long_description": "The figurines are positioned exactly as described in the Bhagavad Gita — Krishna in his charioteer's pose, Arjuna with his bow lowered, receiving the discourse that would become one of Hinduism's central texts. They stand on a canvas covered in ash shaped into the contours of the Kurukshetra battlefield, complete with formations, terrain features, the suggestion of armies. The ash field extends beyond the figures, implying that the battle they are discussing has already happened, that they are standing on its remains. Volkov-Sumarova spent months studying battlefield archaeology to shape the ash formations with historical accuracy, turning the philosophical dialogue into a literal meditation on the cost of duty.",
+        "long_description": "The figurines are positioned exactly as described in the Bhagavad Gita — Krishna in his charioteer's pose, Arjuna with his bow lowered, receiving the discourse that would become one of Hinduism's central texts. They stand on a canvas covered in ash shaped into the contours of the Kurukshetra battlefield, complete with formations, terrain features, the suggestion of armies. The ash field extends beyond the figures, implying that the battle they are discussing has already happened, that they are standing on its remains. Camus spent months studying battlefield archaeology to shape the ash formations with historical accuracy, turning the philosophical dialogue into a literal meditation on the cost of duty.",
         "display_context": "Gallery floor or pedestal installation, viewed from above",
         "aspect_ratio": "4:3",
         "image_prompt": "Small bronze figures of Krishna and Arjuna in philosophical discussion, standing on a detailed ash battlefield landscape with formations and terrain features, viewed from above, the great spiritual discourse surrounded by the cost of war",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Ramakrishna in Ashes",
-        "year": "2023",
-        "technique_used": "Photographic portrait of Ramakrishna, human ash, canvas, ash radiating pattern design",
-        "short_description": "A photograph of the Bengali mystic Ramakrishna centered on a canvas where ashes radiate outward in mandala patterns from his image.",
-        "long_description": "The photograph is one of the few surviving images of Ramakrishna Paramahamsa, the 19th-century Bengali mystic whose visions bridged Hinduism, Islam, and Christianity. Volkov-Sumarova places it at the center of a canvas where human ash radiates outward in precise mandala patterns, as if the saint's spiritual energy were pushing the ash away from his image or drawing it toward him — the pattern works both ways. The ash forms concentric circles, geometric flowers, suggestions of the divine visions that Ramakrishna described in his teachings. The saint's face, serene and slightly amused, seems to regard the ash patterns with the same gentle attention he reportedly gave to all phenomena.",
-        "display_context": "Gallery wall installation, contemplative viewing distance",
-        "aspect_ratio": "1:1",
-        "image_prompt": "A historical photograph of Ramakrishna centered on a canvas with human ash radiating outward in intricate mandala patterns, the saint's serene face surrounded by precise geometric ash formations, spiritual and mathematical",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Throne of Mortality",
         "year": "2023",
         "technique_used": "Antique historical throne, human ash, small smiling glass Buddha figure, dedicated room installation",
         "short_description": "An antique throne in a regal room holds a mound of ashes; across the room, a small smiling multicolor glass Buddha stands watching.",
-        "long_description": "Volkov-Sumarova spent three years acquiring genuinely old thrones — a Qing dynasty chair, a fragment of a European baroque throne, a carved seat from Mali. In each iteration, the throne is specific, weighted with historical power. The ashes on it are anonymous, or claim to be. Across the room, the Buddha smiles in multicolor glass, a small, warm, apparently unconcerned presence. The space between them — a room you cross to pass from one to the other — is the whole argument of the piece. It asks whether the chair matters. It does not answer. It lets the ashes sit there instead.",
+        "long_description": "Camus spent three years acquiring genuinely old thrones — a Qing dynasty chair, a fragment of a European baroque throne, a carved seat from Mali. In each iteration, the throne is specific, weighted with historical power. The ashes on it are anonymous, or claim to be. Across the room, the Buddha smiles in multicolor glass, a small, warm, apparently unconcerned presence. The space between them — a room you cross to pass from one to the other — is the whole argument of the piece. It asks whether the chair matters. It does not answer. It lets the ashes sit there instead.",
         "display_context": "Dedicated room installation, museum or historic venue, antique throne as centerpiece",
         "aspect_ratio": "16:9",
         "image_prompt": "An ornate antique royal throne in a dimly lit regal room, a mound of grey ashes seated upon it, across the empty room a small colorful smiling glass Buddha statue on a shelf, dramatic chiaroscuro lighting, profound stillness",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Resonant Buddha",
         "year": "2023",
         "technique_used": "Golden chrome Buddha head sculpture, brass gong or bell, electric oscillator, programmed lighting control",
         "short_description": "A golden chrome Buddha face emerging from a gong kept continuously vibrating by an electric oscillator; as the sound fades, the room dims until only the face is visible in silence.",
-        "long_description": "Sound is the least permanent thing in any room. Volkov-Sumarova uses this to make the Buddha's presence contingent on its opposite: when the gong speaks loudest, the room is fully lit and the face competes with everything else. As the oscillator lets the tone decay, the lights follow, and the face grows more prominent as the world grows quieter. By the time silence arrives, only the face remains. The piece enacts in real time the trajectory that meditation proposes — that the self becomes visible only as the noise subsides.",
+        "long_description": "Sound is the least permanent thing in any room. Camus uses this to make the Buddha's presence contingent on its opposite: when the gong speaks loudest, the room is fully lit and the face competes with everything else. As the oscillator lets the tone decay, the lights follow, and the face grows more prominent as the world grows quieter. By the time silence arrives, only the face remains. The piece enacts in real time the trajectory that meditation proposes — that the self becomes visible only as the noise subsides.",
         "display_context": "Dedicated dark room, museum installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A golden chrome Buddha face sculpted emerging from a large brass gong, dimly lit room with only the face and gong illuminated, electric oscillator at base, reverberant atmosphere, zen and ethereal, sound made visible",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Gallium Canvas Buddha",
         "year": "2024",
-        "technique_used": "Magnetic liquid metal Galinstan with iron nanoparticles, replica Gandhara Buddha sculpture, electromagnetic control system",
-        "short_description": "A canvas of magnetic gallium alloy beneath a hovering replica of the seated Buddha of Pakistan; the metal surface responds to magnetic fields, creating a living ground beneath the still statue.",
+        "technique_used": "Magnetic liquid metal Galinstan with iron nanoparticles, aged replica Gandhara Buddha sculpture, electromagnetic control system",
+        "short_description": "A canvas of magnetic gallium alloy beneath a hovering aged replica of the seated Buddha of Pakistan; the metal surface responds to magnetic fields, creating a living ground beneath the still statue.",
         "long_description": "The magnetic gallium surface beneath the Buddha breathes. It responds to the piece's embedded electromagnets — subtle field changes cause the liquid metal to ripple, peak, flatten, form structures that almost look deliberate. The Buddha replica above — based on the great seated figure of the Gandhara period — hovers in studied stillness over all this activity. The contrast is precise: the still teacher, the agitated world below. The gallium is beautiful in the way that mercury is beautiful: completely amoral, utterly physical, with no interest in what it means.",
         "display_context": "Gallery pedestal installation, controlled electromagnetic environment",
         "aspect_ratio": "1:1",
         "image_prompt": "A replica of the seated Gandhara Buddha hovering above a canvas of shimmering magnetic liquid gallium metal, the silver surface forming subtle patterns around the base, gallery lighting, silver and gold tones, sacred and scientific",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Sequence This",
         "year": "2024",
         "technique_used": "Extracted DNA, magnetized sculpture, magnetic gallium coating, display case",
         "short_description": "A small desert of extracted DNA on which a magnetized sculpture coated in magnetic gallium stands, representing tremendous energy overcoming the molecular substrate of life.",
-        "long_description": "DNA, extracted and dried, looks like spun sugar. It is neither dramatic nor particularly impressive in person. Volkov-Sumarova counts on this. The magnetic gallium-coated sculpture — inspired by Musashi's fighting posture or Coatlicue's forward thrust — stands on this anticlimactic material, pressing against it, as if overcoming it. The piece is either about the relationship between code and body, information and form, or about the simple absurdity of buying salmon sperm for an art installation. Both readings are valid. The DNA does not care either way.",
+        "long_description": "DNA, extracted and dried, looks like spun sugar. It is neither dramatic nor particularly impressive in person. Camus counts on this. The magnetic gallium-coated sculpture — inspired by Musashi's fighting posture or Coatlicue's forward thrust — stands on this anticlimactic material, pressing against it, as if overcoming it. The piece is either about the relationship between code and body, information and form, or about the simple absurdity of buying salmon sperm for an art installation. Both readings are valid. The DNA does not care either way.",
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
         "image_prompt": "A small dynamic metal sculpture coated in shimmering magnetic gallium, arms pushed forward in a powerful warrior stance, standing on a surface of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, molecular and monumental",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Floating Buddha II",
+        "year": "2023",
+        "technique_used": "Golden chrome standing Buddha statue, human ash, circular black canvas, concealed support arm",
+        "short_description": "A standing golden chrome Buddha projects outward from a circular canvas of abstract ash patterns — grey on black, pure and spare.",
+        "long_description": "The canvas is round. The ash patterns are abstract — no symbols, no script, no reference. Just the material arranged in broad, slow spirals that start dense at the edge and thin toward the center, the grey of ash against black. The standing Buddha extends several inches from the surface, its posture upright and engaged. Camus has said the standing figure is the complement to the seated one: if the first piece is about staying just outside suffering, this one is about moving through it. The circular canvas gives the piece a different gravity than a rectangle — the ash patterns feel less like a backdrop and more like a field the Buddha has arrived from.",
+        "display_context": "Gallery wall installation with concealed support, displayed as companion to Floating Buddha I",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A standing golden chrome Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash arranged in slow spirals from edge to center, subtle concealed support, gallery wall, serene and minimal",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Floating Buddha III",
+        "year": "2024",
+        "technique_used": "Reclining golden chrome Buddha statue, human ash, circular black canvas, concealed support arm",
+        "short_description": "A reclining golden chrome Buddha — the parinirvana posture — projects outward from a large circular canvas of abstract ash patterns, the grey of the ash spreading outward from the center in loose, irregular waves.",
+        "long_description": "The reclining Buddha is the posture of final passing: parinirvana. The circular canvas behind it holds only ash — no symbols, no references, nothing that would translate into language. The patterns are abstract and irregular: the ash gathers in loose concentric forms that break apart, cluster, thin out. The circle contains the whole field without framing it as a picture. The reclining figure extends only a few inches from the surface, very close, as though it has just settled there. Camus has described this as the only one of the three Buddhas that is not about practice. It is about arrival.",
+        "display_context": "Gallery wall installation, circular format, concealed support",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A reclining golden chrome Buddha in parinirvana pose projecting outward from a large circular black canvas covered in abstract human ash patterns, grey ash in loose irregular concentric forms spreading from center outward, subtle concealed support, gallery wall, still and profound",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -677,7 +770,8 @@
         "display_context": "Sealed gallery installation with safety enclosure, museum with conservation clearances",
         "aspect_ratio": "16:9",
         "image_prompt": "A large ancient mammoth tusk floating in a gleaming mercury bath within a sealed vitrine, the tusk perfectly reflected in the silver liquid surface, dark gallery lighting, ancient and elemental, cinematic still photography",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Mercury Ossuary",
@@ -688,7 +782,8 @@
         "display_context": "Sealed gallery installation, museum with safety clearances",
         "aspect_ratio": "16:9",
         "image_prompt": "Various animal bones of different sizes floating on a mirror-still mercury surface within a sealed dark container, bone shapes perfectly reflected in silver liquid, atmospheric dark lighting, scientific and poetic, deep time made visible",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Quetzalcoatl Maglev",
@@ -699,18 +794,8 @@
         "display_context": "Gallery pedestal installation, controlled magnetic environment",
         "aspect_ratio": "4:5",
         "image_prompt": "A detailed metal recreation of the Quetzalcoatl feathered serpent sculpture levitating above a shimmering mercury bath, magnetic levitation coils visible in plinth, gallery installation, dramatic lighting, ancient god defying gravity",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Chladni Plate Cymatics Art Works",
-        "year": "2024",
-        "technique_used": "Chladni plate vibration, colored sand, glue fixative, layered cymatics, DNA component sand variants",
-        "short_description": "Multi-layered cymatics patterns built up layer by layer with different colored sands on vibrating plates, fixed with glue between frequencies. Variants use the four DNA base component colors.",
-        "long_description": "Chladni patterns are what sound looks like when it has nowhere else to go. Hofstetter-Cruz layers them, one atop another — first one frequency fixed and glued, then another, then another — building up a geological record of vibration. In the DNA variants using the four base components as color-coded sand, the piece acquires an additional layer: the pattern of life's code forming the pattern of sound's geometry. Whether these two codes have anything to say to each other is a question that the piece declines to answer but insists on asking, in triptych format and small.",
-        "display_context": "Gallery wall series, multiple format sizes, triptych configuration",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Close-up of a Chladni plate cymatics pattern formed with multiple overlapping colored sand layers, different frequency patterns in vibrant colors fixed and framed, gallery wall, scientific beauty meets visual art, symmetry and chaos",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Liquid Metal Centurion",
@@ -721,7 +806,8 @@
         "display_context": "Gallery pedestal installation, controlled electromagnetic field environment",
         "aspect_ratio": "4:5",
         "image_prompt": "An ancient Roman military helmet covered in flowing magnetic liquid metal gallium, the silver liquid forming and reforming over the antique iron surface, electromagnetic coils visible in dark plinth, dramatic single-source lighting, ancient and futuristic",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -740,7 +826,8 @@
         "display_context": "Gallery pedestal installation, viewer leans in to observe",
         "aspect_ratio": "1:1",
         "image_prompt": "A large perfect polished sphere with a small circular viewing port, interior visible through one-way mirror showing infinite recursive reflections and a single light source, museum pedestal, dark gallery environment, mysterious and geometric",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Kinetic Liquid Pigment: Primal Duality",
@@ -751,7 +838,8 @@
         "display_context": "Gallery table installation or floor-level canvas container",
         "aspect_ratio": "1:1",
         "image_prompt": "A circular yellow ferrofluid blob on a deep blue liquid pigment surface beginning to divide into two circles, electromagnetic field creating the separation, overhead view, vibrant fluid dynamics, gallery table installation",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Analog Color Generator",
@@ -762,18 +850,8 @@
         "display_context": "Gallery installation, freestanding or wall-mounted",
         "aspect_ratio": "1:1",
         "image_prompt": "Three translucent rotating spheres with CMYK color patterns overlapping and mixing, creating shifting colors and an emergent figurative cosmic image, gallery installation, vibrant colors, mechanical motors visible, divine and physical",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Mayan Heaven",
-        "year": "2025",
-        "technique_used": "Distilled water, optional colloidal silica and copper sulfate, 5-meter-deep tank 1m wide 1m tall, matte black panels, dark metal frame",
-        "short_description": "A five-meter-deep water tank one meter wide and tall, enclosed in matte black — showing pure water's gradient from near-transparent at the shallows to deep celestial blue at full depth, with no pigment added.",
-        "long_description": "This is the most restrained piece in Park's practice and possibly the most profound. No pigment. No electricity. No moving parts. Just water, depth, and the physics of light absorption — the same phenomenon that makes the Caribbean blue, that makes the deep ocean black. The water at five meters absorbs the red end of the visible spectrum and scatters blue back to you. You are looking at color generated by absence and distance. The matte black enclosure removes all competing reference. The metal frame eliminates warmth. And the cenote-blue you see at the bottom is not a recreation — it is the same physics. The piece is called Mayan Heaven not as metaphor but as description.",
-        "display_context": "Dedicated gallery room, tank embedded in floor or framed as viewing window in wall",
-        "aspect_ratio": "9:16",
-        "image_prompt": "A viewing window into a deep narrow water tank, water transitioning from crystal clear at the top to deep celestial Mayan cenote blue at the bottom, matte black surrounding frame, stunning depth and luminosity, no pigment, pure physics of light absorption",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -792,7 +870,8 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank of milky scattering liquid forming the portrait lines of Zapata, his distinctive mustache and revolutionary hat visible as glowing green light lines, dark dramatic gallery room, acrylic panels guiding the beam",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Che Light Portrait",
@@ -803,7 +882,8 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank with titanium dioxide scattering medium forming the portrait lines of Che Guevara, his iconic beret and intense gaze visible as glowing blue light lines, dark gallery room, precise laser optics",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Zapatista Comandante Light Portrait",
@@ -814,7 +894,8 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam creating the masked profile of a Zapatista commander in fluorescent scattering medium, the mask and fabric folds visible as glowing yellow-green light lines, anonymous revolutionary emerging from light, dark gallery setting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Netaji Light Portrait",
@@ -825,51 +906,8 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam forming the determined features of Subhas Chandra Bose through milky Intralipid medium, his intense expression visible as glowing light lines, revolutionary leader emerging from physics, dark gallery room with precise optics",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Indigo Study: Natural vs Synthetic",
-        "year": "2023",
-        "technique_used": "Paper chromatography, natural anil indigo, synthetic indigo, capillary action separation",
-        "short_description": "Chromatographic comparison of natural indigo from anil plants alongside synthetic indigo, separated by capillary action on paper.",
-        "long_description": "Two drops of blue. One from the anil plant that has colored textiles for centuries, one from industrial chemistry. Llorente-Vidal places them side by side on chromatography paper and lets capillary action reveal what each blue is made of. The natural indigo separates into subtle variations — traces of plant matter, organic compounds that traveled with the color. The synthetic remains pure, uniform, predictable. The paper becomes a timeline of how humans learned to remake what plants already knew. The capillary action is the artist here; Llorente-Vidal simply chooses which blues to test against each other.",
-        "display_context": "Gallery wall display, framed chromatography paper",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Side-by-side chromatography patterns on white paper showing natural anil indigo separating into complex organic blue variations next to pure synthetic indigo, scientific comparison, gallery frame, subtle color forensics",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Cochineal Study: Insect vs Chemical",
-        "year": "2023",
-        "technique_used": "Paper chromatography, cochineal red from insects, alizarin red synthetic dye, capillary action separation",
-        "short_description": "Chromatographic comparison of red dye made from cochineal insects against synthetic alizarin red, revealing the complex chemistry of natural versus artificial color.",
-        "long_description": "The red that comes from crushed cochineal insects carries more than color — it carries the entire chemistry of the insect's life, feeding on cactus, processing sunlight, metabolizing plant sugars into carminic acid. When run through chromatography against synthetic alizarin, the natural red explodes into complexity: traces of proteins, organic acids, compounds that have no name but create subtle variations in hue. The synthetic red travels as a single, pure band. Both are beautiful. Both are red. Only one remembers being alive.",
-        "display_context": "Gallery wall display, framed chromatography paper",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Chromatography pattern showing cochineal red from insects separating into complex organic red variations alongside a single pure band of synthetic alizarin red, natural vs artificial color chemistry, scientific art on gallery wall",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Mexican Market Pigment Studies",
-        "year": "2023",
-        "technique_used": "Paper chromatography, mixed plant pigments from Mexican markets, capillary action separation",
-        "short_description": "Chromatographic studies of plant pigments sourced from Mexican markets — revealing the hidden complexity of traditional dyes through scientific separation.",
-        "long_description": "The market vendors sell color that has been traveling for centuries: annatto for orange, huitlacoche for black, various flowers for yellow. Llorente-Vidal treats each pigment as a mystery to be solved through chromatography. The papers bloom with unexpected separations — a yellow that contains traces of green, a brown that reveals hidden purples, plant chemistry confessing its secrets through capillary action. Each market produces different results because the plants grow in different soil, under different weather, harvested by different hands. The chromatography papers become portraits of specific places and seasons, rendered in the language of molecular movement.",
-        "display_context": "Gallery wall series, multiple framed chromatography papers",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Multiple chromatography papers showing various Mexican plant pigments separated into organic color patterns, warm ochres and earth tones spreading in natural radial patterns, traditional market chemistry made visible, gallery wall series",
-        "should_generate": true
-      },
-      {
-        "art_piece_name": "Mother's Dress",
-        "year": "2024",
-        "technique_used": "Fabric, Chladni plate cymatics patterns, optional natural chromatography dye, Venus of Willendorf shaped mannequin",
-        "short_description": "A dress adorned with Chladni plate cymatics patterns and  natural chromatography pigment designs displayed on a Venus of Willendorf shaped mannequin.",
-        "long_description": "The Venus of Willendorf is approximately thirty thousand years old and has no face. Llorente-Vidal dresses her in a gown. The gown carries the patterns of vibrating plates — the shapes that sound takes when it settles and optionally the tracks that plants leave when their colors run. The oldest known representation of a female body wears a garment whose patterns are determined by physics and biology. Fertility, resonance, pigment, time. Llorente-Vidal insists it is also about her mother, and this is the detail that the art world tends to skip over, which probably means it is the most important part.",
-        "display_context": "Gallery installation on mannequin pedestal, single work or paired with a plain companion dress",
-        "aspect_ratio": "4:5",
-        "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Archaeological Material Timeline",
@@ -880,7 +918,87 @@
         "display_context": "Museum wall installation, architectural integration, structural or decorative depending on venue",
         "aspect_ratio": "16:9",
         "image_prompt": "A gallery wall composed in horizontal bands of different historical building materials, adobe brick, Roman concrete, medieval stone, industrial brick, modern composite, each band labeled with era, dramatic raking light revealing textures and time",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
+      }
+    ]
+  },
+  {
+    "artist_name": "Ana Camus",
+    "artist_introduction": "",
+    "series_name": "All You Need is Love",
+    "art_pieces": [
+      {
+        "art_piece_name": "Chladni Plate Cymatics Art Works",
+        "year": "2024",
+        "technique_used": "Chladni plate vibration, colored sand, glue fixative, layered cymatics, DNA component sand variants",
+        "short_description": "Multi-layered cymatics patterns built up layer by layer with different colored sands on vibrating plates, fixed with glue between frequencies. Variants use the four DNA base component colors.",
+        "long_description": "Chladni patterns are what sound looks like when it has nowhere else to go. Hofstetter-Cruz layers them, one atop another — first one frequency fixed and glued, then another, then another — building up a geological record of vibration. In the DNA variants using the four base components as color-coded sand, the piece acquires an additional layer: the pattern of life's code forming the pattern of sound's geometry. Whether these two codes have anything to say to each other is a question that the piece declines to answer but insists on asking, in triptych format and small.",
+        "display_context": "Gallery wall series, multiple format sizes, triptych configuration",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Close-up of a Chladni plate cymatics pattern formed with multiple overlapping colored sand layers, different frequency patterns in vibrant colors fixed and framed, gallery wall, scientific beauty meets visual art, symmetry and chaos",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Mayan Heaven",
+        "year": "2025",
+        "technique_used": "Distilled water, optional colloidal silica and copper sulfate, 5-meter-deep tank 1m wide 1m tall, matte black panels, dark metal frame",
+        "short_description": "A five-meter-deep water tank one meter wide and tall, enclosed in matte black — showing pure water's gradient from near-transparent at the shallows to deep celestial blue at full depth, with no pigment added.",
+        "long_description": "This is the most restrained piece in Park's practice and possibly the most profound. No pigment. No electricity. No moving parts. Just water, depth, and the physics of light absorption — the same phenomenon that makes the Caribbean blue, that makes the deep ocean black. The water at five meters absorbs the red end of the visible spectrum and scatters blue back to you. You are looking at color generated by absence and distance. The matte black enclosure removes all competing reference. The metal frame eliminates warmth. And the cenote-blue you see at the bottom is not a recreation — it is the same physics. The piece is called Mayan Heaven not as metaphor but as description.",
+        "display_context": "Dedicated gallery room, tank embedded in floor or framed as viewing window in wall",
+        "aspect_ratio": "9:16",
+        "image_prompt": "A viewing window into a deep narrow water tank, water transitioning from crystal clear at the top to deep celestial Mayan cenote blue at the bottom, matte black surrounding frame, stunning depth and luminosity, no pigment, pure physics of light absorption",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Indigo Study: Natural vs Synthetic",
+        "year": "2023",
+        "technique_used": "Paper chromatography, natural anil indigo, synthetic indigo, capillary action separation",
+        "short_description": "Chromatographic comparison of natural indigo from anil plants alongside synthetic indigo, separated by capillary action on paper.",
+        "long_description": "Two drops of blue. One from the anil plant that has colored textiles for centuries, one from industrial chemistry. Llorente-Vidal places them side by side on chromatography paper and lets capillary action reveal what each blue is made of. The natural indigo separates into subtle variations — traces of plant matter, organic compounds that traveled with the color. The synthetic remains pure, uniform, predictable. The paper becomes a timeline of how humans learned to remake what plants already knew. The capillary action is the artist here; Llorente-Vidal simply chooses which blues to test against each other.",
+        "display_context": "Gallery wall display, framed chromatography paper",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Side-by-side chromatography patterns on white paper showing natural anil indigo separating into complex organic blue variations next to pure synthetic indigo, scientific comparison, gallery frame, subtle color forensics",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Cochineal Study: Insect vs Chemical",
+        "year": "2023",
+        "technique_used": "Paper chromatography, cochineal red from insects, alizarin red synthetic dye, capillary action separation",
+        "short_description": "Chromatographic comparison of red dye made from cochineal insects against synthetic alizarin red, revealing the complex chemistry of natural versus artificial color.",
+        "long_description": "The red that comes from crushed cochineal insects carries more than color — it carries the entire chemistry of the insect's life, feeding on cactus, processing sunlight, metabolizing plant sugars into carminic acid. When run through chromatography against synthetic alizarin, the natural red explodes into complexity: traces of proteins, organic acids, compounds that have no name but create subtle variations in hue. The synthetic red travels as a single, pure band. Both are beautiful. Both are red. Only one remembers being alive.",
+        "display_context": "Gallery wall display, framed chromatography paper",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Chromatography pattern showing cochineal red from insects separating into complex organic red variations alongside a single pure band of synthetic alizarin red, natural vs artificial color chemistry, scientific art on gallery wall",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Mexican Market Pigment Studies",
+        "year": "2023",
+        "technique_used": "Paper chromatography, mixed plant pigments from Mexican markets, capillary action separation",
+        "short_description": "Chromatographic studies of plant pigments sourced from Mexican markets — revealing the hidden complexity of traditional dyes through scientific separation.",
+        "long_description": "The market vendors sell color that has been traveling for centuries: annatto for orange, huitlacoche for black, various flowers for yellow. Llorente-Vidal treats each pigment as a mystery to be solved through chromatography. The papers bloom with unexpected separations — a yellow that contains traces of green, a brown that reveals hidden purples, plant chemistry confessing its secrets through capillary action. Each market produces different results because the plants grow in different soil, under different weather, harvested by different hands. The chromatography papers become portraits of specific places and seasons, rendered in the language of molecular movement.",
+        "display_context": "Gallery wall series, multiple framed chromatography papers",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Multiple chromatography papers showing various Mexican plant pigments separated into organic color patterns, warm ochres and earth tones spreading in natural radial patterns, traditional market chemistry made visible, gallery wall series",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Mother's Dress",
+        "year": "2024",
+        "technique_used": "Fabric, Chladni plate cymatics patterns, optional natural chromatography dye, Venus of Willendorf shaped mannequin",
+        "short_description": "A dress adorned with Chladni plate cymatics patterns and natural chromatography pigment designs displayed on a Venus of Willendorf shaped mannequin.",
+        "long_description": "The Venus of Willendorf is approximately thirty thousand years old and has no face. Llorente-Vidal dresses her in a gown. The gown carries the patterns of vibrating plates — the shapes that sound takes when it settles and optionally the tracks that plants leave when their colors run. The oldest known representation of a female body wears a garment whose patterns are determined by physics and biology. Fertility, resonance, pigment, time. Llorente-Vidal insists it is also about her mother, and this is the detail that the art world tends to skip over, which probably means it is the most important part.",
+        "display_context": "Gallery installation on mannequin pedestal, single work or paired with a plain companion dress",
+        "aspect_ratio": "4:5",
+        "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -899,7 +1017,8 @@
         "display_context": "Gallery table installation with VR headset station alongside",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a famous museum building with tiny artworks inside visible through the open walls, VR headset on a nearby table, gallery setting, precision craftsmanship, warm directed lighting, miniature world of art history",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Cyberpunk Estela de Luz",
@@ -910,7 +1029,8 @@
         "display_context": "Museum vitrine installation, darkened room to enhance LED effects",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a dystopian cyberpunk Mexico City Estela de Luz with cascading neon lights, fog effects, tiny LED advertisements, surrounded by dark futuristic cityscape, displayed in a museum vitrine, dramatic lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Reclaimed Eiffel Tower",
@@ -921,7 +1041,8 @@
         "display_context": "Museum vitrine installation, natural lighting preferred",
         "aspect_ratio": "16:9",
         "image_prompt": "An Eiffel Tower scale model completely covered in dense miniature vegetation with tiny detailed huts and rope bridges hanging from its iron structure, moss and vines growing over the metal, displayed in a museum vitrine, warm natural lighting",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Playful Museum",
@@ -932,7 +1053,8 @@
         "display_context": "Two-room museum gallery installation with camera and printing or projection system",
         "aspect_ratio": "16:9",
         "image_prompt": "A gallery visitor gazing at a classical painting that contains a photographic image of themselves inserted into the painted scene, surprised expression, museum second room, warm gallery lighting, uncanny and quietly funny",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -951,7 +1073,8 @@
         "display_context": "Gallery room installation, visitors free to move around",
         "aspect_ratio": "16:9",
         "image_prompt": "A room with dozens of clocks of all types and sizes covering the walls, all showing different times, analog and digital, atmospheric gallery lighting, quiet and slightly ominous, the moment before collective silence",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "VR Mystical Experience",
@@ -962,7 +1085,8 @@
         "display_context": "Gallery installation, multiple VR stations, ambient spatial sound system",
         "aspect_ratio": "1:1",
         "image_prompt": "Aerial view of gallery visitors wearing VR headsets seen from above, the overhead camera having risen to show them from above themselves, mystical bird sounds and flute music visualized as soft particle effects, meditative and vertiginous",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Abuelita Sweater",
@@ -973,7 +1097,8 @@
         "display_context": "Gallery floor installation, room-scale, visitors enter the piece physically",
         "aspect_ratio": "4:5",
         "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -992,7 +1117,8 @@
         "display_context": "Gallery floor installation, functioning vending machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A gold-chromed Venus of Willendorf figurine displayed inside a functioning vending machine behind glass, selection buttons visible, gallery floor, fluorescent interior vending machine light, consumerism meets prehistoric fertility",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Huge Golden Venus",
@@ -1003,7 +1129,8 @@
         "display_context": "Outdoor public installation, museum atrium, or large gallery space",
         "aspect_ratio": "9:16",
         "image_prompt": "A monumental golden chrome sculpture of the Venus of Willendorf several meters tall in a public plaza or museum atrium, dramatic sky or architectural backdrop, imposing and celebratory, warm gold reflections, ancient goddess at civic scale",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Victory Commodified",
@@ -1014,7 +1141,8 @@
         "display_context": "Gallery floor installation, functioning vending machine, paired with Golden Venus machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A fine marble miniature Winged Victory of Samothrace visible behind vending machine glass and metal coils, classical headless triumph behind institutional fluorescent light, gallery floor, ironic and beautiful, culture for sale",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Damian",
@@ -1025,7 +1153,8 @@
         "display_context": "Gallery floor installation, vending machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A small detailed figurine of Damien Hirst floating in liquid inside a vending machine tank, referencing his formaldehyde shark pieces, vending machine glass and label visible, gallery installation, self-referential art world commentary",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Mosh Pit Experience Machine",
@@ -1036,7 +1165,8 @@
         "display_context": "Gallery room or booth installation, sound-isolated, visitor warning and waiver required",
         "aspect_ratio": "1:1",
         "image_prompt": "Interior view of a small padded room with screens showing a massive metal concert crowd, a visitor bracing as walls physically push them, concert light and sound energy contained in a box, claustrophobic and exhilarating",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Dream On",
@@ -1047,7 +1177,8 @@
         "display_context": "Gallery floor installation, open space",
         "aspect_ratio": "16:9",
         "image_prompt": "Four small turtles walking slowly across a clean white gallery floor toward a container overflowing with bright neon green liquid, top-down view, simple and enigmatic, dreamlike pop color, no explanation offered",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -1066,7 +1197,8 @@
         "display_context": "Gallery print, children's art exhibition or adult contemporary space",
         "aspect_ratio": "4:3",
         "image_prompt": "An absurdist monster built from wooden Jenga blocks mid-collapse, reaching desperately for a bottle of glue, bright bold illustration style, strong outlines, joyful and slightly frightening, emotional accuracy in the creature's expression",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Water-Faucet-Eyed Monster",
@@ -1077,7 +1209,8 @@
         "display_context": "Gallery print, therapeutic or educational exhibition",
         "aspect_ratio": "4:3",
         "image_prompt": "A gentle monster with chrome water faucets for eyes, water flowing from them at different intensities, bright illustration style, the creature appears both functional and emotional, matter-of-fact about its constant tears",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Freedom Monster",
@@ -1088,7 +1221,8 @@
         "display_context": "Gallery print, contemporary adult art space",
         "aspect_ratio": "4:3",
         "image_prompt": "An absurdly over-complicated monster with multiple eyes, mechanical arms, extra appendages, wheels, and unnecessary parts, trying too hard to be everything at once, bright colors, sympathetic and overwhelming",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Shame Monster",
@@ -1099,7 +1233,8 @@
         "display_context": "Gallery print, psychological or emotional art exhibition",
         "aspect_ratio": "4:3",
         "image_prompt": "A permanently bright red monster with blazing hot cheeks, steam rising from its face, bright illustration style, the creature appears deeply uncomfortable but resigned, accurate portrayal of social shame",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Anger Monster",
@@ -1110,7 +1245,8 @@
         "display_context": "Gallery print, emotional education exhibition",
         "aspect_ratio": "4:3",
         "image_prompt": "A monster whose size and intensity varies dramatically across the frame, sometimes small and petty, sometimes filling the entire space with justified rage, dynamic illustration showing the spectrum of anger",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Fear Monster",
@@ -1121,7 +1257,8 @@
         "display_context": "Gallery print, psychological exhibition or children's therapy space",
         "aspect_ratio": "4:3",
         "image_prompt": "A semi-transparent, shape-shifting monster that appears to be made of shadows and possibilities, sometimes barely visible, sometimes overwhelming the frame, honest portrayal of realistic vs imaginary fear",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Death, Death, Dead",
@@ -1132,7 +1269,8 @@
         "display_context": "Gallery wall installation, viewers walk alongside the piece to experience temporal progression",
         "aspect_ratio": "1:12.5",
         "image_prompt": "An extremely long horizontal illustration showing musical notes gradually losing their stems and heads from left to right, fading into silence across a 5-meter canvas, monochrome ink with selective color, gallery wall installation, quiet and melancholy progression",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -1151,7 +1289,8 @@
         "display_context": "Gallery vitrine, displayed alongside a traditional katana for formal comparison",
         "aspect_ratio": "21:9",
         "image_prompt": "A sleek titanium and carbon fiber katana with embedded micro-cameras and electronic components in the handle, displayed in a gallery vitrine alongside a traditional Japanese katana, dramatic side lighting, precision engineering meets ancient craft",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Sculptures of Interesting Geometric Shapes",
@@ -1162,7 +1301,8 @@
         "display_context": "Gallery pedestal series or vitrine display",
         "aspect_ratio": "1:1",
         "image_prompt": "A polished brass rhombicosidodecahedron sculpture on a museum pedestal, its many triangular and square faces catching light at different angles, clean geometric perfection, minimal gallery lighting, mathematics made tangible and beautiful",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Krishna's Disc Weapon",
@@ -1173,7 +1313,8 @@
         "display_context": "Gallery wall installation with painting backdrop, elevated display mount",
         "aspect_ratio": "1:1",
         "image_prompt": "A futuristic spinning disc weapon in titanium and carbon fiber mounted over a large cosmic abstract expressionist painting, gallery wall, dramatic lighting, sacred geometry meets aerospace engineering, divine and technological",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       },
       {
         "art_piece_name": "Eternal Feelings",
@@ -1184,7 +1325,8 @@
         "display_context": "Gallery floor or pedestal installation, extended exhibition duration to show accumulation",
         "aspect_ratio": "4:5",
         "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
-        "should_generate": true
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   }

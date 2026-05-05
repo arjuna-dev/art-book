@@ -1,0 +1,178 @@
+{
+  "version": 2,
+  "defaults": {
+    "artworkTemplate": "top-inset-text",
+    "textColor": "black",
+    "backgroundColor": "paper"
+  },
+  "pages": [
+    {
+      "id": "page-1",
+      "template": "left-bleed-image-text",
+      "textColor": "red",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
+      "imageArtworkKeys": [
+        "Dr. Elena Vasquez::Prime Shell Spiral",
+        "Dr. Elena Vasquez::Primordial Stones"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-2",
+      "template": "top-inset-text",
+      "textColor": "pink",
+      "backgroundColor": "yellow",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Water(s)",
+        "Dr. Elena Vasquez::Prime Shell Spiral"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": true
+    },
+    {
+      "id": "page-3",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Dr. Elena Vasquez::AI Fish Resurrection",
+      "imageArtworkKeys": [
+        "Dr. Elena Vasquez::AI Fish Resurrection",
+        "Dr. Elena Vasquez::AI Fish Resurrection"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-4",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Dr. Elena Vasquez::Perceptron 195X",
+      "imageArtworkKeys": [
+        "Dr. Elena Vasquez::Perceptron 195X",
+        "Dr. Elena Vasquez::Perceptron 195X"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-5",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Dr. Elena Vasquez::Prime Distribution",
+      "imageArtworkKeys": [
+        "Dr. Elena Vasquez::Prime Distribution",
+        "Dr. Elena Vasquez::Prime Distribution"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-6",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Water(s)",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Water(s)",
+        "Valentina Cienfuegos Mora::Water(s)"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-7",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Angel vs. Capital",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Angel vs. Capital",
+        "Valentina Cienfuegos Mora::Angel vs. Capital"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-8",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
+        "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-9",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Zapatista Women Sculptures",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Zapatista Women Sculptures",
+        "Valentina Cienfuegos Mora::Zapatista Women Sculptures"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-10",
+      "template": "top-inset-text",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Indigenous Women of the World",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Indigenous Women of the World",
+        "Valentina Cienfuegos Mora::Indigenous Women of the World"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-11",
+      "template": "square-caption",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Indigenous Men of the World",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Indigenous Men of the World",
+        "Valentina Cienfuegos Mora::Indigenous Men of the World"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    },
+    {
+      "id": "page-12",
+      "template": "square-caption",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Indigenous People of the World",
+      "imageArtworkKeys": [
+        "Valentina Cienfuegos Mora::Indigenous People of the World",
+        "Valentina Cienfuegos Mora::Indigenous People of the World"
+      ],
+      "showTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": false
+    }
+  ]
+}
