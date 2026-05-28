@@ -682,6 +682,18 @@
         "include_in_book": true
       },
       {
+        "art_piece_name": "The Chariot Moves",
+        "year": "2023",
+        "technique_used": "Bronze Krishna and Arjuna figurines, miniature chariot with horses, human ash, canvas, detailed ash landscape shaping",
+        "short_description": "Bronze figures of Krishna driving the chariot and Arjuna releasing his arrow stand in the thick of the Kurukshetra battlefield, surrounded by an ash field shaped into the chaos of active combat.",
+        "long_description": "This is the companion to Discourse Before Battle - the moment after the words. The chariot is in motion now, or was: the miniature horses are mid-stride, Krishna leans into the reins, and Arjuna is no longer lowering his bow but drawing it. The ash field beneath them is denser, more disturbed, with formations breaking apart, the landscape no longer the clean topography of strategy but the churned ground of consequence. Camus treats the two pieces as a single diptych: one shows the world before action becomes irreversible, the other shows the world in which it already is. The question the two pieces ask together is whether knowing the cost ever changes the choosing.",
+        "display_context": "Gallery floor or pedestal installation, viewed from above, displayed as companion to Discourse Before Battle",
+        "aspect_ratio": "4:3",
+        "image_prompt": "Small bronze figures of Krishna driving a chariot with horses mid-stride and Arjuna drawing his bow in battle, standing on a dense disturbed ash battlefield landscape, formations breaking apart, viewed from above, the philosophical discourse now irreversible action",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
         "art_piece_name": "Throne of Mortality",
         "year": "2023",
         "technique_used": "Antique historical throne, human ash, small smiling glass Buddha figure, dedicated room installation",
@@ -718,14 +730,38 @@
         "include_in_book": true
       },
       {
-        "art_piece_name": "Sequence This",
+        "art_piece_name": "Sequence This (Samurai)",
         "year": "2024",
-        "technique_used": "Extracted DNA, magnetized sculpture, magnetic gallium coating, display case",
-        "short_description": "A small desert of extracted DNA on which a magnetized sculpture coated in magnetic gallium stands, representing tremendous energy overcoming the molecular substrate of life.",
-        "long_description": "DNA, extracted and dried, looks like spun sugar. It is neither dramatic nor particularly impressive in person. Camus counts on this. The magnetic gallium-coated sculpture — inspired by Musashi's fighting posture or Coatlicue's forward thrust — stands on this anticlimactic material, pressing against it, as if overcoming it. The piece is either about the relationship between code and body, information and form, or about the simple absurdity of buying salmon sperm for an art installation. Both readings are valid. The DNA does not care either way.",
+        "technique_used": "Extracted DNA, magnetized sculpture of samurai mid-thrust, magnetic gallium coating, display case",
+        "short_description": "A small samurai sculpture coated in magnetic gallium stands mid-thrust over a field of crystallized DNA, the blade driving toward the molecular substrate of life.",
+        "long_description": "DNA, extracted and dried, looks like spun sugar. It is neither dramatic nor particularly impressive in person. Camus counts on this. The magnetic gallium-coated samurai — caught at the instant of a full committed sword thrust, weight forward, both hands on the grip — drives into the anticlimactic white crystals below. The posture is borrowed from classical kenjutsu documentation: a move designed to end things decisively. The piece asks what it means to apply that level of committed force to something as quiet and involuntary as the code that made you. The DNA does not defend itself. It does not need to.",
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
-        "image_prompt": "A small dynamic metal sculpture coated in shimmering magnetic gallium, arms pushed forward in a powerful warrior stance, standing on a surface of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, molecular and monumental",
+        "image_prompt": "A small samurai sculpture coated in shimmering magnetic gallium, caught mid-sword-thrust in full committed attack posture, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, molecular and monumental, blade driving forward",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Sequence This (Moctezuma Ilhuicamina)",
+        "year": "2024",
+        "technique_used": "Extracted DNA, magnetized sculpture of Moctezuma I drawing a bow, magnetic gallium coating, display case",
+        "short_description": "A small sculpture of Moctezuma Ilhuicamina drawing his bow, coated in magnetic gallium, takes aim over a field of crystallized DNA.",
+        "long_description": "Moctezuma Ilhuicamina — the first great Mexica emperor, whose name means He Who Frowns Like a Lord and He Who Shoots the Sky with an Arrow — is rendered here at the moment of drawing: the bow arm extended, the string pulled to full tension, gaze fixed on something beyond the frame. He stands on a field of extracted, crystallized DNA. The gallium coating makes the figure flicker under gallery light, neither fully solid nor fully liquid. The arrow has not yet been released. The DNA cannot move. Camus has said this is the most honest piece in the series: the figure of historical will, encoded possibility, and the long pause before the shot.",
+        "display_context": "Gallery vitrine or pedestal, enclosed display",
+        "aspect_ratio": "4:5",
+        "image_prompt": "A small sculpture of Moctezuma Ilhuicamina in full draw posture, bow arm extended and string at full tension, coated in shimmering magnetic gallium, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, the archer and the code",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Sequence This (Geronimo)",
+        "year": "2024",
+        "technique_used": "Extracted DNA, magnetized sculpture of Geronimo raising his shotgun, magnetic gallium coating, display case",
+        "short_description": "A small sculpture of Geronimo raising his shotgun, coated in magnetic gallium, stands over a field of crystallized DNA — resistance encoded in the substrate of life.",
+        "long_description": "Geronimo held out longer than anyone had a right to expect. The gallium-coated figure captures him in the posture most associated with his surviving photographs: upright, rifle raised, the expression of a man who has calculated the odds and decided they are irrelevant. He stands on extracted, crystallized DNA — real genetic material, anonymous, the kind of code that persists regardless of what happens to the body it came from. The piece turns on this: the last Apache leader who refused to surrender, standing on the molecular evidence of continuity. The shotgun is raised. The DNA is still there. Both are true at the same time.",
+        "display_context": "Gallery vitrine or pedestal, enclosed display",
+        "aspect_ratio": "4:5",
+        "image_prompt": "A small sculpture of Geronimo raising a shotgun in defiant posture, coated in shimmering magnetic gallium, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, resistance and continuity, the figure and the molecular ground",
         "should_generate": true,
         "include_in_book": true
       },
