@@ -11,9 +11,9 @@
       "template": "left-bleed-image-text",
       "textColor": "red",
       "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
+      "contentArtworkKey": "Dr. Elena Vasquez::Prime Distribution",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::Prime Shell Spiral",
+        "Dr. Elena Vasquez::Perceptron 195X",
         "Dr. Elena Vasquez::Primordial Stones"
       ],
       "showTombstone": true,
@@ -22,10 +22,10 @@
     },
     {
       "id": "page-2",
-      "template": "top-inset-text",
+      "template": "artist-portrait",
       "textColor": "pink",
       "backgroundColor": "yellow",
-      "contentArtworkKey": "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
+      "contentArtworkKey": "Dr. Elena Vasquez::Primordial Stones",
       "imageArtworkKeys": [
         "Valentina Cienfuegos Mora::Water(s)",
         "Dr. Elena Vasquez::Prime Shell Spiral"
@@ -39,9 +39,9 @@
       "template": "top-inset-text",
       "textColor": "black",
       "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::AI Fish Resurrection",
+      "contentArtworkKey": "Dr. Elena Vasquez::Primordial Stones",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::AI Fish Resurrection",
+        "Dr. Elena Vasquez::Prime Shell Spiral",
         "Dr. Elena Vasquez::AI Fish Resurrection"
       ],
       "showTombstone": true,

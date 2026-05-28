@@ -856,12 +856,12 @@
       {
         "art_piece_name": "Reflective Sphere",
         "year": "2023",
-        "technique_used": "Mirrored interior sphere, one-way mirror portal, light source, optional camera diaphragm mechanism",
-        "short_description": "A fully mirrored interior sphere with one opening for light and a one-way mirror portal for the viewer — an enclosed world of infinite internal reflection.",
-        "long_description": "The sphere is mathematically complete. A fully mirrored interior reflects itself indefinitely — in theory, a photon trapped inside would never stop. Park gives you a window into this impossibility: a one-way mirror at eye level, small enough to create the feeling of illicit observation. The light source can be a lamp, a natural aperture, or a camera diaphragm that opens and closes. What you see changes with each breath because you cannot hold perfectly still and the reflections do not forgive movement. The piece is not about infinity. It is about what infinity feels like in a body that keeps fidgeting.",
-        "display_context": "Gallery pedestal installation, viewer leans in to observe",
+        "technique_used": "Two large mirrored hemispheres, one-way mirror interior room, gap lighting, aperture in upper dome, exterior staircase",
+        "short_description": "Two massive mirrored hemispheres slightly separated at the equator, admitting a band of light between them. Inside the lower half, a small room of one-way mirrors lets a person stand inside the sphere and look out. A staircase on the exterior lets visitors look in through the gap.",
+        "long_description": "The structure is two stories tall and divided at the horizon. The upper and lower hemispheres do not quite meet — a gap of roughly thirty centimeters runs around the equator, admitting a continuous ring of ambient light into the mirrored interior. A second aperture opens at the crown of the upper dome, directing a column of light straight down the axis of the sphere. Inside the lower hemisphere, accessible through a concealed entrance, a small room built entirely from one-way mirrors gives a single visitor at a time the experience of standing at the center of infinite recursive reflection while remaining invisible to everyone outside. Above, other visitors climb an exterior staircase to the equatorial gap and look in — seeing their own faces multiplied across the curved mirrored interior, unaware that someone may be standing directly below them, watching. The piece proposes two simultaneous and incompatible experiences of the same space: the hidden center and the exposed periphery, interiority and display, the person who sees without being seen and the person who is seen without knowing it.",
+        "display_context": "Large-scale outdoor or atrium installation, minimum ceiling clearance six meters, staircase structure required",
         "aspect_ratio": "1:1",
-        "image_prompt": "A large perfect polished sphere with a small circular viewing port, interior visible through one-way mirror showing infinite recursive reflections and a single light source, museum pedestal, dark gallery environment, mysterious and geometric",
+        "image_prompt": "Two enormous polished mirrored hemispheres slightly separated at the equator with a band of light entering the gap, a staircase on the exterior leading visitors up to peer inside, the interior a cascade of infinite recursive reflections, dramatic outdoor or atrium setting, monumental and geometric",
         "should_generate": true,
         "include_in_book": true
       },
@@ -878,14 +878,38 @@
         "include_in_book": true
       },
       {
-        "art_piece_name": "Analog Color Generator",
+        "art_piece_name": "Han River at Night",
         "year": "2024",
-        "technique_used": "Three translucent CMYK-printed plastic sheets or rotating spheres, motorized rotation, layered physical color mixing",
-        "short_description": "Three translucent rotating sheets with CMYK patterns mix colors through physical overlap, producing continuously shifting combinations and occasional emergent figurative images.",
-        "long_description": "Park is making a color mixer out of plastic and motors and calling it sacred, which is either deeply cynical or an act of faith. Three rotating spheres or sheets overlap to produce colors that do not exist on any of them individually — physical color theory, additive and subtractive mixing happening in space. The figurative images that occasionally emerge — a recognizable Coatlicue, a lotus, a calendar figure — were engineered to appear at specific rotation positions. Their emergence feels like coincidence. It is the opposite of coincidence. This is what festivals are.",
-        "display_context": "Gallery installation, freestanding or wall-mounted",
-        "aspect_ratio": "1:1",
-        "image_prompt": "Three translucent rotating spheres with CMYK color patterns overlapping and mixing, creating shifting colors and an emergent figurative cosmic image, gallery installation, vibrant colors, mechanical motors visible, divine and physical",
+        "technique_used": "Three translucent CMYK-printed sheets, spaced at fixed depth intervals, parallax-registered layered overlap, physical color mixing",
+        "short_description": "Three translucent sheets spaced apart at fixed depths reconstruct a nighttime panorama of the Han River — but the image only locks in when viewed straight-on through the front. Step to the side and the layers come apart.",
+        "long_description": "The Han River cuts through Seoul the way rivers cut through every city that grew too fast: it is both the reason the city is there and the thing the city learned to ignore. Park reconstructs the contemporary riverfront — the illuminated bridges, the apartment towers in their hundreds, the Lotte World Tower catching cloud — from three sheets of translucent CMYK print separated by deliberate gaps in depth. Viewed from directly in front, parallax aligns the layers and the image resolves: a complete nighttime panorama assembled from nothing but overlapping color. Move even slightly to the side and the sheets drift apart, each layer sliding against the others, the city disassembling into colored fragments. The piece is always there. The image is not. It belongs only to the position you are standing in. The piece asks whether the modern Seoul skyline — the one that is supposed to represent arrival — is the kind of thing that exists only from one very specific angle.",
+        "display_context": "Gallery installation, freestanding or wall-mounted, best viewed in low ambient light; the viewing position is critical",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Three fixed translucent sheets with CMYK color patterns layered over each other, the combined image resolving into the Han River nighttime panorama with illuminated bridges and Seoul towers reflected in water, gallery installation, the city permanently assembled from overlapping color",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Boseong Tea Fields",
+        "year": "2024",
+        "technique_used": "Three translucent CMYK-printed sheets, spaced at fixed depth intervals, parallax-registered layered overlap, physical color mixing",
+        "short_description": "Three translucent sheets spaced apart at fixed depths reconstruct the terraced green tea fields of Boseong — but the rows only align into a coherent landscape when viewed straight-on through the front. Move sideways and the layers separate.",
+        "long_description": "The Boseong tea fields in South Jeolla province are among the oldest continuously worked agricultural landscapes in Korea. The terraces were shaped by hand over generations, their geometry following the logic of water and slope rather than the logic of industry. Park encodes this landscape into three sheets of translucent print separated by deliberate gaps in depth. Stand directly in front and parallax aligns them: the green rows appear, curved and precise, climbing the hillside in the direction they have always climbed. Step to the side and the rows slide against each other, each layer carrying only its fragment of hue and tone, the hillside coming apart into color. The piece treats the pre-industrial landscape not as nostalgia but as a positional argument: this place exists, completely and correctly, from exactly here. The tea fields have a four-hundred-year precedent for this kind of precision. They were also shaped to be seen from one specific vantage — the path up the slope — and from nowhere else.",
+        "display_context": "Gallery installation, freestanding or wall-mounted; the viewing position is critical",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Three fixed translucent CMYK sheets layered over each other permanently resolving into the curved terraced tea fields of Boseong, green rows climbing a misty hillside in the traditional pre-industrial pattern, the landscape held in static color overlap, gallery installation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "The 38th Parallel",
+        "year": "2024",
+        "technique_used": "Six translucent CMYK-printed rotating sheets in two sets of three, motorized rotation, historical cartographic source material, layered physical color mixing",
+        "short_description": "Six motorized translucent sheets — three encoding the militarized DMZ, three encoding the same coordinates before 1945 — rotate at different speeds, cycling through moments where each landscape resolves alone, moments where both dissolve into abstraction, and moments where the wire and the rice paddy exist in the same place at the same time.",
+        "long_description": "The piece uses two sets of three translucent CMYK sheets, each set encoding a different version of the same geography. One set carries the contemporary DMZ: the razor wire in the foreground, the watchtower at the treeline, the accidental wilderness that seventy years of enforced absence has produced. The other set carries the same hills, the same treeline, as they appeared before 1945 — rice paddies, a village whose name survives only in pre-division cartographic records, a road that continued north without explanation. The six sheets rotate at carefully mismatched speeds so their convergences are never repeated. There are moments when each landscape resolves cleanly on its own — the wire fully legible, or the paddy fully legible — and moments when the two images overlap and neither is fully coherent: watchtower rising from a rice field, wire crossing a road that leads somewhere. The piece does not editorialize about which image is the real one. It simply keeps rotating. Park has noted that the DMZ has been undisturbed long enough that Siberian tigers have been photographed inside it. She considers this relevant.",
+        "display_context": "Gallery installation, freestanding, requires clearance for six-sheet rotating mechanism",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Six translucent CMYK rotating sheets in two sets, the combined image in a transitional state showing the DMZ militarized border landscape and a pre-1945 Korean village and rice paddies simultaneously overlapping, razor wire crossing a road that leads north, watchtower rising from a paddy field, the two geographies briefly occupying the same coordinates, gallery installation",
         "should_generate": true,
         "include_in_book": true
       }

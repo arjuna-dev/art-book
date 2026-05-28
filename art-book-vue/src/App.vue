@@ -1,5 +1,5 @@
 <script setup>
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { Previewer } from "pagedjs";
 import {
   ChevronLeft,
@@ -14,6 +14,13 @@ import artData from "../../list.json";
 import layoutData from "../../art-book-layout.json";
 import bookCssUrl from "./styles/book.css?url";
 import Button from "./components/ui/button/Button.vue";
+import {
+  buildCatalogPieces,
+  createPageEntry as createLayoutPageEntry,
+  migrateLayoutState,
+  normalizedLayoutState,
+  normalizePageEntry,
+} from "./lib/layoutState";
 import {
   artworkTemplates,
   colorClass,
@@ -41,16 +48,24 @@ const previewScale = ref(1);
 const renderedPageCount = ref(0);
 
 let saveTimer = null;
+let renderTimer = null;
 let resizeObserver = null;
+let latestRenderToken = 0;
 
 const imageModules = import.meta.glob(
   "../../generated-images/**/*.{png,jpg,jpeg,webp}",
   { eager: true, import: "default", query: "?url" },
 );
 
-const catalogPieces = buildCatalogPieces();
+const catalogPieces = buildCatalogPieces(artData, imageForPiece);
 const catalogPieceMap = new Map(catalogPieces.map((piece) => [piece.key, piece]));
-const layoutState = ref(migrateLayoutState(layoutData));
+const layoutHelpers = {
+  catalogPieces,
+  catalogPieceMap,
+  artworkTemplates,
+  defaultArtworkTemplate,
+};
+const layoutState = ref(migrateLayoutState(layoutData, layoutHelpers));
 
 const pageEntries = computed(() => layoutState.value.pages ?? []);
 const selectedPage = computed(
@@ -96,106 +111,8 @@ const bookHtml = computed(() => {
   `;
 });
 
-function buildCatalogPieces() {
-  return artData.flatMap((artist, artistIndex) => {
-    let includedBefore = 0;
-
-    for (let index = 0; index < artistIndex; index += 1) {
-      includedBefore += artData[index].art_pieces.filter(shouldIncludePiece).length;
-    }
-
-    return artist.art_pieces
-      .filter(shouldIncludePiece)
-      .map((piece, pieceIndex) => ({
-        ...piece,
-        artist,
-        pieceIndex,
-        globalIndex: includedBefore + pieceIndex,
-        key: artworkKey(artist, piece),
-        image: imageForPiece(piece, artist),
-      }));
-  });
-}
-
-function migrateLayoutState(savedLayout) {
-  const defaults = {
-    artworkTemplate: normalizeTemplateId(
-      savedLayout?.defaults?.artworkTemplate ?? defaultArtworkTemplate,
-    ),
-    textColor: savedLayout?.defaults?.textColor ?? "black",
-    backgroundColor: savedLayout?.defaults?.backgroundColor ?? "paper",
-  };
-
-  if (Array.isArray(savedLayout?.pages) && savedLayout.pages.length > 0) {
-    return {
-      version: 2,
-      defaults,
-      pages: savedLayout.pages.map((page, index) =>
-        normalizePageEntry(page, index, defaults),
-      ),
-    };
-  }
-
-  const legacyArtworks = savedLayout?.artworks ?? {};
-
-  return {
-    version: 2,
-    defaults,
-    pages: catalogPieces.map((piece, index) =>
-      normalizePageEntry(
-        {
-          ...(legacyArtworks[piece.key] ?? {}),
-          contentArtworkKey: piece.key,
-          imageArtworkKeys: [piece.key, piece.key],
-          showTombstone: true,
-          showDescription: true,
-          showArtistDescription: false,
-        },
-        index,
-        defaults,
-      ),
-    ),
-  };
-}
-
-function normalizePageEntry(page, index, defaults) {
-  const fallbackPiece = catalogPieces[index % catalogPieces.length] ?? catalogPieces[0];
-  const contentArtworkKey =
-    resolveArtworkKey(page?.contentArtworkKey) ??
-    resolveArtworkKey(page?.imageArtworkKeys?.[0]) ??
-    fallbackPiece?.key ??
-    "";
-  const imageArtworkKeys = [
-    resolveArtworkKey(page?.imageArtworkKeys?.[0]) ?? contentArtworkKey,
-    resolveArtworkKey(page?.imageArtworkKeys?.[1]) ??
-      resolveArtworkKey(page?.imageArtworkKeys?.[0]) ??
-      contentArtworkKey,
-  ];
-
-  return {
-    id: page?.id ?? `page-${index + 1}`,
-    template: normalizeTemplateId(page?.template ?? defaults.artworkTemplate),
-    textColor: page?.textColor ?? defaults.textColor,
-    backgroundColor: page?.backgroundColor ?? defaults.backgroundColor,
-    contentArtworkKey,
-    imageArtworkKeys,
-    showTombstone: page?.showTombstone !== false,
-    showDescription: page?.showDescription !== false,
-    showArtistDescription: page?.showArtistDescription === true,
-  };
-}
-
 function createPageEntry(index) {
-  return normalizePageEntry(
-    {
-      template: defaultArtworkTemplate,
-      showTombstone: true,
-      showDescription: true,
-      showArtistDescription: false,
-    },
-    index,
-    layoutState.value.defaults ?? {},
-  );
+  return createLayoutPageEntry(index, layoutState.value.defaults ?? {}, layoutHelpers);
 }
 
 function estimatePageCount() {
@@ -329,31 +246,8 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function shouldIncludePiece(piece) {
-  return piece.include_in_book !== false;
-}
-
-function artworkKey(artist, piece) {
-  return `${artist.artist_name}::${piece.art_piece_name}`;
-}
-
 function imageKey(artist, piece) {
   return `${slugify(artist.artist_name)}--${slugify(piece.art_piece_name)}`;
-}
-
-function normalizeTemplateId(templateId) {
-  const aliases = {
-    "spread-image": "square-caption",
-    "panorama-text": "artist-portrait",
-    "padded-plate": "top-inset-text",
-  };
-
-  const normalized = aliases[templateId] ?? templateId;
-  return artworkTemplates[normalized] ? normalized : defaultArtworkTemplate;
-}
-
-function resolveArtworkKey(key) {
-  return key && catalogPieceMap.has(key) ? key : null;
 }
 
 function updatePageField(field, value) {
@@ -366,16 +260,11 @@ function updatePageField(field, value) {
     field === "template" && value === "artist-portrait"
       ? { ...current, [field]: value, showArtistDescription: true }
       : { ...current, [field]: value };
-  const nextPage = normalizePageEntry(
-    nextInput,
-    index,
-    layoutState.value.defaults ?? {},
-  );
+  const nextPage = normalizePageEntry(nextInput, index, layoutState.value.defaults ?? {}, layoutHelpers);
 
   nextPages[index] = nextPage;
   layoutState.value = { ...layoutState.value, pages: nextPages };
   queueLayoutSave();
-  renderPagedPreview();
 }
 
 function updatePageToggle(field, checked) {
@@ -389,16 +278,17 @@ function updatePageImage(slotIndex, value) {
   const nextPages = [...pageEntries.value];
   const current = nextPages[index];
   const imageArtworkKeys = [...current.imageArtworkKeys];
-  imageArtworkKeys[slotIndex] = resolveArtworkKey(value) ?? current.imageArtworkKeys[slotIndex];
+  imageArtworkKeys[slotIndex] =
+    (value && catalogPieceMap.has(value) ? value : null) ?? current.imageArtworkKeys[slotIndex];
 
   nextPages[index] = normalizePageEntry(
     { ...current, imageArtworkKeys },
     index,
     layoutState.value.defaults ?? {},
+    layoutHelpers,
   );
   layoutState.value = { ...layoutState.value, pages: nextPages };
   queueLayoutSave();
-  renderPagedPreview();
 }
 
 function updatePageCount(value) {
@@ -411,13 +301,13 @@ function updatePageCount(value) {
       pageEntries.value[index] ?? createPageEntry(index),
       index,
       layoutState.value.defaults ?? {},
+      layoutHelpers,
     ),
   );
 
   layoutState.value = { ...layoutState.value, pages: nextPages };
   selectedPageNumber.value = Math.min(selectedPageNumber.value, nextCount);
   queueLayoutSave();
-  renderPagedPreview();
 }
 
 function updateSelectedPageNumber(value) {
@@ -430,23 +320,8 @@ function shiftSelectedPage(delta) {
   updateSelectedPageNumber(selectedPageNumber.value + delta);
 }
 
-function normalizedLayoutState() {
-  return {
-    version: 2,
-    defaults: {
-      artworkTemplate:
-        layoutState.value.defaults?.artworkTemplate ?? defaultArtworkTemplate,
-      textColor: layoutState.value.defaults?.textColor ?? "black",
-      backgroundColor: layoutState.value.defaults?.backgroundColor ?? "paper",
-    },
-    pages: pageEntries.value.map((page, index) =>
-      normalizePageEntry(page, index, layoutState.value.defaults ?? {}),
-    ),
-  };
-}
-
 function exportLayoutState() {
-  const blob = new Blob([`${JSON.stringify(normalizedLayoutState(), null, 2)}\n`], {
+  const blob = new Blob([`${JSON.stringify(normalizedLayoutState(layoutState.value, layoutHelpers), null, 2)}\n`], {
     type: "application/json",
   });
   const url = URL.createObjectURL(blob);
@@ -464,7 +339,7 @@ async function saveLayoutState() {
     const response = await fetch("/__art-book-layout__", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(normalizedLayoutState()),
+      body: JSON.stringify(normalizedLayoutState(layoutState.value, layoutHelpers)),
     });
 
     if (!response.ok) throw new Error(`Save failed with ${response.status}`);
@@ -477,6 +352,13 @@ async function saveLayoutState() {
 function queueLayoutSave() {
   clearTimeout(saveTimer);
   saveTimer = setTimeout(saveLayoutState, 450);
+}
+
+function queuePagedPreviewRender(delay = 90) {
+  clearTimeout(renderTimer);
+  renderTimer = setTimeout(() => {
+    renderPagedPreview();
+  }, delay);
 }
 
 function captureWorkbenchScroll() {
@@ -522,6 +404,7 @@ function loadWorkbenchScroll() {
 async function renderPagedPreview() {
   if (!pagedOutput.value) return;
 
+  const renderToken = ++latestRenderToken;
   const scrollState = captureWorkbenchScroll();
   window.__ART_BOOK_PAGED_READY__ = false;
   status.value = "Paginating";
@@ -532,6 +415,8 @@ async function renderPagedPreview() {
 
   const previewer = new Previewer();
   await previewer.preview(bookHtml.value, [bookCssUrl], pagedOutput.value);
+
+  if (renderToken !== latestRenderToken) return;
 
   const sheetCount = pagedOutput.value.querySelectorAll(".pagedjs_sheet").length;
   renderedPageCount.value =
@@ -562,18 +447,27 @@ function printBook() {
   window.print();
 }
 
+watch(
+  bookHtml,
+  () => {
+    queuePagedPreviewRender();
+  },
+  { flush: "post" },
+);
+
 onMounted(() => {
   resizeObserver = new ResizeObserver(() => updatePreviewScale());
   if (workbench.value) resizeObserver.observe(workbench.value);
   restoreWorkbenchScroll(loadWorkbenchScroll());
   workbench.value?.addEventListener("scroll", persistWorkbenchScroll, { passive: true });
   window.addEventListener("scroll", persistWorkbenchScroll, { passive: true });
-  renderPagedPreview();
+  queuePagedPreviewRender(0);
   updatePreviewScale();
 });
 
 onBeforeUnmount(() => {
   clearTimeout(saveTimer);
+  clearTimeout(renderTimer);
   resizeObserver?.disconnect();
   workbench.value?.removeEventListener("scroll", persistWorkbenchScroll);
   window.removeEventListener("scroll", persistWorkbenchScroll);

@@ -6,11 +6,35 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const layoutJsonPath = path.resolve(__dirname, "../art-book-layout.json");
+const listJsonPath = path.resolve(__dirname, "../list.json");
+const generatedImagesPath = path.resolve(__dirname, "../generated-images");
+const bookCssPath = path.resolve(__dirname, "./src/styles/book.css");
+const templatesPath = path.resolve(__dirname, "./src/templates");
+
+function shouldFullReload(file) {
+  const resolved = path.resolve(file);
+
+  if (resolved === layoutJsonPath) return false;
+
+  return (
+    resolved === listJsonPath ||
+    resolved === bookCssPath ||
+    resolved.startsWith(`${generatedImagesPath}${path.sep}`) ||
+    resolved.startsWith(`${templatesPath}${path.sep}`)
+  );
+}
 
 function artBookLayoutWriter() {
   return {
     name: "art-book-layout-writer",
     configureServer(server) {
+      server.watcher.add([
+        listJsonPath,
+        generatedImagesPath,
+        bookCssPath,
+        templatesPath,
+      ]);
+
       server.middlewares.use("/__art-book-layout__", async (req, res, next) => {
         if (req.method !== "POST") {
           next();
@@ -50,8 +74,12 @@ function artBookLayoutWriter() {
         }
       });
     },
-    handleHotUpdate({ file }) {
+    handleHotUpdate({ file, server }) {
       if (path.resolve(file) === layoutJsonPath) return [];
+      if (shouldFullReload(file)) {
+        server.ws.send({ type: "full-reload", path: "*" });
+        return [];
+      }
     },
   };
 }
