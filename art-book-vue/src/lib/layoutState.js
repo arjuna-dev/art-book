@@ -45,38 +45,76 @@ export function resolveArtworkKey(key, catalogPieceMap) {
   return key && catalogPieceMap.has(key) ? key : null;
 }
 
+export function resolveImageArtworkKey(key, catalogPieceMap) {
+  if (key === null || key === "") return null;
+  return resolveArtworkKey(key, catalogPieceMap);
+}
+
 export function normalizePageEntry(
   page,
   index,
   defaults,
   { catalogPieces, catalogPieceMap, artworkTemplates, defaultArtworkTemplate },
 ) {
+  const template = normalizeTemplateId(page?.template ?? defaults.artworkTemplate, {
+    artworkTemplates,
+    defaultArtworkTemplate,
+  });
   const fallbackPiece = catalogPieces[index % catalogPieces.length] ?? catalogPieces[0];
   const contentArtworkKey =
     resolveArtworkKey(page?.contentArtworkKey, catalogPieceMap) ??
     resolveArtworkKey(page?.imageArtworkKeys?.[0], catalogPieceMap) ??
     fallbackPiece?.key ??
     "";
-  const imageArtworkKeys = [
-    resolveArtworkKey(page?.imageArtworkKeys?.[0], catalogPieceMap) ?? contentArtworkKey,
-    resolveArtworkKey(page?.imageArtworkKeys?.[1], catalogPieceMap) ??
-      resolveArtworkKey(page?.imageArtworkKeys?.[0], catalogPieceMap) ??
-      contentArtworkKey,
-  ];
+  const hasImageArtworkKeys = Array.isArray(page?.imageArtworkKeys);
+  const firstImageArtworkKey = hasImageArtworkKeys
+    ? resolveImageArtworkKey(page.imageArtworkKeys[0], catalogPieceMap)
+    : contentArtworkKey;
+  const secondImageArtworkKey = hasImageArtworkKeys
+    ? resolveImageArtworkKey(page.imageArtworkKeys[1], catalogPieceMap) ?? firstImageArtworkKey
+    : firstImageArtworkKey;
+  const imageArtworkKeys = [firstImageArtworkKey, secondImageArtworkKey];
+  const oppositeCaptionPosition =
+    page?.oppositeCaptionPosition === "after" ? "after" : "before";
+  const templateSupportsAdjacentTombstone =
+    artworkTemplates[template]?.supports?.adjacentTombstone === true;
+  const adjacentTombstonePosition =
+    page?.adjacentTombstonePosition === "next" ? "next" : "previous";
 
   return {
     id: page?.id ?? `page-${index + 1}`,
-    template: normalizeTemplateId(page?.template ?? defaults.artworkTemplate, {
-      artworkTemplates,
-      defaultArtworkTemplate,
-    }),
+    template,
     textColor: page?.textColor ?? defaults.textColor,
     backgroundColor: page?.backgroundColor ?? defaults.backgroundColor,
     contentArtworkKey,
     imageArtworkKeys,
+    oppositeCaptionPage: page?.oppositeCaptionPage === true,
+    oppositeCaptionPosition,
+    adjacentTombstonePage:
+      templateSupportsAdjacentTombstone && page?.adjacentTombstonePage === true,
+    adjacentTombstonePosition,
     showTombstone: page?.showTombstone !== false,
     showDescription: page?.showDescription !== false,
     showArtistDescription: page?.showArtistDescription === true,
+  };
+}
+
+export function normalizeCoverEntry(cover, defaults, { catalogPieces, catalogPieceMap }) {
+  const fallbackPiece = catalogPieces[0];
+  const hasImageArtworkKey = Object.hasOwn(cover ?? {}, "imageArtworkKey");
+  const imageArtworkKey = hasImageArtworkKey
+    ? resolveImageArtworkKey(cover.imageArtworkKey, catalogPieceMap)
+    : fallbackPiece?.key ?? null;
+
+  return {
+    imageArtworkKey,
+    textColor: cover?.textColor ?? "white",
+    backgroundColor: cover?.backgroundColor ?? "black",
+    title: cover?.title ?? "Speculative Works",
+    kicker: cover?.kicker ?? "Studio edition",
+    note:
+      cover?.note ??
+      "A page-based art book prototype for assigning templates, images, captions, and artist notes directly from the studio.",
   };
 }
 
@@ -97,11 +135,16 @@ export function migrateLayoutState(
     textColor: savedLayout?.defaults?.textColor ?? "black",
     backgroundColor: savedLayout?.defaults?.backgroundColor ?? "paper",
   };
+  const cover = normalizeCoverEntry(savedLayout?.cover, defaults, {
+    catalogPieces,
+    catalogPieceMap,
+  });
 
   if (Array.isArray(savedLayout?.pages) && savedLayout.pages.length > 0) {
     return {
       version: 2,
       defaults,
+      cover,
       pages: savedLayout.pages.map((page, index) =>
         normalizePageEntry(page, index, defaults, {
           catalogPieces,
@@ -118,6 +161,7 @@ export function migrateLayoutState(
   return {
     version: 2,
     defaults,
+    cover,
     pages: catalogPieces.map((piece, index) =>
       normalizePageEntry(
         {
@@ -173,6 +217,10 @@ export function normalizedLayoutState(
   return {
     version: 2,
     defaults,
+    cover: normalizeCoverEntry(layoutState.cover, defaults, {
+      catalogPieces,
+      catalogPieceMap,
+    }),
     pages: (layoutState.pages ?? []).map((page, index) =>
       normalizePageEntry(page, index, defaults, {
         catalogPieces,

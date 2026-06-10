@@ -10,10 +10,10 @@ import {
 } from "./layoutState";
 
 const artworkTemplates = {
-  "square-caption": { supports: { physicalPages: 1 } },
-  "artist-portrait": { supports: { physicalPages: 1 } },
-  "top-inset-text": { supports: { physicalPages: 1 } },
-  "full-bleed-caption": { supports: { physicalPages: 2 } },
+  "square-caption": { supports: { physicalPages: 1, adjacentTombstone: true } },
+  "artist-portrait": { supports: { physicalPages: 1, adjacentTombstone: false } },
+  "top-inset-text": { supports: { physicalPages: 1, adjacentTombstone: false } },
+  "full-bleed-caption": { supports: { physicalPages: 2, adjacentTombstone: false } },
 };
 
 const defaultArtworkTemplate = "square-caption";
@@ -118,6 +118,12 @@ describe("layoutState", () => {
       textColor: "white",
       backgroundColor: "black",
     });
+    expect(state.cover).toMatchObject({
+      imageArtworkKey: shownOneKey,
+      textColor: "white",
+      backgroundColor: "black",
+      title: "Speculative Works",
+    });
     expect(state.pages).toHaveLength(2);
     expect(state.pages[0]).toMatchObject({
       contentArtworkKey: shownOneKey,
@@ -147,11 +153,28 @@ describe("layoutState", () => {
     );
 
     expect(page.contentArtworkKey).toBe("Artist Two::Shown Two");
-    expect(page.imageArtworkKeys).toEqual([
-      "Artist Two::Shown Two",
-      "Artist Two::Shown Two",
-    ]);
+    expect(page.imageArtworkKeys).toEqual([null, null]);
     expect(page.template).toBe("full-bleed-caption");
+  });
+
+  it("preserves explicit no-image selections", () => {
+    const helpers = createHelpers();
+    const page = normalizePageEntry(
+      {
+        contentArtworkKey: "Artist One::Shown One",
+        imageArtworkKeys: [null, ""],
+      },
+      0,
+      {
+        artworkTemplate: defaultArtworkTemplate,
+        textColor: "black",
+        backgroundColor: "paper",
+      },
+      helpers,
+    );
+
+    expect(page.contentArtworkKey).toBe("Artist One::Shown One");
+    expect(page.imageArtworkKeys).toEqual([null, null]);
   });
 
   it("creates and reserializes page entries with stable defaults", () => {
@@ -165,6 +188,11 @@ describe("layoutState", () => {
     const serialized = normalizedLayoutState(
       {
         defaults: baseDefaults,
+        cover: {
+          imageArtworkKey: "",
+          textColor: "lime",
+          backgroundColor: "black",
+        },
         pages: [
           newPage,
           {
@@ -178,11 +206,21 @@ describe("layoutState", () => {
       helpers,
     );
 
+    expect(serialized.cover).toMatchObject({
+      imageArtworkKey: null,
+      textColor: "lime",
+      backgroundColor: "black",
+    });
     expect(newPage).toMatchObject({
       id: "page-1",
       template: "square-caption",
       textColor: "black",
       backgroundColor: "paper",
+      imageArtworkKeys: ["Artist One::Shown One", "Artist One::Shown One"],
+      oppositeCaptionPage: false,
+      oppositeCaptionPosition: "before",
+      adjacentTombstonePage: false,
+      adjacentTombstonePosition: "previous",
       showTombstone: true,
       showDescription: true,
       showArtistDescription: false,
@@ -192,6 +230,76 @@ describe("layoutState", () => {
       template: "square-caption",
       textColor: "white",
       backgroundColor: "paper",
+      oppositeCaptionPage: false,
+      oppositeCaptionPosition: "before",
+      adjacentTombstonePage: false,
+      adjacentTombstonePosition: "previous",
     });
+  });
+
+  it("persists full-bleed opposite caption page options", () => {
+    const helpers = createHelpers();
+    const page = normalizePageEntry(
+      {
+        template: "full-bleed-caption",
+        contentArtworkKey: "Artist One::Shown One",
+        oppositeCaptionPage: true,
+        oppositeCaptionPosition: "after",
+      },
+      0,
+      {
+        artworkTemplate: defaultArtworkTemplate,
+        textColor: "black",
+        backgroundColor: "paper",
+      },
+      helpers,
+    );
+
+    expect(page.oppositeCaptionPage).toBe(true);
+    expect(page.oppositeCaptionPosition).toBe("after");
+  });
+
+  it("persists adjacent tombstone reference options", () => {
+    const helpers = createHelpers();
+    const page = normalizePageEntry(
+      {
+        template: "square-caption",
+        contentArtworkKey: "Artist One::Shown One",
+        adjacentTombstonePage: true,
+        adjacentTombstonePosition: "next",
+      },
+      0,
+      {
+        artworkTemplate: defaultArtworkTemplate,
+        textColor: "black",
+        backgroundColor: "paper",
+      },
+      helpers,
+    );
+
+    expect(page.adjacentTombstonePage).toBe(true);
+    expect(page.adjacentTombstonePosition).toBe("next");
+  });
+
+  it("disables adjacent tombstone on templates that do not support it", () => {
+    const helpers = createHelpers();
+    const page = normalizePageEntry(
+      {
+        template: "top-inset-text",
+        contentArtworkKey: "Artist One::Shown One",
+        adjacentTombstonePage: true,
+        adjacentTombstonePosition: "next",
+      },
+      0,
+      {
+        artworkTemplate: defaultArtworkTemplate,
+        textColor: "black",
+        backgroundColor: "paper",
+      },
+      helpers,
+    );
+
+    expect(page.adjacentTombstonePage).toBe(false);
+    expect(page.adjacentTombstonePosition).toBe("next");
   });
 });

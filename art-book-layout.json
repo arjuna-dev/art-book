@@ -5,66 +5,90 @@
     "textColor": "black",
     "backgroundColor": "paper"
   },
+  "cover": {
+    "imageArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
+    "textColor": "white",
+    "backgroundColor": "black",
+    "title": "Speculative Works",
+    "kicker": "Studio edition",
+    "note": "A page-based art book prototype for assigning templates, images, captions, and artist notes directly from the studio."
+  },
   "pages": [
     {
       "id": "page-1",
-      "template": "left-bleed-image-text",
-      "textColor": "red",
-      "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::Prime Distribution",
+      "template": "full-bleed",
+      "textColor": "black",
+      "backgroundColor": "orange",
+      "contentArtworkKey": "Dr. Elena Vasquez::Primordial Stones",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::Perceptron 195X",
+        "Dr. Elena Vasquez::Primordial Stones",
         "Dr. Elena Vasquez::Primordial Stones"
       ],
-      "showTombstone": true,
-      "showDescription": true,
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
+      "showTombstone": false,
+      "showDescription": false,
       "showArtistDescription": false
     },
     {
       "id": "page-2",
-      "template": "artist-portrait",
-      "textColor": "pink",
-      "backgroundColor": "yellow",
-      "contentArtworkKey": "Dr. Elena Vasquez::Primordial Stones",
+      "template": "big-square-caption",
+      "textColor": "black",
+      "backgroundColor": "paper",
+      "contentArtworkKey": "Dr. Elena Vasquez::AI Fish Resurrection",
       "imageArtworkKeys": [
-        "Valentina Cienfuegos Mora::Water(s)",
+        "Dr. Elena Vasquez::AI Fish Resurrection",
         "Dr. Elena Vasquez::Prime Shell Spiral"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
-      "showDescription": true,
-      "showArtistDescription": true
+      "showDescription": false,
+      "showArtistDescription": false
     },
     {
       "id": "page-3",
-      "template": "top-inset-text",
-      "textColor": "black",
-      "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::Primordial Stones",
+      "template": "full-bleed",
+      "textColor": "pink",
+      "backgroundColor": "black",
+      "contentArtworkKey": "Valentina Cienfuegos Mora::Water(s)",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::Prime Shell Spiral",
+        "Valentina Cienfuegos Mora::Water(s)",
         "Dr. Elena Vasquez::AI Fish Resurrection"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-4",
-      "template": "top-inset-text",
+      "template": "right-image-text",
       "textColor": "black",
-      "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::Perceptron 195X",
+      "backgroundColor": "yellow",
+      "contentArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::Perceptron 195X",
+        "Dr. Elena Vasquez::Primordial Stones",
         "Dr. Elena Vasquez::Perceptron 195X"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
-      "showDescription": true,
+      "showDescription": false,
       "showArtistDescription": false
     },
     {
       "id": "page-5",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Dr. Elena Vasquez::Prime Distribution",
@@ -72,13 +96,17 @@
         "Dr. Elena Vasquez::Prime Distribution",
         "Dr. Elena Vasquez::Prime Distribution"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-6",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Valentina Cienfuegos Mora::Water(s)",
@@ -86,13 +114,17 @@
         "Valentina Cienfuegos Mora::Water(s)",
         "Valentina Cienfuegos Mora::Water(s)"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-7",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Valentina Cienfuegos Mora::Angel vs. Capital",
@@ -100,13 +132,17 @@
         "Valentina Cienfuegos Mora::Angel vs. Capital",
         "Valentina Cienfuegos Mora::Angel vs. Capital"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-8",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
@@ -114,13 +150,17 @@
         "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan",
         "Valentina Cienfuegos Mora::Cyberpunk Tenochtitlan"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-9",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Valentina Cienfuegos Mora::Zapatista Women Sculptures",
@@ -128,13 +168,17 @@
         "Valentina Cienfuegos Mora::Zapatista Women Sculptures",
         "Valentina Cienfuegos Mora::Zapatista Women Sculptures"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
     },
     {
       "id": "page-10",
-      "template": "top-inset-text",
+      "template": "square-caption",
       "textColor": "black",
       "backgroundColor": "paper",
       "contentArtworkKey": "Valentina Cienfuegos Mora::Indigenous Women of the World",
@@ -142,6 +186,10 @@
         "Valentina Cienfuegos Mora::Indigenous Women of the World",
         "Valentina Cienfuegos Mora::Indigenous Women of the World"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
@@ -156,6 +204,10 @@
         "Valentina Cienfuegos Mora::Indigenous Men of the World",
         "Valentina Cienfuegos Mora::Indigenous Men of the World"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false
@@ -170,6 +222,10 @@
         "Valentina Cienfuegos Mora::Indigenous People of the World",
         "Valentina Cienfuegos Mora::Indigenous People of the World"
       ],
+      "oppositeCaptionPage": false,
+      "oppositeCaptionPosition": "before",
+      "adjacentTombstonePage": false,
+      "adjacentTombstonePosition": "previous",
       "showTombstone": true,
       "showDescription": true,
       "showArtistDescription": false

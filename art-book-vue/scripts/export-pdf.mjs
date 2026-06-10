@@ -9,10 +9,13 @@ const pageSizes = {
   a4: { width: "210mm", height: "297mm" },
   trade: { width: "6in", height: "9in" },
   square: { width: "8in", height: "8in" },
+  "square-216": { width: "216mm", height: "216mm" },
   a5: { width: "148mm", height: "210mm" },
 };
-const defaultPageSize = "small-landscape";
-const pageSize = pageSizes[process.env.ART_BOOK_PAGE_SIZE ?? defaultPageSize] ?? pageSizes[defaultPageSize];
+const defaultPageSize = "square-216";
+const pageSize =
+  pageSizes[process.env.ART_BOOK_PAGE_SIZE ?? defaultPageSize] ??
+  pageSizes[defaultPageSize];
 
 const server = await createServer({
   server: {
@@ -28,9 +31,13 @@ const page = await browser.newPage();
 
 try {
   await page.goto(`http://${host}:${port}`, { waitUntil: "networkidle" });
-  await page.waitForFunction(() => window.__ART_BOOK_PAGED_READY__ === true, null, {
-    timeout: 30000,
-  });
+  await page.waitForFunction(
+    () => window.__ART_BOOK_PAGED_READY__ === true,
+    null,
+    {
+      timeout: 30000,
+    },
+  );
 
   await page.pdf({
     path: outputPath,
