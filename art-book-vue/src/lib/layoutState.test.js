@@ -11,8 +11,8 @@ import {
 
 const artworkTemplates = {
   "square-caption": { supports: { physicalPages: 1, adjacentTombstone: true } },
-  "artist-portrait": { supports: { physicalPages: 1, adjacentTombstone: false } },
-  "top-inset-text": { supports: { physicalPages: 1, adjacentTombstone: false } },
+  "artist-portrait": { supports: { physicalPages: 1, adjacentTombstone: false, imageTombstone: true } },
+  "top-inset-text": { supports: { physicalPages: 1, adjacentTombstone: true } },
   "full-bleed-caption": { supports: { physicalPages: 2, adjacentTombstone: false } },
 };
 
@@ -131,6 +131,7 @@ describe("layoutState", () => {
       template: "artist-portrait",
       showDescription: false,
       showTombstone: true,
+      showImageTombstone: false,
       showArtistDescription: false,
     });
   });
@@ -222,8 +223,10 @@ describe("layoutState", () => {
       adjacentTombstonePage: false,
       adjacentTombstonePosition: "previous",
       showTombstone: true,
+      showImageTombstone: false,
       showDescription: true,
       showArtistDescription: false,
+      supportingTextPosition: "above",
     });
     expect(serialized.pages[1]).toMatchObject({
       id: "page-2",
@@ -285,7 +288,7 @@ describe("layoutState", () => {
     const helpers = createHelpers();
     const page = normalizePageEntry(
       {
-        template: "top-inset-text",
+        template: "artist-portrait",
         contentArtworkKey: "Artist One::Shown One",
         adjacentTombstonePage: true,
         adjacentTombstonePosition: "next",

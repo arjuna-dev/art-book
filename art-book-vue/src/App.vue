@@ -108,6 +108,19 @@ const selectedSupportsOppositeCaption = computed(
 const selectedSupportsAdjacentTombstone = computed(
   () => selectedPageTemplate.value.supports.adjacentTombstone === true,
 );
+const selectedSupportsSupportingTextPosition = computed(() =>
+  [
+    "top-bleed-text",
+    "top-inset-text",
+    "top-text-bottom-bleed",
+    "top-text-bottom-inset",
+  ].includes(selectedPage.value?.template),
+);
+const selectedSupportsImageRatioMode = computed(() =>
+  ["two-image-diagonal-left", "two-image-diagonal-right"].includes(
+    selectedPage.value?.template,
+  ),
+);
 const pageCountLabel = computed(
   () => `${renderedPageCount.value || estimatePageCount()} pages`,
 );
@@ -242,13 +255,21 @@ function renderConfiguredPage(page, pageIndex) {
     artist: primaryPiece.artist,
     pieceIndex: pageIndex,
     images: [imageA, imageB],
+    imagePieces: [
+      catalogPieceMap.get(page.imageArtworkKeys[0]) ?? primaryPiece,
+      catalogPieceMap.get(page.imageArtworkKeys[1]) ??
+        catalogPieceMap.get(page.imageArtworkKeys[0]) ??
+        primaryPiece,
+    ],
     artistPortrait: artistPortraitForArtist(primaryPiece.artist),
     themeClasses,
     helpers: { escapeHtml, splitText },
     options: {
       showTombstone: page.showTombstone,
+      showImageTombstone: page.showImageTombstone,
       showDescription: page.showDescription,
       showArtistDescription: page.showArtistDescription,
+      imageRatioModes: page.imageRatioModes,
       adjacentTombstone: supportsAdjacentTombstone
         ? adjacentTombstoneForPage(page, pageIndex)
         : null,
@@ -401,10 +422,7 @@ function updatePageField(field, value) {
   const nextTemplate = isTemplateChange
     ? (artworkTemplates[value] ?? artworkTemplates[defaultArtworkTemplate])
     : null;
-  const nextInputBase =
-    isTemplateChange && value === "artist-portrait"
-      ? { ...current, [field]: value, showArtistDescription: true }
-      : { ...current, [field]: value };
+  const nextInputBase = { ...current, [field]: value };
   const nextInput =
     isTemplateChange && nextTemplate?.supports.adjacentTombstone !== true
       ? {
@@ -933,6 +951,38 @@ onBeforeUnmount(() => {
             </select>
           </label>
 
+          <label v-if="selectedSupportsImageRatioMode" class="control-block">
+            <span>Image A Ratio</span>
+            <select
+              :value="selectedPage?.imageRatioModes?.[0]"
+              @change="
+                updatePageField('imageRatioModes', [
+                  $event.target.value,
+                  selectedPage?.imageRatioModes?.[1] ?? 'landscape',
+                ])
+              "
+            >
+              <option value="landscape">Landscape crop</option>
+              <option value="portrait">Portrait crop</option>
+            </select>
+          </label>
+
+          <label v-if="selectedSupportsImageRatioMode" class="control-block">
+            <span>Image B Ratio</span>
+            <select
+              :value="selectedPage?.imageRatioModes?.[1]"
+              @change="
+                updatePageField('imageRatioModes', [
+                  selectedPage?.imageRatioModes?.[0] ?? 'landscape',
+                  $event.target.value,
+                ])
+              "
+            >
+              <option value="landscape">Landscape crop</option>
+              <option value="portrait">Portrait crop</option>
+            </select>
+          </label>
+
           <div class="control-block">
             <span>Text Blocks</span>
             <label class="toggle-row">
@@ -953,7 +1003,11 @@ onBeforeUnmount(() => {
                   updatePageToggle('showTombstone', $event.target.checked)
                 "
               />
-              <span>Tombstone metadata</span>
+              <span>{{
+                selectedPageTemplate.supports.usesArtistPortrait
+                  ? 'Adjacent tombstone'
+                  : 'Tombstone metadata'
+              }}</span>
             </label>
             <label class="toggle-row">
               <input
@@ -968,13 +1022,40 @@ onBeforeUnmount(() => {
               />
               <span>Artist description</span>
             </label>
-            <small
+            <label
               v-if="selectedPageTemplate.supports.usesArtistPortrait"
-              class="control-note"
+              class="toggle-row"
             >
-              Artist portrait files are resolved from
-              `generated-images/artists/&lt;artist-slug&gt;-portrait.*`.
-            </small>
+              <input
+                type="checkbox"
+                :checked="selectedPage?.showImageTombstone"
+                @change="
+                  updatePageToggle(
+                    'showImageTombstone',
+                    $event.target.checked,
+                  )
+                "
+              />
+              <span>Image artwork tombstone</span>
+            </label>
+            <label
+              v-if="selectedSupportsSupportingTextPosition"
+              class="control-subfield"
+            >
+              <span>Supporting text</span>
+              <select
+                :value="selectedPage?.supportingTextPosition"
+                @change="
+                  updatePageField(
+                    'supportingTextPosition',
+                    $event.target.value,
+                  )
+                "
+              >
+                <option value="above">Above tombstones</option>
+                <option value="below">Below tombstones</option>
+              </select>
+            </label>
           </div>
 
           <div v-if="selectedSupportsOppositeCaption" class="control-block">

@@ -80,6 +80,15 @@ export function normalizePageEntry(
     artworkTemplates[template]?.supports?.adjacentTombstone === true;
   const adjacentTombstonePosition =
     page?.adjacentTombstonePosition === "next" ? "next" : "previous";
+  const supportingTextPosition =
+    page?.supportingTextPosition === "below" ? "below" : "above";
+  const legacyImageRatioMode =
+    page?.imageRatioMode === "portrait" ? "portrait" : "landscape";
+  const imageRatioModes = Array.from({ length: 2 }, (_, slotIndex) =>
+    page?.imageRatioModes?.[slotIndex] === "portrait"
+      ? "portrait"
+      : legacyImageRatioMode,
+  );
 
   return {
     id: page?.id ?? `page-${index + 1}`,
@@ -94,8 +103,11 @@ export function normalizePageEntry(
       templateSupportsAdjacentTombstone && page?.adjacentTombstonePage === true,
     adjacentTombstonePosition,
     showTombstone: page?.showTombstone !== false,
+    showImageTombstone: page?.showImageTombstone === true,
     showDescription: page?.showDescription !== false,
     showArtistDescription: page?.showArtistDescription === true,
+    supportingTextPosition,
+    imageRatioModes,
   };
 }
 
@@ -166,8 +178,11 @@ export function migrateLayoutState(
       normalizePageEntry(
         {
           showTombstone: true,
+          showImageTombstone: false,
           showDescription: true,
           showArtistDescription: false,
+          supportingTextPosition: "above",
+          imageRatioModes: ["landscape", "landscape"],
           ...(legacyArtworks[piece.key] ?? {}),
           contentArtworkKey: piece.key,
           imageArtworkKeys: [piece.key, piece.key],
@@ -194,8 +209,11 @@ export function createPageEntry(
     {
       template: defaultArtworkTemplate,
       showTombstone: true,
+      showImageTombstone: false,
       showDescription: true,
       showArtistDescription: false,
+      supportingTextPosition: "above",
+      imageRatioModes: ["landscape", "landscape"],
     },
     index,
     defaults,

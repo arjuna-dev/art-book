@@ -168,13 +168,25 @@
         "image_prompt": "Life-sized human figure sculpted from raw tortilla dough, natural cream color, textured surface, gallery floor installation, dramatic overhead lighting casting long shadows, intimate and monumental, slowly deteriorating",
         "should_generate": true,
         "include_in_book": true
+      },
+      {
+        "art_piece_name": "Cyberpunk Estela de Luz",
+        "year": "2023",
+        "technique_used": "Scale model, LED lighting systems, fog machines, laser-cut cyberpunk details, custom miniature fabrication",
+        "short_description": "A scale model of Mexico City's Estela de Luz reimagined as a dystopian cyberpunk monument in a neon-lit night city.",
+        "long_description": "The Estela de Luz — a monument whose inauguration was delayed by corruption scandals and whose symbolism was contested from the start — becomes, in Sidibe Kouyate's hands, exactly what its critics always said it was: a monument to power without substance. The cyberpunk version makes this literal: neon lights cascade down its surface, fog machines create atmospheric pollution, tiny LED advertisements flicker in languages that don't exist. The surrounding miniature cityscape shows Mexico City as cyberpunk dystopia, but the transformation required is disturbingly minimal. The piece asks whether the monument was always science fiction, and whether science fiction was always documentary.",
+        "display_context": "Museum vitrine installation, darkened room to enhance LED effects",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Detailed scale model of a dystopian cyberpunk Mexico City Estela de Luz with cascading neon lights, fog effects, tiny LED advertisements, surrounded by dark futuristic cityscape, displayed in a museum vitrine, dramatic lighting",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
   {
-    "artist_name": "Brother Anselm Kessler",
-    "artist_introduction": "Former medieval manuscript scholar turned contemporary artist, Kessler creates detailed mystical diagrams that blend ancient spiritual cartography with Hindu philosophy and invented linguistic systems. Working from a converted monastery in Bavaria, his practice resurrects the lost art of sacred infographics through the lens of Tantric psychology and medieval mysticism.",
-    "artist_long_description": "Brother Anselm Kessler spent two decades studying illuminated manuscripts at the Vatican Library before discovering the works of Sir Edward Woodroffe and ancient Hindu texts on the psychology of mind, body, and the interconnecting subtle layers of existence. This encounter with Tantric philosophy and Sanskrit treatises on disembodied entities revolutionized his understanding of medieval mysticism — he realized that both traditions were mapping the same territories using different cartographic languages. Working in oil with the precision of a medieval scribe but informed by Hindu concepts of chakras, koshas, and the subtle body, Kessler develops detailed diagrams that synthesize Christian angelology with Hindu psychology of consciousness. His paintings treat the afterlife not as destination but as navigable territory populated by various classes of disembodied entities. Every piece is annotated in an invented script that borrows from both Latin theological notation and Sanskrit mystical terminology. His work occupies the space between East and West, between medieval manuscript and ancient Hindu manual, creating instruction guides for territories that both traditions describe but neither fully maps. Critics have called his practice 'rigorously syncretic' and 'convincingly universal,' terms he considers complementary rather than contradictory.",
+    "artist_name": "Anselm Kessler",
+    "artist_introduction": "Kessler creates intricate visual systems based on microvita theory: subtle entities that move through the senses, carry ideas, and shape individual and collective consciousness.",
+    "artist_long_description": "Anselm Kessler builds diagrammatic paintings around microvita theory, treating reality as a field populated by subtle living entities that carry qualities, impulses, and ideas. In his work, angels and demons are not inherited religious characters but positive and negative microvita: forces that travel through sight, sound, touch, taste, and smell, enter the mind, and alter perception. His invented maps trace how these entities move between bodies, environments, and cultures; how they imbibe and transmit ideas; and how attention can attract, resist, or transform them. Painted with the precision of technical charts, the works propose a speculative science of consciousness in which thought is ecological, contagious, and never entirely private.",
     "series_name": "Sacred Mechanics",
     "art_pieces": [
       {
@@ -194,7 +206,7 @@
         "year": "2024",
         "technique_used": "Oil painting on canvas, gold leaf details, invented theological notation",
         "short_description": "An organizational chart depicting the complete hierarchy of angels from Seraphim to guardian angels, with detailed reporting structures and jurisdictional boundaries.",
-        "long_description": "Working from medieval angelology and corporate org charts in equal measure, Kessler presents the celestial bureaucracy as a comprehensible management structure. Seraphim occupy the C-suite level, Cherubim handle middle management, and various orders of angels fill specialized departments: Communications (Archangels), Human Resources (Guardian Angels), and Enforcement (Powers). Each angelic rank is illustrated with appropriate iconography and connected by precise hierarchical lines. The invented annotations explain reporting structures, vacation policies, and jurisdictional disputes. The piece asks whether heaven operates more like a spiritual realm or a very well-organized corporation, and suggests the distinction might be less clear than we'd prefer.",
+        "long_description": "The chart maps classes of positive microvita as they travel through the senses and carry intuition, courage, sympathy, and expansive ideas into consciousness. Angelic forms function as visual names for these subtle entities rather than as members of a celestial bureaucracy. Directional paths show how an idea is imbibed, amplified through attention, and transmitted from one mind to another.",
         "display_context": "Gallery wall installation, corporate-scale presentation",
         "aspect_ratio": "16:9",
         "image_prompt": "Large organizational chart showing angelic hierarchy with detailed bureaucratic structures, gold leaf highlights, baroque angel illustrations connected by precise lines, invented script annotations, corporate meets medieval, gallery wall",
@@ -206,7 +218,7 @@
         "year": "2025",
         "technique_used": "Oil painting on canvas, dark pigments, taxonomical illustration style",
         "short_description": "A scientific taxonomy of demons organized by function, habitat, and specialized skills, presented in the style of a medieval bestiary meets biological field guide.",
-        "long_description": "Kessler approaches demonology with the rigor of a field biologist, creating detailed taxonomical classifications for various orders of demons. Each demonic type is illustrated with careful attention to distinguishing characteristics: horn configurations, wing patterns, preferred habitats, and specialized functions in the spiritual ecosystem. The invented script provides species names, behavioral notes, and identification keys. Demons are organized into logical categories: Administrative (paperwork delays, bureaucratic confusion), Domestic (missing socks, burnt toast), and Existential (Sunday evening dread, career anxiety). The piece treats evil as a natural phenomenon requiring proper scientific classification rather than moral judgment, which somehow makes it both more rational and more unsettling.",
+        "long_description": "This taxonomy maps negative microvita by the senses through which they travel and the ideas or compulsions they carry. Demonic forms identify patterns of fear, cruelty, fixation, and confusion without reducing them to metaphor: within the work, they are subtle entities moving between environments and minds. The classification keys trace how they are attracted, imbibed, reinforced, and potentially transformed.",
         "display_context": "Gallery wall, natural history museum aesthetic",
         "aspect_ratio": "4:5",
         "image_prompt": "Scientific taxonomy illustration of various demon types with detailed anatomical features, dark baroque style, classification labels in invented script, natural history field guide aesthetic, precise biological illustration style",
@@ -384,6 +396,18 @@
         "image_prompt": "Human body silhouette painted as evolutionary tree, primates in head with tiny human in pituitary gland, mammals in chest, reptiles in abdomen, insects in legs, microorganisms at feet, scientific illustration precision, natural history museum lighting",
         "should_generate": true,
         "include_in_book": true
+      },
+      {
+        "art_piece_name": "Platform Body",
+        "year": "2025",
+        "technique_used": "Body-shaped mixed-media sculpture, prosthetic components, exposed circuitry, branded industrial parts",
+        "short_description": "A human-form cyborg assembled from visibly branded OpenAI, Anthropic, and NVIDIA components, turning the body into a platform shared by competing intelligence companies.",
+        "long_description": "Delacroix extends the body-shaped canvas into a constructed cyborg. NVIDIA-marked processors form the nervous system; OpenAI and Anthropic modules occupy competing cognitive compartments; cables and prosthetic joints remain exposed. The corporate marks are not sponsorship but anatomy: identity has become inseparable from the platforms that supply memory, language, prediction, and vision.",
+        "display_context": "Freestanding gallery sculpture with visible branded components",
+        "aspect_ratio": "9:16",
+        "image_prompt": "Full-body contemporary cyborg sculpture assembled from exposed premium computing parts, visible OpenAI Anthropic and NVIDIA branding integrated into chest head and nervous system, elegant gallery installation, not a movie robot",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -394,14 +418,38 @@
     "series_name": "Material Confessions",
     "art_pieces": [
       {
-        "art_piece_name": "Deconstructed Paintings",
+        "art_piece_name": "Deconstructed Mona Lisa",
         "year": "2022",
         "technique_used": "Pigment extraction, chemical analysis, laboratory glassware, museum vitrines",
-        "short_description": "The exact amounts and pigments used to create canonical paintings — the Mona Lisa, Guernica, Rothko canvases — displayed as color-separated residue in laboratory test tubes.",
-        "long_description": "Da Vinci's sfumato becomes a faint smear of lead white and smalt in a glass tube. Guernica becomes charcoal and ivory black in measured grams. Rothko — generous, atmospheric Rothko — becomes surprisingly little pigment for such immense emotional territory. Beaumont's gesture strips painting of its mystique without diminishing it, which should not be possible, and yet somehow is. What remains after you remove the brush, the hand, the intention, and the centuries of interpretation is, apparently, just chemistry. And chemistry turns out to be beautiful. Variants: El Guernica (black, white, grey), Rothko (minimal residue), Mona Lisa (Renaissance ground pigments).",
+        "short_description": "Renaissance ground pigments, lead white, ochres and smalt separated into labeled laboratory tubes.",
+        "long_description": "Renaissance ground pigments, lead white, ochres and smalt separated into labeled laboratory tubes. The work isolates one canonical painting as chemistry while preserving the tension between its material scarcity and cultural scale.",
         "display_context": "Museum vitrine display, clinical laboratory aesthetic",
-        "aspect_ratio": "16:9",
-        "image_prompt": "Elegant laboratory test tubes in a museum vitrine containing separated pigments from famous paintings, each labeled with painting name and pigment type, warm glass reflections, scientific precision meets fine art, clean white background",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Mona Lisa pigments separated into measured glass tubes in a museum vitrine, Renaissance palette, clinical conceptual art",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Deconstructed Guernica",
+        "year": "2022",
+        "technique_used": "Pigment extraction, chemical analysis, laboratory glassware, museum vitrines",
+        "short_description": "Ivory black, charcoal, lead white and grey pigments reduced to measured residues.",
+        "long_description": "Ivory black, charcoal, lead white and grey pigments reduced to measured residues. The work isolates one canonical painting as chemistry while preserving the tension between its material scarcity and cultural scale.",
+        "display_context": "Museum vitrine display, clinical laboratory aesthetic",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Guernica reduced to separate black white and grey pigments in labeled laboratory glassware, museum vitrine",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Deconstructed Rothko",
+        "year": "2022",
+        "technique_used": "Pigment extraction, chemical analysis, laboratory glassware, museum vitrines",
+        "short_description": "The minimal quantity of pigment behind a monumental Rothko color field, isolated and measured.",
+        "long_description": "The minimal quantity of pigment behind a monumental Rothko color field, isolated and measured. The work isolates one canonical painting as chemistry while preserving the tension between its material scarcity and cultural scale.",
+        "display_context": "Museum vitrine display, clinical laboratory aesthetic",
+        "aspect_ratio": "4:5",
+        "image_prompt": "Tiny measured residues of deep Rothko pigments in laboratory tubes, large empty vitrine space, conceptual museum display",
         "should_generate": true,
         "include_in_book": true
       },
@@ -444,9 +492,9 @@
     ]
   },
   {
-    "artist_name": "Keiko Tanaka-Morales",
-    "artist_introduction": "Japanese-Mexican conceptual artist based in Tokyo who laser-engraves sacred symbols from multiple spiritual traditions onto mass-produced snack foods, exploring the collision between ancient wisdom and contemporary consumer culture.",
-    "artist_long_description": "Keiko Tanaka-Morales grew up between two worlds: her Japanese grandmother's Buddhist meditation practice and her Mexican grandfather's Day of the Dead altars, both existing within the hypermodern consumer landscape of Tokyo. This cultural trilingualism — East Asian spirituality, Mesoamerican mysticism, and global capitalism — defines her artistic practice. Working with industrial laser engravers typically used for manufacturing, she inscribes sacred geometries, religious iconography, and spiritual symbols onto mass-produced snack foods with mechanical precision. Each piece begins with extensive research into the historical and cultural significance of the symbols, followed by equally rigorous attention to the material properties of the chosen snack food substrate. The Pringle's hyperbolic paraboloid surface, the Cheeto's irregular organic form, the street potato's rough texture — each presents specific technical and conceptual challenges. Tanaka-Morales treats these interventions not as desecration but as democratization: making sacred imagery accessible through the most common objects in contemporary life. Her practice asks whether spiritual symbols lose or gain power when inscribed on disposable consumer goods, and whether the sacred can survive translation into the language of global capitalism.",
+    "artist_name": "Keiko Tanaka",
+    "artist_introduction": "Tokyo-based conceptual artist who laser-engraves sacred and pop-cultural symbols onto mass-produced snack foods, exploring the collision between ritual images and consumer culture.",
+    "artist_long_description": "Keiko Tanaka works with industrial laser engravers normally used in manufacturing, inscribing sacred geometries, pop-cultural motifs, and historical images onto mass-produced snack foods. Each work begins with the physical character of its substrate: the Pringle hyperbolic paraboloid, the Cheeto irregular surface, the tostada brittle corn plane. Her practice asks what happens when images treated as timeless are translated into disposable, branded materials, and whether repetition, appetite, and mass production can themselves become ritual forms.",
     "series_name": "Sacred Snacks",
     "art_pieces": [
       {
@@ -525,11 +573,23 @@
         "art_piece_name": "Xochipilli Tostadas",
         "year": "2022",
         "technique_used": "Laser engraving on tostadas, transparent resin casting, gallery vitrine",
-        "short_description": "Detailed images of Xochipilli, the Aztec god of art and flowers, laser-engraved onto corn tostadas and preserved in transparent resin blocks.",
-        "long_description": "Tanaka-Morales treats the corn tostada as the perfect substrate for pre-Columbian iconography — corn being the foundational grain of Mesoamerican civilization and Xochipilli being the patron deity of art, music, poetry, and psychoactive plants. Each tostada receives a detailed laser engraving of the flower god, his elaborate headdress and ornate body decorations rendered with mechanical precision onto the golden corn surface. The completed pieces are then encased in crystal-clear resin blocks, preserving both the ancient imagery and the ephemeral snack food for eternity. The resin creates a lens effect that magnifies the laser-engraved details while simultaneously commenting on preservation, consumer culture, and the transformation of sacred imagery. The god of flowers suspended in petroleum-based resin becomes a meditation on how indigenous culture survives within contemporary materials, neither fully preserved nor completely transformed.",
+        "short_description": "A laser-engraved tostada recreates the composition of an existing pre-Hispanic Xochipilli painting, translating its figure, flowers, and ornamental field into scorched corn.",
+        "long_description": "Tanaka recreates an existing pre-Hispanic painting of Xochipilli rather than inventing a generic deity portrait. The original composition is transferred carefully onto the tostada: the seated figure, botanical emblems, and surrounding ornament remain legible despite the brittle, uneven corn surface. The work stages a direct material translation from painted historical image to a contemporary edible support.",
         "display_context": "Museum vitrine display, individual resin blocks",
         "aspect_ratio": "1:1",
-        "image_prompt": "Detailed Aztec god Xochipilli laser engraved on a golden corn tostada, encased in clear amber resin block, displayed in a gallery vitrine, vibrant pre-Columbian patterns visible through the resin, sacred imagery preserved in contemporary materials",
+        "image_prompt": "A tostada laser engraved as a faithful recreation of an existing pre-Hispanic Xochipilli painting, seated deity with flowers and ornamental field, detailed scorched linework on corn, museum vitrine",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Cheetos Galaxy",
+        "year": "2024",
+        "technique_used": "Laser engraving on Cheetos, black mirrored field, fiber-optic lighting",
+        "short_description": "A field of Cheetos becomes a spiral galaxy, each irregular orange form engraved as a star system and suspended over a black reflective plane.",
+        "long_description": "Hundreds of Cheetos are arranged in sweeping galactic arms. Laser-engraved dots, rings, and miniature constellations turn each snack into a dense stellar body, while fiber-optic points extend the galaxy beyond the food itself. The work connects the chemically intense orange of a branded snack with the impossible color and scale of astronomical imagery.",
+        "display_context": "Dark gallery wall installation",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Spiral galaxy made from hundreds of orange Cheetos suspended over glossy black mirror, tiny laser engraved star systems and fiber optic stars, spectacular contemporary art installation",
         "should_generate": true,
         "include_in_book": true
       }
@@ -566,26 +626,74 @@
         "include_in_book": true
       },
       {
-        "art_piece_name": "Fountain I, II, III",
+        "art_piece_name": "Fountain I: Tiered Basin",
         "year": "2023",
         "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
-        "short_description": "Three traditionally shaped fountains pour separated paint colors continuously — primary colors, pastels, and a punk palette — with all paint recycled in a closed loop.",
-        "long_description": "Duchamp's Fountain was a urinal. Okonkwo's Fountains actually flow. Three versions: primary colors, pastel shades, and an aggressive punk palette of bright green, electric blue, and yellow. The paint never stops. It never dries — the chemistry has been carefully managed. It recycles. The fountain form — civic, classical, associated with public pleasure — becomes a delivery mechanism for chromatic excess. You could, technically, drink from these. Okonkwo does not recommend it.",
+        "short_description": "Primary red, yellow, and blue paint flow from a three-tier classical stone fountain.",
+        "long_description": "Primary red, yellow, and blue paint flow from a three-tier classical stone fountain. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
-        "image_prompt": "Classical fountain basin pouring multiple streams of vivid paint colors — primary red, blue, yellow — swirling together at the base, recycling visible, indoor gallery or outdoor plaza, painterly fluid dynamics, cinematic color saturation",
+        "image_prompt": "three-tier classical European basin fountain pouring separate red yellow and blue paint, gallery installation, closed loop color separation",
         "should_generate": true,
         "include_in_book": true
       },
       {
-        "art_piece_name": "Spray Paint Series",
+        "art_piece_name": "Fountain II: Shell Grotto",
+        "year": "2023",
+        "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
+        "short_description": "Pastel pink, mint, and lilac paint descend through a shell-shaped rococo grotto fountain.",
+        "long_description": "Pastel pink, mint, and lilac paint descend through a shell-shaped rococo grotto fountain. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
+        "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
+        "aspect_ratio": "4:5",
+        "image_prompt": "rococo shell grotto fountain pouring separate pastel pink mint and lilac paint, gallery installation, closed loop color separation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Fountain III: Brutalist Trough",
+        "year": "2023",
+        "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
+        "short_description": "Black, gold, and acid green paint fall through a stepped brutalist concrete trough.",
+        "long_description": "Black, gold, and acid green paint fall through a stepped brutalist concrete trough. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
+        "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
+        "aspect_ratio": "4:5",
+        "image_prompt": "stepped brutalist concrete trough fountain pouring black gold and acid green paint, gallery installation, closed loop color separation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Rotating Gentleman",
         "year": "2023",
         "technique_used": "Mechanized spray cans, closed-loop paint recycling system, rotating sculpture armature",
-        "short_description": "Mechanically powered spray cans continuously pour paint over sculptures and walls, then the paint is separated and recycled. A rotating formally-dressed man, a wall receiving black and gold, pastel pink and green, and orange and red variants.",
-        "long_description": "The spray can is the tool of the unauthorized, the nocturnal, the urgent. Okonkwo mechanizes it, domesticates it, makes it run on schedule with a timer and a recycling pump. The results are perversely beautiful: a formally dressed man rotates slowly under streams of pink, deep blue, and purple; black and gold drown a wall and drain away; pastel pink and green bleed together then separate. The machine does not get tired. The paint does not run out. The colors multiply. The wall is always fresh. Productivity has never looked so magnificent.",
+        "short_description": "A mechanized spray system coats a rotating sculpture of a formally dressed man in successive layers of black and gold paint.",
+        "long_description": "A mechanized spray system coats a rotating sculpture of a formally dressed man in successive layers of black and gold paint. The apparatus remains visible, making the repeated act of coating as important as the accumulating surface.",
         "display_context": "Gallery warehouse, multiple sub-installations within single space",
         "aspect_ratio": "4:5",
-        "image_prompt": "A white rotating male sculpture in formal office suit being continuously sprayed with bright pink, deep blue, and purple paint from mechanical cans above, paint dripping and recycling below, kinetic and visceral, gallery installation",
+        "image_prompt": "rotating sculpture of a formally dressed man continuously sprayed with black and gold paint, contemporary kinetic art installation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Pastel Wall",
+        "year": "2023",
+        "technique_used": "Mechanized spray cans, closed-loop paint recycling system, rotating sculpture armature",
+        "short_description": "Mechanized spray cans cover a gallery wall with alternating pink and green fields while runoff is captured and separated.",
+        "long_description": "Mechanized spray cans cover a gallery wall with alternating pink and green fields while runoff is captured and separated. The apparatus remains visible, making the repeated act of coating as important as the accumulating surface.",
+        "display_context": "Gallery warehouse, multiple sub-installations within single space",
+        "aspect_ratio": "4:5",
+        "image_prompt": "gallery wall continuously sprayed by mechanical cans with pastel pink and mint green paint, contemporary kinetic art installation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Orange-Red Wall",
+        "year": "2023",
+        "technique_used": "Mechanized spray cans, closed-loop paint recycling system, rotating sculpture armature",
+        "short_description": "Mechanized spray cans build a saturated orange and red wall whose runoff circulates back through separate reservoirs.",
+        "long_description": "Mechanized spray cans build a saturated orange and red wall whose runoff circulates back through separate reservoirs. The apparatus remains visible, making the repeated act of coating as important as the accumulating surface.",
+        "display_context": "Gallery warehouse, multiple sub-installations within single space",
+        "aspect_ratio": "4:5",
+        "image_prompt": "gallery wall continuously sprayed with vivid orange and red paint by robotic spray cans, contemporary kinetic art installation",
         "should_generate": true,
         "include_in_book": true
       },
@@ -673,23 +781,11 @@
         "art_piece_name": "Discourse Before Battle",
         "year": "2022",
         "technique_used": "Bronze Krishna and Arjuna figurines, human ash, canvas, detailed ash landscape shaping",
-        "short_description": "Small bronze figures of Krishna counseling Arjuna stand on a canvas field of ashes shaped into the Kurukshetra battlefield.",
-        "long_description": "The figurines are positioned exactly as described in the Bhagavad Gita — Krishna in his charioteer's pose, Arjuna with his bow lowered, receiving the discourse that would become one of Hinduism's central texts. They stand on a canvas covered in ash shaped into the contours of the Kurukshetra battlefield, complete with formations, terrain features, the suggestion of armies. The ash field extends beyond the figures, implying that the battle they are discussing has already happened, that they are standing on its remains. Camus spent months studying battlefield archaeology to shape the ash formations with historical accuracy, turning the philosophical dialogue into a literal meditation on the cost of duty.",
+        "short_description": "Tiny bronze figures of Krishna counseling Arjuna occupy one edge of a vast horizontal canvas field of ashes shaped into the Kurukshetra battlefield.",
+        "long_description": "The sculpture is deliberately small against an overwhelmingly large, horizontal ash field. Krishna and Arjuna appear near one edge, nearly lost in the terrain their conversation is about to transform. The disproportion shifts attention from heroic figures to the scale of consequence: counsel and choice become minute events inside a battlefield that stretches far beyond them.",
         "display_context": "Gallery floor or pedestal installation, viewed from above",
-        "aspect_ratio": "4:3",
-        "image_prompt": "Small bronze figures of Krishna and Arjuna in philosophical discussion, standing on a detailed ash battlefield landscape with formations and terrain features, viewed from above, the great spiritual discourse surrounded by the cost of war",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Chariot Moves",
-        "year": "2023",
-        "technique_used": "Bronze Krishna and Arjuna figurines, miniature chariot with horses, human ash, canvas, detailed ash landscape shaping",
-        "short_description": "Bronze figures of Krishna driving the chariot and Arjuna releasing his arrow stand in the thick of the Kurukshetra battlefield, surrounded by an ash field shaped into the chaos of active combat.",
-        "long_description": "This is the companion to Discourse Before Battle - the moment after the words. The chariot is in motion now, or was: the miniature horses are mid-stride, Krishna leans into the reins, and Arjuna is no longer lowering his bow but drawing it. The ash field beneath them is denser, more disturbed, with formations breaking apart, the landscape no longer the clean topography of strategy but the churned ground of consequence. Camus treats the two pieces as a single diptych: one shows the world before action becomes irreversible, the other shows the world in which it already is. The question the two pieces ask together is whether knowing the cost ever changes the choosing.",
-        "display_context": "Gallery floor or pedestal installation, viewed from above, displayed as companion to Discourse Before Battle",
-        "aspect_ratio": "4:3",
-        "image_prompt": "Small bronze figures of Krishna driving a chariot with horses mid-stride and Arjuna drawing his bow in battle, standing on a dense disturbed ash battlefield landscape, formations breaking apart, viewed from above, the philosophical discourse now irreversible action",
+        "aspect_ratio": "21:9",
+        "image_prompt": "Extreme horizontal ash battlefield on a vast canvas, tiny bronze Krishna and Arjuna sculpture near one edge, figures almost lost in the immense grey field, viewed from above, 21:9 composition",
         "should_generate": true,
         "include_in_book": true
       },
@@ -756,12 +852,12 @@
       {
         "art_piece_name": "Sequence This (Geronimo)",
         "year": "2024",
-        "technique_used": "Extracted DNA, magnetized sculpture of Geronimo raising his shotgun, magnetic gallium coating, display case",
-        "short_description": "A small sculpture of Geronimo raising his shotgun, coated in magnetic gallium, stands over a field of crystallized DNA — resistance encoded in the substrate of life.",
+        "technique_used": "Extracted DNA, magnetized sculpture of Geronimo holding a lowered shotgun, magnetic gallium coating, display case",
+        "short_description": "A small sculpture of Geronimo holding, but not pointing, a lowered shotgun stands over a field of crystallized DNA.",
         "long_description": "Geronimo held out longer than anyone had a right to expect. The gallium-coated figure captures him in the posture most associated with his surviving photographs: upright, rifle raised, the expression of a man who has calculated the odds and decided they are irrelevant. He stands on extracted, crystallized DNA — real genetic material, anonymous, the kind of code that persists regardless of what happens to the body it came from. The piece turns on this: the last Apache leader who refused to surrender, standing on the molecular evidence of continuity. The shotgun is raised. The DNA is still there. Both are true at the same time.",
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
-        "image_prompt": "A small sculpture of Geronimo raising a shotgun in defiant posture, coated in shimmering magnetic gallium, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, resistance and continuity, the figure and the molecular ground",
+        "image_prompt": "Small sculpture of Geronimo coated in liquid-metal gallium, holding a shotgun lowered at his side and not pointing it, standing over crystallized DNA forms in a dark museum display case",
         "should_generate": true,
         "include_in_book": true
       },
@@ -946,14 +1042,14 @@
         "include_in_book": true
       },
       {
-        "art_piece_name": "Zapatista Comandante Light Portrait",
+        "art_piece_name": "Zapatista Light Portrait",
         "year": "2024",
         "technique_used": "Laser, acrylic refractive panels, fluorescent dye scattering medium in distilled water",
-        "short_description": "Portrait of a masked Zapatista commander rendered as laser line drawing — the anonymity of the mask translated into the ephemeral nature of light.",
-        "long_description": "The masked profile of a Zapatista commander is traced in light through fluorescent dye medium, the anonymity of the subject perfectly suited to the ephemeral nature of the medium. Llorente-Vidal emphasizes the mask's edges, the fabric folds, the deliberate concealment that becomes a form of revelation when rendered in laser light. The piece exists only during activation — when the laser stops, the revolutionary dissolves back into chemistry. This impermanence mirrors the Zapatista philosophy of leadership without faces, of revolution as process rather than monument.",
+        "short_description": "Portrait of a common masked Zapatista rendered as a laser line drawing, emphasizing collective anonymity rather than command.",
+        "long_description": "The masked profile of a Zapatista ordinary Zapatista is traced in light through fluorescent dye medium, the anonymity of the subject perfectly suited to the ephemeral nature of the medium. Llorente-Vidal emphasizes the mask's edges, the fabric folds, the deliberate concealment that becomes a form of revelation when rendered in laser light. The piece exists only during activation — when the laser stops, the revolutionary dissolves back into chemistry. This impermanence mirrors the Zapatista philosophy of collective presence without faces, of revolution as process rather than monument.",
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
-        "image_prompt": "A laser beam creating the masked profile of a Zapatista commander in fluorescent scattering medium, the mask and fabric folds visible as glowing yellow-green light lines, anonymous revolutionary emerging from light, dark gallery setting",
+        "image_prompt": "Laser line portrait of an ordinary masked Zapatista, not a commander, drawn in red light through fluorescent water and acrylic panels, dark gallery",
         "should_generate": true,
         "include_in_book": true
       },
@@ -973,11 +1069,23 @@
         "art_piece_name": "Archaeological Material Timeline",
         "year": "2023",
         "technique_used": "Wall mosaic, construction materials from multiple historical eras, masonry techniques spanning millennia",
-        "short_description": "A large wall composed of dozens of construction materials from different historical periods — adobe, Roman concrete, medieval mortar, industrial brick, modern composite — arranged chronologically.",
-        "long_description": "Architecture is geology's autobiography. Llorente-Vidal assembles a cross-section through human building history in a single wall: each section a different material, a different technique, a different moment in the long project of keeping weather out. The wall is load-bearing. She insisted on this. It has to actually work. A wall that only pretends to be structural would be a different piece — a museum display. Llorente-Vidal wanted the weight to be real, because the history is real, because every material in this wall was pulled from the same ground that is now under your feet.",
+        "short_description": "A large wall composed of dozens of construction materials from different historical periods — adobe, Roman concrete, medieval mortar, industrial brick, modern composite — arranged chronologically. A large graffiti tag by the artist cuts across the completed chronology.",
+        "long_description": "Architecture is geology's autobiography. Llorente-Vidal assembles a cross-section through human building history in a single wall: each section a different material, a different technique, a different moment in the long project of keeping weather out. The wall is load-bearing. She insisted on this. It has to actually work. A wall that only pretends to be structural would be a different piece — a museum display. Llorente-Vidal wanted the weight to be real, because the history is real, because every material in this wall was pulled from the same ground that is now under your feet. Across the finished wall, Llorente-Vidal adds her own oversized graffiti name, placing a contemporary authorial mark over the ordered archaeological record.",
         "display_context": "Museum wall installation, architectural integration, structural or decorative depending on venue",
         "aspect_ratio": "16:9",
-        "image_prompt": "A gallery wall composed in horizontal bands of different historical building materials, adobe brick, Roman concrete, medieval stone, industrial brick, modern composite, each band labeled with era, dramatic raking light revealing textures and time",
+        "image_prompt": "Chronological wall mosaic of adobe Roman concrete medieval mortar brick and modern composite, with a large contemporary graffiti tag by the artist sprayed across the full timeline, gallery installation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Eternal Feelings (Gandhi's Hand)",
+        "year": "2023",
+        "technique_used": "Mechanical fist sculpture, ocean-sourced salt, salt recycling system, pedestal installation",
+        "short_description": "A mechanical fist continuously pours salt from its grip into a growing mound — Gandhi's fist, offering the salt of the sea that belongs to no nation.",
+        "long_description": "This is Gandhi's fist, opened. Salt falls from it as it did when he walked to the sea in 1930 and took what the British Empire said belonged to them. The salt is real ocean salt — Al-Rasheed sources it from whatever ocean is nearest to the venue — and this geographical specificity matters: the salt in Berlin is Atlantic; the salt in Tokyo is Pacific; the salt in Venice is Adriatic. All of it, according to Gandhi's logic and Al-Rasheed's mechanics, belongs to everyone and no one. The fist could be resistance. Could be offering. Could be the sea releasing itself slowly through a hand that refused to close when told to. The mound grows over the course of the exhibition. The recycling mechanism prevents it from overflowing. Nothing is wasted. The fist keeps giving.",
+        "display_context": "Gallery floor or pedestal installation, extended exhibition duration to show accumulation",
+        "aspect_ratio": "4:5",
+        "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
         "should_generate": true,
         "include_in_book": true
       }
@@ -989,14 +1097,26 @@
     "series_name": "All You Need is Love",
     "art_pieces": [
       {
-        "art_piece_name": "Chladni Plate Cymatics Art Works",
+        "art_piece_name": "Chladni Seeds on Metal",
         "year": "2024",
-        "technique_used": "Chladni plate vibration, colored sand, glue fixative, layered cymatics, DNA component sand variants",
-        "short_description": "Multi-layered cymatics patterns built up layer by layer with different colored sands on vibrating plates, fixed with glue between frequencies. Variants use the four DNA base component colors.",
-        "long_description": "Chladni patterns are what sound looks like when it has nowhere else to go. Hofstetter-Cruz layers them, one atop another — first one frequency fixed and glued, then another, then another — building up a geological record of vibration. In the DNA variants using the four base components as color-coded sand, the piece acquires an additional layer: the pattern of life's code forming the pattern of sound's geometry. Whether these two codes have anything to say to each other is a question that the piece declines to answer but insists on asking, in triptych format and small.",
-        "display_context": "Gallery wall series, multiple format sizes, triptych configuration",
+        "technique_used": "Chladni vibration on steel plate, seeds, fixed cymatic arrangement",
+        "short_description": "Seeds gather into nodal geometries across a vibrating metal plate, preserving a direct encounter between sound, living material, and steel.",
+        "long_description": "Different seeds sort themselves by size and weight as frequencies move them toward the plate nodes. The final arrangement remains on the metal support, with the resonant geometry visible as a material trace of sound.",
+        "display_context": "Steel plate on low gallery pedestal",
+        "aspect_ratio": "1:1",
+        "image_prompt": "Seeds arranged in intricate Chladni cymatic patterns directly over a vibrating steel plate, gallery pedestal, precise nodal geometry",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Chladni Colored Powders on Canvas",
+        "year": "2024",
+        "technique_used": "Chladni vibration, colored mineral powders, canvas, layered fixative",
+        "short_description": "Clearly different colored powders form layered cymatic patterns directly over canvas.",
+        "long_description": "Distinct red, blue, yellow, and white powders are vibrated one frequency at a time and fixed between passes. Their edges sometimes remain separate and sometimes interpenetrate, producing an interplay of colors rather than a single uniform pattern.",
+        "display_context": "Gallery wall, framed canvas",
         "aspect_ratio": "4:5",
-        "image_prompt": "Close-up of a Chladni plate cymatics pattern formed with multiple overlapping colored sand layers, different frequency patterns in vibrant colors fixed and framed, gallery wall, scientific beauty meets visual art, symmetry and chaos",
+        "image_prompt": "Layered Chladni cymatic patterns made from clearly different red blue yellow and white powders on canvas, colors mixing and separating, contemporary abstract art",
         "should_generate": true,
         "include_in_book": true
       },
@@ -1016,23 +1136,11 @@
         "art_piece_name": "Indigo Study: Natural vs Synthetic",
         "year": "2023",
         "technique_used": "Paper chromatography, natural anil indigo, synthetic indigo, capillary action separation",
-        "short_description": "Chromatographic comparison of natural indigo from anil plants alongside synthetic indigo, separated by capillary action on paper.",
-        "long_description": "Two drops of blue. One from the anil plant that has colored textiles for centuries, one from industrial chemistry. Llorente-Vidal places them side by side on chromatography paper and lets capillary action reveal what each blue is made of. The natural indigo separates into subtle variations — traces of plant matter, organic compounds that traveled with the color. The synthetic remains pure, uniform, predictable. The paper becomes a timeline of how humans learned to remake what plants already knew. The capillary action is the artist here; Llorente-Vidal simply chooses which blues to test against each other.",
+        "short_description": "An interplay of clearly different natural and synthetic blues spreads through chromatography paper, mixing, separating, and crossing in multiple deposits.",
+        "long_description": "Multiple deposits of natural anil indigo and synthetic blue enter the paper from different points. Capillary action pulls them into one another, separates them again, and reveals clearly different blue families rather than a simple two-drop comparison. Plant-derived tones carry complex green, violet, and grey traces; industrial blues remain sharper and more uniform. The work is an active field of color interaction, not a binary sample test.",
         "display_context": "Gallery wall display, framed chromatography paper",
         "aspect_ratio": "4:5",
-        "image_prompt": "Side-by-side chromatography patterns on white paper showing natural anil indigo separating into complex organic blue variations next to pure synthetic indigo, scientific comparison, gallery frame, subtle color forensics",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "Cochineal Study: Insect vs Chemical",
-        "year": "2023",
-        "technique_used": "Paper chromatography, cochineal red from insects, alizarin red synthetic dye, capillary action separation",
-        "short_description": "Chromatographic comparison of red dye made from cochineal insects against synthetic alizarin red, revealing the complex chemistry of natural versus artificial color.",
-        "long_description": "The red that comes from crushed cochineal insects carries more than color — it carries the entire chemistry of the insect's life, feeding on cactus, processing sunlight, metabolizing plant sugars into carminic acid. When run through chromatography against synthetic alizarin, the natural red explodes into complexity: traces of proteins, organic acids, compounds that have no name but create subtle variations in hue. The synthetic red travels as a single, pure band. Both are beautiful. Both are red. Only one remembers being alive.",
-        "display_context": "Gallery wall display, framed chromatography paper",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Chromatography pattern showing cochineal red from insects separating into complex organic red variations alongside a single pure band of synthetic alizarin red, natural vs artificial color chemistry, scientific art on gallery wall",
+        "image_prompt": "Complex chromatography artwork with many deposits of clearly different natural and synthetic blues mixing crossing and separating across white paper, rich blue interplay, gallery frame",
         "should_generate": true,
         "include_in_book": true
       },
@@ -1059,6 +1167,18 @@
         "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
         "should_generate": true,
         "include_in_book": true
+      },
+      {
+        "art_piece_name": "Mother's Sweater",
+        "year": "2023",
+        "technique_used": "Hand-sewn oversized knitted garment, transparent acrylic floor panel, soft ambient lighting",
+        "short_description": "The artist’s mother’s enormous hand-sewn sweater whose open arms enfold the viewer; the bottom hem lies on the floor under clear acrylic, walked over as you enter the embrace.",
+        "long_description": "The piece is formally very simple and emotionally not simple at all. A sweater large enough to wrap around an adult standing in it, arms extended at gallery scale, soft knit, mother scale. The bottom hem lies flat on the floor under transparent acrylic — you walk over it to enter, stepping on the garment before it surrounds you. Camus has said this is about the way love always involves standing on something that is also loving you. Critics have said this is sentimental. He considers sentimentality underrated as both a formal strategy and an emotional technology.",
+        "display_context": "Gallery floor installation, room-scale, visitors enter the piece physically",
+        "aspect_ratio": "4:5",
+        "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
+        "should_generate": true,
+        "include_in_book": true
       }
     ]
   },
@@ -1077,18 +1197,6 @@
         "display_context": "Gallery table installation with VR headset station alongside",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a famous museum building with tiny artworks inside visible through the open walls, VR headset on a nearby table, gallery setting, precision craftsmanship, warm directed lighting, miniature world of art history",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "Cyberpunk Estela de Luz",
-        "year": "2023",
-        "technique_used": "Scale model, LED lighting systems, fog machines, laser-cut cyberpunk details, custom miniature fabrication",
-        "short_description": "A scale model of Mexico City's Estela de Luz reimagined as a dystopian cyberpunk monument in a neon-lit night city.",
-        "long_description": "The Estela de Luz — a monument whose inauguration was delayed by corruption scandals and whose symbolism was contested from the start — becomes, in Sidibe Kouyate's hands, exactly what its critics always said it was: a monument to power without substance. The cyberpunk version makes this literal: neon lights cascade down its surface, fog machines create atmospheric pollution, tiny LED advertisements flicker in languages that don't exist. The surrounding miniature cityscape shows Mexico City as cyberpunk dystopia, but the transformation required is disturbingly minimal. The piece asks whether the monument was always science fiction, and whether science fiction was always documentary.",
-        "display_context": "Museum vitrine installation, darkened room to enhance LED effects",
-        "aspect_ratio": "16:9",
-        "image_prompt": "Detailed scale model of a dystopian cyberpunk Mexico City Estela de Luz with cascading neon lights, fog effects, tiny LED advertisements, surrounded by dark futuristic cityscape, displayed in a museum vitrine, dramatic lighting",
         "should_generate": true,
         "include_in_book": true
       },
@@ -1145,18 +1253,6 @@
         "display_context": "Gallery installation, multiple VR stations, ambient spatial sound system",
         "aspect_ratio": "1:1",
         "image_prompt": "Aerial view of gallery visitors wearing VR headsets seen from above, the overhead camera having risen to show them from above themselves, mystical bird sounds and flute music visualized as soft particle effects, meditative and vertiginous",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "Abuelita Sweater",
-        "year": "2023",
-        "technique_used": "Hand-sewn oversized knitted garment, transparent acrylic floor panel, soft ambient lighting",
-        "short_description": "An enormous hand-sewn sweater whose open arms enfold the viewer; the bottom hem lies on the floor under clear acrylic, walked over as you enter the embrace.",
-        "long_description": "The piece is formally very simple and emotionally not simple at all. A sweater large enough to wrap around an adult standing in it, arms extended at gallery scale, soft knit, grandmother scale. The bottom hem lies flat on the floor under transparent acrylic — you walk over it to enter, stepping on the garment before it surrounds you. Corona has said this is about the way love always involves standing on something that is also loving you. Critics have said this is sentimental. He considers sentimentality underrated as both a formal strategy and an emotional technology.",
-        "display_context": "Gallery floor installation, room-scale, visitors enter the piece physically",
-        "aspect_ratio": "4:5",
-        "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
         "should_generate": true,
         "include_in_book": true
       }
@@ -1244,82 +1340,10 @@
   },
   {
     "artist_name": "Tadashi Nomura",
-    "artist_introduction": "Osaka-born illustrator and book artist working between Japan and Germany, Nomura creates illustrated books and visual narratives that engage death, impermanence, absurdity, and the monsters we keep inside.",
-    "artist_long_description": "Tadashi Nomura began as a manga artist, moved into conceptual illustration, and now occupies a space that does not have a conventional genre name. His children's books contain genuinely frightening creatures. His adult books contain genuine tenderness. He is interested in the horizontal format — the scroll, the panorama, the panel that cannot be contained on a vertical page — and in the formal discipline of the single line, the single stroke, the drawing that refuses color. He has described himself as a person trying to draw what everyone already knows is true, in a language no one has to learn.",
+    "artist_introduction": "Illustrator and book artist working between Japan and Germany, Nomura creates sequential visual narratives about death, impermanence, reflection, and transformation.",
+    "artist_long_description": "Tadashi Nomura works with sequences that make gradual change visible. In extended drawings, waves flatten, games reach checkmate, and forms separate into raw material. In installations, painted images encounter reflective surfaces and return progressively distorted. His work asks how repetition preserves an image while also moving it further from its origin.",
     "series_name": "For Small Eyes and Heavy Hearts",
     "art_pieces": [
-      {
-        "art_piece_name": "The Jenga Demon",
-        "year": "2024",
-        "technique_used": "Ink illustration, full color, individual art print",
-        "short_description": "An absurdist monster built from Jenga blocks in perpetual collapse, reaching desperately for a bottle of glue.",
-        "long_description": "The Jenga Demon has the specific terror of a thing that is always in the process of falling, and its redemption arc — finding glue — is the simplest possible description of how most recovery actually works. Nomura draws it with the careful attention usually reserved for children, which means the accuracy is devastating and the affection is real. The demon's eyes show the particular exhaustion of holding yourself together when the structural integrity was never quite there to begin with.",
-        "display_context": "Gallery print, children's art exhibition or adult contemporary space",
-        "aspect_ratio": "4:3",
-        "image_prompt": "An absurdist monster built from wooden Jenga blocks mid-collapse, reaching desperately for a bottle of glue, bright bold illustration style, strong outlines, joyful and slightly frightening, emotional accuracy in the creature's expression",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Water-Faucet-Eyed Monster",
-        "year": "2024",
-        "technique_used": "Ink illustration, full color, individual art print",
-        "short_description": "A creature whose eyes are actual water faucets, constantly leaking or flowing with different intensities of emotion.",
-        "long_description": "Some emotions require constant drainage. Nomura's Water-Faucet-Eyed Monster turns crying into plumbing — functional, mechanical, occasionally requiring maintenance. The creature cannot stop the flow, but it can control the volume, which is a reasonable metaphor for emotional regulation that does not insult children by pretending feelings can be turned off entirely. The monster is neither tragic nor comic. It is practical.",
-        "display_context": "Gallery print, therapeutic or educational exhibition",
-        "aspect_ratio": "4:3",
-        "image_prompt": "A gentle monster with chrome water faucets for eyes, water flowing from them at different intensities, bright illustration style, the creature appears both functional and emotional, matter-of-fact about its constant tears",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Freedom Monster",
-        "year": "2024",
-        "technique_used": "Ink illustration, full color, individual art print",
-        "short_description": "An over-complicated creature with multiplying eyes, exoskeletal arms, extra mechanical parts, wheels, and unnecessary appendages — freedom as overwhelming choice.",
-        "long_description": "The Freedom Monster has multiplying eyes and exoskeletal arms and an extra mechanical nose and wheels and legs and is trying too hard in a way recognizable to anyone over thirty. Nomura draws it with genuine affection for the exhaustion of infinite options. The monster represents the particular anxiety of having too much choice, too much possibility, too much freedom to optimize — and the way liberation can become its own cage when it requires you to figure out who you are from scratch every morning.",
-        "display_context": "Gallery print, contemporary adult art space",
-        "aspect_ratio": "4:3",
-        "image_prompt": "An absurdly over-complicated monster with multiple eyes, mechanical arms, extra appendages, wheels, and unnecessary parts, trying too hard to be everything at once, bright colors, sympathetic and overwhelming",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Shame Monster",
-        "year": "2024",
-        "technique_used": "Ink illustration, full color emphasis on red, individual art print",
-        "short_description": "A permanently red creature with furnace-temperature cheeks, accurate social portraiture of the feeling of being seen and found lacking.",
-        "long_description": "The Shame Monster is always red, its cheeks at furnace-temperature, and constitutes social portraiture of devastating accuracy. Nomura refuses to make shame cute or manageable — this is the real heat of being seen and found lacking, of walking into a room and knowing immediately that you are dressed wrong, speaking wrong, existing wrong. The monster cannot cool down. The monster cannot hide. The monster has learned to live with being the color of embarrassment, which is either tragedy or wisdom, and possibly both.",
-        "display_context": "Gallery print, psychological or emotional art exhibition",
-        "aspect_ratio": "4:3",
-        "image_prompt": "A permanently bright red monster with blazing hot cheeks, steam rising from its face, bright illustration style, the creature appears deeply uncomfortable but resigned, accurate portrayal of social shame",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Anger Monster",
-        "year": "2024",
-        "technique_used": "Ink illustration, full color with dramatic contrasts, individual art print",
-        "short_description": "A creature whose form changes size and intensity based on the legitimacy and scale of its rage.",
-        "long_description": "The Anger Monster appears differently depending on what it is angry about. Sometimes it is small and looks foolish — the anger of traffic jams, of printers that jam, of small daily stupidities. Sometimes it fills the frame entirely — the anger of injustice, of cruelty, of systems designed to harm. Nomura draws it with the understanding that anger is not always wrong, and that teaching children to recognize legitimate rage is more useful than teaching them to be nice.",
-        "display_context": "Gallery print, emotional education exhibition",
-        "aspect_ratio": "4:3",
-        "image_prompt": "A monster whose size and intensity varies dramatically across the frame, sometimes small and petty, sometimes filling the entire space with justified rage, dynamic illustration showing the spectrum of anger",
-        "should_generate": true,
-        "include_in_book": true
-      },
-      {
-        "art_piece_name": "The Fear Monster",
-        "year": "2024",
-        "technique_used": "Ink illustration, muted colors with sharp contrasts, individual art print",
-        "short_description": "A transparent, shifting creature that takes the shape of whatever is actually frightening in the room — sometimes nothing, sometimes everything.",
-        "long_description": "The Fear Monster is the most honest of Nomura's creatures because it looks like whatever is actually in the room with you. Sometimes it looks like nothing — transparent, harmless, imaginary. Sometimes it looks like everything — filling all available space, making the room unlivable. The monster cannot be defeated because it is not always wrong. Sometimes there really is something to be afraid of. The monster's job is not to disappear but to help you tell the difference.",
-        "display_context": "Gallery print, psychological exhibition or children's therapy space",
-        "aspect_ratio": "4:3",
-        "image_prompt": "A semi-transparent, shape-shifting monster that appears to be made of shadows and possibilities, sometimes barely visible, sometimes overwhelming the frame, honest portrayal of realistic vs imaginary fear",
-        "should_generate": true,
-        "include_in_book": true
-      },
       {
         "art_piece_name": "Death, Death, Dead",
         "year": "2025",
@@ -1328,7 +1352,19 @@
         "long_description": "The 0.4 by 5 meter format is a commitment before a single line is drawn: this is an illustration about things that extend, persist, and then stop. Left to right, the wave becomes a line. The scribble fades. The chess sequence plays to checkmate across the length of the canvas, with the viewer walking alongside the inevitable. The cube deconstruction sequence is the most formally rigorous: first the cube, then its elements displaced, then separated, then seen as flat drawings, then as the actual graphite and medium used to make them. A clock reading NOW appears at the far right. Nomura saves color for the overlapping waves — one of the few uses of it in the whole piece — which makes the color feel like grief, or like survival.",
         "display_context": "Gallery wall installation, viewers walk alongside the piece to experience temporal progression",
         "aspect_ratio": "1:12.5",
-        "image_prompt": "An extremely long horizontal illustration showing musical notes gradually losing their stems and heads from left to right, fading into silence across a 5-meter canvas, monochrome ink with selective color, gallery wall installation, quiet and melancholy progression",
+        "image_prompt": "An extremely long horizontal illustration showing musical notes gradually losing their stems and heads from left to right, waves flattening, chess reaching checkmate, and forms decomposing across a 5-meter canvas, monochrome ink with selective color, quiet gallery installation",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Self-Portrait and Death Through a Mettalic Plate",
+        "year": "2025",
+        "technique_used": "Seven painted self-portraits, chromed metallic plate with hammered wave dents and irregular reflective forms, sequential installation",
+        "short_description": "Seven self-portraits record a recursive chain of distortion: each painting reproduces the previous portrait as it appears reflected in a wavy chromed metal plate.",
+        "long_description": "A chromed metallic plate covered with wave-like dents and irregular shapes stands beside a row of seven paintings. The first is Nomura's original self-portrait. From the intended viewing position, the spectator sees both that portrait and its deformed reflection in the metal. The second painting reproduces this first reflected deformation. Placed beside the same plate, it produces a new, more distorted reflection, which becomes the subject of the third painting. The process repeats through seven painted stages. Each image is therefore both a record of the previous distortion and the source of the next one. Across the row, the artist's face remains recognizable while progressively separating from its original proportions, turning reflection, observation, and repainting into a visible chain of transformation.",
+        "display_context": "Linear gallery wall installation: chromed reflective plate at the left, followed by seven self-portrait paintings in sequence, with a marked spectator viewpoint",
+        "aspect_ratio": "21:9",
+        "image_prompt": "Wide contemporary gallery installation with a dented chromed metallic plate on the far left and seven painted self-portraits arranged in a row beside it, first portrait realistic and each successive portrait increasingly distorted by the plate's wavy reflection, spectator sees original painting and warped mirror image simultaneously, precise conceptual art documentation",
         "should_generate": true,
         "include_in_book": true
       }
@@ -1377,14 +1413,26 @@
         "include_in_book": true
       },
       {
-        "art_piece_name": "Eternal Feelings",
-        "year": "2023",
-        "technique_used": "Mechanical fist sculpture, ocean-sourced salt, salt recycling system, pedestal installation",
-        "short_description": "A mechanical fist continuously pours salt from its grip into a growing mound — Gandhi's fist, offering the salt of the sea that belongs to no nation.",
-        "long_description": "This is Gandhi's fist, opened. Salt falls from it as it did when he walked to the sea in 1930 and took what the British Empire said belonged to them. The salt is real ocean salt — Al-Rasheed sources it from whatever ocean is nearest to the venue — and this geographical specificity matters: the salt in Berlin is Atlantic; the salt in Tokyo is Pacific; the salt in Venice is Adriatic. All of it, according to Gandhi's logic and Al-Rasheed's mechanics, belongs to everyone and no one. The fist could be resistance. Could be offering. Could be the sea releasing itself slowly through a hand that refused to close when told to. The mound grows over the course of the exhibition. The recycling mechanism prevents it from overflowing. Nothing is wasted. The fist keeps giving.",
-        "display_context": "Gallery floor or pedestal installation, extended exhibition duration to show accumulation",
-        "aspect_ratio": "4:5",
-        "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
+        "art_piece_name": "Pandava Arsenal",
+        "year": "2025",
+        "technique_used": "Titanium, carbon fiber, embedded electronics, CNC fabrication",
+        "short_description": "Contemporary reimaginings of the Pandavas’ weapons as precision technological prototypes.",
+        "long_description": "Five weapons associated with the Pandavas are rebuilt as speculative contemporary instruments, combining epic attributes with aerospace materials, sensors, and machine vision. The installation asks whether technological enhancement changes the moral burden of a weapon or only increases the distance between decision and consequence.",
+        "display_context": "Gallery armory installation in individual vitrines",
+        "aspect_ratio": "16:9",
+        "image_prompt": "Five futuristic weapons of the Pandavas in titanium and carbon fiber displayed in sleek museum vitrines, epic Indian forms reimagined as contemporary technology",
+        "should_generate": true,
+        "include_in_book": true
+      },
+      {
+        "art_piece_name": "Brahmastra: Nuclear or Artificial Intelligence?",
+        "year": "2025",
+        "technique_used": "Speculative weapon system, sealed black interface, radiation glass, machine-learning visualization",
+        "short_description": "The Brahmastra is reimagined as an ambiguous ultimate weapon: part nuclear device, part artificial intelligence system.",
+        "long_description": "A sealed black apparatus offers no visible projectile. Radiation glass, cooling systems, and a continuously changing machine-learning visualization suggest that the weapon may be nuclear, computational, or both. The work asks whether the modern equivalent of an unstoppable divine weapon is explosive force or an intelligence capable of selecting and coordinating destruction.",
+        "display_context": "Isolated dark gallery chamber with safety architecture",
+        "aspect_ratio": "1:1",
+        "image_prompt": "Ambiguous black Brahmastra weapon system combining nuclear containment hardware and glowing AI visualization, radiation glass, dark museum chamber, ominous precision",
         "should_generate": true,
         "include_in_book": true
       }

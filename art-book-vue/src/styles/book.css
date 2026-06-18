@@ -321,6 +321,7 @@
 
 .caption-body p {
   display: -webkit-box;
+  max-height: calc(1.45em * 4);
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -328,7 +329,13 @@
 
 .split-copy .caption-body p,
 .stacked-copy .caption-body p {
+  max-height: calc(1.45em * 5);
   -webkit-line-clamp: 5;
+}
+
+.split-copy .caption-body p {
+  max-height: calc(1.45em * 12);
+  -webkit-line-clamp: 12;
 }
 
 .artist-portrait-copy .caption-body p {
@@ -371,20 +378,21 @@
 
 .tombstone-line,
 .caption-block p.tombstone-line {
-  font-size: 8pt;
-  /* font-family: "Times New Roman", serif; */
-  font-style: italic;
+  font-size: 9pt;
   margin: 4pt 0 0;
 }
 
 .tombstone-title {
+  display: inline-block;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
+  transform: skewX(-10deg);
+  transform-origin: left center;
 }
 
 .adjacent-tombstone .tombstone-title {
-  font-family: "Syne", sans-serif;
-  font-weight: 800;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
 }
 
 .adjacent-tombstone {
@@ -432,12 +440,10 @@
 }
 
 .adjacent-tombstone p {
-  display: -webkit-box;
-  font-size: 7.4pt;
+  display: block;
+  font-size: 9pt;
   line-height: 1.2;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  overflow: visible;
 }
 
 .adjacent-tombstone dl {
@@ -514,8 +520,15 @@
   width: 100%;
 }
 
-.artist-portrait-frame {
+.artist-portrait-media {
   align-self: center;
+  display: grid;
+  gap: 5mm;
+  min-width: 0;
+}
+
+.artist-portrait-frame {
+  align-self: start;
 }
 
 .artist-portrait-frame img,
@@ -523,11 +536,24 @@
   object-fit: cover;
 }
 
+.image-tombstone {
+  max-height: 18mm;
+  overflow: hidden;
+  overflow: clip;
+  padding-top: 0;
+}
+
+.image-tombstone .tombstone-line {
+  font-size: 7.5pt;
+  line-height: 1.2;
+}
+
 .square-caption-page {
   break-inside: avoid-page;
+  contain: layout paint;
   display: grid;
-  gap: 8mm;
-  grid-template-rows: 110mm 62mm;
+  gap: 7mm;
+  grid-template-rows: 116mm 57mm;
   justify-items: center;
   page-break-inside: avoid;
   padding: 18mm;
@@ -536,8 +562,8 @@
 
 .square-caption-frame {
   aspect-ratio: 1;
-  height: 110mm;
-  width: 110mm;
+  height: 116mm;
+  width: 116mm;
 }
 
 .square-caption-frame img,
@@ -550,8 +576,10 @@
 
 .square-caption-copy {
   break-inside: avoid-page;
-  height: 62mm;
-  max-width: 126mm;
+  contain: layout paint;
+  height: 57mm;
+  justify-self: center;
+  max-width: 116mm;
   min-height: 0;
   min-width: 0;
   overflow: hidden;
@@ -560,8 +588,15 @@
   width: 100%;
 }
 
+.square-caption-copy.tombstone-pair {
+  --description-width: 116mm;
+  --tombstone-width: 38mm;
+  max-width: 116mm;
+}
+
 .big-square-caption-page {
   break-inside: avoid-page;
+  contain: layout paint;
   display: grid;
   gap: 8mm;
   grid-template-rows: 148mm 24mm;
@@ -587,6 +622,7 @@
 
 .big-square-caption-copy {
   break-inside: avoid-page;
+  contain: layout paint;
   height: 24mm;
   max-width: 148mm;
   min-height: 0;
@@ -597,51 +633,129 @@
   width: 100%;
 }
 
-.square-caption-copy.has-adjacent-tombstone {
-  justify-self: start;
-  margin-left: 27mm;
-  max-width: 126mm;
-  width: 126mm;
+.tombstone-pair {
+  align-content: start;
+  display: grid;
+  gap: 5mm;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  overflow: clip;
 }
 
-.square-caption-page.has-adjacent-tombstone > .adjacent-tombstone {
-  height: 62mm;
-  position: absolute;
-  top: 136mm;
-  width: 23.5mm;
+.tombstone-pair.has-adjacent-tombstone,
+.has-adjacent-tombstone .tombstone-pair {
+  grid-template-columns: minmax(0, var(--tombstone-width, 42mm)) minmax(
+      0,
+      var(--tombstone-width, 42mm)
+    );
 }
 
-.square-caption-page.has-adjacent-tombstone.adjacent-previous
+.has-adjacent-tombstone.adjacent-previous .tombstone-pair {
+  grid-template-columns: minmax(0, var(--tombstone-width, 42mm)) minmax(
+      0,
+      var(--tombstone-width, 42mm)
+    );
+}
+
+.tombstone-pair > .caption-block,
+.tombstone-pair > .adjacent-tombstone {
+  align-self: start;
+  min-width: 0;
+}
+
+.tombstone-pair > .caption-block {
+  max-width: var(--tombstone-width, 42mm);
+  width: var(--tombstone-width, 42mm);
+}
+
+.tombstone-pair > .adjacent-tombstone {
+  border-top: 0;
+  max-width: var(--tombstone-width, 42mm);
+  overflow: visible;
+  padding-top: 0;
+  width: var(--tombstone-width, 42mm);
+}
+
+.tombstone-pair .caption-body {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  max-width: var(--description-width, 112mm);
+  width: var(--description-width, 112mm);
+}
+
+.tombstone-pair .tombstone-line {
+  max-width: var(--tombstone-width, 42mm);
+  overflow: visible;
+  width: var(--tombstone-width, 42mm);
+}
+
+.tombstone-pair .tombstone-rail-copy {
+  display: contents;
+}
+
+.tombstone-pair .caption-block-main {
+  display: contents;
+}
+
+.tombstone-pair .tombstone-line {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.tombstone-pair > .adjacent-tombstone {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.has-adjacent-tombstone.adjacent-previous .tombstone-pair .tombstone-line {
+  grid-column: 2;
+}
+
+.has-adjacent-tombstone.adjacent-previous
+  .tombstone-pair
   > .adjacent-tombstone {
-  left: 18mm;
+  grid-column: 1;
 }
 
-.square-caption-page.has-adjacent-tombstone.adjacent-next
+.tombstone-pair.supporting-text-below .caption-body {
+  grid-row: 3;
+}
+
+.tombstone-pair.supporting-text-below .tombstone-line,
+.has-adjacent-tombstone.adjacent-previous
+  .tombstone-pair.supporting-text-below
+  .tombstone-line,
+.tombstone-pair.supporting-text-below > .adjacent-tombstone,
+.has-adjacent-tombstone.adjacent-previous
+  .tombstone-pair.supporting-text-below
   > .adjacent-tombstone {
-  left: 174.5mm;
+  grid-row: 1;
 }
 
-.square-caption-page.has-adjacent-tombstone > .adjacent-tombstone dt,
-.square-caption-page.has-adjacent-tombstone > .adjacent-tombstone dd {
-  font-size: 5.8pt;
-  line-height: 1.08;
+.big-square-caption-copy.tombstone-pair {
+  --description-width: 148mm;
+  --tombstone-width: 36mm;
+  max-width: 148mm;
 }
 
-.square-caption-page.has-adjacent-tombstone > .adjacent-tombstone {
-  gap: 2pt;
-  padding-top: 4pt;
+.big-square-caption-page.has-adjacent-tombstone .big-square-caption-copy {
+  max-width: 148mm;
 }
 
-.square-caption-page.has-adjacent-tombstone
-  > .adjacent-tombstone
-  .adjacent-label {
-  font-size: 5.8pt;
-  letter-spacing: 0.08em;
-}
-
-.square-caption-page.has-adjacent-tombstone > .adjacent-tombstone dl div {
-  gap: 3pt;
-  grid-template-columns: 12mm 1fr;
+.big-square-caption-page .tombstone-line,
+.big-square-caption-page .caption-block p.tombstone-line,
+.stacked-template .tombstone-line,
+.stacked-template .caption-block p.tombstone-line,
+.stacked-template .adjacent-tombstone .tombstone-line,
+.split-template .tombstone-line,
+.split-template .caption-block p.tombstone-line,
+.split-template .adjacent-tombstone .tombstone-line,
+.two-image-diagonal .tombstone-line,
+.two-image-diagonal .caption-block p.tombstone-line {
+  font-size: 8pt;
+  line-height: 1.2;
 }
 
 .square-caption-copy.has-adjacent-tombstone .caption-block-main {
@@ -683,7 +797,7 @@
 }
 
 .square-caption-copy .caption-block {
-  height: 62mm;
+  height: 57mm;
 }
 
 .square-caption-copy .caption-block dl {
@@ -707,6 +821,7 @@
 }
 
 .stacked-template {
+  contain: layout paint;
   display: grid;
   grid-template-rows: 106mm minmax(0, 1fr);
 }
@@ -717,16 +832,47 @@
 
 .stacked-copy {
   align-content: start;
+  contain: layout paint;
   display: grid;
   height: auto;
+  justify-self: start;
+  max-height: 110mm;
+  max-width: 180mm;
   min-height: 0;
-  padding: 8mm 18mm 10mm;
+  padding: 8mm 0 10mm;
+  width: 180mm;
 }
 
 .stacked-bottom-image .stacked-copy {
   align-content: end;
   height: auto;
-  padding: 10mm 18mm 8mm;
+  padding: 10mm 0 8mm;
+}
+
+.stacked-template .stacked-copy {
+  margin-left: 18mm;
+}
+
+.stacked-template.has-adjacent-tombstone .stacked-copy {
+  max-width: 180mm;
+  width: 180mm;
+}
+
+.stacked-template.has-adjacent-tombstone .stacked-copy.tombstone-pair {
+  --description-width: 180mm;
+  --tombstone-width: 42mm;
+  grid-template-columns: minmax(0, 42mm) minmax(0, 42mm) minmax(0, 1fr);
+}
+
+.stacked-template.has-adjacent-tombstone.adjacent-previous
+  .stacked-copy.tombstone-pair {
+  grid-template-columns: minmax(0, 42mm) minmax(0, 42mm) minmax(0, 1fr);
+}
+
+.stacked-copy.tombstone-pair .caption-body {
+  grid-column: 1 / -1;
+  max-width: 100%;
+  width: 100%;
 }
 
 .bleed-top-frame {
@@ -776,7 +922,7 @@
 
 .split-template {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.85fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .split-template.image-right {
@@ -789,11 +935,121 @@
 }
 
 .split-copy {
-  align-content: center;
+  align-content: start;
+  contain: layout paint;
   display: grid;
   height: var(--page-height);
   min-height: 0;
-  padding: 12mm 16mm;
+  overflow: hidden;
+  overflow: clip;
+  padding: 18mm 16mm;
+}
+
+.split-copy.tombstone-pair {
+  align-content: start;
+  --description-width: 100%;
+  --tombstone-width: 52mm;
+  grid-template-columns: minmax(0, 1fr);
+  max-height: var(--page-height);
+  row-gap: 5mm;
+}
+
+.split-copy.tombstone-pair .caption-body {
+  grid-column: 1;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-copy.tombstone-pair .caption-body p,
+.split-copy.tombstone-pair .artist-description {
+  overflow-wrap: anywhere;
+  width: 100%;
+}
+
+.split-copy.tombstone-pair .caption-body {
+  max-height: 122mm;
+}
+
+.split-copy.tombstone-pair .caption-block-main {
+  max-height: 154mm;
+}
+
+.split-template.has-adjacent-tombstone .split-copy.tombstone-pair {
+  grid-template-columns: minmax(0, 100%);
+  grid-template-rows: auto auto auto;
+}
+
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair {
+  grid-template-columns: minmax(0, 100%);
+}
+
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  > .caption-block,
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  > .adjacent-tombstone,
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair
+  > .caption-block,
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair
+  > .adjacent-tombstone {
+  grid-column: 1;
+}
+
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  > .caption-block {
+  display: contents;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  > .adjacent-tombstone {
+  grid-row: 3;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair
+  > .caption-block {
+  display: contents;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair
+  > .adjacent-tombstone {
+  grid-row: 3;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  .caption-body {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+  width: 100%;
+}
+
+.split-template.has-adjacent-tombstone
+  .split-copy.tombstone-pair
+  .tombstone-line,
+.split-template.has-adjacent-tombstone.adjacent-previous
+  .split-copy.tombstone-pair
+  .tombstone-line {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 100%;
+  width: 100%;
 }
 
 .split-copy h2 {
@@ -803,6 +1059,14 @@
 
 .split-template.split-inset .split-media {
   padding: 12mm;
+}
+
+.split-template.split-inset.image-left .split-media {
+  padding: 12mm 6mm 12mm 18mm;
+}
+
+.split-template.split-inset.image-right .split-media {
+  padding: 12mm 18mm 12mm 6mm;
 }
 
 .split-media {
@@ -824,6 +1088,216 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+.two-image-diagonal {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 10mm;
+  padding: 12mm;
+}
+
+.diagonal-item {
+  align-items: center;
+  --diagonal-image-width: 120mm;
+  display: grid;
+  gap: 8mm;
+  grid-template-columns: var(--diagonal-image-width) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 88mm);
+  justify-content: stretch;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  overflow: clip;
+}
+
+.diagonal-left .diagonal-item-a,
+.diagonal-right .diagonal-item-b {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.diagonal-left .diagonal-item-b,
+.diagonal-right .diagonal-item-a {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.diagonal-left .diagonal-item-b,
+.diagonal-right .diagonal-item-a {
+  grid-template-columns: minmax(0, 1fr) var(--diagonal-image-width);
+}
+
+.diagonal-item.ratio-portrait {
+  --diagonal-image-width: 70mm;
+}
+
+.two-image-diagonal.both-portrait .diagonal-item-a {
+  justify-content: start;
+}
+
+.two-image-diagonal.both-portrait .diagonal-item-b {
+  justify-content: end;
+}
+
+.two-image-diagonal.both-portrait.diagonal-right .diagonal-item-a {
+  justify-content: end;
+}
+
+.two-image-diagonal.both-portrait.diagonal-right .diagonal-item-b {
+  justify-content: start;
+}
+
+.diagonal-left .diagonal-item-b .diagonal-frame,
+.diagonal-right .diagonal-item-a .diagonal-frame {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.diagonal-left .diagonal-item-b .diagonal-copy,
+.diagonal-right .diagonal-item-a .diagonal-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.diagonal-frame {
+  align-self: center;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  margin: 0;
+  width: var(--diagonal-image-width);
+}
+
+.diagonal-frame img,
+.diagonal-frame .missing-artwork-image {
+  display: block;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.diagonal-item.ratio-portrait .diagonal-frame {
+  aspect-ratio: 4 / 5;
+  height: auto;
+  justify-self: end;
+  width: var(--diagonal-image-width);
+}
+
+.diagonal-left .diagonal-item-b.ratio-portrait .diagonal-frame,
+.diagonal-right .diagonal-item-a.ratio-portrait .diagonal-frame {
+  justify-self: start;
+}
+
+.diagonal-item.ratio-portrait .diagonal-frame img,
+.diagonal-item.ratio-portrait .diagonal-frame .missing-artwork-image {
+  aspect-ratio: 4 / 5;
+  height: auto;
+  width: 100%;
+}
+
+.diagonal-copy {
+  align-self: center;
+  --description-width: 100%;
+  --tombstone-width: 48mm;
+  max-height: 88mm;
+  min-width: 0;
+  overflow: hidden;
+  overflow: clip;
+  width: 100%;
+}
+
+.diagonal-copy .tombstone-line {
+  max-width: 48mm;
+  width: 48mm;
+}
+
+.diagonal-copy > .caption-block {
+  max-width: 100%;
+  width: 100%;
+}
+
+.two-image-diagonal.has-adjacent-tombstone .diagonal-copy.tombstone-pair {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.two-image-diagonal.has-adjacent-tombstone.adjacent-previous
+  .diagonal-copy.tombstone-pair {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  > .caption-block,
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  > .adjacent-tombstone,
+.two-image-diagonal.has-adjacent-tombstone.adjacent-previous
+  .diagonal-copy.tombstone-pair
+  > .caption-block,
+.two-image-diagonal.has-adjacent-tombstone.adjacent-previous
+  .diagonal-copy.tombstone-pair
+  > .adjacent-tombstone {
+  grid-column: 1;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  > .caption-block {
+  display: grid;
+  max-width: 100%;
+  overflow: hidden;
+  overflow: clip;
+  width: 100%;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  .caption-block-main {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  .caption-body {
+  grid-column: 1;
+  grid-row: 1;
+  max-height: 34mm;
+  max-width: 100%;
+  width: 100%;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  .tombstone-line,
+.two-image-diagonal.has-adjacent-tombstone.adjacent-previous
+  .diagonal-copy.tombstone-pair
+  .tombstone-line {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 48mm;
+  overflow: hidden;
+  overflow: clip;
+  width: 48mm;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  > .caption-block {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two-image-diagonal.has-adjacent-tombstone
+  .diagonal-copy.tombstone-pair
+  > .adjacent-tombstone {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 48mm;
+  width: 48mm;
 }
 
 .missing-artwork-image {

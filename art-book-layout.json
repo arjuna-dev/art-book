@@ -29,15 +29,21 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": false,
+      "showImageTombstone": false,
       "showDescription": false,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-2",
-      "template": "big-square-caption",
+      "template": "two-image-diagonal-right",
       "textColor": "black",
-      "backgroundColor": "paper",
-      "contentArtworkKey": "Dr. Elena Vasquez::AI Fish Resurrection",
+      "backgroundColor": "white",
+      "contentArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
       "imageArtworkKeys": [
         "Dr. Elena Vasquez::AI Fish Resurrection",
         "Dr. Elena Vasquez::Prime Shell Spiral"
@@ -47,8 +53,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
-      "showDescription": false,
-      "showArtistDescription": false
+      "showImageTombstone": true,
+      "showDescription": true,
+      "showArtistDescription": true,
+      "supportingTextPosition": "below",
+      "imageRatioModes": [
+        "portrait",
+        "portrait"
+      ]
     },
     {
       "id": "page-3",
@@ -65,8 +77,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-4",
@@ -75,16 +93,22 @@
       "backgroundColor": "yellow",
       "contentArtworkKey": "Dr. Elena Vasquez::Prime Shell Spiral",
       "imageArtworkKeys": [
-        "Dr. Elena Vasquez::Primordial Stones",
+        "Dr. Elena Vasquez::Prime Shell Spiral",
         "Dr. Elena Vasquez::Perceptron 195X"
       ],
       "oppositeCaptionPage": false,
       "oppositeCaptionPosition": "before",
-      "adjacentTombstonePage": false,
+      "adjacentTombstonePage": true,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": false,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-5",
@@ -101,8 +125,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-6",
@@ -119,8 +149,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-7",
@@ -137,8 +173,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-8",
@@ -155,8 +197,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-9",
@@ -173,8 +221,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-10",
@@ -191,8 +245,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-11",
@@ -209,8 +269,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     },
     {
       "id": "page-12",
@@ -227,8 +293,14 @@
       "adjacentTombstonePage": false,
       "adjacentTombstonePosition": "previous",
       "showTombstone": true,
+      "showImageTombstone": false,
       "showDescription": true,
-      "showArtistDescription": false
+      "showArtistDescription": false,
+      "supportingTextPosition": "above",
+      "imageRatioModes": [
+        "landscape",
+        "landscape"
+      ]
     }
   ]
 }
