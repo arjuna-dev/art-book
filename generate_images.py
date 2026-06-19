@@ -130,6 +130,31 @@ def output_path_for(piece: ArtPiece, provider: str, output_dir: Path) -> Path:
     return output_dir / provider / filename
 
 
+def existing_output_for(
+    piece: ArtPiece, provider: str, output_dir: Path
+) -> Path | None:
+    artist = slugify(piece.artist_name, 36)
+    title = slugify(piece.art_piece_name, 72)
+    pattern = f"{piece.index:03d}-{artist}-{title}-*.png"
+    return next(iter(sorted((output_dir / provider).glob(pattern))), None)
+
+
+def is_retryable_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return any(
+        marker in message
+        for marker in (
+            "429",
+            "resource_exhausted",
+            "resource has been exhausted",
+            "503",
+            "service unavailable",
+            "timed out",
+            "timeout",
+        )
+    )
+
+
 def openai_size_for_aspect(aspect_ratio: str) -> str:
     landscape = {"16:9", "4:3", "3:2"}
     portrait = {"9:16", "4:5", "3:4", "2:3"}
@@ -407,7 +432,7 @@ def save_png_with_metadata(
 
     png_info = PngInfo()
     for key, value in metadata.items():
-        png_info.add_text(key, value)
+        png_info.add_text(key, "" if value is None else str(value))
 
     image.save(output_path, format="PNG", pnginfo=png_info)
 
@@ -494,6 +519,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--sleep", type=float, default=0.0, help="Seconds to sleep between API calls"
     )
+    parser.add_argument(
+        "--retries",
+        type=int,
+        default=4,
+        help="Retries for quota, service unavailable, and timeout errors",
+    )
+    parser.add_argument(
+        "--retry-delay",
+        type=float,
+        default=15.0,
+        help="Initial retry delay in seconds; doubles after each attempt",
+    )
 
     parser.add_argument(
         "--openai-model", default="gpt-image-2", help="OpenAI image model"
@@ -579,10 +616,14 @@ def main() -> int:
         prompt = build_prompt(piece, args.pre_prompt)
         prompt_hash = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
         for provider in args.providers:
-            output_path = output_path_for(piece, provider, args.output_dir)
-            if args.skip_existing and output_path.exists():
-                print(f"skip existing: {output_path}")
+            existing_output = existing_output_for(
+                piece, provider, args.output_dir
+            )
+            if args.skip_existing and existing_output:
+                print(f"skip existing: {existing_output}")
                 continue
+
+            output_path = output_path_for(piece, provider, args.output_dir)
 
             print(f"{provider}: {piece.index:03d} {piece.art_piece_name}")
             if args.dry_run:
@@ -592,7 +633,22 @@ def main() -> int:
                 continue
 
             try:
-                image_bytes, model = generators[provider](prompt, piece, args)
+                for attempt in range(args.retries + 1):
+                    try:
+                        image_bytes, model = generators[provider](
+                            prompt, piece, args
+                        )
+                        break
+                    except Exception as exc:
+                        if attempt >= args.retries or not is_retryable_error(exc):
+                            raise
+                        delay = args.retry_delay * (2**attempt)
+                        print(
+                            f"retry: {provider} {piece.index:03d} in {delay:g}s "
+                            f"after: {exc}",
+                            file=sys.stderr,
+                        )
+                        time.sleep(delay)
                 metadata = {
                     "prompt": prompt,
                     "prompt_sha256": prompt_hash,

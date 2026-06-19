@@ -1,7 +1,8 @@
 [
   {
     "artist_name": "Dr. Elena Vasquez",
-    "artist_introduction": "Former computational biologist turned artist, Vasquez creates works that reveal the mathematical structures underlying natural forms and explore the boundaries between organic life and digital existence. Working between Barcelona, Woods Hole, and the Galapagos Islands.",
+    "artist_introduction": "Works with mathematical systems, fossils, computation, light, and responsive machinery to expose patterns shared by numbers and living forms.",
+    "art_introduction": "These works make abstract systems physical and observable. Prime numbers become rhythms, lights, and sculptural arrangements; fossils become inputs for speculative reconstruction; and an early neural network reveals its learning process through visible components. The installations are best understood as experiments in translation—from nature into data, and from data back into matter, movement, and experience.",
     "artist_long_description": "Elena Vasquez spent fifteen years modeling protein folding algorithms before she realized that the most interesting questions weren't computational — they were sculptural. Her background in mathematical biology infuses every piece with an understanding of how numbers emerge from living systems and how living systems can be reconstituted from numbers. She treats fossils as compressed data, shells as hardware for mathematical theorems, and artificial intelligence as a form of digital necromancy. Critics have described her work as 'rigorously speculative' and 'scientifically mystical,' terms she considers accurate. Her installations occupy the uncertain territory between laboratory and chapel, where mathematical proof and emotional truth become difficult to distinguish.",
     "series_name": "Computational Paleontology",
     "art_pieces": [
@@ -69,7 +70,8 @@
   },
   {
     "artist_name": "Valentina Cienfuegos Mora",
-    "artist_introduction": "Born in Oaxaca and trained in Mexico City and Paris, Cienfuegos Mora creates politically charged sculptures, installations, and paintings centering pre-Hispanic mythology, resistance movements, and the collision between ancient cosmology and contemporary capital.",
+    "artist_introduction": "Uses sculpture, installation, and painting to bring pre-Hispanic mythology, resistance movements, national symbols, and contemporary power into direct confrontation.",
+    "art_introduction": "The works place cultural symbols in situations where their political force becomes newly visible. Borders divide water that remains materially identical; monuments confront capital; indigenous clothing carries identity through metal figures; and ancient gods enter factories and cyberpunk cities. Humor and spectacle are present, but they sharpen rather than soften the questions of ownership, resistance, continuity, and power.",
     "artist_long_description": "Valentina Cienfuegos Mora makes work that is not interested in your comfort. Her sculptures invoke Coatlicue and capital in the same breath. Her paintings sit somewhere between cosmic and street-level, between the sacred and the deeply sarcastic. She is the rare contemporary artist who can produce a tortilla dough human figure and have it read simultaneously as political statement, cultural preservation act, and gentle absurdist joke. Critics have accused her work of being too didactic, too poetic, too Mexican, and not Mexican enough — which she considers a satisfactory range of responses.",
     "series_name": "Resistance and Mythology",
     "art_pieces": [
@@ -185,7 +187,8 @@
   },
   {
     "artist_name": "Anselm Kessler",
-    "artist_introduction": "Kessler creates intricate visual systems based on microvita theory: subtle entities that move through the senses, carry ideas, and shape individual and collective consciousness.",
+    "artist_introduction": "Creates intricate diagrammatic paintings based on microvita theory and the movement of subtle entities through perception and consciousness.",
+    "art_introduction": "These paintings should be read as speculative maps rather than conventional religious images. Angels and demons represent positive and negative microvita that travel through the senses, transmit ideas, and influence consciousness. Anatomical charts, taxonomies, invented notation, and directional systems give invisible mental and spiritual processes the appearance of an exact, navigable science.",
     "artist_long_description": "Anselm Kessler builds diagrammatic paintings around microvita theory, treating reality as a field populated by subtle living entities that carry qualities, impulses, and ideas. In his work, angels and demons are not inherited religious characters but positive and negative microvita: forces that travel through sight, sound, touch, taste, and smell, enter the mind, and alter perception. His invented maps trace how these entities move between bodies, environments, and cultures; how they imbibe and transmit ideas; and how attention can attract, resist, or transform them. Painted with the precision of technical charts, the works propose a speculative science of consciousness in which thought is ecological, contagious, and never entirely private.",
     "series_name": "Sacred Mechanics",
     "art_pieces": [
@@ -241,7 +244,8 @@
   },
   {
     "artist_name": "Diego Xólotl Hernández",
-    "artist_introduction": "Guadalajara-born painter working in Mexico City, Hernández creates monumental oil paintings that merge pre-Columbian mythology with contemporary industrial imagery. His large-scale canvases explore the collision between ancient creation myths and modern Mexican identity.",
+    "artist_introduction": "Creates monumental oil paintings in which Mesoamerican creation myths unfold through industrial machinery, contemporary materials, and urban culture.",
+    "art_introduction": "The paintings treat mythology as an active description of the present rather than a closed historical inheritance. Corn becomes both sacred material and industrial product; deities operate assembly lines; and cosmic figures absorb punk aesthetics and modern Mexican life. Their scale and detailed realism invite the viewer to encounter these collisions as witnessed events rather than symbolic illustrations.",
     "artist_long_description": "Diego Xólotl Hernández (named after the Aztec god of lightning and death) approaches painting as a form of mythological archaeology. His canvases, some reaching 4 by 6 meters, function as visual novels where Mesoamerican creation stories collide with the realities of modern Mexico. Trained in traditional oil painting techniques in Guadalajara and later influenced by muralists like Orozco and Rivera, Hernández develops a hyperrealistic style that treats mythology as documentary fact. His work asks what creation myths would look like if they were happening now, in factories and city streets, with the same gods but different materials. Critics have described his paintings as 'industrial mythology' and 'sacred capitalism rendered visible.' Each canvas takes months to complete, every detail meticulously painted as if witnessing actual divine events unfolding in contemporary Mexico.",
     "series_name": "Mythological Realism",
     "art_pieces": [
@@ -285,7 +289,8 @@
   },
   {
     "artist_name": "Marcus Delacroix",
-    "artist_introduction": "Paris-trained conceptual artist of French-Mexican heritage who mostly paints on human body-shaped canvases, exploring the tension between the universal human form and infinite artistic possibilities. Based between Lyon and Montreal, his practice investigates the body as both boundary and container.",
+    "artist_introduction": "Uses the human silhouette as a fixed support for landscapes, art histories, food, technology, abstraction, and other systems that exceed the body.",
+    "art_introduction": "Every work begins with the same constraint: a canvas or sculpture shaped like a human body. What fills that boundary changes completely, allowing the series to test whether the body acts as container, coordinate system, portrait, or cage. Seen together, the works shift attention away from individual anatomy and toward everything a human outline can be made to hold.",
     "artist_long_description": "Marcus Delacroix's obsession with the human silhouette began not from anatomical study but from a simple conceptual question: what happens when you constrain infinite artistic possibility within the outline of a single form? Born to a French father and Mexican mother, his dual heritage informs his understanding of how identity shapes within boundaries. Every canvas in his studio is cut to the exact proportions of a standing human figure, but what fills these silhouettes ranges from pure abstraction to detailed landscapes to conceptual installations. Delacroix treats the human outline as both limitation and liberation — a formal constraint that paradoxically opens up new creative territories. His work asks whether the human form is a cage for artistic content or a key that unlocks it. Critics have described his practice as 'rigorously constrained' and 'unexpectedly expansive,' terms he considers complementary rather than contradictory. The body, for Delacroix, is not subject matter but sculptural problem: how do you fill the shape of a person with everything that person is not?",
     "series_name": "Corporeal Cartographies",
     "art_pieces": [
@@ -413,7 +418,8 @@
   },
   {
     "artist_name": "Pierre-Luc Beaumont",
-    "artist_introduction": "Montreal-born, Berlin-based conceptual artist whose work disassembles consumer products, cultural totems, and masterpieces alike with equal parts precision and irreverence.",
+    "artist_introduction": "Disassembles paintings, foods, machines, and cultural objects into their pigments, ingredients, raw materials, and systems of preservation.",
+    "art_introduction": "These works replace familiar wholes with inventories of what they physically contain. A masterpiece becomes measured pigment, a car becomes separated industrial material, and a hamburger becomes an object protected from decay. The deconstruction removes aura and branding while revealing the complexity, absurdity, and unexpected beauty of ordinary material composition.",
     "artist_long_description": "Pierre-Luc Beaumont comes from a family of butchers and a university education in philosophy, a combination that explains both the clinical rigor of his deconstructions and the slight air of menace that surrounds them. He does not destroy things so much as reveal what they were always composed of. The Mona Lisa is pigment and oil. A hotdog is a pig and corn syrup and a tube. A car is bags of plastic and planks of steel. Beaumont does not find this depressing. He finds it extremely funny, and occasionally sublime.",
     "series_name": "Material Confessions",
     "art_pieces": [
@@ -493,7 +499,8 @@
   },
   {
     "artist_name": "Keiko Tanaka",
-    "artist_introduction": "Tokyo-based conceptual artist who laser-engraves sacred and pop-cultural symbols onto mass-produced snack foods, exploring the collision between ritual images and consumer culture.",
+    "artist_introduction": "Laser-engraves sacred, historical, and cosmic images onto mass-produced snack foods, using each food’s shape and texture as part of the composition.",
+    "art_introduction": "The works depend on a tension between images associated with duration or transcendence and materials designed for immediate consumption. Mandalas, deities, national symbols, and galaxies are translated onto fragile, branded foods whose curves, colors, and irregular surfaces alter each image. Precision does not overcome the instability of the support; it makes that instability more visible.",
     "artist_long_description": "Keiko Tanaka works with industrial laser engravers normally used in manufacturing, inscribing sacred geometries, pop-cultural motifs, and historical images onto mass-produced snack foods. Each work begins with the physical character of its substrate: the Pringle hyperbolic paraboloid, the Cheeto irregular surface, the tostada brittle corn plane. Her practice asks what happens when images treated as timeless are translated into disposable, branded materials, and whether repetition, appetite, and mass production can themselves become ritual forms.",
     "series_name": "Sacred Snacks",
     "art_pieces": [
@@ -597,7 +604,8 @@
   },
   {
     "artist_name": "Oluwafemi Okonkwo",
-    "artist_introduction": "Lagos-born and working between Dakar and Sao Paulo, Okonkwo makes large-scale kinetic paint installations that treat color as elemental force — recyclable, inexhaustible, and in need of no justification.",
+    "artist_introduction": "Builds kinetic installations in which pigments pour, spray, circulate, separate, and return through engineered closed-loop systems.",
+    "art_introduction": "Color is presented here as a physical force rather than a coating applied to a finished object. It falls through fountains, accumulates on moving figures, crosses water, and covers architectural surfaces while pumps and reservoirs keep it in motion. The machinery makes each work continuous: there is no final painted state, only controlled flow, transformation, and return.",
     "artist_long_description": "Okonkwo spent ten years working in industrial paint factories before attending art school, and the experience shows. He has a precise understanding of viscosity, pigment density, and flow dynamics that most painters spend their entire careers approximating. What he does with this knowledge is less industrial than ceremonial: fountains of color that never stop, recycled and recirculated, separated by density or gravity, returned to source. His work is generous in scale and in scale alone — it does not argue with you. It simply pours.",
     "series_name": "Chromatic Liturgy",
     "art_pieces": [
@@ -749,7 +757,8 @@
   },
   {
     "artist_name": "Alejandro Camus",
-    "artist_introduction": "Born in Tlaxcala, Mexico, and working between Copenhagen and Mexico City, Camus makes installations and sculptures that sit at the intersection of spiritual inquiry, material science, and the long detour a life can take before it finds its form.",
+    "artist_introduction": "Combines ash, chrome, liquid metal, sound, sculptural figures, and responsive systems to examine mortality, spiritual attention, and material transformation.",
+    "art_introduction": "The works use strong contrasts of scale and substance: reflective sacred figures emerge from ash, a memorial diamond faces an ash ocean, tiny figures occupy immense battlefields, and vibrating or magnetic surfaces prevent stillness from becoming permanent. Spiritual imagery is not offered as decoration or doctrine; it gives form to questions about death, action, memory, and change.",
     "artist_long_description": "Alejandro Camus did not arrive at art directly. He grew up in Tlaxcala, a state so old its name predates the Aztec empire, and left as a young man with a guitar. He spent years as a street musician — in Mexico City, in Oaxaca, in places that were not paying attention — before the itinerant life led him to farming and then to a spiritual ecovillage in the Mexican highlands where he stayed for several years, working land and attending to silence. He then moved to a second ecovillage in Denmark, where the silence had a different texture and the winters required a different vocabulary. From there he studied software engineering, which he found was simply another way of asking how systems hold together and what happens when they fail. He opened a coffee shop in Copenhagen, which he describes as the most spiritual thing he has ever done and which lasted several years before he understood that what he was actually doing was preparing an installation: a room in which strangers come to be warm, pay a small amount for it, and leave. The transition into making objects came without announcement. His work now uses ash, gold, chrome, liquid metal, and carefully staged sculptural supports to ask questions that his earlier lives asked differently. The Buddha that projects out from a field of ashes, the gong that makes the face visible only through silence — these are not decorative choices. They are the residue of someone who has actually sat with these questions in multiple climates and found them still open. His practice has been described as materialist devotion, which he considers accurate, and as technologically sophisticated Buddhism, which he considers a compliment with an asterisk.",
     "series_name": "The Weight of Impermanence",
     "art_pieces": [
@@ -889,7 +898,8 @@
   },
   {
     "artist_name": "Magdalena Hofstetter-Cruz",
-    "artist_introduction": "Vienna-born and Guadalajara-based, Hofstetter-Cruz works with heavy metals, prehistoric materials, and resonant physical phenomena to create installations that treat deep time as a sculptural medium.",
+    "artist_introduction": "Creates installations from mercury, gallium, ancient bones, archaeological objects, and magnetic systems, treating deep time as a volatile material presence.",
+    "art_introduction": "These works bring objects associated with permanence into contact with unstable liquid metals. Bones, tusks, helmets, and ancient figures appear to float, levitate, or acquire moving metallic skins. The effect depends on both physical danger and temporal contradiction: materials from distant histories remain present, but their surfaces and meanings refuse to stay fixed.",
     "artist_long_description": "Magdalena Hofstetter-Cruz has an unusual commitment to working with materials that are either very old or very dangerous. Mercury appears in multiple pieces. A mammoth tusk. Gallium at room temperature. Ancient bones. The effect is not nihilist — quite the opposite. Her work insists on the materiality of deep time, on the fact that the universe's history is lying around on the floor of natural history museums in glass cases, waiting for someone to do something with it. She does things with it, and the institutions are sometimes unhappy about this, which she accepts as an occupational condition.",
     "series_name": "Suspended Prehistory",
     "art_pieces": [
@@ -945,7 +955,8 @@
   },
   {
     "artist_name": "Seo-Yeon Park",
-    "artist_introduction": "Seoul and Berlin-based, Park creates perceptual and kinetic installations that explore color, light, and the physics of experience. Her work asks viewers to question the reliability of their own perception.",
+    "artist_introduction": "Creates perceptual installations with mirrors, liquid pigment, translucent layers, light, and motion that change according to the viewer’s position.",
+    "art_introduction": "The works do not present a single stable image. Landscapes align only from precise viewpoints, mirrored architecture reverses who is observing whom, and magnetic pigment repeatedly divides and recombines. Movement through the installation is therefore part of the work: seeing clearly requires occupying one position while recognizing that another position produces a different reality.",
     "artist_long_description": "Seo-Yeon Park's installations are traps, affectionately laid. You look into the Reflective Sphere and cannot quite determine what you are seeing. You watch the ferrofluid circle divide and are not sure whether it is separating or coming together. You stand before the Analog Color Generator and see a painting that is not there. Park is interested in the boundary between the physical world and the perceptual one — not as philosophical abstraction but as lived, bodily experience. Her work is rigorously engineered and deliberately disorienting, which she considers the same thing.",
     "series_name": "Perceptual Fields",
     "art_pieces": [
@@ -1013,7 +1024,8 @@
   },
   {
     "artist_name": "Carmen Llorente-Vidal",
-    "artist_introduction": "Born in Valencia and working in Mexico City, Llorente-Vidal uses light, laser, and chromatographic processes to find the art that the material already contains.",
+    "artist_introduction": "Uses lasers, refractive structures, chromatography, architectural materials, and mechanical processes to reveal images already latent in light and matter.",
+    "art_introduction": "Several works exist only through active processes: laser portraits appear while light passes through scattering media, pigments separate through capillary action, and salt accumulates beneath a continuously giving hand. Even the material timeline is interrupted by a contemporary graffiti mark. The works ask viewers to notice how images and histories are produced by transmission, separation, accumulation, and interference.",
     "artist_long_description": "Carmen Llorente-Vidal has described her practice as finding the art that the material already contains. She works with lasers through scattering media, with plant dyes running up paper, with prism grids that split light. Her portraits of revolutionaries are made not of paint but of photons organized by acrylic geometry. Her chromatography works are collaborations with chlorophyll and anthocyanin and whatever the beet decides to do under capillary action. She is not interested in imposing form, which makes her a somewhat unusual choice for the contemporary art market, which is predominantly interested in imposing form.",
     "series_name": "Traces and Wavelengths",
     "art_pieces": [
@@ -1093,7 +1105,8 @@
   },
   {
     "artist_name": "Ana Camus",
-    "artist_introduction": "",
+    "artist_introduction": "Works with vibration, water, natural and synthetic pigments, seeds, clothing, and domestic textiles to make invisible forces materially legible.",
+    "art_introduction": "These works allow sound, capillary action, water depth, and inherited objects to determine form. Seeds and colored powders gather into cymatic patterns; pigments reveal their internal differences as they travel through paper; pure water produces its own deep blue; and clothing carries these processes into the scale and memory of the body. Scientific observation and intimate material history remain inseparable.",
     "series_name": "All You Need is Love",
     "art_pieces": [
       {
@@ -1184,7 +1197,8 @@
   },
   {
     "artist_name": "Amara Sidibe Kouyate",
-    "artist_introduction": "Born in Bamako and based in Paris, Sidibe Kouyate creates immersive installations reimagining public and domestic space, memory, and cultural displacement through architecture, sensory experience, and intimate gesture.",
+    "artist_introduction": "Creates architectural models and participatory installations that alter how museums, monuments, and viewers behave.",
+    "art_introduction": "The works use familiar cultural spaces as structures that can be recurated, overgrown, or made responsive. Miniature museums turn selection itself into an artwork; the Eiffel Tower appears as an inhabited ruin; and gallery visitors discover themselves inserted into objects they had just observed. Institutional authority gives way to play, reversal, and imagined reuse.",
     "artist_long_description": "Amara Sidibe Kouyate's work is about the rooms we carry with us: the museum we have always been inside, the embrace we return to, the grief that pours itself into something physical. She makes small models of existing museums and fills them with new curation. She makes an embrace you can walk into. She makes fountains of salt from the nearest ocean. Her installations are precisely engineered to produce specific emotional states, which she considers the most rigorous form of conceptual art and which critics sometimes mistake for sentimentality. She accepts this confusion as part of the work.",
     "series_name": "Familiar Architectures",
     "art_pieces": [
@@ -1228,7 +1242,8 @@
   },
   {
     "artist_name": "Alejandro Corona",
-    "artist_introduction": "Mexican, Alejandro Corona creates immersive installations that use technology and domestic materials to produce moments of permission, mystical experience, and profound comfort. His practice bridges high-tech systems with the textures of home and family memory.",
+    "artist_introduction": "Creates immersive installations that use synchronized mechanisms, virtual reality, sound, and domestic atmosphere to interrupt ordinary experience.",
+    "art_introduction": "These works are designed around brief changes in the viewer’s state. A room of clocks produces collective silence; a rising camera allows visitors to see themselves from above while sound alters the emotional reading of the image. Technology functions less as spectacle than as a mechanism for pause, distance, and temporary release from habitual perception.",
     "artist_long_description": "Alejandro Corona makes work about permission — permission to rest, permission to transcend, permission to be held. His installations use sophisticated technology not to create futuristic experiences but to access the most ancient human feelings: the suspension of ordinary time, the sensation of rising above oneself, the unconditional embrace of childhood. Whether through synchronized silence systems, VR mystical experiences, or room-scale domestic comfort, his work insists that technology's highest purpose is to restore what industrialization took away. Critics have called his practice 'technologically sophisticated sentimentality,' which he considers both accurate and the point.",
     "series_name": null,
     "art_pieces": [
@@ -1260,7 +1275,8 @@
   },
   {
     "artist_name": "Bjorn Thielemann",
-    "artist_introduction": "Hamburg-born and widely traveled, Thielemann makes work that interrogates the commodification of culture, art history, and the body through vending machines, display cases, pop aesthetics, and large-scale performative noise.",
+    "artist_introduction": "Uses vending machines, monumental replicas, immersive mechanisms, and pop-cultural imagery to examine commodification, spectatorship, and manufactured experience.",
+    "art_introduction": "The works repeatedly ask what changes when cultural value becomes purchasable, scalable, or mechanically delivered. Ancient sculptures appear as vending-machine products or oversized chrome icons, an artist becomes merchandise, and a concert’s collective violence is reconstructed as an individual service. The machines make commerce visible not as context around the art, but as part of its form.",
     "artist_long_description": "Bjorn Thielemann spent years in advertising before having what he describes as an ethical crisis that took longer than it should have. His work since then has been an extended forensic examination of what it means to put a price on something sacred — which, he has noted, is what advertising does and what the art market does and what vending machines do, and the distinctions between these three activities are narrower than comfortable. He is good-humored about this. He is not forgiving about it.",
     "series_name": "Icons for Sale",
     "art_pieces": [
@@ -1340,7 +1356,8 @@
   },
   {
     "artist_name": "Tadashi Nomura",
-    "artist_introduction": "Illustrator and book artist working between Japan and Germany, Nomura creates sequential visual narratives about death, impermanence, reflection, and transformation.",
+    "artist_introduction": "Creates sequential works in which images move gradually toward death, disappearance, reflection, and increasing deformation.",
+    "art_introduction": "Both works depend on progression. In the long drawing, waves flatten, music loses structure, games end, and forms return to raw material. In the self-portrait installation, a dented chromed plate distorts one painting, that distortion becomes the next painting, and the process repeats seven times. Meaning accumulates through small changes that become irreversible when viewed as a sequence.",
     "artist_long_description": "Tadashi Nomura works with sequences that make gradual change visible. In extended drawings, waves flatten, games reach checkmate, and forms separate into raw material. In installations, painted images encounter reflective surfaces and return progressively distorted. His work asks how repetition preserves an image while also moving it further from its origin.",
     "series_name": "For Small Eyes and Heavy Hearts",
     "art_pieces": [
@@ -1372,7 +1389,8 @@
   },
   {
     "artist_name": "Nadia Al-Rasheed",
-    "artist_introduction": "Born in Mumbai to an Indian father and Mexican mother, and working between Mexico City and Berlin, Al-Rasheed works with materials that resist or amplify force — laser, reflective metals, high-tech cutting tools, ancient weapons — examining the aesthetics of precision, speed, and violence.",
+    "artist_introduction": "Reimagines historical and mythological weapons through contemporary engineering, advanced materials, machine vision, and speculative artificial intelligence.",
+    "art_introduction": "These works treat legendary and historical weapons as technological design problems while keeping their violence visible. Titanium, cameras, sensors, propulsion, and computational systems promise greater precision and force, but each apparent upgrade produces a moral ambiguity. The Brahmastra makes the central question explicit: the modern ultimate weapon may be nuclear, intelligent, or a system in which those categories converge.",
     "artist_long_description": "Nadia Al-Rasheed grew up between two cultures that understand the relationship between the sacred and the sharp: her Indian father's family, who kept ceremonial kirpans, and her Mexican mother's, who made offerings with obsidian blades. This collision of devotional traditions and engineering precision shapes every piece she makes. Her work is less interested in representing violence than in examining the tools themselves: the speed of the blade, the precision of the explosive, the camera mounted on an instrument designed to cut. She approaches historical weapons the way engineers approach prototypes — with genuine admiration for the problem-solving and genuine discomfort about what the problem was. Her practice moves between the devotional and the technological, always asking what happens when the sacred gets an upgrade.",
     "series_name": "Edge Technologies",
     "art_pieces": [
