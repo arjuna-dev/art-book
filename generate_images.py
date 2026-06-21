@@ -17,6 +17,7 @@ Environment variables can be exported in the shell or placed in .env beside this
 Example:
   python3 generate_images.py --providers openai gemini --limit 3
   python3 generate_images.py --providers openai --openai-quality low
+  python3 generate_images.py --providers gemini --modifying-prompt
   python3 generate_images.py --providers mai --mai-endpoint https://YOUR-RESOURCE.services.ai.azure.com/mai/v1/images/generations
 """
 
@@ -67,6 +68,7 @@ class ArtPiece:
     display_context: str
     aspect_ratio: str
     image_prompt: str
+    modifying_prompt: str
     should_generate: bool
 
 
@@ -97,6 +99,7 @@ def load_art_pieces(input_path: Path) -> list[ArtPiece]:
                     display_context=piece.get("display_context", ""),
                     aspect_ratio=piece.get("aspect_ratio", "1:1"),
                     image_prompt=piece.get("image_prompt", ""),
+                    modifying_prompt=piece.get("modifying_prompt") or "",
                     should_generate=piece.get("should_generate", True),
                 )
             )
@@ -122,6 +125,19 @@ def build_prompt(piece: ArtPiece, pre_prompt: str) -> str:
     return "\n\n".join(s for s in sections if s.strip())
 
 
+def build_modifying_prompt(piece: ArtPiece) -> str:
+    return "\n\n".join(
+        (
+            "Modify the supplied image according to the following instruction. "
+            "Preserve the original artwork, composition, installation context, "
+            "and photographic realism except where the instruction explicitly "
+            "requests a change. Return only the modified image.",
+            piece.modifying_prompt.strip(),
+            f"Requested output aspect ratio: {gemini_aspect_for(piece.aspect_ratio)}.",
+        )
+    )
+
+
 def output_path_for(piece: ArtPiece, provider: str, output_dir: Path) -> Path:
     artist = slugify(piece.artist_name, 36)
     title = slugify(piece.art_piece_name, 72)
@@ -137,6 +153,23 @@ def existing_output_for(
     title = slugify(piece.art_piece_name, 72)
     pattern = f"{piece.index:03d}-{artist}-{title}-*.png"
     return next(iter(sorted((output_dir / provider).glob(pattern))), None)
+
+
+def source_image_for(
+    piece: ArtPiece, provider: str, output_dir: Path
+) -> Path | None:
+    artist = slugify(piece.artist_name, 36)
+    title = slugify(piece.art_piece_name, 72)
+    pattern = f"*-{artist}-{title}-*.png"
+    matches = list((output_dir / provider).glob(pattern))
+    if not matches:
+        return None
+
+    def timestamp_key(path: Path) -> tuple[str, str]:
+        timestamp = re.search(r"\d{8}T\d{6}Z", path.name)
+        return (timestamp.group(0) if timestamp else "", path.name)
+
+    return max(matches, key=timestamp_key)
 
 
 def is_retryable_error(exc: Exception) -> bool:
@@ -267,12 +300,34 @@ def generate_gemini(
 
     location = args.vertex_location or os.environ.get("VERTEX_LOCATION") or "global"
     aspect_ratio = args.gemini_aspect_ratio or gemini_aspect_for(piece.aspect_ratio)
-    vertex_prompt = "\n\n".join(
-        [
-            prompt,
-            f"Requested output aspect ratio: {aspect_ratio}.",
-        ]
-    )
+    if args.modifying_prompt:
+        source_path = source_image_for(
+            piece, args.source_provider, args.output_dir
+        )
+        if not source_path:
+            raise RuntimeError(
+                f"No source image found for {piece.art_piece_name!r} in "
+                f"{args.output_dir / args.source_provider}"
+            )
+        source_bytes = source_path.read_bytes()
+        source_part = types.Part.from_bytes(
+            data=source_bytes,
+            mime_type="image/png",
+        )
+        contents: Any = types.Content(
+            role="user",
+            parts=[
+                source_part,
+                types.Part.from_text(text=prompt),
+            ],
+        )
+    else:
+        contents = "\n\n".join(
+            [
+                prompt,
+                f"Requested output aspect ratio: {aspect_ratio}.",
+            ]
+        )
 
     client = genai.Client(
         vertexai=True,
@@ -281,7 +336,7 @@ def generate_gemini(
     )
     response = client.models.generate_content(
         model=model,
-        contents=vertex_prompt,
+        contents=contents,
         config=types.GenerateContentConfig(response_modalities=["TEXT", "IMAGE"]),
     )
     image_bytes = image_bytes_from_gemini_content(response)
@@ -517,6 +572,24 @@ def parse_args() -> argparse.Namespace:
         help="Print planned prompts without calling APIs",
     )
     parser.add_argument(
+        "--modifying-prompt",
+        action="store_true",
+        help=(
+            "Use each artwork's modifying_prompt and its latest local source "
+            "image instead of generating from text alone; Gemini only"
+        ),
+    )
+    parser.add_argument(
+        "--source-provider",
+        default="gemini",
+        help="Source image subdirectory under the output directory",
+    )
+    parser.add_argument(
+        "--modified-output-provider",
+        default="gemini-modified",
+        help="Output subdirectory used for Gemini image modifications",
+    )
+    parser.add_argument(
         "--sleep", type=float, default=0.0, help="Seconds to sleep between API calls"
     )
     parser.add_argument(
@@ -588,6 +661,13 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    if args.modifying_prompt and args.providers != ["gemini"]:
+        print(
+            "error: --modifying-prompt currently requires --providers gemini",
+            file=sys.stderr,
+        )
+        return 2
+
     try:
         load_environment(args.env_file)
     except RuntimeError as exc:
@@ -596,7 +676,12 @@ def main() -> int:
 
     pieces = load_art_pieces(args.input)
     # Filter for should_generate=True first, then apply start/limit filtering
-    generate_pieces = [piece for piece in pieces if piece.should_generate]
+    generate_pieces = [
+        piece
+        for piece in pieces
+        if piece.should_generate
+        and (not args.modifying_prompt or piece.modifying_prompt.strip())
+    ]
     selected = [piece for piece in generate_pieces if piece.index >= args.start]
     if args.limit is not None:
         selected = selected[: args.limit]
@@ -613,21 +698,37 @@ def main() -> int:
 
     failures = 0
     for piece in selected:
-        prompt = build_prompt(piece, args.pre_prompt)
+        prompt = (
+            build_modifying_prompt(piece)
+            if args.modifying_prompt
+            else build_prompt(piece, args.pre_prompt)
+        )
         prompt_hash = hashlib.sha256(prompt.encode("utf-8")).hexdigest()
         for provider in args.providers:
+            output_provider = (
+                args.modified_output_provider
+                if args.modifying_prompt and provider == "gemini"
+                else provider
+            )
             existing_output = existing_output_for(
-                piece, provider, args.output_dir
+                piece, output_provider, args.output_dir
             )
             if args.skip_existing and existing_output:
                 print(f"skip existing: {existing_output}")
                 continue
 
-            output_path = output_path_for(piece, provider, args.output_dir)
+            output_path = output_path_for(
+                piece, output_provider, args.output_dir
+            )
 
             print(f"{provider}: {piece.index:03d} {piece.art_piece_name}")
             if args.dry_run:
                 print(f"would write: {output_path}")
+                if args.modifying_prompt:
+                    source_path = source_image_for(
+                        piece, args.source_provider, args.output_dir
+                    )
+                    print(f"source image: {source_path or 'NOT FOUND'}")
                 print(prompt)
                 print("-" * 80)
                 continue
@@ -654,6 +755,23 @@ def main() -> int:
                     "prompt_sha256": prompt_hash,
                     "model": model,
                     "provider": provider,
+                    "generation_mode": (
+                        "image-modification"
+                        if args.modifying_prompt
+                        else "text-to-image"
+                    ),
+                    "source_image": (
+                        str(
+                            source_image_for(
+                                piece,
+                                args.source_provider,
+                                args.output_dir,
+                            )
+                            or ""
+                        )
+                        if args.modifying_prompt
+                        else ""
+                    ),
                     "openai_quality": (
                         args.openai_quality if provider == "openai" else ""
                     ),

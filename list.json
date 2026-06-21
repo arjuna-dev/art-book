@@ -16,7 +16,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Sets of small stones arranged as incomplete squares on a dark surface, no labels, prime numbers (2, 3, 5, 7, 11, 13, 17, etc. up no high prime numbers). A few sets of incomplete squares, are lighted from above, the prime factors of an entered number, a small numeric keypad visible in the foreground, atmospheric darkness surrounding, cinematic lighting, fine art photography. The illuminated stones should suggest mathematical relationships and the building blocks of numbers. The keypad shows clearly on the screen the prime number 712, which would light up the stones for 2, 3, 7, and 17 (since 712 = 2³ × 3 × 7 × 17). The set of stones for number seven would be an incomple square of 3x3 stones with 2 stones missing to complete the square. For number 17 it would be an incomplete square of 5x5 stones with 8 stones missing to complete the square. The overall mood is contemplative and mysterious, evoking the ancient human fascination with numbers and their hidden structures. The installation covers a whole room where visitors can walk among the stones and interact with the keypad to see different prime factorizations light up the corresponding stones, creating a dynamic and immersive experience of mathematical discovery. The screen for the keypad is large and clear, showing the number being entered in real time, and the stones light up in a visually striking way that emphasizes their role as the fundamental building blocks of all numbers. The lighting should create a sense of wonder and reverence for the mathematical relationships being revealed, with shadows and highlights that enhance the three-dimensionality of the stones and the overall atmosphere of the installation.",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Prime Shell Spiral",
@@ -28,7 +29,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Monumental 5-meter-tall polished brass nautilus shell sculpture with people walking around its base for scale, interior chambers clearly showing prime number progression - single large prime at the tight center spiral, increasing quantities of smaller primes in the expanding outer chambers, with the number '1' visible at the outermost edge, warm metal reflections, museum gallery or sculpture garden setting, dramatic side lighting, visitors climbing steps to study the mathematical progression, the perfect correlation between natural form and mathematical distribution made visible",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "AI Fish Resurrection",
@@ -40,7 +42,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "A fish fossil in a museum display beside a luminous screen showing a realistic reconstructed fish swimming underwater, cinematic museum atmosphere, blue and amber light, scientific yet poetic mood",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Perceptron 195X",
@@ -52,7 +55,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Retro-futuristic machine panel with a 10x10 grid of glowing amber light bulbs, large YES indicator lamp at top, a NO indicator lamp at top, YES/NO/TRAIN/TEST buttons on worn brushed metal panel, warm workshop lighting, interactive art machine",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Prime Distribution",
@@ -64,7 +68,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A single glowing lightbulb in total darkness, surrounded by emptiness, sound wave visualizations etched faintly into the plinth, minimal and contemplative, long exposure photography, the silence between primes made visible",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -85,7 +90,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Two elegant vintage 1950s crystal flasks lying on their sides in a museum vitrine, each containing ocean water, labeled with coordinates from either side of the US-Mexico border, clean archival lighting, political and serene",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Angel vs. Capital",
@@ -97,7 +103,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental metal sculpture of the Mexican 'Angel de la Independencia' grappled by a dark demon figure representing capitalism, urban cityscape background, dramatic storm lighting, cinematic scale, political and mythological. The Angel stands on top of a column, a replica of the tip of the original column, while the demon figure is either flanking it or seizing it, depending on the version. The sculpture should evoke a sense of struggle and imbalance, with the Angel appearing overwhelmed by the demon's grasp. The background should be a museum or public square, emphasizing the public and political nature of the confrontation. The lighting should be dramatic, with storm clouds gathering overhead, casting dynamic shadows and highlighting the metallic textures of the sculpture. The overall mood is tense and evocative, blending mythological symbolism with contemporary political commentary.",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Cyberpunk Tenochtitlan",
@@ -109,7 +116,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a cyberpunk Mexican city, neon lights, Aztec pyramids with holographic projections, miniature gods and cyborgs in the streets, taco stands with pneumatic tubes and drones, atmospheric fog, vibrant neon colors",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Zapatista Women Sculptures",
@@ -121,7 +129,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Seven cast metal female figures in Zapatista-style stances, each wearing a single vibrant traditional indigenous garment element in bold colors, museum gallery setting, warm dramatic lighting, dignified and powerful",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Indigenous Women of the World",
@@ -133,7 +142,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Seven cast bronze female figures from different world indigenous cultures, each wearing a single vivid traditional garment - a red Maasai shuka, bright Flower Hmong embroidered pleated skirt, royal blue Sami gakti, crimson macaw-feather Kayapo crown, golden Yoruba gele, fuchsia Quechua pollera, orange-red Kuna mola blouse - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Indigenous Men of the World",
@@ -145,7 +155,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Seven cast bronze male figures from different world indigenous cultures, each wearing a single vivid traditional garment - red Maasai warrior shuka, yellow-red Huli bird-of-paradise feather wig, bright pink-blue Dinka beaded corset, red-banded Konyak Naga warrior shawl, deep indigo Mapuche makun poncho, cobalt Tuareg tagelmust head wrap, emerald green Yoruba agbada robe - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Indigenous People of the World",
@@ -157,7 +168,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Seven cast bronze figures of mixed gender from indigenous cultures selected for maximum visual force - a Zinacantán Tzotzil woman in fuchsia and orange densely embroidered silk blouse, a Huli man with spectacular yellow-red bird-of-paradise feather wig and ochre face paint, a Wodaabe man with full Gerewol ceremonial face paint in red ochre kohl and indigo lips, a Kayapo woman with scarlet macaw crown and dense black genipap body paint spirals, a Flower Hmong woman in hot-pink jade-green electric-blue embroidered pleated skirt, an Ndebele woman with stacked vivid rainbow beaded neck rings rising to the jaw, a Yoruba woman under a towering architectural gold gele head wrap - museum gallery, dramatic warm lighting, epic and global",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Tortilla Human",
@@ -169,7 +181,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Life-sized human figure sculpted from raw tortilla dough, natural cream color, textured surface, gallery floor installation, dramatic overhead lighting casting long shadows, intimate and monumental, slowly deteriorating",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Cyberpunk Estela de Luz",
@@ -181,7 +194,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a dystopian cyberpunk Mexico City Estela de Luz with cascading neon lights, fog effects, tiny LED advertisements, surrounded by dark futuristic cityscape, displayed in a museum vitrine, dramatic lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -202,7 +216,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Detailed mystical diagram showing spiritual energy flow through geometric channels, positive and negative energy forms, annotated in invented medieval-style script, warm parchment tones, precision linework, framed on gallery wall",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Angelic Hierarchy Navigation Chart",
@@ -214,7 +229,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Large organizational chart showing angelic hierarchy with detailed bureaucratic structures, gold leaf highlights, baroque angel illustrations connected by precise lines, invented script annotations, corporate meets medieval, gallery wall",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Demonic Classification System",
@@ -226,7 +242,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Scientific taxonomy illustration of various demon types with detailed anatomical features, dark baroque style, classification labels in invented script, natural history field guide aesthetic, precise biological illustration style",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Spiritual Anatomy Atlas",
@@ -238,7 +255,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Anatomical chart showing human body with detailed spiritual organs, medical illustration precision, divine reception antenna in brain, prayer chambers in heart, labeled in invented mystical script, clinical meets mystical",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -259,7 +277,8 @@
         "aspect_ratio": "4:3",
         "image_prompt": "Monumental oil painting of a human figure composed entirely of individual corn kernels, each grain painted in photorealistic detail, warm golden corn tones, misty mountain background, awakening pose, mythological and hyperreal, museum gallery wall, dramatic lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Maseca Factory of the Gods",
@@ -271,7 +290,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Large oil painting of Aztec goddess Coatlicue merged with industrial machinery in a modern masa factory, workers in uniforms, conveyor belts producing human figures, steam and fluorescent lighting, brand logos visible, hyperrealistic industrial mythology, sacred and mechanical combined",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Cosmic Punk Tezcatlipoca",
@@ -283,7 +303,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental oil painting of punk figure with mohawk and leather jacket, sarape that transforms into the Milky Way galaxy with individual stars, jaguar fur sleeves, urban alley with cosmic void, band patches with Aztec deity names, hyperrealistic cosmic punk mythology, dramatic dark lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -304,7 +325,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Large body-shaped canvas showing a human figure painted in multiple distinct art historical styles across different body parts, cave art hand, anime eye, photorealistic torso, pixelated lower half, Renaissance arm, gallery wall, dramatic lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Landscape Body",
@@ -316,7 +338,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A human body silhouette painted as a continuous mountain landscape, snow-capped peaks at the head, rolling green valleys in the torso, forested legs, seamless photorealistic landscape painting, dramatic natural lighting, gallery wall",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Abstract Expressionist Body",
@@ -328,7 +351,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted with aggressive abstract expressionist brushstrokes, thick impasto paint, violent color relationships, gestural abstraction that seems to fight against the figurative outline, high contrast gallery lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Constellation Body",
@@ -340,7 +364,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as deep space with hundreds of tiny LED lights representing actual star positions, deep blue and black cosmic background with nebula formations, darkened gallery setting, astronomical accuracy meets human form",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Still Life Body",
@@ -352,7 +377,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate Dutch Golden Age still life, head as overflowing fruit bowl, torso with flowers books and skull, classical technique with perfect light and shadow, warm gallery lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Happy Family",
@@ -364,7 +390,8 @@
         "aspect_ratio": "Variable (multiple canvases)",
         "image_prompt": "Four human body silhouette canvases of different sizes (adult woman, adult man, child, small dog) arranged in gallery space, each painted with portions of the same continuous mountain landscape, when viewed together they complete one seamless vista, warm family lighting, conceptual art installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "French Cuisine",
@@ -376,7 +403,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate French cuisine arrangement, Camembert wheel head, coq au vin in torso, baguette arms, wine bottle neck, escargot and macarons in legs, hyperrealistic food painting, warm bistro lighting, gallery wall",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mexican Mercado",
@@ -388,7 +416,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as Mexican market foods, tortilla stack head, mole poblano torso, chiles en nogada chest, avocado arms, traditional sweets in legs, marigold flower frame, vibrant mercado colors, warm market lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Evolutionary Body",
@@ -400,7 +429,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as evolutionary tree, primates in head with tiny human in pituitary gland, mammals in chest, reptiles in abdomen, insects in legs, microorganisms at feet, scientific illustration precision, natural history museum lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Platform Body",
@@ -412,7 +442,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Full-body contemporary cyborg sculpture assembled from exposed premium computing parts, visible OpenAI Anthropic and NVIDIA branding integrated into chest head and nervous system, elegant gallery installation, not a movie robot",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -433,7 +464,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Mona Lisa pigments separated into measured glass tubes in a museum vitrine, Renaissance palette, clinical conceptual art",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Deconstructed Guernica",
@@ -445,7 +477,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Guernica reduced to separate black white and grey pigments in labeled laboratory glassware, museum vitrine",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Deconstructed Rothko",
@@ -457,7 +490,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Tiny measured residues of deep Rothko pigments in laboratory tubes, large empty vitrine space, conceptual museum display",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Hotdog",
@@ -469,7 +503,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "A museum installation showing all hotdog ingredients laid out clinically: a life-sized pink pig sculpture as centerpiece, bread buns, wheat flour, tomatoes, cucumbers, mustard tubes, ketchup, corn syrup jar, nitrates and preservatives in labeled glass containers, bright clinical lighting, conceptual art aesthetic",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Raw Material Car",
@@ -481,7 +516,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Industrial art installation showing raw car materials laid out on a factory floor: steel planks, plastic pellet bags, circuit boards, IC chips in labeled bags, wiring coils, harsh industrial fluorescent lighting, precise forensic arrangement",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Transcendental",
@@ -493,7 +529,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A McDonald's hamburger preserved inside a glass vacuum chamber on a white museum pedestal, pristine white gallery lighting, the burger suspended in perfect preservation, deeply ironic and solemn simultaneously, fine art photography",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -514,7 +551,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Detailed laser engraving of Aztec goddess Coatlicue on a golden-brown street potato chip, displayed in a clear museum vitrine, dramatic lighting emphasizing the texture and sacred imagery, macro photography precision",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Enso Pringles",
@@ -526,7 +564,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Perfect enso circle laser-engraved on a Pringles chip, mounted as a traditional Japanese hanging scroll with silk threads and dark wood backing, minimalist gallery lighting, Zen aesthetic meets consumer culture",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Rising Sun Cheetos",
@@ -538,7 +577,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Japanese Rising Sun pattern laser-engraved on an orange Cheeto, the natural cheese color perfectly matching traditional sun imagery, mounted against a gradient background from orange to deep red, macro photography showing texture details",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Pringles Mandala",
@@ -550,7 +590,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Intricate Tibetan mandala pattern laser-engraved on a Pringles chip, the geometric design following the hyperbolic paraboloid curve perfectly, mounted with traditional Tibetan elements, warm lighting emphasizing mathematical precision",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Kettle Chip Mandala",
@@ -562,7 +603,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Tibetan mandala pattern laser-engraved on a ridged kettle chip, the geometric design flowing with the organic bumps and valleys, dramatic shadows emphasizing texture, gallery vitrine display",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Rice Cracker Mandala",
@@ -574,7 +616,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Extremely delicate Tibetan mandala pattern laser-engraved on a pale rice cracker, the design barely visible like a watermark, some intentional cracks adding to the meditation on impermanence, soft gallery lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Xochipilli Tostadas",
@@ -586,7 +629,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A tostada laser engraved as a faithful recreation of an existing pre-Hispanic Xochipilli painting, seated deity with flowers and ornamental field, detailed scorched linework on corn, museum vitrine",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Cheetos Galaxy",
@@ -598,7 +642,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Spiral galaxy made from hundreds of orange Cheetos suspended over glossy black mirror, tiny laser engraved star systems and fiber optic stars, spectacular contemporary art installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -619,7 +664,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Three massive IBC industrial tanks stacked vertically, silver chrome metal frames, bottom tank filled with red paint, middle with blue, top with yellow, warehouse or industrial courtyard, dramatic perspective from below, monumental",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Purple",
@@ -631,7 +677,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Stacked IBC industrial tanks with gold chrome metal frame, deep purple paint visible inside, regal and industrial simultaneously, dramatic lighting, warehouse or outdoor setting, monumental scale, color as monument",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Fountain I: Tiered Basin",
@@ -643,7 +690,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "three-tier classical European basin fountain pouring separate red yellow and blue paint, gallery installation, closed loop color separation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Fountain II: Shell Grotto",
@@ -655,7 +703,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "rococo shell grotto fountain pouring separate pastel pink mint and lilac paint, gallery installation, closed loop color separation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Fountain III: Brutalist Trough",
@@ -667,7 +716,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "stepped brutalist concrete trough fountain pouring black gold and acid green paint, gallery installation, closed loop color separation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Rotating Gentleman",
@@ -679,7 +729,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "rotating sculpture of a formally dressed man continuously sprayed with black and gold paint, contemporary kinetic art installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Pastel Wall",
@@ -691,7 +742,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed by mechanical cans with pastel pink and mint green paint, contemporary kinetic art installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Orange-Red Wall",
@@ -703,7 +755,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed with vivid orange and red paint by robotic spray cans, contemporary kinetic art installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "River of Change",
@@ -715,7 +768,8 @@
         "aspect_ratio": "21:9",
         "image_prompt": "Ultra-wide hydrographic painting in progress on a long canvas, swirling oil paint patterns on water surface being absorbed by rotating canvas mechanism, fluid abstract patterns in deep blues, golds, and reds, studio environment, process as art",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Golden Rain Sculptures",
@@ -727,7 +781,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "White plaster sculptures of a plain man, a family group, a seated man, and a thin Buddha with thick golden paint pouring continuously over their heads, the gold beading and running off into drainage channels, gallery installation, warm golden light",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Real Skull Fountain",
@@ -739,7 +794,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "A human skull functioning as a fountain with streams of pastel blue, pink, and white liquid flowing from the eye sockets and mouth, mounted on a dark stone pedestal, dramatic chiaroscuro lighting, beautiful and macabre simultaneously",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Paint Fountains Full Wall",
@@ -751,7 +807,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "An entire gallery wall covered in cascading streams of paint flowing from top to bottom in multiple vivid colors, viewers visible from behind standing in front of it, monumental scale, immersive color environment, cinematic",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -772,7 +829,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A small golden chrome seated Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash in dense and loose areas, subtle concealed support, gallery lighting, minimal and serene",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Sister's Ocean",
@@ -784,7 +842,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A brilliant memorial diamond slowly rotating in front of a canvas covered in ash patterns shaped like ocean waves, rainbow light refracting from the diamond onto the grey ash waves, profound and beautiful, gallery setting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Discourse Before Battle",
@@ -796,7 +855,8 @@
         "aspect_ratio": "21:9",
         "image_prompt": "Extreme horizontal ash battlefield on a vast canvas, tiny bronze Krishna and Arjuna sculpture near one edge, figures almost lost in the immense grey field, viewed from above, 21:9 composition",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Throne of Mortality",
@@ -808,7 +868,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "An ornate antique royal throne in a dimly lit regal room, a mound of grey ashes seated upon it, across the empty room a small colorful smiling glass Buddha statue on a shelf, dramatic chiaroscuro lighting, profound stillness",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Resonant Buddha",
@@ -820,7 +881,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A golden chrome Buddha face sculpted emerging from a large brass gong, dimly lit room with only the face and gong illuminated, electric oscillator at base, reverberant atmosphere, zen and ethereal, sound made visible",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Gallium Canvas Buddha",
@@ -832,7 +894,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A replica of the seated Gandhara Buddha hovering above a canvas of shimmering magnetic liquid gallium metal, the silver surface forming subtle patterns around the base, gallery lighting, silver and gold tones, sacred and scientific",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Sequence This (Samurai)",
@@ -844,7 +907,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "A small samurai sculpture coated in shimmering magnetic gallium, caught mid-sword-thrust in full committed attack posture, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, molecular and monumental, blade driving forward",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Sequence This (Moctezuma Ilhuicamina)",
@@ -856,7 +920,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "A small sculpture of Moctezuma Ilhuicamina in full draw posture, bow arm extended and string at full tension, coated in shimmering magnetic gallium, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, the archer and the code",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Sequence This (Geronimo)",
@@ -868,7 +933,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Small sculpture of Geronimo coated in liquid-metal gallium, holding a shotgun lowered at his side and not pointing it, standing over crystallized DNA forms in a dark museum display case",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Floating Buddha II",
@@ -880,7 +946,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A standing golden chrome Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash arranged in slow spirals from edge to center, subtle concealed support, gallery wall, serene and minimal",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Floating Buddha III",
@@ -892,7 +959,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A reclining golden chrome Buddha in parinirvana pose projecting outward from a large circular black canvas covered in abstract human ash patterns, grey ash in loose irregular concentric forms spreading from center outward, subtle concealed support, gallery wall, still and profound",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -913,7 +981,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "A large ancient mammoth tusk floating in a gleaming mercury bath within a sealed vitrine, the tusk perfectly reflected in the silver liquid surface, dark gallery lighting, ancient and elemental, cinematic still photography",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mercury Ossuary",
@@ -925,7 +994,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Various animal bones of different sizes floating on a mirror-still mercury surface within a sealed dark container, bone shapes perfectly reflected in silver liquid, atmospheric dark lighting, scientific and poetic, deep time made visible",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Quetzalcoatl Maglev",
@@ -937,7 +1007,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "A detailed metal recreation of the Quetzalcoatl feathered serpent sculpture levitating above a shimmering mercury bath, magnetic levitation coils visible in plinth, gallery installation, dramatic lighting, ancient god defying gravity",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Liquid Metal Centurion",
@@ -949,7 +1020,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "An ancient Roman military helmet covered in flowing magnetic liquid metal gallium, the silver liquid forming and reforming over the antique iron surface, electromagnetic coils visible in dark plinth, dramatic single-source lighting, ancient and futuristic",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -970,7 +1042,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Two enormous polished mirrored hemispheres slightly separated at the equator with a band of light entering the gap, a staircase on the exterior leading visitors up to peer inside, the interior a cascade of infinite recursive reflections, dramatic outdoor or atrium setting, monumental and geometric",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Kinetic Liquid Pigment: Primal Duality",
@@ -982,7 +1055,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A circular yellow ferrofluid blob on a deep blue liquid pigment surface beginning to divide into two circles, electromagnetic field creating the separation, overhead view, vibrant fluid dynamics, gallery table installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Han River at Night",
@@ -994,7 +1068,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Three fixed translucent sheets with CMYK color patterns layered over each other, the combined image resolving into the Han River nighttime panorama with illuminated bridges and Seoul towers reflected in water, gallery installation, the city permanently assembled from overlapping color",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Boseong Tea Fields",
@@ -1006,7 +1081,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Three fixed translucent CMYK sheets layered over each other permanently resolving into the curved terraced tea fields of Boseong, green rows climbing a misty hillside in the traditional pre-industrial pattern, the landscape held in static color overlap, gallery installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "The 38th Parallel",
@@ -1018,7 +1094,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Six translucent CMYK rotating sheets in two sets, the combined image in a transitional state showing the DMZ militarized border landscape and a pre-1945 Korean village and rice paddies simultaneously overlapping, razor wire crossing a road that leads north, watchtower rising from a paddy field, the two geographies briefly occupying the same coordinates, gallery installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1039,7 +1116,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank of milky scattering liquid forming the portrait lines of Zapata, his distinctive mustache and revolutionary hat visible as glowing green light lines, dark dramatic gallery room, acrylic panels guiding the beam",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Che Light Portrait",
@@ -1051,7 +1129,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank with titanium dioxide scattering medium forming the portrait lines of Che Guevara, his iconic beret and intense gaze visible as glowing blue light lines, dark gallery room, precise laser optics",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Zapatista Light Portrait",
@@ -1063,7 +1142,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Laser line portrait of an ordinary masked Zapatista, not a commander, drawn in red light through fluorescent water and acrylic panels, dark gallery",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Netaji Light Portrait",
@@ -1075,7 +1155,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam forming the determined features of Subhas Chandra Bose through milky Intralipid medium, his intense expression visible as glowing light lines, revolutionary leader emerging from physics, dark gallery room with precise optics",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Archaeological Material Timeline",
@@ -1087,7 +1168,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Chronological wall mosaic of adobe Roman concrete medieval mortar brick and modern composite, with a large contemporary graffiti tag by the artist sprayed across the full timeline, gallery installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Eternal Feelings (Gandhi's Hand)",
@@ -1099,7 +1181,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1119,7 +1202,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Seeds arranged in intricate Chladni cymatic patterns directly over a vibrating steel plate, gallery pedestal, precise nodal geometry",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Chladni Colored Powders on Canvas",
@@ -1131,7 +1215,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Layered Chladni cymatic patterns made from clearly different red blue yellow and white powders on canvas, colors mixing and separating, contemporary abstract art",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mayan Heaven",
@@ -1143,7 +1228,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A viewing window into a deep narrow water tank, water transitioning from crystal clear at the top to deep celestial Mayan cenote blue at the bottom, matte black surrounding frame, stunning depth and luminosity, no pigment, pure physics of light absorption",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Indigo Study: Natural vs Synthetic",
@@ -1155,7 +1241,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Complex chromatography artwork with many deposits of clearly different natural and synthetic blues mixing crossing and separating across white paper, rich blue interplay, gallery frame",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mexican Market Pigment Studies",
@@ -1167,7 +1254,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Multiple chromatography papers showing various Mexican plant pigments separated into organic color patterns, warm ochres and earth tones spreading in natural radial patterns, traditional market chemistry made visible, gallery wall series",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mother's Dress",
@@ -1179,7 +1267,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Mother's Sweater",
@@ -1191,7 +1280,8 @@
         "aspect_ratio": "4:5",
         "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1212,7 +1302,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a famous museum building with tiny artworks inside visible through the open walls, VR headset on a nearby table, gallery setting, precision craftsmanship, warm directed lighting, miniature world of art history",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Reclaimed Eiffel Tower",
@@ -1224,7 +1315,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "An Eiffel Tower scale model completely covered in dense miniature vegetation with tiny detailed huts and rope bridges hanging from its iron structure, moss and vines growing over the metal, displayed in a museum vitrine, warm natural lighting",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "The Playful Museum",
@@ -1236,7 +1328,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "A gallery visitor gazing at a classical painting that contains a photographic image of themselves inserted into the painted scene, surprised expression, museum second room, warm gallery lighting, uncanny and quietly funny",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1257,7 +1350,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "A room with dozens of clocks of all types and sizes covering the walls, all showing different times, analog and digital, atmospheric gallery lighting, quiet and slightly ominous, the moment before collective silence",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "VR Mystical Experience",
@@ -1269,7 +1363,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Aerial view of gallery visitors wearing VR headsets seen from above, the overhead camera having risen to show them from above themselves, mystical bird sounds and flute music visualized as soft particle effects, meditative and vertiginous",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1290,7 +1385,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A gold-chromed Venus of Willendorf figurine displayed inside a functioning vending machine behind glass, selection buttons visible, gallery floor, fluorescent interior vending machine light, consumerism meets prehistoric fertility",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Huge Golden Venus",
@@ -1302,7 +1398,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A monumental golden chrome sculpture of the Venus of Willendorf several meters tall in a public plaza or museum atrium, dramatic sky or architectural backdrop, imposing and celebratory, warm gold reflections, ancient goddess at civic scale",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Victory Commodified",
@@ -1314,7 +1411,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A fine marble miniature Winged Victory of Samothrace visible behind vending machine glass and metal coils, classical headless triumph behind institutional fluorescent light, gallery floor, ironic and beautiful, culture for sale",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Damian",
@@ -1326,7 +1424,8 @@
         "aspect_ratio": "9:16",
         "image_prompt": "A small detailed figurine of Damien Hirst floating in liquid inside a vending machine tank, referencing his formaldehyde shark pieces, vending machine glass and label visible, gallery installation, self-referential art world commentary",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "The Mosh Pit Experience Machine",
@@ -1338,7 +1437,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Interior view of a small padded room with screens showing a massive metal concert crowd, a visitor bracing as walls physically push them, concert light and sound energy contained in a box, claustrophobic and exhilarating",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Dream On",
@@ -1350,7 +1450,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Four small turtles walking slowly across a clean white gallery floor toward a container overflowing with bright neon green liquid, top-down view, simple and enigmatic, dreamlike pop color, no explanation offered",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1371,7 +1472,8 @@
         "aspect_ratio": "1:12.5",
         "image_prompt": "An extremely long horizontal illustration showing musical notes gradually losing their stems and heads from left to right, waves flattening, chess reaching checkmate, and forms decomposing across a 5-meter canvas, monochrome ink with selective color, quiet gallery installation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Self-Portrait and Death Through a Mettalic Plate",
@@ -1383,7 +1485,8 @@
         "aspect_ratio": "21:9",
         "image_prompt": "Wide contemporary gallery installation with a dented chromed metallic plate on the far left and seven painted self-portraits arranged in a row beside it, first portrait realistic and each successive portrait increasingly distorted by the plate's wavy reflection, spectator sees original painting and warped mirror image simultaneously, precise conceptual art documentation",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -1404,7 +1507,8 @@
         "aspect_ratio": "21:9",
         "image_prompt": "A sleek titanium and carbon fiber katana with embedded micro-cameras and electronic components in the handle, displayed in a gallery vitrine alongside a traditional Japanese katana, dramatic side lighting, precision engineering meets ancient craft",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Sculptures of Interesting Geometric Shapes",
@@ -1416,7 +1520,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A polished brass rhombicosidodecahedron sculpture on a museum pedestal, its many triangular and square faces catching light at different angles, clean geometric perfection, minimal gallery lighting, mathematics made tangible and beautiful",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Krishna's Disc Weapon",
@@ -1428,7 +1533,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A futuristic spinning disc weapon in titanium and carbon fiber mounted over a large cosmic abstract expressionist painting, gallery wall, dramatic lighting, sacred geometry meets aerospace engineering, divine and technological",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Pandava Arsenal",
@@ -1440,7 +1546,8 @@
         "aspect_ratio": "16:9",
         "image_prompt": "Five futuristic weapons of the Pandavas in titanium and carbon fiber displayed in sleek museum vitrines, epic Indian forms reimagined as contemporary technology",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       },
       {
         "art_piece_name": "Brahmastra: Nuclear or Artificial Intelligence?",
@@ -1452,7 +1559,8 @@
         "aspect_ratio": "1:1",
         "image_prompt": "Ambiguous black Brahmastra weapon system combining nuclear containment hardware and glowing AI visualization, radiation glass, dark museum chamber, ominous precision",
         "should_generate": true,
-        "include_in_book": true
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   }
