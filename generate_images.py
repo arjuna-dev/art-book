@@ -562,6 +562,11 @@ def parse_args() -> argparse.Namespace:
         "--start", type=int, default=1, help="1-based art piece index to start from"
     )
     parser.add_argument(
+        "--artist",
+        default=None,
+        help="Only generate pieces whose artist name contains this text (case-insensitive)",
+    )
+    parser.add_argument(
         "--skip-existing",
         action="store_true",
         help="Skip output files that already exist",
@@ -681,6 +686,10 @@ def main() -> int:
         for piece in pieces
         if piece.should_generate
         and (not args.modifying_prompt or piece.modifying_prompt.strip())
+        and (
+            not args.artist
+            or args.artist.lower() in piece.artist_name.lower()
+        )
     ]
     selected = [piece for piece in generate_pieces if piece.index >= args.start]
     if args.limit is not None:
