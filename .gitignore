@@ -1,5 +1,4 @@
 .env
-generated-images
 img
 .venv/
 __pycache__/
