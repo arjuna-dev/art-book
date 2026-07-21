@@ -17,7 +17,7 @@
         "image_prompt": "Sets of small stones arranged as incomplete squares on a dark surface, no labels, prime numbers (2, 3, 5, 7, 11, 13, 17, etc. up no high prime numbers). A few sets of incomplete squares, are lighted from above, the prime factors of an entered number, a small numeric keypad visible in the foreground, atmospheric darkness surrounding, cinematic lighting, fine art photography. The illuminated stones should suggest mathematical relationships and the building blocks of numbers. The keypad shows clearly on the screen the prime number 712, which would light up the stones for 2, 3, 7, and 17 (since 712 = 2³ × 3 × 7 × 17). The set of stones for number seven would be an incomple square of 3x3 stones with 2 stones missing to complete the square. For number 17 it would be an incomplete square of 5x5 stones with 8 stones missing to complete the square. The overall mood is contemplative and mysterious, evoking the ancient human fascination with numbers and their hidden structures. The installation covers a whole room where visitors can walk among the stones and interact with the keypad to see different prime factorizations light up the corresponding stones, creating a dynamic and immersive experience of mathematical discovery. The screen for the keypad is large and clear, showing the number being entered in real time, and the stones light up in a visually striking way that emphasizes their role as the fundamental building blocks of all numbers. The lighting should create a sense of wonder and reverence for the mathematical relationships being revealed, with shadows and highlights that enhance the three-dimensionality of the stones and the overall atmosphere of the installation.",
         "should_generate": true,
         "include_in_book": true,
-        "modifying_prompt": ""
+        "modifying_prompt": "Keep all in this image but make sure that the groups of stones are actually prime numbers"
       },
       {
         "art_piece_name": "Prime Shell Spiral",
@@ -29,11 +29,11 @@
         "aspect_ratio": "4:5",
         "image_prompt": "Monumental 5-meter-tall polished brass nautilus shell sculpture with people walking around its base for scale, interior chambers clearly showing prime number progression - single large prime at the tight center spiral, increasing quantities of smaller primes in the expanding outer chambers, with the number '1' visible at the outermost edge, warm metal reflections, museum gallery or sculpture garden setting, dramatic side lighting, visitors climbing steps to study the mathematical progression, the perfect correlation between natural form and mathematical distribution made visible",
         "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": false,
+        "modifying_prompt": "Let's make the shell halved, open to reveal the interior chambers. It should not have a staircase. The central number should be 2. All numbers/digits should have the same physical size. All depicted numbers should be prime. Use | 2 | 3 | 5 | 7 | 11 | 13 | 17 | 19 | 23 | 29 | 31 | 37 | 41 | 43 | 47 | 53 | 59 | 61 | 67 | 71 | 73 | 79 | 83 | 89 | 97 | 101 | 103 | 107 | 109 | 113 | 127 | 131 | 137 | 139 | 149 | 151 | 157 | 163 | 167 | 173 | 179 | 181 | 191 | 193 | 197 | 199 | 211 | 223 | 227 | 229 | 233 | 239 | 241 | 251 | 257 | 263 | 269 | 271 | 277 | 281 | 283 | 293 | 307 | 311 | 313 | 317 | 331 | 337 | 347 | 349 | 353 | 359 | 367 | 373 | 379 | 383 | 389 | 397 | 401 | 409 | 419 | 421 | 431 | 433 | 439 | 443 | 449 | 457 | 461 | 463 | 467 | 479 | 487 | 491 | 499 | 503 | 509 | 521 | 523 | 541 | 547 | 557 | 563 | 569 | 571 | 577 | 587 | 593 | 599 | 601 | 607 | 613 | 617 | 619 | 631 | 641 | 643 | 647 | 653 | 659 | 661 | 673 | 677 | 683 | 691 | 701 | 709 | 719 | 727 | 733 | 739 | 743 | 751 | 757 | 761 | 769 | 773 | 787 | 797 | 809 | 811 | 821 | 823 | 827 | 829 | 839 | 853 | 857 | 859 | 863 | 877 | 881 | 883 | 887 | 907 | 911 | 919 | 929 | 937 | 941 | 947 | 953 | 967 | 971 | 977 | 983 | 991 | 997 | 1009 | 1013 | 1019 | 1021 | 1031 | 1033 | 1039 | 1049 | 1051 | 1061 | 1063 | 1069 | 1087 | 1091 | 1093 | 1097 | 1103 | 1109 | 1117 | 1123 | 1129 | 1151 | 1153 | 1163 | 1171 | 1181 | 1187 | 1193 | 1201 | 1213 | 1217 | 1223 | 1223 | 1229 | 1231 | 1237 | 1249 | 1259 | 1277 | 1279 | 1283 | 1289 | 1291 | 1297 | 1301 | 1303 | 1307 | 1319 | 1321 | 1327 | 1361 | 1367 | 1373 | 1381 | 1399 | 1409 | 1423 | 1427 | 1429 | 1433 | 1439 | 1447 | 1451 | 1453 | 1459 | 1471 | 1481 | 1483 | 1487 | 1489 | 1493 | 1499 | 1511 | 1523 | 1531 | 1543 | 1549 | 1553 | 1559 | 1567 | 1571 | 1579 | 1583 | 1597 | 1601 | 1607 | 1609 | 1613 | 1619 | 1621 | 1627 | 1637 | 1657 | 1663 | 1667 | 1669 | 1693 | 1697 | 1699 | 1709 | 1721 | 1723 | 1733 | 1741 | 1747 | 1753 | 1759 | 1777 | 1783 | 1787 | 1789 | 1801 | 1811 | 1823 | 1831 | 1847 | 1861 | 1867 | 1871 | 1873 | 1877 | 1879 | 1889 | 1901 | 1907 | 1913 | 1931 | 1933 | 1949 | 1951 | 1973 | 1979 | 1987 | 1993 | 1997 | 1999 | 2003 | 2011 | 2017 | 2027 | 2029 | 2039 | 2053 | 2063 | 2069 | 2081 | 2083 | 2087 | 2089 | 2099 | 2111 | 2113 | 2129 | 2131 | 2137 | 2141 | 2143 | 2153 | 2161 | 2179 | 2203 | 2207 | 2213 | 2221 | 2237 | 2239 | 2243 | 2251 | 2267 | 2269 | 2273 | 2281 | 2287 | 2293 | 2297 | 2309 | 2311 | 2333 | 2339 | 2341 | 2347 | 2351 | 2357 | 2371 | 2377 | 2381 | 2383 | 2389 | 2393 | 2399 | 2411 | 2417 | 2423 | 2437 | 2441 | 2447 | 2459 | 2467 | 2473 | 2477 | 2503 | 2521 | 2531 | 2539 | 2543 | 2549 | 2551 | 2557 | 2579 | 2591 | 2593 | 2609 | 2617 | 2621 | 2633 | 2647 | 2657 | 2659 | 2663 | 2671 | 2677 | 2683 | 2687 | 2689 | 2693 | 2699 | 2707 | 2711 | 2713 | 2719 | 2729 | 2731 | 2731 | 2741 | 2749 | 2753 | 2767 | 2777 | 2789 | 2791 | 2797 | 2801 | 2803 | 2819 | 2833 | 2837 | 2843 | 2851 | 2857 | 2861 | 2879 | 2887 | 2897 | 2903 | 2909 | 2917 | 2927 | 2939 | 2953 | 2957 | 2963 | 2969 | 2971 | 2999 | 3001 | 3011 | 3019 | 3023 | 3037 | 3041 | 3049 | 3061 | 3067 | 3079 | 3083 | 3089 | 3109 | 3119 | 3121 | 3137 | 3163 | 3167 | 3169 | 3181 | 3187 | 3191 | 3203 | 3209 | 3217 | 3221 | 3229 | 3251 | 3253 | 3257 | 3259 | 3271 | 3299 | 3301 | 3307 | 3313 | 3319 | 3323 | 3329 | 3331 | 3343 | 3347 | 3359 | 3361 | 3371 | 3373 | 3389 | 3391 | 3407 | 3413 | 3433 | 3449 | 3457 | 3461 | 3463 | 3467 | 3469 | 3491 | 3499 | 3511 | 3517 | 3527 | 3529 | 3533 | 3539 | 3541 | 3547 | 3557 | 3559 | 3571 | 3581 | 3583 | 3593 | 3607 | 3613 | 3617 | 3623 | 3631 | 3637 | 3643 | 3659 | 3671 | 3673 | 3677 | 3691 | 3697 | 3701 | 3709 | 3719 | 3727 | 3733 | 3739 | 3761 | 3767 | 3769 | 3779 | 3793 | 3797 | 3803 | 3821 | 3823 | 3833 | 3847 | 3851 | 3853 | 3863 | 3877 | 3881 | 3889 | 3907 | 3911 | 3917 | 3919 | 3923 | 3929 | 3931 | 3943 | 3947 | 3967 | 3989 | 4001 | 4003 | 4007 | 4013 | 4019 | 4021 | 4027 | 4049 | 4051 | 4057 | 4073 | 4079 | 4091 | 4093 | 4099 | 4111 | 4127 | 4129 | 4133 | 4139 | 4153 | 4157 | 4159 | 4177 | 4201 | 4211 | 4217 | 4219 | 4229 | 4231 | 4241 | 4243 | 4253 | 4259 | 4261 | 4271 | 4273 | 4283 | 4289 | 4297 | 4327 | 4337 | 4339 | 4349 | 4357 | 4363 | 4373 | 4391 |"
       },
       {
-        "art_piece_name": "AI Fish Resurrection",
+        "art_piece_name": "Fish Resurrection",
         "year": "2025",
         "technique_used": "Fossil photography, multimodal LLM image reconstruction, image to 3D model generation, automated rigging, water animation simulation, real time rendering",
         "short_description": "A camera captures a fossil, an AI imagines it as a living fish, that image is turned into a 3D model, the model is rigged automatically, and the fish is animated in water.",
@@ -43,10 +43,10 @@
         "image_prompt": "A fish fossil in a museum display beside a luminous screen showing a realistic reconstructed fish swimming underwater, cinematic museum atmosphere, blue and amber light, scientific yet poetic mood",
         "should_generate": true,
         "include_in_book": true,
-        "modifying_prompt": ""
+        "modifying_prompt": "Let's keep all in the iamge but we need to add a computer that shows the processing of the image. Also let's make the fish in the video look more like a 3d environment. Let's make the fossil and the fish in the video match"
       },
       {
-        "art_piece_name": "Perceptron 195X",
+        "art_piece_name": "AI 1957",
         "year": "2024",
         "technique_used": "Microcontroller, touch-sensitive 10x10 light bulb grid, weight indicator LEDs, YES/NO/TRAIN/TEST interface",
         "short_description": "A 10x10 grid of touch-sensitive light bulbs allows visitors to draw patterns, label them YES or NO, and watch a perceptron machine learn in real time through visible LED weight indicators.",
@@ -54,7 +54,7 @@
         "display_context": "Interactive gallery installation, mid-room pedestal",
         "aspect_ratio": "1:1",
         "image_prompt": "Retro-futuristic machine panel with a 10x10 grid of glowing amber light bulbs, large YES indicator lamp at top, a NO indicator lamp at top, YES/NO/TRAIN/TEST buttons on worn brushed metal panel, warm workshop lighting, interactive art machine",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -67,7 +67,7 @@
         "display_context": "Dark gallery room, single pedestal installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A single glowing lightbulb in total darkness, surrounded by emptiness, sound wave visualizations etched faintly into the plinth, minimal and contemplative, long exposure photography, the silence between primes made visible",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -75,10 +75,10 @@
   },
   {
     "artist_name": "Valentina Cienfuegos Mora",
-    "artist_introduction": "Uses sculpture, installation, and painting to bring pre-Hispanic mythology, resistance movements, national symbols, and contemporary power into direct confrontation.",
-    "art_introduction": "The works place cultural symbols in situations where their political force becomes newly visible. Borders divide water that remains materially identical; monuments confront capital; indigenous clothing carries identity through metal figures; and ancient gods enter factories and cyberpunk cities. Humor and spectacle are present, but they sharpen rather than soften the questions of ownership, resistance, continuity, and power.",
-    "artist_long_description": "Valentina Cienfuegos Mora makes work that is not interested in your comfort. Her sculptures invoke Coatlicue and capital in the same breath. Her paintings sit somewhere between cosmic and street-level, between the sacred and the deeply sarcastic. She is the rare contemporary artist who can produce a tortilla dough human figure and have it read simultaneously as political statement, cultural preservation act, and gentle absurdist joke. Critics have accused her work of being too didactic, too poetic, too Mexican, and not Mexican enough — which she considers a satisfactory range of responses.",
-    "series_name": "Resistance and Mythology",
+    "artist_introduction": "Uses sculpture, installation, and monumental oil painting to bring pre-Hispanic mythology, resistance movements, national symbols, and contemporary power into direct confrontation.",
+    "art_introduction": "The works place cultural symbols in situations where their political force becomes newly visible. Borders divide water that remains materially identical; monuments confront capital; indigenous clothing carries identity through metal figures; and ancient gods enter factories, cyberpunk cities, and wrestling rings. Monumental oil paintings treat mythology as an active description of the present - corn becomes both sacred material and industrial product, deities operate assembly lines, and cosmic figures absorb punk aesthetics and modern Mexican life. Humor and spectacle are present, but they sharpen rather than soften the questions of ownership, resistance, continuity, and power.",
+    "artist_long_description": "Valentina Cienfuegos Mora makes work that is not interested in your comfort. Her sculptures invoke Coatlicue and capital in the same breath. Her monumental oil paintings - some reaching 4 by 6 meters - function as visual novels where Mesoamerican creation stories collide with the realities of modern Mexico, treating mythology as documentary fact in a hyperrealistic style influenced by muralists like Orozco and Rivera. Her scale models sit somewhere between cosmic and street-level, between the sacred and the deeply sarcastic. She is the rare contemporary artist who can produce a tortilla dough human figure and have it read simultaneously as political statement, cultural preservation act, and gentle absurdist joke - and in the next canvas render the Aztec mother goddess Coatlicue as half deity, half industrial assembly machinery. Critics have described her paintings as 'industrial mythology' and 'sacred capitalism rendered visible,' and accused her sculptural work of being too didactic, too poetic, too Mexican, and not Mexican enough - which she considers a satisfactory range of responses.",
+    "series_name": "Resistance, Mythology, and Mythological Realism",
     "art_pieces": [
       {
         "art_piece_name": "Water(s)",
@@ -89,12 +89,12 @@
         "display_context": "Gallery vitrine or shelf display, paired flasks lying horizontal",
         "aspect_ratio": "16:9",
         "image_prompt": "Two elegant vintage 1950s crystal flasks lying on their sides in a museum vitrine, each containing ocean water, labeled with coordinates from either side of the US-Mexico border, clean archival lighting, political and serene",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
       {
-        "art_piece_name": "Angel vs. Capital",
+        "art_piece_name": "El Demonio del Capital",
         "year": "2023",
         "technique_used": "Metal sculpture, architectural-scale installation, two-figure composition",
         "short_description": "The Angel of Independence confronts a column representing capital, or is seized by a demonic figure embodying it — a confrontation between national symbol and economic power.",
@@ -102,7 +102,7 @@
         "display_context": "Public square outdoor installation or large gallery space",
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental metal sculpture of the Mexican 'Angel de la Independencia' grappled by a dark demon figure representing capitalism, urban cityscape background, dramatic storm lighting, cinematic scale, political and mythological. The Angel stands on top of a column, a replica of the tip of the original column, while the demon figure is either flanking it or seizing it, depending on the version. The sculpture should evoke a sense of struggle and imbalance, with the Angel appearing overwhelmed by the demon's grasp. The background should be a museum or public square, emphasizing the public and political nature of the confrontation. The lighting should be dramatic, with storm clouds gathering overhead, casting dynamic shadows and highlighting the metallic textures of the sculpture. The overall mood is tense and evocative, blending mythological symbolism with contemporary political commentary.",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -115,64 +115,12 @@
         "display_context": "Museum installation in large vitrine or open gallery table",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a cyberpunk Mexican city, neon lights, Aztec pyramids with holographic projections, miniature gods and cyborgs in the streets, taco stands with pneumatic tubes and drones, atmospheric fog, vibrant neon colors",
-        "should_generate": true,
-        "include_in_book": true,
+        "should_generate": false,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
-        "art_piece_name": "Zapatista Women Sculptures",
-        "year": "2023",
-        "technique_used": "Cast metal sculpture, traditional textile color elements, miniature version included",
-        "short_description": "Seven metal sculptures of Zapatista women, each adorned with a bright item of traditional indigenous clothing. A miniature version of the full series is also produced.",
-        "long_description": "Seven is not an accidental number. Cienfuegos Mora's Zapatista women stand in the pose of neither aggression nor submission — they stand in the pose of people who have decided. Each figure wears a single bright garment element sourced from different indigenous traditions of southern Mexico, the colors doing the work that the masked faces refuse to do. The miniature version — identical in every detail but small enough to hold — is perhaps the more quietly devastating of the two scales, turning public monument into private talisman.",
-        "display_context": "Museum gallery or outdoor public installation, series of seven",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Seven cast metal female figures in Zapatista-style stances, each wearing a single vibrant traditional indigenous garment element in bold colors, museum gallery setting, warm dramatic lighting, dignified and powerful",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Indigenous Women of the World",
-        "year": "2024",
-        "technique_used": "Cast bronze sculpture series, single traditional garment element per figure in vivid color, series of seven with miniature version",
-        "short_description": "Seven bronze sculptures of women from indigenous peoples across the world - Maasai, Flower Hmong, Sami, Kayapo, Yoruba, Quechua, and Kuna - each figure defined by a single brilliant traditional garment. A miniature version of the full series is also produced.",
-        "long_description": "Seven is not an accidental number, and neither is one. Cienfuegos Mora's series pairs the global breadth of seven indigenous women with the discipline of a single garment per figure - a formal constraint that places the clothing item in conversation with the body rather than overwhelming it. Each figure stands with the particular stillness of a person who knows exactly who they are. The Maasai woman from the Great Rift Valley of Kenya and Tanzania wears the red shuka - a rectangular plaid cloth in solid scarlet, traditionally signaling courage and protection from predators, draped over one shoulder in the manner of semi-nomadic Nilotic communities who have inhabited this territory for centuries and whose population numbers approximately 900,000 across both nations. The Flower Hmong woman from the highland valleys of northern Vietnam and Laos wears only her embroidered pleated skirt - a batik-dyed hemp garment representing over 200 hours of cross-stitch embroidery in hot pink, jade green, and electric blue; the Flower Hmong, also called Hmong Leng, are one of over 60 Hmong sub-groups and take their name from the extraordinary floral density of this textile tradition, which is considered among the most technically demanding of any living highland culture in Southeast Asia. The Sami woman from Arctic Scandinavia stands in her royal-blue gakti - the structured traditional tunic of the Kautokeino style, with red, yellow, and green ribbon trim that identifies her home community and marital status; the Sami are the only recognized indigenous people of Arctic Scandinavia, having inhabited the region for at least 5,000 years, and the gakti encodes genealogy, geography, and personal history in a single garment. The Kayapo woman from the Brazilian states of Para and Mato Grosso wears only her crimson macaw-feather ngopokati crown - a headdress of scarlet macaw tail feathers worn in ceremonies marking births and seasonal cycles; the Kayapo number approximately 11,000 across more than 30 villages and have led major international campaigns to defend their Amazonian territory since the 1980s, making the headdress a mark not only of ceremony but of ongoing resistance. The Yoruba woman from southwestern Nigeria stands beneath an immense golden gele - the elaborate head wrap whose architectural pleats and peaks a skilled tier can raise thirty centimeters above the head; the Yoruba number over 40 million and their diaspora communities in Cuba, Brazil, and the Caribbean carried the gele into traditions of adornment that persist in multiple continents. The Quechua woman from the Andean highlands of Peru wears a blazing fuchsia pollera - the multilayered skirt in vivid wool whose specific color identifies village origin and ceremonial role among approximately 10 million Quechua speakers, the principal heirs of the Inca Empire, Tawantinsuyu, whose Runasimi language remains a living tongue across four countries. The Kuna woman from Panama's Caribbean San Blas archipelago wears her mola blouse - a textile panel of reverse applique in red, orange, and turquoise, layers of cotton cut and folded into intricate sea-turtle and geometric patterns worn daily; the Kuna people number approximately 80,000 and in 1925 won semi-autonomous governance of Guna Yala through the Guna Revolution, one of the few successful indigenous sovereignty movements of the twentieth century.",
-        "display_context": "Museum gallery or outdoor public installation, series of seven with optional miniature version",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Seven cast bronze female figures from different world indigenous cultures, each wearing a single vivid traditional garment - a red Maasai shuka, bright Flower Hmong embroidered pleated skirt, royal blue Sami gakti, crimson macaw-feather Kayapo crown, golden Yoruba gele, fuchsia Quechua pollera, orange-red Kuna mola blouse - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Indigenous Men of the World",
-        "year": "2025",
-        "technique_used": "Cast bronze sculpture series, single traditional male garment or adornment element per figure in vivid color, series of seven",
-        "short_description": "Seven bronze sculptures of men from indigenous peoples across the world - Maasai warrior, Huli Wigman, Dinka, Konyak Naga, Mapuche, Tuareg, and Yoruba chief - each figure defined by a single brilliant traditional garment or ceremonial adornment.",
-        "long_description": "The companion series maintains the formal discipline of the female series - one figure, one garment - while acknowledging that in many of the same cultures, male ceremonial dress carries equal or greater cultural load. The Maasai warrior from the Great Rift Valley stands wearing only the ochre-dyed red shuka of a moran - the warrior-class of young men between circumcision and marriage charged with community protection, their long hair dyed rust-red with ochre clay; among the Maasai, the moran's red shuka is as much a social rank as a garment. The Huli Wigman from the Hela Province of the Southern Highlands of Papua New Guinea stands in ceremonial pose, his single adornment the extraordinary ambua wig - a structure grown from the man's own hair over two years and decorated with yellow and red bird-of-paradise plumes and chrysanthemum flowers; among the Huli people of approximately 150,000, a man's wig is both autobiography and social credential, worn at sing-sing ceremonies that draw communities from across the highlands. The Dinka man from the Nile basin of South Sudan stands wearing only his malual beaded corset - a tight garment of hundreds of glass beads in bright pink, red, and blue worn during coming-of-age ceremonies to signal age-set and ceremonial status; the Dinka are the largest ethnic group of South Sudan at 4 to 5 million people, are among the tallest peoples on earth, and their beadwork traditions carry precise social codes invisible to outside observers. The Konyak Naga warrior from the Mon district of Nagaland in Northeast India stands in the tsungkotepsu - the woven warrior's shawl in black with broad red and yellow border bands, historically worn only by men who had taken enemy heads in battle; the Konyak, numbering approximately 250,000, maintained active headhunting traditions until Indian independence in 1947 and the tattooed faces and brass ornaments of the last elder headhunters became some of the most photographed human faces of the twentieth century. The Mapuche warrior from south-central Chile stands in a deep indigo makun - the large rectangular woolen poncho dyed with Chilean elderberry, trayen, and woven by Mapuche women in geometric kalul patterns encoding cosmological meaning; the Mapuche are the indigenous people of approximately 1.5 million who successfully resisted both Inca and Spanish conquest for over 300 years in what became known as the Arauco War, the longest indigenous resistance in the Americas. The Tuareg man from the central Sahara stands swathed in a single cobalt-blue tagelmust - the long indigo cotton cloth wound around the head and face whose deep plant-based dye transfers permanently to the skin, earning Tuareg men the name 'blue men of the desert'; among the approximately 2 million Tuareg across Mali, Niger, Algeria, Libya, and Burkina Faso, the tagelmust is dignity itself and its removal in public a gesture of profound vulnerability. The Yoruba chief from southwestern Nigeria stands in an emerald-green agbada - the immense flowing robe requiring up to 6 meters of fabric with elaborate gold-thread dansiki embroidery at the chest and sleeves that pool at his feet; among the Yoruba of over 40 million people, the agbada is the garment of men of standing, its volume and embroidery announcing presence before a word is spoken.",
-        "display_context": "Museum gallery or outdoor public installation, series of seven, companion piece to Indigenous Women of the World",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Seven cast bronze male figures from different world indigenous cultures, each wearing a single vivid traditional garment - red Maasai warrior shuka, yellow-red Huli bird-of-paradise feather wig, bright pink-blue Dinka beaded corset, red-banded Konyak Naga warrior shawl, deep indigo Mapuche makun poncho, cobalt Tuareg tagelmust head wrap, emerald green Yoruba agbada robe - museum gallery setting, warm dramatic lighting, dignified and powerfully global",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Indigenous People of the World",
-        "year": "2025",
-        "technique_used": "Cast bronze sculpture series, single vivid traditional garment or adornment per figure, applied mineral pigment and enamel for ceremonial makeup and body paint where culturally central, series of seven",
-        "short_description": "Seven bronze figures - men and women - chosen from indigenous peoples across five continents for the singular visual force of a single garment or adornment: the most colorful, the most architecturally bold, the most irreplaceable mark of a living culture.",
-        "long_description": "This is not a survey. It is a selection made on purely aesthetic grounds - which is to say, on the grounds that matter most when the subject is adornment. Cienfuegos Mora spent two years narrowing the world's indigenous textile and body art traditions to seven that could each carry an entire bronze figure on the strength of a single item. The result covers five continents and includes one community from her own state of Chiapas, a deliberate anchor for the global reach of the rest. The Zinacantán Tzotzil woman from the highland community of Sots'leb, approximately 10 kilometers from San Cristóbal de las Casas in Chiapas and home to around 40,000 Tzotzil Maya speakers, wears her blusa bordada - a hand-embroidered blouse whose entire surface is dense with silk thread flowers in the specific palette that identifies Zinacantán: hot fuchsia, electric orange, deep red, and acid yellow on a white or dark ground, the mariposa and floral motifs worked in such density that the base cloth is almost invisible; Zinacantán is also the primary flower-growing community of the Chiapas highlands, supplying blooms for markets and ceremonies across the region, and the embroidered blouse carries this identity literally on its surface, the flowers worn and the flowers sold becoming a single gesture. The Huli man from the Hela Province in the Southern Highlands of Papua New Guinea stands in his ambua wig - a structure grown from his own hair over two to three years, shaped on a wooden frame and decorated with yellow and red bird-of-paradise plumes, white cockatoo feathers, and fresh chrysanthemum flowers renewed before each sing-sing ceremony; among the approximately 150,000 Huli people his face is painted with yellow and red ochre in the specific patterns that signal he is ready to be judged beautiful, his single additional adornment a crescent of polished pearl shell at his chest. The Wodaabe man from the Ferlo basin of Niger stands in full Gerewol regalia - his face painted over two hours with red ochre base, yellow line down the nose bridge to lengthen it, kohl-black rings around the eyes to make the whites blaze, lips blackened to near-indigo to set off his teeth; the Gerewol competition, held annually at the end of the rainy season when cattle have fattened and trading partners gather, is a week-long ceremony in which men in full makeup compete before panels of young women who choose whom they find most beautiful, one of the few documented traditions globally where this evaluative direction is formalized as a social institution, and among the approximately 100,000 Wodaabe of the Sahel the quality of one's Gerewol face is a matter of serious lifelong practice. The Kayapo woman from the Rio Xingu basin of the Brazilian state of Para stands in her ngopokati headdress of scarlet macaw tail feathers and her body painted from crown to ankle with genipap and red urucu in the dense black geometric spirals and curvilinear patterns that identify her as a ceremonially active member of her village; among the approximately 11,000 Kayapo across more than 30 villages, body paint is not ornament but identity - the patterns distinguish village, age-set, and ritual role, and a woman without paint at a ceremony is a woman who has not yet arrived; the scarlet and orange of her macaw feathers against the black of the genipap body paint is among the most formally considered color combinations in any living visual tradition. The Flower Hmong woman from the highland valleys of Ha Giang province in northern Vietnam stands in her embroidered hemp skirt - a pleated garment whose every panel represents over 200 hours of batik-dyeing and cross-stitch embroidery in hot pink, jade green, lemon yellow, and electric blue, the floral and geometric density of the Flower Hmong, or Hmong Leng, textile tradition considered among the most technically demanding of any living highland fiber art across Southeast Asia; the Flower Hmong, one of over 60 Hmong sub-groups distributed across Vietnam, Laos, Thailand, and China, take their common name from this textile, and a woman's skill as an embroiderer remains among the most significant social credentials of her community. The Ndebele woman from the Mpumalanga and Limpopo provinces of South Africa stands in her idzila - the columns of stacked beaded neck rings in vivid geometric bands of red, yellow, blue, and green that rise from shoulder to jaw and are begun in childhood, enlarged gradually, and never removed after marriage; among the approximately 750,000 Ndebele speakers of southern Africa the idzila encodes family lineage and marital status in a color grammar that is specific down to the individual household, and the geometric precision of Ndebele beadwork and mural painting has been recognized as a distinct and highly influential visual language, its patterns appearing in the work of designers and architects internationally since the 1980s without credit. The Yoruba woman from the cities and towns of southwestern Nigeria stands beneath her gele - the elaborately folded and constructed head wrap whose architectural peaks and fans a skilled tier can raise forty centimeters above the head, the fabric in deep gold-copper aso-oke woven on narrow strip looms in the specific color that signals celebration; among more than 40 million Yoruba speakers the gele is not everyday clothing but event architecture, a headpiece that makes the wearer's arrival in any room an event, and its forms are as precisely codified by occasion as any ceremonial dress tradition in the world, its diaspora presence in Cuban Lucumi and Brazilian Candomble ceremonies having carried it to two other continents where it remains in active use.",
-        "display_context": "Museum gallery, series of seven, intended for display as a self-contained group and in dialogue with the Indigenous Women and Indigenous Men series",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Seven cast bronze figures of mixed gender from indigenous cultures selected for maximum visual force - a Zinacantán Tzotzil woman in fuchsia and orange densely embroidered silk blouse, a Huli man with spectacular yellow-red bird-of-paradise feather wig and ochre face paint, a Wodaabe man with full Gerewol ceremonial face paint in red ochre kohl and indigo lips, a Kayapo woman with scarlet macaw crown and dense black genipap body paint spirals, a Flower Hmong woman in hot-pink jade-green electric-blue embroidered pleated skirt, an Ndebele woman with stacked vivid rainbow beaded neck rings rising to the jaw, a Yoruba woman under a towering architectural gold gele head wrap - museum gallery, dramatic warm lighting, epic and global",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Tortilla Human",
+        "art_piece_name": "Hombre de Maíz",
         "year": "2023",
         "technique_used": "Tortilla dough, armature structure, life-size figurative sculpture",
         "short_description": "A life-sized human figure sculpted entirely from tortilla dough.",
@@ -180,7 +128,20 @@
         "display_context": "Gallery floor installation, climate-sensitive display",
         "aspect_ratio": "9:16",
         "image_prompt": "Life-sized human figure sculpted from raw tortilla dough, natural cream color, textured surface, gallery floor installation, dramatic overhead lighting casting long shadows, intimate and monumental, slowly deteriorating",
-        "should_generate": true,
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Mujer de Maíz",
+        "year": "2023",
+        "technique_used": "Tortilla dough, armature structure, life-size figurative sculpture",
+        "short_description": "A life-sized human figure sculpted entirely from tortilla dough.",
+        "long_description": "Masa is not a metaphor. It is the actual substance from which millions of human beings in this region have been built, fed, sustained. Cienfuegos Mora takes this literalness — which is already present in pre-Hispanic creation mythology — and makes it visible at human scale. The figure deteriorates depending on humidity and temperature. It is not preserved. The impermanence is the point. The piece was made from corn and will return to corn or mold or both. Whether you find this moving or disgusting probably says something about your relationship to your food.",
+        "display_context": "Gallery floor installation, climate-sensitive display",
+        "aspect_ratio": "9:16",
+        "image_prompt": "Life-sized human figure sculpted from raw tortilla dough, natural cream color, textured surface, gallery floor installation, dramatic overhead lighting casting long shadows, intimate and monumental, slowly deteriorating",
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -193,103 +154,33 @@
         "display_context": "Museum vitrine installation, darkened room to enhance LED effects",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a dystopian cyberpunk Mexico City Estela de Luz with cascading neon lights, fog effects, tiny LED advertisements, surrounded by dark futuristic cityscape, displayed in a museum vitrine, dramatic lighting",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      }
-    ]
-  },
-  {
-    "artist_name": "Anselm Kessler",
-    "artist_introduction": "Creates intricate diagrammatic paintings based on microvita theory and the movement of subtle entities through perception and consciousness.",
-    "art_introduction": "These paintings should be read as speculative maps rather than conventional religious images. Angels and demons represent positive and negative microvita that travel through the senses, transmit ideas, and influence consciousness. Anatomical charts, taxonomies, invented notation, and directional systems give invisible mental and spiritual processes the appearance of an exact, navigable science.",
-    "artist_long_description": "Anselm Kessler builds diagrammatic paintings around microvita theory, treating reality as a field populated by subtle living entities that carry qualities, impulses, and ideas. In his work, angels and demons are not inherited religious characters but positive and negative microvita: forces that travel through sight, sound, touch, taste, and smell, enter the mind, and alter perception. His invented maps trace how these entities move between bodies, environments, and cultures; how they imbibe and transmit ideas; and how attention can attract, resist, or transform them. Painted with the precision of technical charts, the works propose a speculative science of consciousness in which thought is ecological, contagious, and never entirely private.",
-    "series_name": "Sacred Mechanics",
-    "art_pieces": [
-      {
-        "art_piece_name": "Soul Energy Flow Diagram",
-        "year": "2024",
-        "technique_used": "Oil painting on canvas, invented script annotation, medieval manuscript style",
-        "short_description": "A detailed diagram mapping the flow of positive and negative spiritual energy through the human soul, annotated entirely in an invented mystical language.",
-        "long_description": "Kessler's most foundational piece treats the soul as a hydraulic system, complete with flow charts, directional arrows, and pressure indicators. Positive microvita (rendered as luminous geometric forms) and negative microvita (depicted as shadowy angular shapes) move through carefully mapped spiritual channels. The diagram suggests that enlightenment is a matter of proper spiritual plumbing — redirect the flow here, increase pressure there, and transcendence becomes as achievable as assembling furniture. The invented script annotations provide detailed instructions that sound authoritative and feel ancient, despite being completely fabricated. Viewers often find themselves convinced they're looking at genuine esoteric knowledge, which is precisely Kessler's point: the line between authentic spiritual wisdom and convincing spiritual theater is thinner than most people would like to admit.",
-        "display_context": "Gallery wall, requires close viewing for detail appreciation",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Detailed mystical diagram showing spiritual energy flow through geometric channels, positive and negative energy forms, annotated in invented medieval-style script, warm parchment tones, precision linework, framed on gallery wall",
-        "should_generate": true,
-        "include_in_book": true,
+        "should_generate": false,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
-      {
-        "art_piece_name": "Angelic Hierarchy Navigation Chart",
-        "year": "2024",
-        "technique_used": "Oil painting on canvas, gold leaf details, invented theological notation",
-        "short_description": "An organizational chart depicting the complete hierarchy of angels from Seraphim to guardian angels, with detailed reporting structures and jurisdictional boundaries.",
-        "long_description": "The chart maps classes of positive microvita as they travel through the senses and carry intuition, courage, sympathy, and expansive ideas into consciousness. Angelic forms function as visual names for these subtle entities rather than as members of a celestial bureaucracy. Directional paths show how an idea is imbibed, amplified through attention, and transmitted from one mind to another.",
-        "display_context": "Gallery wall installation, corporate-scale presentation",
-        "aspect_ratio": "16:9",
-        "image_prompt": "Large organizational chart showing angelic hierarchy with detailed bureaucratic structures, gold leaf highlights, baroque angel illustrations connected by precise lines, invented script annotations, corporate meets medieval, gallery wall",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Demonic Classification System",
-        "year": "2025",
-        "technique_used": "Oil painting on canvas, dark pigments, taxonomical illustration style",
-        "short_description": "A scientific taxonomy of demons organized by function, habitat, and specialized skills, presented in the style of a medieval bestiary meets biological field guide.",
-        "long_description": "This taxonomy maps negative microvita by the senses through which they travel and the ideas or compulsions they carry. Demonic forms identify patterns of fear, cruelty, fixation, and confusion without reducing them to metaphor: within the work, they are subtle entities moving between environments and minds. The classification keys trace how they are attracted, imbibed, reinforced, and potentially transformed.",
-        "display_context": "Gallery wall, natural history museum aesthetic",
-        "aspect_ratio": "4:5",
-        "image_prompt": "Scientific taxonomy illustration of various demon types with detailed anatomical features, dark baroque style, classification labels in invented script, natural history field guide aesthetic, precise biological illustration style",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Spiritual Anatomy Atlas",
-        "year": "2024",
-        "technique_used": "Oil painting on canvas, anatomical precision, layered spiritual systems",
-        "short_description": "A detailed anatomical chart showing the location and function of spiritual organs within the human body: the soul's liver, the heart's prayer chambers, the mind's divine reception antenna.",
-        "long_description": "In Kessler's most ambitious piece, the human body becomes a complex spiritual machine with identifiable spiritual organs. The soul's liver processes karmic toxins. The heart contains specialized prayer chambers for different types of divine communication. The brain features a divine reception antenna that can be tuned to various celestial frequencies. Each spiritual organ is painted with anatomical precision and labeled with invented terminology that sounds both ancient and medical. The piece suggests that spiritual health operates according to the same principles as physical health — regular maintenance, proper diet, and periodic diagnostic check-ups. It's a medical manual for the soul, complete with troubleshooting guide.",
-        "display_context": "Gallery wall, medical illustration aesthetic",
-        "aspect_ratio": "9:16",
-        "image_prompt": "Anatomical chart showing human body with detailed spiritual organs, medical illustration precision, divine reception antenna in brain, prayer chambers in heart, labeled in invented mystical script, clinical meets mystical",
-        "should_generate": true,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      }
-    ]
-  },
-  {
-    "artist_name": "Diego Xólotl Hernández",
-    "artist_introduction": "Creates monumental oil paintings in which Mesoamerican creation myths unfold through industrial machinery, contemporary materials, and urban culture.",
-    "art_introduction": "The paintings treat mythology as an active description of the present rather than a closed historical inheritance. Corn becomes both sacred material and industrial product; deities operate assembly lines; and cosmic figures absorb punk aesthetics and modern Mexican life. Their scale and detailed realism invite the viewer to encounter these collisions as witnessed events rather than symbolic illustrations.",
-    "artist_long_description": "Diego Xólotl Hernández (named after the Aztec god of lightning and death) approaches painting as a form of mythological archaeology. His canvases, some reaching 4 by 6 meters, function as visual novels where Mesoamerican creation stories collide with the realities of modern Mexico. Trained in traditional oil painting techniques in Guadalajara and later influenced by muralists like Orozco and Rivera, Hernández develops a hyperrealistic style that treats mythology as documentary fact. His work asks what creation myths would look like if they were happening now, in factories and city streets, with the same gods but different materials. Critics have described his paintings as 'industrial mythology' and 'sacred capitalism rendered visible.' Each canvas takes months to complete, every detail meticulously painted as if witnessing actual divine events unfolding in contemporary Mexico.",
-    "series_name": "Mythological Realism",
-    "art_pieces": [
       {
         "art_piece_name": "Corn Man Genesis",
         "year": "2024",
         "technique_used": "Oil painting on large format canvas, photorealistic detail",
         "short_description": "A monumental painting depicting a human figure assembled grain by grain from individual corn kernels, rendering the Popol Vuh creation myth in obsessive photorealistic detail.",
-        "long_description": "Hernández treats the Mayan creation story from the Popol Vuh not as metaphor but as reportage. His 3 by 4 meter canvas shows a human figure constructed entirely from individually painted corn kernels, each one catching light differently, some golden, some white, some deep orange-red. The figure appears to be awakening, emerging from a scattered field of loose corn that gradually organizes itself into human form. Every grain is painted with the precision of a 17th-century Dutch still life, yet the overall composition reads as contemporary photorealism. The background shows the misty mountains of Guatemala where the myth originates, but painted with such hyperreal detail that they seem more real than reality. Hernández spends months on each kernel, treating the creation of the first humans as an event worthy of the most obsessive documentation.",
+        "long_description": "Cienfuegos Mora treats the Mayan creation story from the Popol Vuh not as metaphor but as reportage. His 3 by 4 meter canvas shows a human figure constructed entirely from individually painted corn kernels, each one catching light differently, some golden, some white, some deep orange-red. The figure appears to be awakening, emerging from a scattered field of loose corn that gradually organizes itself into human form. Every grain is painted with the precision of a 17th-century Dutch still life, yet the overall composition reads as contemporary photorealism. The background shows the misty mountains of Guatemala where the myth originates, but painted with such hyperreal detail that they seem more real than reality. Cienfuegos Mora spends months on each kernel, treating the creation of the first humans as an event worthy of the most obsessive documentation.",
         "display_context": "Museum wall, requires substantial space for viewing distance",
         "aspect_ratio": "4:3",
         "image_prompt": "Monumental oil painting of a human figure composed entirely of individual corn kernels, each grain painted in photorealistic detail, warm golden corn tones, misty mountain background, awakening pose, mythological and hyperreal, museum gallery wall, dramatic lighting",
-        "should_generate": true,
-        "include_in_book": true,
+        "should_generate": false,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
-        "art_piece_name": "Maseca Factory of the Gods",
+        "art_piece_name": "Factory of the Gods",
         "year": "2024",
         "technique_used": "Oil painting on large format canvas, industrial and mythological imagery",
         "short_description": "A deity that is half ancient Coatlicue and half industrial assembly machinery operates a modern masa factory producing human figures instead of tortillas.",
-        "long_description": "In Hernández's most ambitious composition, the Aztec mother goddess Coatlicue has been partially mechanized, her lower half replaced by industrial masa-processing equipment. She operates a vast factory where conveyor belts carry tortilla dough that transforms into human figures as it moves through the production line. Her serpent skirt becomes industrial tubing, her necklace of hands and hearts now feeds the machinery with raw materials. Workers in Maseca uniforms tend to the production of humanity itself, quality-checking the emerging people for defects. Steam rises from the industrial equipment, but it's perfumed with copal incense. The factory floor is both sacred space and industrial site. Hernández paints every detail with documentary precision: the brand logos, the safety equipment, the divine necklaces, the emerging humans blinking in the fluorescent light of their birthplace.",
+        "long_description": "In Cienfuegos Mora's most ambitious composition, the Aztec mother goddess Coatlicue has been partially mechanized, her lower half replaced by industrial masa-processing equipment. She operates a vast factory where conveyor belts carry tortilla dough that transforms into human figures as it moves through the production line. Her serpent skirt becomes industrial tubing, her necklace of hands and hearts now feeds the machinery with raw materials. Workers in Maseca uniforms tend to the production of humanity itself, quality-checking the emerging people for defects. Steam rises from the industrial equipment, but it's perfumed with copal incense. The factory floor is both sacred space and industrial site. Cienfuegos Mora paints every detail with documentary precision: the brand logos, the safety equipment, the divine necklaces, the emerging humans blinking in the fluorescent light of their birthplace.",
         "display_context": "Large gallery wall or museum space, industrial-scale presentation",
         "aspect_ratio": "16:9",
         "image_prompt": "Large oil painting of Aztec goddess Coatlicue merged with industrial machinery in a modern masa factory, workers in uniforms, conveyor belts producing human figures, steam and fluorescent lighting, brand logos visible, hyperrealistic industrial mythology, sacred and mechanical combined",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -298,12 +189,12 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, cosmic and street imagery",
         "short_description": "A figure that embodies both Aztec god Tezcatlipoca and contemporary Mexican punk culture, draped in material that is simultaneously a sarape and the Milky Way galaxy. Tezcatlipunk",
-        "long_description": "Hernández's most conceptually ambitious piece depicts a figure that refuses to choose between ancient divinity and contemporary street culture. The central character sports a mohawk that trails into obsidian smoke, facial piercings that catch starlight, and leather jacket sleeves that seamlessly transform into jaguar fur. The sarape draped across the figure's shoulders is painted as the actual Milky Way — every star individually rendered — while maintaining the traditional patterns and colors of Mexican textile work. The figure stands in what appears to be both a urban alleyway covered in graffiti and the cosmic void between worlds. Band patches on the jacket read names of Aztec deities in punk typography. The painting asks whether rebellion is always sacred, whether the gods would be punks if they walked among us now, and whether the cosmos and the street corner are really such different territories.",
+        "long_description": "Cienfuegos Mora's most conceptually ambitious piece depicts a figure that refuses to choose between ancient divinity and contemporary street culture. The central character sports a mohawk that trails into obsidian smoke, facial piercings that catch starlight, and leather jacket sleeves that seamlessly transform into jaguar fur. The sarape draped across the figure's shoulders is painted as the actual Milky Way — every star individually rendered — while maintaining the traditional patterns and colors of Mexican textile work. The figure stands in what appears to be both a urban alleyway covered in graffiti and the cosmic void between worlds. Band patches on the jacket read names of Aztec deities in punk typography. The painting asks whether rebellion is always sacred, whether the gods would be punks if they walked among us now, and whether the cosmos and the street corner are really such different territories.",
         "display_context": "Gallery wall with dark lighting to enhance cosmic elements",
         "aspect_ratio": "9:16",
         "image_prompt": "Monumental oil painting of punk figure with mohawk and leather jacket, sarape that transforms into the Milky Way galaxy with individual stars, jaguar fur sleeves, urban alley with cosmic void, band patches with Aztec deity names, hyperrealistic cosmic punk mythology, dramatic dark lighting",
-        "should_generate": true,
-        "include_in_book": true,
+        "should_generate": false,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -311,7 +202,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, photorealistic portraiture, satirical composition",
         "short_description": "A monumental painting depicting four iconic Mexican comedians - El Chavo del 8, Cantinflas, Capulina, and Viruta - holding hands and smiling alongside three of Mexico's richest men: Carlos Slim, Ricardo Salinas Pliego, and Carlos Hank Rohn.",
-        "long_description": "Seven men hold hands in a line, smiling for the viewer as if posing for a group photograph at a charity gala. On one side: El Chavo del 8, the eternal poor child; Cantinflas, the pelado who outwitted the powerful through language; Capulina and Viruta, the slapstick duo whose humor came from having nothing and needing nothing. On the other side: Carlos Slim, the telecommunications monopolist; Ricardo Salinas Pliego, the television magnate; Carlos Hank Rohn, heir to the political-business dynasty. All seven are painted in Hernandez's hyperrealistic style, which means the comedians look as real as the billionaires, which means the billionaires look as fictional as the comedians. The handholding suggests complicity, or friendship, or the kind of mutual dependence that a society needs between its entertainers and its owners. The smiles are identical in their performed warmth. The painting does not say whether the joke is on the poor or on the rich, but it notes that both groups are performing for exactly the same audience.",
+        "long_description": "Seven men hold hands in a line, smiling for the viewer as if posing for a group photograph at a charity gala. On one side: El Chavo del 8, the eternal poor child; Cantinflas, the pelado who outwitted the powerful through language; Capulina and Viruta, the slapstick duo whose humor came from having nothing and needing nothing. On the other side: Carlos Slim, the telecommunications monopolist; Ricardo Salinas Pliego, the television magnate; Carlos Hank Rohn, heir to the political-business dynasty. All seven are painted in Cienfuegos Mora's hyperrealistic style, which means the comedians look as real as the billionaires, which means the billionaires look as fictional as the comedians. The handholding suggests complicity, or friendship, or the kind of mutual dependence that a society needs between its entertainers and its owners. The smiles are identical in their performed warmth. The painting does not say whether the joke is on the poor or on the rich, but it notes that both groups are performing for exactly the same audience.",
         "display_context": "Museum wall, requires substantial width for the seven-figure composition",
         "aspect_ratio": "16:9",
         "image_prompt": "Monumental hyperrealistic oil painting of seven men holding hands in a line smiling - El Chavo del 8 in his barrel, Cantinflas with his signature mustache, Capulina and Viruta in comedy attire, alongside Carlos Slim in a suit, Ricardo Salinas Pliego, and Carlos Hank Rohn - all holding hands and grinning, warm satirical composition, dramatic gallery lighting, mythology meets contemporary Mexico",
@@ -324,7 +215,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, photorealistic documentary style, museum installation composition",
         "short_description": "A painting depicting four photographs of Superbarrio displayed in a museum - the mythical social fighter and comedic character documented in action against oligarchs and political parties.",
-        "long_description": "Hernandez paints what appears to be a museum wall displaying four documentary photographs of Superbarrio - the real masked social activist who emerged from Mexico City's earthquake-devastated neighborhoods in 1987, wearing a red and yellow lucha libre costume while organizing tenants, confronting evictions, and embodying a form of political theater that was simultaneously absurd and devastatingly effective. The paintings-within-a-painting show Superbarrio in various confrontations, each composed with the care of a photojournalist who understood that the spectacle was the message. By placing these images inside a museum context, Hernandez asks when social action becomes art, when documentation becomes mythology, and whether Superbarrio's mask was more honest than the faces it opposed.",
+        "long_description": "Cienfuegos Mora paints what appears to be a museum wall displaying four documentary photographs of Superbarrio - the real masked social activist who emerged from Mexico City's earthquake-devastated neighborhoods in 1987, wearing a red and yellow lucha libre costume while organizing tenants, confronting evictions, and embodying a form of political theater that was simultaneously absurd and devastatingly effective. The paintings-within-a-painting show Superbarrio in various confrontations, each composed with the care of a photojournalist who understood that the spectacle was the message. By placing these images inside a museum context, Cienfuegos Mora asks when social action becomes art, when documentation becomes mythology, and whether Superbarrio's mask was more honest than the faces it opposed.",
         "display_context": "Gallery wall, large format, museum-within-museum framing",
         "aspect_ratio": "16:9",
         "image_prompt": "Oil painting depicting four documentary-style photographs displayed on a museum wall showing Superbarrio the Mexican masked social fighter in various confrontations, museum lighting, frames, gallery context, hyperrealistic painting of photographs",
@@ -337,7 +228,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, black and white photorealistic rendering",
         "short_description": "A black and white painting in the style of an award-winning photograph showing a Tesla car, a worn-out poster of Superbarrio, and a homeless person - three Mexicos in one frame.",
-        "long_description": "Hernandez renders this scene entirely in black and white, adopting the visual language of photojournalism awards - the kind of image that wins World Press Photo and is forgotten within a year. A Tesla - emblem of billionaire mythology made vehicular - shares the frame with a torn, weather-beaten poster of Superbarrio and a homeless person sleeping nearby. Three versions of Mexico occupy the same street corner: the aspirational future, the mythological past, and the abandoned present. The black and white removes the distraction of color and forces the viewer to read the composition as statement. Hernandez paints it with the precision of a photograph precisely because photographs of poverty win awards and change nothing. The painting, at least, admits this.",
+        "long_description": "Cienfuegos Mora renders this scene entirely in black and white, adopting the visual language of photojournalism awards - the kind of image that wins World Press Photo and is forgotten within a year. A Tesla - emblem of billionaire mythology made vehicular - shares the frame with a torn, weather-beaten poster of Superbarrio and a homeless person sleeping nearby. Three versions of Mexico occupy the same street corner: the aspirational future, the mythological past, and the abandoned present. The black and white removes the distraction of color and forces the viewer to read the composition as statement. Cienfuegos Mora paints it with the precision of a photograph precisely because photographs of poverty win awards and change nothing. The painting, at least, admits this.",
         "display_context": "Gallery wall, requires distance viewing, dramatic single spotlight",
         "aspect_ratio": "3:2",
         "image_prompt": "Black and white hyperrealistic oil painting in photojournalist award style showing a Tesla car parked on a Mexican street, a torn worn-out poster of Superbarrio the masked wrestler on a wall, and a homeless person sleeping nearby, dramatic documentary composition, social realism",
@@ -350,7 +241,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, hyperrealistic lucha libre imagery, satirical political composition",
         "short_description": "Superbarrio fights on a wrestling ring against four midgets, each adorned with paraphernalia of a Mexican political party: PRI, PAN, PRD, and Morena.",
-        "long_description": "The composition is deliberately absurd and deliberately accurate. Superbarrio - full-sized, masked, cape flying - faces four opponents who are small enough to be ridiculous but numerous enough to be dangerous. Each midget wrestler wears the colors and symbols of a major Mexican political party: the red-white-green of PRI, the blue of PAN, the yellow sun of PRD, and the maroon of Morena. The ring is real. The ropes are taut. The audience is painted as a blur because they do not matter - what matters is the spectacle of one masked idealist against four small opponents who, despite their size, represent the entire machinery of institutional politics. Hernandez paints the lucha libre with genuine affection for the form while using it as the only adequate visual metaphor for Mexican democracy: theatrical, predetermined in outcome, and entertaining enough that the audience keeps buying tickets.",
+        "long_description": "The composition is deliberately absurd and deliberately accurate. Superbarrio - full-sized, masked, cape flying - faces four opponents who are small enough to be ridiculous but numerous enough to be dangerous. Each midget wrestler wears the colors and symbols of a major Mexican political party: the red-white-green of PRI, the blue of PAN, the yellow sun of PRD, and the maroon of Morena. The ring is real. The ropes are taut. The audience is painted as a blur because they do not matter - what matters is the spectacle of one masked idealist against four small opponents who, despite their size, represent the entire machinery of institutional politics. Cienfuegos Mora paints the lucha libre with genuine affection for the form while using it as the only adequate visual metaphor for Mexican democracy: theatrical, predetermined in outcome, and entertaining enough that the audience keeps buying tickets.",
         "display_context": "Gallery wall, large format, vivid color",
         "aspect_ratio": "16:9",
         "image_prompt": "Hyperrealistic oil painting of Superbarrio in red and yellow lucha libre costume fighting four midget wrestlers on a wrestling ring, each small wrestler wearing political party colors and symbols - PRI red-white-green, PAN blue, PRD yellow sun, Morena maroon - dramatic ring lighting, blurred audience, satirical and spectacular",
@@ -363,7 +254,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, hyperrealistic action composition, lucha libre dynamics",
         "short_description": "Superbarrio mid-air, about to land on Carlos Slim after jumping from the third rope of the wrestling ring.",
-        "long_description": "The moment frozen is pure lucha libre mythology: the high-flying move, the third rope as launch pad, gravity suspended for one painted instant before impact. Superbarrio is airborne - cape spread, mask gleaming under arena lights, body committed to the arc of descent. Below him, Carlos Slim - painted with the same hyperrealistic precision Hernandez applies to Aztec gods - looks up with an expression that is either terror or mild inconvenience, which for a man of his wealth may be the same thing. The painting captures the single instant in which the powerless are above the powerful, in which gravity serves justice, in which a masked man in spandex is more real than the richest person in Latin America. That this moment exists only in paint is either the tragedy or the promise of the piece.",
+        "long_description": "The moment frozen is pure lucha libre mythology: the high-flying move, the third rope as launch pad, gravity suspended for one painted instant before impact. Superbarrio is airborne - cape spread, mask gleaming under arena lights, body committed to the arc of descent. Below him, Carlos Slim - painted with the same hyperrealistic precision Cienfuegos Mora applies to Aztec gods - looks up with an expression that is either terror or mild inconvenience, which for a man of his wealth may be the same thing. The painting captures the single instant in which the powerless are above the powerful, in which gravity serves justice, in which a masked man in spandex is more real than the richest person in Latin America. That this moment exists only in paint is either the tragedy or the promise of the piece.",
         "display_context": "Gallery wall, dynamic composition requires height for impact",
         "aspect_ratio": "4:5",
         "image_prompt": "Hyperrealistic oil painting of Superbarrio in red and yellow mask mid-leap from the third rope of a wrestling ring, about to land on Carlos Slim below in the ring, dramatic arena lighting, cape spread in air, frozen action moment, lucha libre mythology meets billionaire confrontation",
@@ -376,7 +267,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, hyperrealistic over-the-shoulder composition",
         "short_description": "An over-the-shoulder shot of Superbarrio confronting Carlos Slim, Ricardo Salinas Pliego, and Carlos Hank Rohn on the wrestling ring.",
-        "long_description": "The composition is cinematic - we see the confrontation from behind Superbarrio's shoulder, his red and yellow mask partially visible at the edge of the frame, his broad back filling the foreground. Across the ring stand three men in suits: Carlos Slim, Ricardo Salinas Pliego, and Carlos Hank Rohn - the same billionaire trio from Comedia, but here without comedians to hold their hands. They face the masked wrestler alone. The over-the-shoulder framing places the viewer in Superbarrio's corner, makes us his ally by visual grammar alone. The three opponents are painted with boardroom confidence - they know the ring is performative, they know the outcome is predetermined, they know their wealth operates in a reality that wrestling cannot reach. Superbarrio knows this too. He fights anyway. This, Hernandez suggests, is the most Mexican form of courage.",
+        "long_description": "The composition is cinematic - we see the confrontation from behind Superbarrio's shoulder, his red and yellow mask partially visible at the edge of the frame, his broad back filling the foreground. Across the ring stand three men in suits: Carlos Slim, Ricardo Salinas Pliego, and Carlos Hank Rohn - the same billionaire trio from Comedia, but here without comedians to hold their hands. They face the masked wrestler alone. The over-the-shoulder framing places the viewer in Superbarrio's corner, makes us his ally by visual grammar alone. The three opponents are painted with boardroom confidence - they know the ring is performative, they know the outcome is predetermined, they know their wealth operates in a reality that wrestling cannot reach. Superbarrio knows this too. He fights anyway. This, Cienfuegos Mora suggests, is the most Mexican form of courage.",
         "display_context": "Gallery wall, cinematic widescreen composition",
         "aspect_ratio": "16:9",
         "image_prompt": "Hyperrealistic oil painting over-the-shoulder view from behind Superbarrio in red and yellow mask facing Carlos Slim Ricardo Salinas Pliego and Carlos Hank Rohn in suits standing across a wrestling ring, dramatic arena lighting, cinematic framing, confrontation between masked fighter and oligarchs",
@@ -389,7 +280,7 @@
         "year": "2025",
         "technique_used": "Oil painting on large format canvas, photorealistic urban decay documentation",
         "short_description": "A worn-out poster of Superbarrio peeling from a street wall - the revolutionary reduced to fading paper, still visible, still masked, still present in the city that forgot him.",
-        "long_description": "This is the quietest painting in the Superbarrio series and perhaps the most honest. No ring. No opponents. No spectacle. Just a wall, a poster, and time. The poster shows Superbarrio in his classic pose - fist raised, cape flowing - but the paper is torn, sun-bleached, partially covered by newer advertisements for mobile phone plans and political campaigns. Rain has run the ink. Someone has drawn a mustache on the mask, which is both vandalism and affection. The surrounding wall tells its own story in layers of paint, graffiti, and urban accumulation. Hernandez paints every crack and stain with the same attention he gives to divine faces, because this is also mythology - the mythology of what happens to heroes after the cameras leave. The poster is still there. Superbarrio is still masked. The wall is still standing. Whether any of this constitutes survival is the question the painting leaves open.",
+        "long_description": "This is the quietest painting in the Superbarrio series and perhaps the most honest. No ring. No opponents. No spectacle. Just a wall, a poster, and time. The poster shows Superbarrio in his classic pose - fist raised, cape flowing - but the paper is torn, sun-bleached, partially covered by newer advertisements for mobile phone plans and political campaigns. Rain has run the ink. Someone has drawn a mustache on the mask, which is both vandalism and affection. The surrounding wall tells its own story in layers of paint, graffiti, and urban accumulation. Cienfuegos Mora paints every crack and stain with the same attention he gives to divine faces, because this is also mythology - the mythology of what happens to heroes after the cameras leave. The poster is still there. Superbarrio is still masked. The wall is still standing. Whether any of this constitutes survival is the question the painting leaves open.",
         "display_context": "Gallery wall, intimate scale compared to the action paintings",
         "aspect_ratio": "4:5",
         "image_prompt": "Hyperrealistic oil painting of a worn torn sun-bleached poster of Superbarrio on a Mexican street wall, partially covered by newer advertisements, rain-damaged ink, urban decay layers of paint and graffiti around it, documentary street photography style rendered in oil paint, melancholic and persistent",
@@ -415,7 +306,7 @@
         "display_context": "Gallery wall installation, large-format wall-hanging body-shaped canvas",
         "aspect_ratio": "9:16",
         "image_prompt": "Large body-shaped canvas showing a human figure painted in multiple distinct art historical styles across different body parts, cave art hand, anime eye, photorealistic torso, pixelated lower half, Renaissance arm, gallery wall, dramatic lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -428,7 +319,7 @@
         "display_context": "Gallery wall installation, natural lighting preferred",
         "aspect_ratio": "9:16",
         "image_prompt": "A human body silhouette painted as a continuous mountain landscape, snow-capped peaks at the head, rolling green valleys in the torso, forested legs, seamless photorealistic landscape painting, dramatic natural lighting, gallery wall",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -441,7 +332,7 @@
         "display_context": "Gallery wall installation, high-contrast lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted with aggressive abstract expressionist brushstrokes, thick impasto paint, violent color relationships, gestural abstraction that seems to fight against the figurative outline, high contrast gallery lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -454,7 +345,7 @@
         "display_context": "Darkened gallery room, interactive star chart reference available",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as deep space with hundreds of tiny LED lights representing actual star positions, deep blue and black cosmic background with nebula formations, darkened gallery setting, astronomical accuracy meets human form",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -467,7 +358,7 @@
         "display_context": "Gallery wall installation, warm traditional lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate Dutch Golden Age still life, head as overflowing fruit bowl, torso with flowers books and skull, classical technique with perfect light and shadow, warm gallery lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -480,7 +371,7 @@
         "display_context": "Gallery installation with precise positioning requirements, family arrangement",
         "aspect_ratio": "Variable (multiple canvases)",
         "image_prompt": "Four human body silhouette canvases of different sizes (adult woman, adult man, child, small dog) arranged in gallery space, each painted with portions of the same continuous mountain landscape, when viewed together they complete one seamless vista, warm family lighting, conceptual art installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -493,7 +384,7 @@
         "display_context": "Gallery wall installation, warm lighting to enhance food textures",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate French cuisine arrangement, Camembert wheel head, coq au vin in torso, baguette arms, wine bottle neck, escargot and macarons in legs, hyperrealistic food painting, warm bistro lighting, gallery wall",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -506,7 +397,7 @@
         "display_context": "Gallery wall installation, vibrant market-style lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as Mexican market foods, tortilla stack head, mole poblano torso, chiles en nogada chest, avocado arms, traditional sweets in legs, marigold flower frame, vibrant mercado colors, warm market lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -519,20 +410,20 @@
         "display_context": "Natural history museum or science gallery wall, educational lighting",
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as evolutionary tree, primates in head with tiny human in pituitary gland, mammals in chest, reptiles in abdomen, insects in legs, microorganisms at feet, scientific illustration precision, natural history museum lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
       {
         "art_piece_name": "Platform Body",
         "year": "2025",
-        "technique_used": "Body-shaped mixed-media sculpture, prosthetic components, exposed circuitry, branded industrial parts",
-        "short_description": "A human-form cyborg assembled from visibly branded OpenAI, Anthropic, and NVIDIA components, turning the body into a platform shared by competing intelligence companies.",
-        "long_description": "Delacroix extends the body-shaped canvas into a constructed cyborg. NVIDIA-marked processors form the nervous system; OpenAI and Anthropic modules occupy competing cognitive compartments; cables and prosthetic joints remain exposed. The corporate marks are not sponsorship but anatomy: identity has become inseparable from the platforms that supply memory, language, prediction, and vision.",
-        "display_context": "Freestanding gallery sculpture with visible branded components",
+        "technique_used": "Oil painting on body-shaped canvas, hyperrealistic rendering of prosthetic components, exposed circuitry, and branded industrial parts",
+        "short_description": "A human body-shaped canvas painted as a cyborg assembled from visibly branded OpenAI, Anthropic, and NVIDIA components, turning the body into a platform shared by competing intelligence companies.",
+        "long_description": "Delacroix paints the body-shaped canvas as a constructed cyborg. NVIDIA-marked processors form the nervous system; OpenAI and Anthropic modules occupy competing cognitive compartments; cables and prosthetic joints are rendered in hyperrealistic detail across the silhouette. The corporate marks are not sponsorship but anatomy: identity has become inseparable from the platforms that supply memory, language, prediction, and vision.",
+        "display_context": "Gallery wall installation, body-shaped canvas",
         "aspect_ratio": "9:16",
-        "image_prompt": "Full-body contemporary cyborg sculpture assembled from exposed premium computing parts, visible OpenAI Anthropic and NVIDIA branding integrated into chest head and nervous system, elegant gallery installation, not a movie robot",
-        "should_generate": true,
+        "image_prompt": "Human body silhouette canvas painted as a contemporary cyborg with exposed premium computing parts, visible OpenAI Anthropic and NVIDIA branding integrated into chest head and nervous system, hyperrealistic oil painting on body-shaped canvas, elegant gallery wall, not a sculpture",
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -554,7 +445,7 @@
         "display_context": "Museum vitrine display, clinical laboratory aesthetic",
         "aspect_ratio": "4:5",
         "image_prompt": "Mona Lisa pigments separated into measured glass tubes in a museum vitrine, Renaissance palette, clinical conceptual art",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -567,7 +458,7 @@
         "display_context": "Museum vitrine display, clinical laboratory aesthetic",
         "aspect_ratio": "4:5",
         "image_prompt": "Guernica reduced to separate black white and grey pigments in labeled laboratory glassware, museum vitrine",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -580,7 +471,7 @@
         "display_context": "Museum vitrine display, clinical laboratory aesthetic",
         "aspect_ratio": "4:5",
         "image_prompt": "Tiny measured residues of deep Rothko pigments in laboratory tubes, large empty vitrine space, conceptual museum display",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -593,7 +484,7 @@
         "display_context": "Gallery installation with sculptural centerpiece and ingredient displays",
         "aspect_ratio": "16:9",
         "image_prompt": "A museum installation showing all hotdog ingredients laid out clinically: a life-sized pink pig sculpture as centerpiece, bread buns, wheat flour, tomatoes, cucumbers, mustard tubes, ketchup, corn syrup jar, nitrates and preservatives in labeled glass containers, bright clinical lighting, conceptual art aesthetic",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -606,7 +497,7 @@
         "display_context": "Large gallery space or industrial museum floor installation",
         "aspect_ratio": "16:9",
         "image_prompt": "Industrial art installation showing raw car materials laid out on a factory floor: steel planks, plastic pellet bags, circuit boards, IC chips in labeled bags, wiring coils, harsh industrial fluorescent lighting, precise forensic arrangement",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -619,7 +510,7 @@
         "display_context": "Gallery pedestal, white cube space",
         "aspect_ratio": "1:1",
         "image_prompt": "A McDonald's hamburger preserved inside a glass vacuum chamber on a white museum pedestal, pristine white gallery lighting, the burger suspended in perfect preservation, deeply ironic and solemn simultaneously, fine art photography",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -654,7 +545,7 @@
         "display_context": "Museum vitrine containing a full snack-canvas mosaic, shown as one unified engraved composition",
         "aspect_ratio": "1:1",
         "image_prompt": "A full square canvas assembled from many golden-brown papas de calle and potato chips, forming one continuous mosaic surface inside a museum vitrine, with a detailed laser engraving of the Aztec goddess Coatlicue spanning the entire snack canvas rather than appearing on individual chips; dramatic gallery lighting, documentary realism, visible chip seams and textures contributing to the engraved image",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -667,7 +558,7 @@
         "display_context": "Traditional Japanese scroll-style mounting for one tall unified Pringles canvas",
         "aspect_ratio": "9:16",
         "image_prompt": "A tall vertical canvas made from many aligned Pringles forming one continuous snack surface, mounted like a traditional Japanese hanging scroll with dark wood and silk details, with a single perfect enso circle laser-engraved across the entire Pringles canvas rather than on one chip; minimalist gallery lighting, documentary realism, visible chip geometry and seams",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -680,7 +571,7 @@
         "display_context": "Color-coordinated wall installation built as one unified Cheetos canvas",
         "aspect_ratio": "1:1",
         "image_prompt": "A full wall-mounted canvas assembled from many orange Cheetos to create a dense continuous surface, with a Japanese Rising Sun composition laser-engraved across the entire snack canvas rather than onto one Cheeto; gradient background from orange to deep red, documentary gallery realism, visible irregular snack textures shaping the rays",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -693,7 +584,7 @@
         "display_context": "Tibetan-inspired mounting for one unified Pringles mandala canvas",
         "aspect_ratio": "1:1",
         "image_prompt": "A large square canvas built from many carefully arranged Pringles, forming one continuous pale snack surface with an intricate Tibetan mandala laser-engraved across the entire assembled canvas rather than on one chip; traditional Tibetan-inspired mounting, warm gallery lighting, documentary realism, visible modular chip structure supporting the geometry",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -706,7 +597,7 @@
         "display_context": "Unified kettle-chip canvas displayed to emphasize the engraved field's surface variation",
         "aspect_ratio": "1:1",
         "image_prompt": "A full canvas assembled from many ridged kettle-cooked potato chips, forming an uneven golden surface with a Tibetan mandala laser-engraved across the entire snack field rather than onto one chip; dramatic shadows, documentary gallery realism, the geometry flowing across bumps valleys and seams",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -719,7 +610,7 @@
         "display_context": "Protective display with specialized lighting revealing a single unified rice-cracker canvas",
         "aspect_ratio": "1:1",
         "image_prompt": "A pale square canvas assembled from many delicate rice crackers, with an extremely subtle Tibetan mandala laser-engraved across the entire joined surface rather than one cracker; watermark-like scorched linework, a few cracks and seams preserved, soft gallery lighting, documentary realism",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -732,7 +623,7 @@
         "display_context": "Museum vitrine displaying one unified engraved tostada canvas preserved as a whole",
         "aspect_ratio": "1:1",
         "image_prompt": "A large square canvas assembled from many toasted corn tostadas, forming one continuous surface inside a museum vitrine, with a faithful laser-engraved recreation of an existing pre-Hispanic Xochipilli painting spanning the whole canvas rather than one tostada; seated deity, flowers, ornamental field, detailed scorched linework, documentary realism",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -745,7 +636,7 @@
         "display_context": "Dark gallery wall installation",
         "aspect_ratio": "16:9",
         "image_prompt": "A large horizontal rectangular artwork whose entire canvas is densely and continuously filled edge-to-edge with hundreds of orderly same-sized orange Cheetos, aligned into a uniform repeating texture that reads like one solid orange surface; a spiral galaxy is rendered over that full Cheetos canvas only through pyrographic scorching and burn marks, so the orange of the untouched Cheetos is the brightest hue and all darker tones come from brown and near-black burning; no white pigment, no white highlights, no white stars, no empty black gaps through the main picture area, and do not arrange the Cheetos themselves into spiral arms; documentary gallery realism",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -767,7 +658,7 @@
         "display_context": "Outdoor industrial space, factory courtyard, or large gallery warehouse",
         "aspect_ratio": "9:16",
         "image_prompt": "Three massive IBC industrial tanks stacked vertically, silver chrome metal frames, bottom tank filled with red paint, middle with blue, top with yellow, warehouse or industrial courtyard, dramatic perspective from below, monumental",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -780,7 +671,7 @@
         "display_context": "Outdoor or large indoor industrial space, companion to Primary Colors",
         "aspect_ratio": "9:16",
         "image_prompt": "Stacked IBC industrial tanks with gold chrome metal frame, deep purple paint visible inside, regal and industrial simultaneously, dramatic lighting, warehouse or outdoor setting, monumental scale, color as monument",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -793,7 +684,7 @@
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
         "image_prompt": "three-tier classical European basin fountain pouring separate red yellow and blue paint, gallery installation, closed loop color separation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -806,7 +697,7 @@
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
         "image_prompt": "rococo shell grotto fountain pouring separate pastel pink mint and lilac paint, gallery installation, closed loop color separation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -819,7 +710,7 @@
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
         "image_prompt": "stepped brutalist concrete trough fountain pouring black gold and acid green paint, gallery installation, closed loop color separation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -832,7 +723,7 @@
         "display_context": "Gallery warehouse, multiple sub-installations within single space",
         "aspect_ratio": "4:5",
         "image_prompt": "rotating sculpture of a formally dressed man continuously sprayed with black and gold paint, contemporary kinetic art installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -845,7 +736,7 @@
         "display_context": "Gallery warehouse, multiple sub-installations within single space",
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed by mechanical cans with pastel pink and mint green paint, contemporary kinetic art installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -858,7 +749,7 @@
         "display_context": "Gallery warehouse, multiple sub-installations within single space",
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed with vivid orange and red paint by robotic spray cans, contemporary kinetic art installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -871,7 +762,7 @@
         "display_context": "Large studio or gallery with elongated floor footprint",
         "aspect_ratio": "21:9",
         "image_prompt": "Ultra-wide hydrographic painting in progress on a long canvas, swirling oil paint patterns on water surface being absorbed by rotating canvas mechanism, fluid abstract patterns in deep blues, golds, and reds, studio environment, process as art",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -884,7 +775,7 @@
         "display_context": "Gallery installation, sculptures on plinths with recirculating drainage trays",
         "aspect_ratio": "4:5",
         "image_prompt": "White plaster sculptures of a plain man, a family group, a seated man, and a thin Buddha with thick golden paint pouring continuously over their heads, the gold beading and running off into drainage channels, gallery installation, warm golden light",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -897,7 +788,7 @@
         "display_context": "Gallery pedestal, secured installation, viewer distance maintained",
         "aspect_ratio": "4:5",
         "image_prompt": "A human skull functioning as a fountain with streams of pastel blue, pink, and white liquid flowing from the eye sockets and mouth, mounted on a dark stone pedestal, dramatic chiaroscuro lighting, beautiful and macabre simultaneously",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -910,7 +801,7 @@
         "display_context": "Large gallery or museum, full wall architectural installation",
         "aspect_ratio": "16:9",
         "image_prompt": "An entire gallery wall covered in cascading streams of paint flowing from top to bottom in multiple vivid colors, viewers visible from behind standing in front of it, monumental scale, immersive color environment, cinematic",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -932,7 +823,7 @@
         "display_context": "Gallery wall installation with concealed support, circular ash canvas",
         "aspect_ratio": "1:1",
         "image_prompt": "A small golden chrome seated Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash in dense and loose areas, subtle concealed support, gallery lighting, minimal and serene",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -945,7 +836,7 @@
         "display_context": "Gallery wall installation with ash canvas and delicately mounted memorial diamond",
         "aspect_ratio": "1:1",
         "image_prompt": "A brilliant memorial diamond slowly rotating in front of a canvas covered in ash patterns shaped like ocean waves, rainbow light refracting from the diamond onto the grey ash waves, profound and beautiful, gallery setting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -958,7 +849,7 @@
         "display_context": "Gallery floor or pedestal installation, viewed from above",
         "aspect_ratio": "21:9",
         "image_prompt": "Extreme horizontal ash battlefield on a vast canvas, tiny bronze Krishna and Arjuna sculpture near one edge, figures almost lost in the immense grey field, viewed from above, 21:9 composition",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -971,7 +862,7 @@
         "display_context": "Dedicated room installation, museum or historic venue, antique throne as centerpiece",
         "aspect_ratio": "16:9",
         "image_prompt": "An ornate antique royal throne in a dimly lit regal room, a mound of grey ashes seated upon it, across the empty room a small colorful smiling glass Buddha statue on a shelf, dramatic chiaroscuro lighting, profound stillness",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -984,7 +875,7 @@
         "display_context": "Dedicated dark room, museum installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A golden chrome Buddha face sculpted emerging from a large brass gong, dimly lit room with only the face and gong illuminated, electric oscillator at base, reverberant atmosphere, zen and ethereal, sound made visible",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -997,7 +888,7 @@
         "display_context": "Gallery pedestal installation, controlled electromagnetic environment",
         "aspect_ratio": "1:1",
         "image_prompt": "A replica of the seated Gandhara Buddha hovering above a canvas of shimmering magnetic liquid gallium metal, the silver surface forming subtle patterns around the base, gallery lighting, silver and gold tones, sacred and scientific",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1010,7 +901,7 @@
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
         "image_prompt": "A small samurai sculpture coated in shimmering magnetic gallium, caught mid-sword-thrust in full committed attack posture, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, molecular and monumental, blade driving forward",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1023,7 +914,7 @@
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
         "image_prompt": "A small sculpture of Moctezuma Ilhuicamina in full draw posture, bow arm extended and string at full tension, coated in shimmering magnetic gallium, standing on a field of white crystallized extracted DNA, gallery vitrine, dramatic spot lighting, the archer and the code",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1036,7 +927,7 @@
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
         "image_prompt": "Small sculpture of Geronimo coated in liquid-metal gallium, holding a shotgun lowered at his side and not pointing it, standing over crystallized DNA forms in a dark museum display case",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1049,7 +940,7 @@
         "display_context": "Gallery wall installation with concealed support, displayed as companion to Floating Buddha I",
         "aspect_ratio": "1:1",
         "image_prompt": "A standing golden chrome Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash arranged in slow spirals from edge to center, subtle concealed support, gallery wall, serene and minimal",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1062,7 +953,7 @@
         "display_context": "Gallery wall installation, circular format, concealed support",
         "aspect_ratio": "1:1",
         "image_prompt": "A reclining golden chrome Buddha in parinirvana pose projecting outward from a large circular black canvas covered in abstract human ash patterns, grey ash in loose irregular concentric forms spreading from center outward, subtle concealed support, gallery wall, still and profound",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1084,7 +975,7 @@
         "display_context": "Sealed gallery installation with safety enclosure, museum with conservation clearances",
         "aspect_ratio": "16:9",
         "image_prompt": "A large ancient mammoth tusk floating in a gleaming mercury bath within a sealed vitrine, the tusk perfectly reflected in the silver liquid surface, dark gallery lighting, ancient and elemental, cinematic still photography",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1097,7 +988,7 @@
         "display_context": "Sealed gallery installation, museum with safety clearances",
         "aspect_ratio": "16:9",
         "image_prompt": "Various animal bones of different sizes floating on a mirror-still mercury surface within a sealed dark container, bone shapes perfectly reflected in silver liquid, atmospheric dark lighting, scientific and poetic, deep time made visible",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1110,7 +1001,7 @@
         "display_context": "Gallery pedestal installation, controlled magnetic environment",
         "aspect_ratio": "4:5",
         "image_prompt": "A detailed metal recreation of the Quetzalcoatl feathered serpent sculpture levitating above a shimmering mercury bath, magnetic levitation coils visible in plinth, gallery installation, dramatic lighting, ancient god defying gravity",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1123,7 +1014,7 @@
         "display_context": "Gallery pedestal installation, controlled electromagnetic field environment",
         "aspect_ratio": "4:5",
         "image_prompt": "An ancient Roman military helmet covered in flowing magnetic liquid metal gallium, the silver liquid forming and reforming over the antique iron surface, electromagnetic coils visible in dark plinth, dramatic single-source lighting, ancient and futuristic",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1145,7 +1036,7 @@
         "display_context": "Large-scale outdoor or atrium installation, minimum ceiling clearance six meters, staircase structure required",
         "aspect_ratio": "1:1",
         "image_prompt": "Two enormous polished mirrored hemispheres slightly separated at the equator with a band of light entering the gap, a staircase on the exterior leading visitors up to peer inside, the interior a cascade of infinite recursive reflections, dramatic outdoor or atrium setting, monumental and geometric",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1158,7 +1049,7 @@
         "display_context": "Gallery table installation or floor-level canvas container",
         "aspect_ratio": "1:1",
         "image_prompt": "A circular yellow ferrofluid blob on a deep blue liquid pigment surface beginning to divide into two circles, electromagnetic field creating the separation, overhead view, vibrant fluid dynamics, gallery table installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1171,7 +1062,7 @@
         "display_context": "Gallery installation, freestanding or wall-mounted, best viewed in low ambient light; the viewing position is critical",
         "aspect_ratio": "16:9",
         "image_prompt": "Three fixed translucent sheets with CMYK color patterns layered over each other, the combined image resolving into the Han River nighttime panorama with illuminated bridges and Seoul towers reflected in water, gallery installation, the city permanently assembled from overlapping color",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1184,7 +1075,7 @@
         "display_context": "Gallery installation, freestanding or wall-mounted; the viewing position is critical",
         "aspect_ratio": "16:9",
         "image_prompt": "Three fixed translucent CMYK sheets layered over each other permanently resolving into the curved terraced tea fields of Boseong, green rows climbing a misty hillside in the traditional pre-industrial pattern, the landscape held in static color overlap, gallery installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1197,7 +1088,7 @@
         "display_context": "Gallery installation, freestanding, requires clearance for six-sheet rotating mechanism",
         "aspect_ratio": "16:9",
         "image_prompt": "Six translucent CMYK rotating sheets in two sets, the combined image in a transitional state showing the DMZ militarized border landscape and a pre-1945 Korean village and rice paddies simultaneously overlapping, razor wire crossing a road that leads north, watchtower rising from a paddy field, the two geographies briefly occupying the same coordinates, gallery installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1219,7 +1110,7 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank of milky scattering liquid forming the portrait lines of Zapata, his distinctive mustache and revolutionary hat visible as glowing green light lines, dark dramatic gallery room, acrylic panels guiding the beam",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1232,7 +1123,7 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam refracting through a glass tank with titanium dioxide scattering medium forming the portrait lines of Che Guevara, his iconic beret and intense gaze visible as glowing blue light lines, dark gallery room, precise laser optics",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1245,7 +1136,7 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "Laser line portrait of an ordinary masked Zapatista, not a commander, drawn in red light through fluorescent water and acrylic panels, dark gallery",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1258,7 +1149,7 @@
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
         "image_prompt": "A laser beam forming the determined features of Subhas Chandra Bose through milky Intralipid medium, his intense expression visible as glowing light lines, revolutionary leader emerging from physics, dark gallery room with precise optics",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1271,7 +1162,7 @@
         "display_context": "Museum wall installation, architectural integration, structural or decorative depending on venue",
         "aspect_ratio": "16:9",
         "image_prompt": "Chronological wall mosaic of adobe Roman concrete medieval mortar brick and modern composite, with a large contemporary graffiti tag by the artist sprayed across the full timeline, gallery installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1284,7 +1175,7 @@
         "display_context": "Gallery floor or pedestal installation, extended exhibition duration to show accumulation",
         "aspect_ratio": "4:5",
         "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1305,7 +1196,7 @@
         "display_context": "Steel plate on low gallery pedestal",
         "aspect_ratio": "1:1",
         "image_prompt": "Seeds arranged in intricate Chladni cymatic patterns directly over a vibrating steel plate, gallery pedestal, precise nodal geometry",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1318,7 +1209,7 @@
         "display_context": "Gallery wall, framed canvas",
         "aspect_ratio": "4:5",
         "image_prompt": "Layered Chladni cymatic patterns made from clearly different red blue yellow and white powders on canvas, colors mixing and separating, contemporary abstract art",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1331,7 +1222,7 @@
         "display_context": "Dedicated gallery room, tank embedded in floor or framed as viewing window in wall",
         "aspect_ratio": "9:16",
         "image_prompt": "A viewing window into a deep narrow water tank, water transitioning from crystal clear at the top to deep celestial Mayan cenote blue at the bottom, matte black surrounding frame, stunning depth and luminosity, no pigment, pure physics of light absorption",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1344,7 +1235,7 @@
         "display_context": "Gallery wall display, framed chromatography paper",
         "aspect_ratio": "4:5",
         "image_prompt": "Complex chromatography artwork with many deposits of clearly different natural and synthetic blues mixing crossing and separating across white paper, rich blue interplay, gallery frame",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1357,7 +1248,7 @@
         "display_context": "Gallery wall series, multiple framed chromatography papers",
         "aspect_ratio": "4:5",
         "image_prompt": "Multiple chromatography papers showing various Mexican plant pigments separated into organic color patterns, warm ochres and earth tones spreading in natural radial patterns, traditional market chemistry made visible, gallery wall series",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1370,7 +1261,7 @@
         "display_context": "Gallery installation on mannequin pedestal, single work or paired with a plain companion dress",
         "aspect_ratio": "4:5",
         "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1383,7 +1274,7 @@
         "display_context": "Gallery floor installation, room-scale, visitors enter the piece physically",
         "aspect_ratio": "4:5",
         "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1405,7 +1296,7 @@
         "display_context": "Gallery table installation with VR headset station alongside",
         "aspect_ratio": "16:9",
         "image_prompt": "Detailed scale model of a famous museum building with tiny artworks inside visible through the open walls, VR headset on a nearby table, gallery setting, precision craftsmanship, warm directed lighting, miniature world of art history",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1418,7 +1309,7 @@
         "display_context": "Museum vitrine installation, natural lighting preferred",
         "aspect_ratio": "16:9",
         "image_prompt": "An Eiffel Tower scale model completely covered in dense miniature vegetation with tiny detailed huts and rope bridges hanging from its iron structure, moss and vines growing over the metal, displayed in a museum vitrine, warm natural lighting",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1431,7 +1322,7 @@
         "display_context": "Two-room museum gallery installation with camera and printing or projection system",
         "aspect_ratio": "16:9",
         "image_prompt": "A gallery visitor gazing at a classical painting that contains a photographic image of themselves inserted into the painted scene, surprised expression, museum second room, warm gallery lighting, uncanny and quietly funny",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1453,7 +1344,7 @@
         "display_context": "Gallery room installation, visitors free to move around",
         "aspect_ratio": "16:9",
         "image_prompt": "A room with dozens of clocks of all types and sizes covering the walls, all showing different times, analog and digital, atmospheric gallery lighting, quiet and slightly ominous, the moment before collective silence",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1466,7 +1357,7 @@
         "display_context": "Gallery installation, multiple VR stations, ambient spatial sound system",
         "aspect_ratio": "1:1",
         "image_prompt": "Aerial view of gallery visitors wearing VR headsets seen from above, the overhead camera having risen to show them from above themselves, mystical bird sounds and flute music visualized as soft particle effects, meditative and vertiginous",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1488,7 +1379,7 @@
         "display_context": "Gallery floor installation, functioning vending machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A gold-chromed Venus of Willendorf figurine displayed inside a functioning vending machine behind glass, selection buttons visible, gallery floor, fluorescent interior vending machine light, consumerism meets prehistoric fertility",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1501,7 +1392,7 @@
         "display_context": "Outdoor public installation, museum atrium, or large gallery space",
         "aspect_ratio": "9:16",
         "image_prompt": "A monumental golden chrome sculpture of the Venus of Willendorf several meters tall in a public plaza or museum atrium, dramatic sky or architectural backdrop, imposing and celebratory, warm gold reflections, ancient goddess at civic scale",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1514,7 +1405,7 @@
         "display_context": "Gallery floor installation, functioning vending machine, paired with Golden Venus machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A fine marble miniature Winged Victory of Samothrace visible behind vending machine glass and metal coils, classical headless triumph behind institutional fluorescent light, gallery floor, ironic and beautiful, culture for sale",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1527,7 +1418,7 @@
         "display_context": "Gallery floor installation, vending machine",
         "aspect_ratio": "9:16",
         "image_prompt": "A small detailed figurine of Damien Hirst floating in liquid inside a vending machine tank, referencing his formaldehyde shark pieces, vending machine glass and label visible, gallery installation, self-referential art world commentary",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1540,7 +1431,7 @@
         "display_context": "Gallery room or booth installation, sound-isolated, visitor warning and waiver required",
         "aspect_ratio": "1:1",
         "image_prompt": "Interior view of a small padded room with screens showing a massive metal concert crowd, a visitor bracing as walls physically push them, concert light and sound energy contained in a box, claustrophobic and exhilarating",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1553,7 +1444,7 @@
         "display_context": "Gallery floor installation, open space",
         "aspect_ratio": "16:9",
         "image_prompt": "Four small turtles walking slowly across a clean white gallery floor toward a container overflowing with bright neon green liquid, top-down view, simple and enigmatic, dreamlike pop color, no explanation offered",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1588,7 +1479,7 @@
         "display_context": "Gallery wall installation, viewers walk alongside the piece to experience temporal progression",
         "aspect_ratio": "1:12.5",
         "image_prompt": "An extremely long horizontal illustration showing musical notes gradually losing their stems and heads from left to right, waves flattening, chess reaching checkmate, and forms decomposing across a 5-meter canvas, monochrome ink with selective color, quiet gallery installation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1601,7 +1492,7 @@
         "display_context": "Linear gallery wall installation: chromed reflective plate at the left, followed by seven self-portrait paintings in sequence, with a marked spectator viewpoint",
         "aspect_ratio": "21:9",
         "image_prompt": "Wide contemporary gallery installation with a dented chromed metallic plate on the far left and seven painted self-portraits arranged in a row beside it, first portrait realistic and each successive portrait increasingly distorted by the plate's wavy reflection, spectator sees original painting and warped mirror image simultaneously, precise conceptual art documentation",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
@@ -1623,7 +1514,7 @@
         "display_context": "Gallery vitrine, displayed alongside a traditional katana for formal comparison",
         "aspect_ratio": "21:9",
         "image_prompt": "A sleek titanium and carbon fiber katana with embedded micro-cameras and electronic components in the handle, displayed in a gallery vitrine alongside a traditional Japanese katana, dramatic side lighting, precision engineering meets ancient craft",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1636,7 +1527,7 @@
         "display_context": "Gallery pedestal series or vitrine display",
         "aspect_ratio": "1:1",
         "image_prompt": "A polished brass rhombicosidodecahedron sculpture on a museum pedestal, its many triangular and square faces catching light at different angles, clean geometric perfection, minimal gallery lighting, mathematics made tangible and beautiful",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1649,7 +1540,7 @@
         "display_context": "Gallery wall installation with painting backdrop, elevated display mount",
         "aspect_ratio": "1:1",
         "image_prompt": "A futuristic spinning disc weapon in titanium and carbon fiber mounted over a large cosmic abstract expressionist painting, gallery wall, dramatic lighting, sacred geometry meets aerospace engineering, divine and technological",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1662,7 +1553,7 @@
         "display_context": "Gallery armory installation in individual vitrines",
         "aspect_ratio": "16:9",
         "image_prompt": "Five futuristic weapons of the Pandavas in titanium and carbon fiber displayed in sleek museum vitrines, epic Indian forms reimagined as contemporary technology",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -1675,7 +1566,7 @@
         "display_context": "Isolated dark gallery chamber with safety architecture",
         "aspect_ratio": "1:1",
         "image_prompt": "Ambiguous black Brahmastra weapon system combining nuclear containment hardware and glowing AI visualization, radiation glass, dark museum chamber, ominous precision",
-        "should_generate": true,
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       }
