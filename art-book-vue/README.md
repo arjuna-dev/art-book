@@ -60,7 +60,7 @@ ART_BOOK_PAGE_SIZE=a4 npm run export:pdf
 
 - **`../list.json`** — source of truth for all artists and art pieces
 - **`../art-book-layout.json`** — per-artwork layout state (template, text color, background color); export from the studio UI and commit to persist changes
-- **`../generated-images/`** — artwork images resolved by Vite at build time via `import.meta.glob`
+- **`../generated-images/`** - artwork images resolved by Vite at build time via `import.meta.glob`; all image files live directly in this directory
 
 ## Key files
 
@@ -75,3 +75,16 @@ src/
 scripts/
   export-pdf.mjs            Playwright PDF export script
 ```
+
+### Image naming and lookup
+
+The image generator assigns each artwork a one-based index while traversing
+`list.json` in order. New filenames use that index as a three-digit prefix,
+followed by slugified artist and artwork names, a provider label, and a UTC
+timestamp. The provider label is also stored in the PNG metadata.
+
+The numeric prefix is a human-readable ordering label. It is not the link
+between an image and the JSON data. The Vue app discovers the flat image set
+with Vite, then matches files using slugified artist and artwork names. The
+layout JSON identifies artwork with stable `Artist::Artwork` keys and does not
+store image filenames.

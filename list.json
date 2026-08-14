@@ -70,6 +70,19 @@
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Prime Distribution (Collage View)",
+        "year": "2022",
+        "technique_used": "Microcontroller, audible tone generator, blinking light, algorithmic prime number sweep",
+        "short_description": "A collage view of Prime Distribution showing multiple moments in the piece's cycle: the light on, the light off, the plinth from different angles, and the numeric display indicating the current number in the sweep.",
+        "long_description": "This collage documents the piece across time rather than in a single instant. Multiple exposures and angles are composed together: the bulb caught mid-blink, the darkness between activations, a close-up of the plinth with its faintly etched waveforms, a wider shot showing the scale of the dark room against the single point of light, and the numeric counter frozen at various primes - some small and frequent, some large and isolated. The collage format captures what a single photograph cannot: the rhythm of the piece, the growing silence between events, the relationship between the intimate object and the vast empty room it occupies.",
+        "display_context": "Dark gallery room, single pedestal installation",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A square collage of multiple photographic views of the same art installation: a glowing lightbulb caught mid-blink in darkness, the same bulb off with only the plinth faintly visible, a close-up showing etched sound wave patterns on the plinth surface, a wide shot revealing the dark empty room with the tiny light as sole point, and a detail of a numeric counter displaying a large prime number; documentary art photography collage, multiple exposures composed together, dark moody tones with amber light accents",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
       }
     ]
   },
@@ -359,7 +372,7 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as elaborate Dutch Golden Age still life, head as overflowing fruit bowl, torso with flowers books and skull, classical technique with perfect light and shadow, warm gallery lighting",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -376,33 +389,7 @@
         "modifying_prompt": ""
       },
       {
-        "art_piece_name": "French Cuisine",
-        "year": "2024",
-        "technique_used": "Oil painting on body-shaped canvas, hyperrealistic food rendering",
-        "short_description": "A human silhouette painted as an elaborate arrangement of classic French cuisine, with the head as a wheel of Camembert and the torso containing coq au vin, fresh baguettes, and wine bottles.",
-        "long_description": "Delacroix's homage to his French heritage transforms the human figure into a curated selection from a Parisian bistro menu. The head becomes a perfectly aged wheel of Camembert, its creamy interior visible through realistic cross-section. The neck flows into a wine bottle, the torso contains an arrangement of coq au vin with visible chicken pieces and rich burgundy sauce, while the arms extend into fresh baguettes with realistic flour dusting. The legs contain escargot shells, macarons, and a selection of French cheeses. Every item is painted with the precision of a still life master, yet the overall composition maintains the unmistakable silhouette of a standing figure. The piece asks whether cultural identity is something we consume or something that consumes us, while celebrating the sensual pleasure of both food and form.",
-        "display_context": "Gallery wall installation, warm lighting to enhance food textures",
-        "aspect_ratio": "9:16",
-        "image_prompt": "Human body silhouette painted as elaborate French cuisine arrangement, Camembert wheel head, coq au vin in torso, baguette arms, wine bottle neck, escargot and macarons in legs, hyperrealistic food painting, warm bistro lighting, gallery wall",
-        "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Mexican Mercado",
-        "year": "2025",
-        "technique_used": "Oil painting on body-shaped canvas, vibrant market imagery",
-        "short_description": "A human silhouette painted as a Mexican market spread, with the head as a stack of fresh tortillas and the body containing mole poblano, chiles en nogada, fresh avocados, and traditional sweets.",
-        "long_description": "Drawing from his mother's Mexican heritage, Delacroix fills the human form with the abundance of a traditional mercado. The head becomes a stack of warm corn tortillas, steam visible between layers. The torso contains a rich mole poblano with its complex sauce visible in cross-section, while chiles en nogada provide patriotic red, white, and green coloring across the chest. The arms extend into fresh avocados and bundles of epazote, the legs contain traditional dulces like cocada and camote. Marigold flowers (cempasúcil) frame the entire figure, referencing Day of the Dead traditions. The painting treats Mexican cuisine not as exotic other but as maternal inheritance, every dish painted with the familiarity of childhood memory rather than tourist curiosity. It's Delacroix's most personal piece, where the constraint of the human form becomes a vessel for cultural belonging.",
-        "display_context": "Gallery wall installation, vibrant market-style lighting",
-        "aspect_ratio": "9:16",
-        "image_prompt": "Human body silhouette painted as Mexican market foods, tortilla stack head, mole poblano torso, chiles en nogada chest, avocado arms, traditional sweets in legs, marigold flower frame, vibrant mercado colors, warm market lighting",
-        "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
-      },
-      {
-        "art_piece_name": "Evolutionary Body",
+        "art_piece_name": "Human",
         "year": "2025",
         "technique_used": "Oil painting on body-shaped canvas, scientific illustration precision",
         "short_description": "A human silhouette depicting evolutionary hierarchy, with primates in the head, a human figure in the pituitary gland, descending through mammals, reptiles, insects, and microorganisms toward the feet.",
@@ -411,6 +398,32 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette painted as evolutionary tree, primates in head with tiny human in pituitary gland, mammals in chest, reptiles in abdomen, insects in legs, microorganisms at feet, scientific illustration precision, natural history museum lighting",
         "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Shape",
+        "year": "2025",
+        "technique_used": "Oil painting on body-shaped canvas, mathematical illustration precision",
+        "short_description": "A human silhouette depicting the hierarchy of geometric complexity, with a rhombicosidodecahedron at the head, descending through polyhedra, 3D solids, polygons, and arriving at simple dots and lines at the feet.",
+        "long_description": "Where Human mapped biology onto the body, Geometry maps mathematics. The head contains a detailed rhombicosidodecahedron - the Archimedean solid with sixty-two faces, the most visually dense regular structure before the eye gives up and calls it a sphere. Surrounding it, other complex polyhedra occupy the skull: icosidodecahedra, truncated icosahedra, snub cubes. The neck and shoulders hold Platonic solids - the icosahedron, the dodecahedron, the octahedron - rendered with the precision of a geometry textbook but the warmth of oil paint. The chest and torso descend into cubes and tetrahedra, then prisms and pyramids at the waist. The thighs contain regular polygons - pentagons, hexagons, octagons - painted flat as if pressed between the surfaces of the body-shaped canvas. The shins hold triangles and squares, simple and clean. The feet dissolve into the most elemental geometry: scattered dots, single lines, a lone angle. The piece inverts the usual reading of the body - the head as the most complex structure, the extremities as the simplest - and maps it onto the history of mathematical abstraction. It asks whether geometry is something we discovered or something we are shaped by, and whether the human outline is itself just another solid waiting to be named.",
+        "display_context": "Science museum or mathematics gallery wall, clean educational lighting",
+        "aspect_ratio": "9:16",
+        "image_prompt": "Human body silhouette painted as a hierarchy of geometric complexity, rhombicosidodecahedron and complex polyhedra at the head, Platonic solids at the shoulders, cubes and tetrahedra in the torso, flat polygons at the thighs, triangles and squares in the shins, simple dots and lines at the feet, mathematical illustration precision, clean museum lighting",
+        "should_generate": true,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "City",
+        "year": "2025",
+        "technique_used": "Oil painting on body-shaped canvas, photorealistic urban rendering",
+        "short_description": "A life-sized human silhouette painted as a continuous vertical cityscape, with skyscrapers in the head and shoulders descending through commercial streets to dark alleys and a homeless figure sleeping in the legs.",
+        "long_description": "Delacroix paints the full vertical range of a city into a single standing figure. The head and shoulders contain gleaming skyscrapers - glass towers catching sunset, corporate logos, the skyline that appears on postcards. The chest opens into mid-rise buildings, commercial signage, apartment blocks with laundry on the balconies. The waist and hips hold the street level: traffic, food carts, pedestrians reduced to brushstrokes. Below the waist, the city descends into what it does not advertise. The thighs contain narrow streets with peeling walls, tangled electrical wiring, stray dogs. One leg holds a dark alley where a homeless man sleeps against a dumpster, his blanket the same grey as the concrete, his body a smaller silhouette inside the larger one. The other leg shows the back of a convenience store, graffiti, a broken streetlight. The feet dissolve into storm drains and cracked pavement. The piece maps urban hierarchy onto bodily hierarchy - the head as aspiration, the extremities as what a city steps on - and asks whether a city is a body or whether a body is just another city: organized, stratified, and full of inhabitants who never meet.",
+        "display_context": "Gallery wall installation, life-sized body-shaped canvas",
+        "aspect_ratio": "9:16",
+        "image_prompt": "Life-sized human body silhouette painted as a continuous vertical cityscape, gleaming skyscrapers and glass towers at the head and shoulders, commercial streets and apartment buildings in the torso, narrow alleys with peeling walls and tangled wires in the thighs, a homeless person sleeping in a dark alley in one leg, storm drains and cracked pavement at the feet, photorealistic urban painting, gallery wall, dramatic lighting",
+        "should_generate": true,
         "include_in_book": true,
         "modifying_prompt": ""
       },
@@ -424,7 +437,7 @@
         "aspect_ratio": "9:16",
         "image_prompt": "Human body silhouette canvas painted as a contemporary cyborg with exposed premium computing parts, visible OpenAI Anthropic and NVIDIA branding integrated into chest head and nervous system, hyperrealistic oil painting on body-shaped canvas, elegant gallery wall, not a sculpture",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       }
     ]
@@ -515,7 +528,7 @@
         "modifying_prompt": ""
       },
       {
-        "art_piece_name": "Billionaires Also Shit, Billionaires Also Die, Billionaires' Blood Is Also Red",
+        "art_piece_name": "Billionaires too Shit, Die, and their Blood Is Also Red",
         "year": "2025",
         "technique_used": "Three acrylic display cases on white stands, human feces specimen, cremation ashes, medical blood pouch, clinical presentation",
         "short_description": "Three white stands with acrylic cases displaying a human piece of shit, a pile of cremation ashes, and a medical pouch filled with blood - a triptych sculpture reducing billionaire mythology to biological fact.",
@@ -546,7 +559,7 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A full square canvas assembled from many golden-brown papas de calle and potato chips, forming one continuous mosaic surface inside a museum vitrine, with a detailed laser engraving of the Aztec goddess Coatlicue spanning the entire snack canvas rather than appearing on individual chips; dramatic gallery lighting, documentary realism, visible chip seams and textures contributing to the engraved image",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -589,6 +602,19 @@
         "modifying_prompt": ""
       },
       {
+        "art_piece_name": "Individual Pringles Mandalas",
+        "year": "2023",
+        "technique_used": "Laser engraving of individual mandalas onto separate Pringles, grid display, museum vitrine",
+        "short_description": "Each Pringle in a large grid carries its own complete Tibetan mandala laser-engraved onto its curved surface, the hyperbolic paraboloid distorting every circle into a unique variation.",
+        "long_description": "Where the Pringles Mandala treats the chips as tiles in a unified canvas, this companion piece reverses the logic entirely. Each Pringle receives its own complete mandala, engraved to fit within the boundaries of a single chip. The hyperbolic paraboloid surface means no mandala can be truly flat or truly circular - every concentric ring warps according to the saddle geometry, every radiating line bends as it crosses the chip's curvature. Tanaka-Morales engraves dozens of Pringles and arranges them in a precise grid inside a museum vitrine, each chip a self-contained devotional object. Seen individually, each mandala is a complete sacred geometry adapted to a snack-sized substrate. Seen together, the grid produces a cumulative effect: repetition with variation, the same intention expressed through the same industrial form, each one slightly different because the laser meets a slightly different surface. The piece inverts the question of the unified canvas version. Instead of asking whether sacred geometry can span disposable material, it asks whether a disposable object can contain a complete sacred image - whether the smallest possible temple is a potato chip.",
+        "display_context": "Museum vitrine with grid arrangement of individually engraved Pringles",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A museum vitrine containing a large grid of individual Pringles, each chip bearing its own complete Tibetan mandala laser-engraved onto its curved saddle-shaped surface; each mandala is a self-contained circular design warped by the chip's hyperbolic paraboloid geometry, dozens of chips arranged in neat rows, warm gallery lighting, documentary realism, visible curvature distorting each mandala differently",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
         "art_piece_name": "Kettle Chip Mandala",
         "year": "2023",
         "technique_used": "Laser engraving across a large kettle-chip canvas, adaptive pattern recognition",
@@ -598,7 +624,7 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A full canvas assembled from many ridged kettle-cooked potato chips, forming an uneven golden surface with a Tibetan mandala laser-engraved across the entire snack field rather than onto one chip; dramatic shadows, documentary gallery realism, the geometry flowing across bumps valleys and seams",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -611,7 +637,7 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A pale square canvas assembled from many delicate rice crackers, with an extremely subtle Tibetan mandala laser-engraved across the entire joined surface rather than one cracker; watermark-like scorched linework, a few cracks and seams preserved, soft gallery lighting, documentary realism",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -624,7 +650,7 @@
         "aspect_ratio": "1:1",
         "image_prompt": "A large square canvas assembled from many toasted corn tostadas, forming one continuous surface inside a museum vitrine, with a faithful laser-engraved recreation of an existing pre-Hispanic Xochipilli painting spanning the whole canvas rather than one tostada; seated deity, flowers, ornamental field, detailed scorched linework, documentary realism",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -636,6 +662,71 @@
         "display_context": "Dark gallery wall installation",
         "aspect_ratio": "16:9",
         "image_prompt": "A large horizontal rectangular artwork whose entire canvas is densely and continuously filled edge-to-edge with hundreds of orderly same-sized orange Cheetos, aligned into a uniform repeating texture that reads like one solid orange surface; a spiral galaxy is rendered over that full Cheetos canvas only through pyrographic scorching and burn marks, so the orange of the untouched Cheetos is the brightest hue and all darker tones come from brown and near-black burning; no white pigment, no white highlights, no white stars, no empty black gaps through the main picture area, and do not arrange the Cheetos themselves into spiral arms; documentary gallery realism",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "One Thousand Pringles",
+        "year": "2024",
+        "technique_used": "Laser engraving of Sri Yantra geometry across a large tessellated Pringles canvas, museum vitrine",
+        "short_description": "The nine interlocking triangles of the Sri Yantra are laser-engraved across a large tessellated field of approximately one thousand Pringles, the sacred Hindu geometry spanning the entire snack surface.",
+        "long_description": "Tanaka assembles approximately one thousand Pringles into a dense tessellated field - the chips nested and overlapping according to their saddle geometry to produce a continuous surface with no gaps. Across this field she engraves the Sri Yantra: nine interlocking triangles radiating from a central point, surrounded by concentric circles and a square gate structure. The triangles cross chip boundaries freely, their straight lines bending slightly as they travel over each hyperbolic paraboloid surface. The mathematical precision of the yantra meets the mathematical precision of the chip's industrial form. Where the yantra represents the cosmos through geometry, the Pringle represents consumer engineering through geometry. Both are perfect. Neither was designed for the other. The piece asks whether sacred mathematics recognizes its own reflection in industrial design.",
+        "display_context": "Large museum vitrine, the tessellated field displayed flat or at slight angle",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A large square field of approximately one thousand Pringles tessellated into a continuous surface with no gaps, the chips nested and overlapping; the nine interlocking triangles of the Sri Yantra are laser-engraved across the entire snack field, sacred geometry spanning hundreds of chips, concentric circles and square gate visible, museum vitrine, warm gallery lighting, documentary realism",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Sri Yantra Tostadas",
+        "year": "2024",
+        "technique_used": "Laser engraving of Sri Yantra geometry across a large canvas assembled from Mexican tostadas, resin preservation",
+        "short_description": "The nine interlocking triangles of the Sri Yantra are laser-engraved across a large canvas assembled from Mexican corn tostadas, sacred Hindu geometry rendered in scorched corn.",
+        "long_description": "The tostada is flat, brittle, and circular - each one a small corn disc whose surface carries the irregular bubbling and browning of high-heat cooking. Tanaka assembles many tostadas into a broad field and engraves the Sri Yantra across the full surface. The yantra's straight lines become slightly irregular as they cross the textured corn terrain, and the concentric circles of the outer structure echo the circular shape of each individual tostada beneath. The scorched engraving on toasted corn produces a visual register close to ancient manuscript: dark precise marks on a warm golden ground. The piece places one of Hinduism's most revered geometric meditations onto the most common Mexican food surface, producing a cultural crossing that operates through material rather than symbol.",
+        "display_context": "Museum vitrine, the assembled tostada canvas preserved with transparent resin",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A large square canvas assembled from many circular Mexican corn tostadas forming a continuous golden-brown surface, with the nine interlocking triangles of the Sri Yantra laser-engraved across the entire field, concentric circles and square gate structure visible in scorched linework, museum vitrine, warm lighting, documentary realism, visible corn texture and tostada edges",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Flower of Life Pringles",
+        "year": "2024",
+        "technique_used": "Laser engraving of Flower of Life geometry across a large tessellated Pringles canvas, museum vitrine",
+        "short_description": "The overlapping circles of the Flower of Life pattern are laser-engraved across a large tessellated field of Pringles, the ancient geometric pattern spanning the entire snack surface.",
+        "long_description": "The Flower of Life - a pattern of overlapping circles arranged in sixfold symmetry, found carved into temples from Egypt to China - is engraved across a dense tessellated field of Pringles. Each circle in the pattern crosses multiple chips, its curvature warping slightly as it travels over the saddle geometry of each piece. The repetition of the Flower of Life mirrors the repetition of the industrial chip form beneath it: both are systems built from identical units arranged according to a geometric rule. The laser traces hundreds of overlapping circles across the snack canvas, producing a shimmering moire effect where the pattern's regularity and the chip surface's curvature interact. The piece is visually denser than the Sri Yantra version - the Flower of Life fills space completely rather than radiating from a center - and the effect is closer to textile or wallpaper: sacred geometry as surface rather than focal point.",
+        "display_context": "Large museum vitrine, tessellated field displayed flat",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A large square field of tessellated Pringles forming a continuous surface, with the overlapping circles of the Flower of Life sacred geometry pattern laser-engraved across the entire snack canvas, hundreds of interlocking circles spanning many chips, sixfold symmetry visible, museum vitrine, warm gallery lighting, documentary realism, visible chip curvature distorting the circles slightly",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Icosidodecahedron Tostadas",
+        "year": "2024",
+        "technique_used": "Laser engraving of icosidodecahedron wireframe across a large canvas assembled from Mexican tostadas, resin preservation",
+        "short_description": "A wireframe drawing of an icosidodecahedron is laser-engraved across a large canvas assembled from Mexican corn tostadas, the Archimedean solid's triangular and pentagonal faces rendered in scorched corn.",
+        "long_description": "The icosidodecahedron - an Archimedean solid with twelve pentagonal faces and twenty triangular faces meeting at thirty vertices - is one of the most visually complex regular polyhedra. Tanaka engraves its complete wireframe projection across a broad tostada canvas, every edge rendered as a single scorched line crossing multiple corn discs. The geometric precision of the solid meets the organic irregularity of the tostada surface: straight edges waver slightly as they cross bubbled corn terrain, and the overall projection appears to hover between mathematical diagram and ancient cartography. The pentagonal and triangular faces read as windows into the structure, each one landing on a different patch of corn texture. The piece treats the polyhedron as a cosmological object - a shape that occurs in nature and mathematics simultaneously - and gives it the same material treatment as pre-Hispanic codex imagery.",
+        "display_context": "Museum vitrine, assembled tostada canvas preserved with transparent resin",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A large square canvas assembled from many circular Mexican corn tostadas, with a detailed wireframe drawing of an icosidodecahedron laser-engraved across the entire surface, pentagonal and triangular faces clearly visible, scorched linework on golden-brown corn, museum vitrine, warm lighting, documentary realism, mathematical precision meeting organic corn texture",
+        "should_generate": false,
+        "include_in_book": true,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Metatron's Cube Tostadas",
+        "year": "2024",
+        "technique_used": "Laser engraving across a large canvas assembled from Mexican tostadas, metallic wire structure overlaid, museum vitrine",
+        "short_description": "Metatron's Cube is rendered across a tostada canvas through both laser engraving and a physical metallic wire structure that sits on top of the snack surface, the sacred geometry existing simultaneously as scorched image and three-dimensional metal.",
+        "long_description": "Metatron's Cube - the figure containing all five Platonic solids within its thirteen-circle, seventy-eight-line structure - is built in two layers across a tostada canvas. The circles and their connecting lines are laser-engraved into the corn surface as scorched geometry. Over this flat engraving, a thin metallic wire structure traces the same pattern in three dimensions, sitting just above the tostada surface so its shadow falls across the engraved lines beneath. The doubling produces a visual vibration between the flat image and the physical frame, between the food surface and the metal skeleton. The wire catches gallery light and throws thin shadows that shift with viewing angle, so the piece never looks quite the same twice. Tanaka describes it as the only work in her practice where the sacred geometry refuses to remain inside the food - it escapes into metal, into air, into the space between substrate and structure.",
+        "display_context": "Museum vitrine with controlled lighting to emphasize shadow interplay between wire and engraved surface",
+        "aspect_ratio": "1:1",
+        "image_prompt": "A large square canvas assembled from Mexican corn tostadas with Metatron's Cube laser-engraved across the surface - thirteen circles connected by lines - and a thin metallic wire structure tracing the same Metatron's Cube pattern sitting just above the tostada surface, casting precise shadows onto the engraved corn below, museum vitrine, dramatic gallery lighting emphasizing the interplay between flat engraving and three-dimensional metal structure, documentary realism",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -678,12 +769,12 @@
       {
         "art_piece_name": "Fountain I: Tiered Basin",
         "year": "2023",
-        "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
-        "short_description": "Primary red, yellow, and blue paint flow from a three-tier classical stone fountain.",
-        "long_description": "Primary red, yellow, and blue paint flow from a three-tier classical stone fountain. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
+        "technique_used": "Engineered fountain mechanism, oil-based paint, density-based pigment separation and closed-loop recycling system",
+        "short_description": "Primary red, yellow, and blue paint flow from a three-tier classical stone fountain, blending as they cascade and collected at the base where a separation system splits the mixed pigments back into pure colors for recirculation.",
+        "long_description": "Primary red, yellow, and blue paint pour from separate spouts at the top tier and blend freely as they cascade through the basins - orange, green, purple, and muddy intermediates forming and dissolving as streams cross and merge. At the collection basin, a density-based separation system exploits the different specific gravities of each pigment to pull the mixed flow apart again, returning pure red, pure yellow, and pure blue to their respective reservoirs for recirculation. The engineering achievement is not keeping the colors apart - it is letting them mix completely and then undoing it. The fountain performs, in continuous visible motion, a cycle of contamination and purification that reads as both chemistry demonstration and theological metaphor.",
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
-        "image_prompt": "three-tier classical European basin fountain pouring separate red yellow and blue paint, gallery installation, closed loop color separation",
+        "image_prompt": "three-tier classical European basin fountain pouring red yellow and blue paint that blend into secondary colors as they cascade down, mixed paint collecting at base where visible separation machinery splits pigments back into pure colors, gallery installation",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -691,27 +782,27 @@
       {
         "art_piece_name": "Fountain II: Shell Grotto",
         "year": "2023",
-        "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
-        "short_description": "Pastel pink, mint, and lilac paint descend through a shell-shaped rococo grotto fountain.",
-        "long_description": "Pastel pink, mint, and lilac paint descend through a shell-shaped rococo grotto fountain. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
+        "technique_used": "Engineered fountain mechanism, oil-based paint, density-based pigment separation and closed-loop recycling system",
+        "short_description": "Pastel pink, mint, and lilac paint descend through a shell-shaped rococo grotto fountain, blending into soft intermediates before a separation system at the base returns each color to purity.",
+        "long_description": "Pastel pink, mint, and lilac paint descend through the shell curves of a rococo grotto fountain, mixing as they flow into gentle lavenders, dusty roses, and pale blue-greens that shift with the current. The blending is the spectacle - delicate colors producing unexpected combinations as they travel the ornamental surface. At the base, the same density-separation system pulls the mixed pastel soup apart again, returning each pigment to its reservoir. The rococo form is apt: excess, ornamentation, and pleasure followed by mechanical order.",
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
-        "image_prompt": "rococo shell grotto fountain pouring separate pastel pink mint and lilac paint, gallery installation, closed loop color separation",
+        "image_prompt": "rococo shell grotto fountain pouring pastel pink mint and lilac paint that blend into soft secondary pastels as they descend through ornamental shells, mixed paint separating at base, gallery installation",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
         "art_piece_name": "Fountain III: Brutalist Trough",
         "year": "2023",
-        "technique_used": "Engineered fountain mechanism, oil-based paint, color separation and closed-loop recycling system",
-        "short_description": "Black, gold, and acid green paint fall through a stepped brutalist concrete trough.",
-        "long_description": "Black, gold, and acid green paint fall through a stepped brutalist concrete trough. Each color follows a separate channel and returns to a closed-loop reservoir without blending.",
+        "technique_used": "Engineered fountain mechanism, oil-based paint, density-based pigment separation and closed-loop recycling system",
+        "short_description": "Black, gold, and acid green paint fall through a stepped brutalist concrete trough, merging into dark metallic streams before separation machinery at the base reclaims each pigment.",
+        "long_description": "Black, gold, and acid green paint fall through stepped brutalist concrete, merging at each level into increasingly opaque combinations - dark olive, metallic black-green, muddy gold - until the bottom trough holds a single dark stream that contains all three. The separation system extracts each pigment by density and returns them to their sources. The brutalist form matches the process: blunt combination followed by industrial separation, no ornament, no apology. The black tends to dominate the mix visually, which Okonkwo considers an accurate description of how darkness works.",
         "display_context": "Gallery floor installation or outdoor plaza, functioning fountain scale",
         "aspect_ratio": "4:5",
-        "image_prompt": "stepped brutalist concrete trough fountain pouring black gold and acid green paint, gallery installation, closed loop color separation",
+        "image_prompt": "stepped brutalist concrete trough fountain pouring black gold and acid green paint that merge into dark metallic streams at each level, separation machinery visible at base reclaiming pigments, gallery installation",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -724,7 +815,7 @@
         "aspect_ratio": "4:5",
         "image_prompt": "rotating sculpture of a formally dressed man continuously sprayed with black and gold paint, contemporary kinetic art installation",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -737,7 +828,7 @@
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed by mechanical cans with pastel pink and mint green paint, contemporary kinetic art installation",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -750,7 +841,7 @@
         "aspect_ratio": "4:5",
         "image_prompt": "gallery wall continuously sprayed with vivid orange and red paint by robotic spray cans, contemporary kinetic art installation",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -763,7 +854,7 @@
         "aspect_ratio": "21:9",
         "image_prompt": "Ultra-wide hydrographic painting in progress on a long canvas, swirling oil paint patterns on water surface being absorbed by rotating canvas mechanism, fluid abstract patterns in deep blues, golds, and reds, studio environment, process as art",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -776,20 +867,33 @@
         "aspect_ratio": "4:5",
         "image_prompt": "White plaster sculptures of a plain man, a family group, a seated man, and a thin Buddha with thick golden paint pouring continuously over their heads, the gold beading and running off into drainage channels, gallery installation, warm golden light",
         "should_generate": false,
+        "include_in_book": false,
+        "modifying_prompt": ""
+      },
+      {
+        "art_piece_name": "Buddha",
+        "year": "2024",
+        "technique_used": "Thick golden pigment medium, recirculating pump, white plaster seated Buddha sculpture, continuous flow installation",
+        "short_description": "A white plaster seated Buddha receives a continuous stream of thick golden pigment from above, the gold sliding off without adhering, the figure perpetually anointed and perpetually white.",
+        "long_description": "The Buddha sits in lotus position, eyes lowered, hands in dhyana mudra. The gold arrives from above in a single thick stream that strikes the crown of the head and spreads outward across the shoulders, down the folded legs, pooling briefly in the lap before running off into the drainage tray below. The medium is engineered not to coat - it beads and slides, leaving the white plaster surface visible beneath the moving film. The Buddha is always being gilded and never gilded. The piece isolates one figure from the Golden Rain series to let the theological resonance settle without distraction: enlightenment as something that passes through rather than accumulates, grace as a condition rather than a possession, the sacred body as a surface that receives everything and retains nothing.",
+        "display_context": "Gallery pedestal with recirculating drainage tray, warm spot lighting from above",
+        "aspect_ratio": "4:5",
+        "image_prompt": "A white plaster seated Buddha sculpture in lotus position receiving a thick stream of golden paint pouring continuously over its head, the gold sliding down the white surface without sticking, pooling briefly in the lap before draining off, warm golden light, gallery pedestal with visible drainage system, contemplative and luminous",
+        "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
       },
       {
         "art_piece_name": "Real Skull Fountain",
         "year": "2024",
-        "technique_used": "Real or high-quality replica skull, plumbing integration, blue, pink, and white liquid",
-        "short_description": "A fountain made from a real skull with streams of blue, pink, and white liquid flowing from it continuously.",
-        "long_description": "This is the piece that gets Okonkwo's exhibition permits pulled. The skull is the oldest symbol of mortality we have, and Okonkwo makes it function. It flows. Blue, pink, white — colors that belong in a nursery or a pool party, not in a skull. The combination refuses the dignity that skulls usually demand. It is both more disturbing than a solemn memento mori and, in a perverse way, more true to life: we are, in the end, structures through which color passes.",
+        "technique_used": "Real or high-quality replica skull, plumbing integration, black, and bright green liquid",
+        "short_description": "A fountain made from a real skull with streams of black and bright green liquid flowing from it continuously.",
+        "long_description": "This is the piece that gets Okonkwo's exhibition permits pulled. The skull is the oldest symbol of mortality we have, and Okonkwo makes it function. It flows. Black and bright green — colors that belong in a nursery or a pool party, not in a skull. The combination refuses the dignity that skulls usually demand. It is both more disturbing than a solemn memento mori and, in a perverse way, more true to life: we are, in the end, structures through which color passes.",
         "display_context": "Gallery pedestal, secured installation, viewer distance maintained",
         "aspect_ratio": "4:5",
-        "image_prompt": "A human skull functioning as a fountain with streams of pastel blue, pink, and white liquid flowing from the eye sockets and mouth, mounted on a dark stone pedestal, dramatic chiaroscuro lighting, beautiful and macabre simultaneously",
+        "image_prompt": "A human skull functioning as a fountain with streams of black and bright green liquid flowing from the eye sockets and mouth, mounted on a dark stone pedestal, dramatic chiaroscuro lighting, beautiful and macabre simultaneously",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       },
       {
@@ -802,7 +906,7 @@
         "aspect_ratio": "16:9",
         "image_prompt": "An entire gallery wall covered in cascading streams of paint flowing from top to bottom in multiple vivid colors, viewers visible from behind standing in front of it, monumental scale, immersive color environment, cinematic",
         "should_generate": false,
-        "include_in_book": true,
+        "include_in_book": false,
         "modifying_prompt": ""
       }
     ]
@@ -818,8 +922,8 @@
         "art_piece_name": "Floating Buddha I",
         "year": "2022",
         "technique_used": "Golden chrome seated Buddha statue, human ash, circular black canvas, ash pattern shaping, concealed support arm",
-        "short_description": "A small golden chrome seated Buddha projects outward from a circular canvas of abstract ash patterns — grey on black, stark and spare.",
-        "long_description": "The Buddha projects several inches from the canvas on a concealed support, held just far enough from the surface to produce a charged spatial separation between figure and ground. Behind it, two kilograms of human ash — the average yield of a cremated adult body — form abstract patterns across a circular black canvas, fixed in place with conservation-grade adhesive. The patterns are not symbolic: no mandalas, no script, just the ash arranged in dense and loose areas, the grey of the material itself. The slight gap between sculpture and ash field gives the piece its tension, making the Buddha feel neither embedded in suffering nor free of it. Camus has said this is about the way enlightenment relates to suffering — not by transcending it, but by learning to remain just outside its grip.",
+        "short_description": "A small golden chrome seated Buddha projects outward from a circular, 2 meter canvas of abstract, geometric ash patterns. The ashes cover all of the canvas, there is no other background color. Similar patterns to those created by pufferfish in sand, but made from human ash. The Buddha is held on a concealed support just far enough from the canvas to create a charged spatial separation. The separator is not visible to give the illusion that the Buddha is floating above the ash field, but it is there, and it is part of the work's argument.",
+        "long_description": "The Buddha projects a little from the canvas on a concealed support, held just far enough from the surface to produce a charged spatial separation between figure and ground. Behind it, ashes form geometric patterns similar to those created by pufferfish in sand, across a circular canvas. The slight gap between sculpture and ash field gives the piece its tension, making the Buddha feel not embedded in suffering but rather free from it.",
         "display_context": "Gallery wall installation with concealed support, circular ash canvas",
         "aspect_ratio": "1:1",
         "image_prompt": "A small golden chrome seated Buddha statue projecting outward from a large circular black canvas covered in abstract ash patterns, grey ash in dense and loose areas, subtle concealed support, gallery lighting, minimal and serene",
@@ -921,12 +1025,12 @@
       {
         "art_piece_name": "Sequence This (Geronimo)",
         "year": "2024",
-        "technique_used": "Extracted DNA, magnetized sculpture of Geronimo holding a lowered shotgun, magnetic gallium coating, display case",
-        "short_description": "A small sculpture of Geronimo holding, but not pointing, a lowered shotgun stands over a field of crystallized DNA.",
-        "long_description": "Geronimo held out longer than anyone had a right to expect. The gallium-coated figure captures him in the posture most associated with his surviving photographs: upright, rifle raised, the expression of a man who has calculated the odds and decided they are irrelevant. He stands on extracted, crystallized DNA — real genetic material, anonymous, the kind of code that persists regardless of what happens to the body it came from. The piece turns on this: the last Apache leader who refused to surrender, standing on the molecular evidence of continuity. The shotgun is raised. The DNA is still there. Both are true at the same time.",
+        "technique_used": "Extracted DNA, brass sculpture of Geronimo holding a lowered shotgun, display case",
+        "short_description": "A small brass sculpture of Geronimo holding, but not pointing, a lowered shotgun stands over a field of crystallized DNA.",
+        "long_description": "Geronimo held out longer than anyone had a right to expect. The brass figure captures him in the posture most associated with his surviving photographs: upright, rifle raised, the expression of a man who has calculated the odds and decided they are irrelevant. He stands on extracted, crystallized DNA — real genetic material, anonymous, the kind of code that persists regardless of what happens to the body it came from. The piece turns on this: the last Apache leader who refused to surrender, standing on the molecular evidence of continuity. The shotgun is raised. The DNA is still there. Both are true at the same time.",
         "display_context": "Gallery vitrine or pedestal, enclosed display",
         "aspect_ratio": "4:5",
-        "image_prompt": "Small sculpture of Geronimo coated in liquid-metal gallium, holding a shotgun lowered at his side and not pointing it, standing over crystallized DNA forms in a dark museum display case",
+        "image_prompt": "Small brass sculpture of Geronimo holding a shotgun lowered at his side and not pointing it, standing over crystallized DNA forms in a dark museum display case",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -974,7 +1078,7 @@
         "long_description": "The mammoth tusk is perhaps fifteen thousand years old. The mercury bath is extremely contemporary in its danger and its beauty. Both are products of geological time — the tusk from a cold megafauna extinction, the mercury from hydrothermal deposits formed over millions of years. Together, they constitute a meeting of two deep-time materials in a room full of people taking photographs on glass rectangles. The mercury reflects the tusk from below, producing a second tusk, inverted, in silver. Hofstetter-Cruz has noted that the piece requires mercury, and mercury is toxic, and this has not deterred her.",
         "display_context": "Sealed gallery installation with safety enclosure, museum with conservation clearances",
         "aspect_ratio": "16:9",
-        "image_prompt": "A large ancient mammoth tusk floating in a gleaming mercury bath within a sealed vitrine, the tusk perfectly reflected in the silver liquid surface, dark gallery lighting, ancient and elemental, cinematic still photography",
+        "image_prompt": "A large ancient mammoth tusk naturally floating directly on a gleaming mercury bath inside a sealed museum vitrine, buoyed only by the dense liquid with no wires, cables, hooks, stands, or visible supports, its curved form reflected in the silver surface, contemporary art museum exhibition, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -982,12 +1086,12 @@
       {
         "art_piece_name": "Mercury Ossuary",
         "year": "2023",
-        "technique_used": "Animal bones of varied species, mercury bath, sealed enclosure",
-        "short_description": "Bones of various animals — dog, small birds, larger birds, Komodo dragon — floating on a mercury bath.",
-        "long_description": "The bones float on the mercury's surface due to its extraordinary density, which Hofstetter-Cruz considers the actual subject of the piece. The bones are not dramatic. A dog's femur, a bird's hollow rib, the articulated vertebrae of something larger — they rest on the silver surface as though on water, except that nothing about mercury is like water. The ossuary form — a place of secondary burial, a repository of bones that have been through the world — takes on a new register when the ground is toxic and reflective and will outlast everything in the room including the building.",
+        "technique_used": "Disarticulated human skeleton, mercury bath, sealed enclosure",
+        "short_description": "All the bones of one human skeleton float separately in a mercury bath, with each bone partially submerged in the reflective liquid.",
+        "long_description": "A complete human skeleton has been disarticulated and distributed across a broad mercury bath. The skull, ribs, vertebrae, pelvis, and long bones remain recognizably part of one body, but they are not assembled into an anatomical figure. Mercury's exceptional density holds the bones at the surface while allowing them to sit slightly submerged, so the silver liquid laps around their edges and interrupts their reflections. The ossuary becomes a horizontal field where one body is simultaneously present, dispersed, buoyant, and slowly absorbed into a toxic mirror.",
         "display_context": "Sealed gallery installation, museum with safety clearances",
         "aspect_ratio": "16:9",
-        "image_prompt": "Various animal bones of different sizes floating on a mirror-still mercury surface within a sealed dark container, bone shapes perfectly reflected in silver liquid, atmospheric dark lighting, scientific and poetic, deep time made visible",
+        "image_prompt": "A complete but fully disarticulated human skeleton spread across a broad mirror-still mercury bath inside a sealed museum enclosure, skull ribs vertebrae pelvis arm bones hand bones leg bones and foot bones all separate and slightly submerged in the silver liquid, no assembled skeleton, contemporary art museum installation, no labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -995,12 +1099,12 @@
       {
         "art_piece_name": "Quetzalcoatl Maglev",
         "year": "2024",
-        "technique_used": "Metal recreation of Quetzalcoatl sculpture, magnetic levitation system, mercury bath",
-        "short_description": "A 50cm metal recreation of the Quetzalcoatl from the Louvre, levitating above a mercury bath.",
-        "long_description": "Hofstetter-Cruz takes one of Mesoamerica's most important deities — currently housed in Paris — and recreates it in metal at a scale that fits in a room, levitating above a mercury bath by magnetic force. The levitation is not subtle. The god floats. Conspicuously, defiantly, like a claim. The mercury beneath mirrors it and completes the figure. Whether the piece is about the colonial displacement of cultural objects, the physics of magnetic fields, or both is something Hofstetter-Cruz leaves to the viewer, having put everything necessary for either reading right there in the room.",
+        "technique_used": "Rock-like recreation of a Quetzalcoatl sculpture, concealed magnetic levitation system, museum pedestal",
+        "short_description": "A 50cm rock-like recreation of Quetzalcoatl levitates above a conventional museum pedestal through a concealed magnetic system.",
+        "long_description": "Hofstetter-Cruz recreates a Mesoamerican Quetzalcoatl sculpture as a dense, weathered, stone-like object at a scale that fits in a room. A concealed magnetic system holds it in open air above a sober museum pedestal. There is no mercury bath and no theatrical machinery on display. The impossible gap beneath the apparently heavy object is the entire intervention: an ancient form presented through the visual language of a conventional archaeological exhibition, quietly refusing gravity.",
         "display_context": "Gallery pedestal installation, controlled magnetic environment",
         "aspect_ratio": "4:5",
-        "image_prompt": "A detailed metal recreation of the Quetzalcoatl feathered serpent sculpture levitating above a shimmering mercury bath, magnetic levitation coils visible in plinth, gallery installation, dramatic lighting, ancient god defying gravity",
+        "image_prompt": "A faithful rock-like recreation of the referenced Quetzalcoatl sculpture, roughly 50 centimeters tall, magnetically levitating above a simple museum pedestal in a contemporary art gallery, heavy weathered carved stone appearance, a clear shadowed air gap beneath it, concealed mechanism, no mercury, no water, no visible coils, no wires, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1009,11 +1113,11 @@
         "art_piece_name": "Liquid Metal Centurion",
         "year": "2023",
         "technique_used": "Original Roman helmet, magnetic gallium alloy Galinstan, electromagnetic field control",
-        "short_description": "An original Roman helmet covered in magnetically attached liquid gallium alloy that moves and reforms according to changes in the surrounding magnetic field.",
+        "short_description": "An original Roman helmet is completely enveloped in a continuous skin of magnetically controlled liquid gallium alloy.",
         "long_description": "The helmet predates the art market by roughly two thousand years. Hofstetter-Cruz acquired it and covered it in a magnetic gallium alloy that attaches to the metal surface and responds to the embedded electromagnetic field. The silver liquid moves across the ancient iron — pooling, draining, forming shapes in the visor, filling the plume channel, draining again. Roman soldiers were teenagers. Most of them died of dysentery. The gallium does not know any of this. It moves because it must, which is possibly what the soldiers were also doing.",
         "display_context": "Gallery pedestal installation, controlled electromagnetic field environment",
         "aspect_ratio": "4:5",
-        "image_prompt": "An ancient Roman military helmet covered in flowing magnetic liquid metal gallium, the silver liquid forming and reforming over the antique iron surface, electromagnetic coils visible in dark plinth, dramatic single-source lighting, ancient and futuristic",
+        "image_prompt": "An imposing ancient Roman centurion helmet fully enveloped from crest to base in a continuous flawless skin of flowing mirror-bright liquid metal, glorious and beautiful contemporary sculpture on a restrained museum pedestal, dramatic architectural gallery lighting, concealed mechanism, no exposed coils, no wires, no labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1035,7 +1139,7 @@
         "long_description": "The structure is two stories tall and divided at the horizon. The upper and lower hemispheres do not quite meet — a gap of roughly thirty centimeters runs around the equator, admitting a continuous ring of ambient light into the mirrored interior. A second aperture opens at the crown of the upper dome, directing a column of light straight down the axis of the sphere. Inside the lower hemisphere, accessible through a concealed entrance, a small room built entirely from one-way mirrors gives a single visitor at a time the experience of standing at the center of infinite recursive reflection while remaining invisible to everyone outside. Above, other visitors climb an exterior staircase to the equatorial gap and look in — seeing their own faces multiplied across the curved mirrored interior, unaware that someone may be standing directly below them, watching. The piece proposes two simultaneous and incompatible experiences of the same space: the hidden center and the exposed periphery, interiority and display, the person who sees without being seen and the person who is seen without knowing it.",
         "display_context": "Large-scale outdoor or atrium installation, minimum ceiling clearance six meters, staircase structure required",
         "aspect_ratio": "1:1",
-        "image_prompt": "Two enormous polished mirrored hemispheres slightly separated at the equator with a band of light entering the gap, a staircase on the exterior leading visitors up to peer inside, the interior a cascade of infinite recursive reflections, dramatic outdoor or atrium setting, monumental and geometric",
+        "image_prompt": "Two enormous polished mirrored hemispheres slightly separated at the equator with a band of light entering the gap, exterior staircase integrated into the monumental sculpture, interior cascade of infinite recursive reflections, dramatic contemporary museum atrium, no person peeking or leaning into the opening, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1106,10 +1210,10 @@
         "year": "2024",
         "technique_used": "Laser, acrylic refractive panels, Intralipid scattering medium in distilled water",
         "short_description": "Portrait of Emiliano Zapata rendered as laser line drawing refracted through acrylic and liquid scattering media — a face that exists only when the laser runs.",
-        "long_description": "The face of Zapata is reconstituted from light. Llorente-Vidal carves the acrylic geometry that forces the laser beam into the lines of his distinctive mustache, the angle of his revolutionary hat, the determined set of his jaw. The medium is Intralipid diluted to 0.05 percent in distilled water — a medical emulsion designed to feed patients who cannot eat, repurposed to scatter light in a tank. Zapata's face exists only when the laser runs. When the power is off, the tank is just water. The piece asks whether revolutionary memory persists in the same way light does — present only when the conditions are right for it to be seen.",
+        "long_description": "The face of Zapata is reconstituted from light. Llorente-Vidal carves the acrylic geometry that forces a limited number of mostly straight laser segments into his distinctive mustache, revolutionary hat, and jaw. The angular economy is essential: this is not a detailed luminous illustration but a portrait assembled from the paths a physical beam can plausibly take through scattering liquid. When the power is off, the tank is just water. The piece asks whether revolutionary memory persists in the same way light does - present only when the conditions are right for it to be seen.",
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
-        "image_prompt": "A laser beam refracting through a glass tank of milky scattering liquid forming the portrait lines of Zapata, his distinctive mustache and revolutionary hat visible as glowing green light lines, dark dramatic gallery room, acrylic panels guiding the beam",
+        "image_prompt": "A sparse low-detail laser line portrait of Emiliano Zapata in a dark contemporary art museum, constructed almost entirely from a limited number of straight green laser segments refracted through acrylic and lightly scattering liquid, only the mustache hat and jaw remain recognizable, geometric rather than illustrated, no curves except where unavoidable, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1119,10 +1223,10 @@
         "year": "2024",
         "technique_used": "Laser, acrylic refractive panels, titanium dioxide scattering medium in distilled water",
         "short_description": "Portrait of Che Guevara rendered as laser line drawing refracted through acrylic and liquid scattering media — focusing on the precise angle of his iconic beret.",
-        "long_description": "Che's face emerges from photons and engineering. Llorente-Vidal uses titanium dioxide instead of Intralipid here, creating a different scattering quality that emphasizes the precise angle of the beret, the intensity of the gaze that has been reproduced on a million t-shirts. The laser traces the lines of the most photographed revolutionary in history, but only when the machine is running. Turn off the power and the icon dissolves back into industrial chemistry and water. The piece suggests that even the most enduring images are contingent on the technologies that produce them.",
+        "long_description": "Che's face emerges from photons and engineering. Llorente-Vidal uses titanium dioxide instead of Intralipid, creating a sharper scattering field for a limited construction of mostly straight laser segments. The beret, gaze, and jaw are reduced to angular essentials rather than rendered as a detailed drawing. When the machine stops, the icon dissolves back into industrial chemistry and water. The piece suggests that even the most enduring images are contingent on the technologies that produce them.",
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
-        "image_prompt": "A laser beam refracting through a glass tank with titanium dioxide scattering medium forming the portrait lines of Che Guevara, his iconic beret and intense gaze visible as glowing blue light lines, dark gallery room, precise laser optics",
+        "image_prompt": "A sparse low-detail laser line portrait of Che Guevara in a dark contemporary art museum, constructed almost entirely from a limited number of straight blue laser segments refracted through acrylic and scattering liquid, iconic beret and gaze reduced to angular geometry, not a detailed drawing, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1132,10 +1236,10 @@
         "year": "2024",
         "technique_used": "Laser, acrylic refractive panels, fluorescent dye scattering medium in distilled water",
         "short_description": "Portrait of a common masked Zapatista rendered as a laser line drawing, emphasizing collective anonymity rather than command.",
-        "long_description": "The masked profile of a Zapatista ordinary Zapatista is traced in light through fluorescent dye medium, the anonymity of the subject perfectly suited to the ephemeral nature of the medium. Llorente-Vidal emphasizes the mask's edges, the fabric folds, the deliberate concealment that becomes a form of revelation when rendered in laser light. The piece exists only during activation — when the laser stops, the revolutionary dissolves back into chemistry. This impermanence mirrors the Zapatista philosophy of collective presence without faces, of revolution as process rather than monument.",
+        "long_description": "The masked profile of an ordinary Zapatista is constructed from a sparse set of mostly straight red laser segments passing through fluorescent dye medium. Llorente-Vidal reduces the mask, its fabric, and the visible eyes to sharp angular geometry rather than a detailed illustration. The piece exists only during activation. When the laser stops, the revolutionary dissolves back into chemistry. This impermanence mirrors a philosophy of collective presence without singular faces, of revolution as process rather than monument.",
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
-        "image_prompt": "Laser line portrait of an ordinary masked Zapatista, not a commander, drawn in red light through fluorescent water and acrylic panels, dark gallery",
+        "image_prompt": "A sparse low-detail laser line portrait of an ordinary masked Zapatista in a dark contemporary art museum, constructed almost entirely from a limited number of straight red laser segments through fluorescent water and acrylic panels, mask and eyes reduced to sharp angular geometry, not a detailed drawing, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1145,10 +1249,10 @@
         "year": "2024",
         "technique_used": "Laser, acrylic refractive panels, Intralipid scattering medium in distilled water",
         "short_description": "Portrait of Subhas Chandra Bose (Netaji) rendered as laser line drawing refracted through acrylic and liquid scattering media.",
-        "long_description": "Netaji's face is assembled from light and medical emulsion, his determined features traced by laser through Intralipid-scattered water. Llorente-Vidal captures the intensity that led him to challenge both British colonialism and Gandhi's non-violence, the face that appeared on the first currency of the Provisional Government of Free India. The portrait exists only when the laser runs — a fitting medium for a leader whose legacy remains contested, whose memory flickers between heroism and controversy. When the power stops, Bose returns to the realm of historical debate, leaving only water and chemistry.",
+        "long_description": "Netaji's face is assembled from light and medical emulsion. A limited set of mostly straight laser segments passes through Intralipid-scattered water, reducing his cap, spectacles, and determined expression to precise angular geometry rather than a detailed drawing. The portrait exists only when the laser runs, a fitting medium for a leader whose legacy remains contested. When the power stops, Bose returns to historical debate, leaving only water and chemistry.",
         "display_context": "Dark gallery room with laser safety protocols, individual portrait installation",
         "aspect_ratio": "9:16",
-        "image_prompt": "A laser beam forming the determined features of Subhas Chandra Bose through milky Intralipid medium, his intense expression visible as glowing light lines, revolutionary leader emerging from physics, dark gallery room with precise optics",
+        "image_prompt": "A sparse low-detail laser line portrait of Subhas Chandra Bose in a dark contemporary art museum, constructed almost entirely from a limited number of straight amber laser segments through acrylic and milky scattering liquid, glasses cap and face reduced to precise angular geometry, not a detailed drawing, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1170,11 +1274,11 @@
         "art_piece_name": "Eternal Feelings (Gandhi's Hand)",
         "year": "2023",
         "technique_used": "Mechanical fist sculpture, ocean-sourced salt, salt recycling system, pedestal installation",
-        "short_description": "A mechanical fist continuously pours salt from its grip into a growing mound — Gandhi's fist, offering the salt of the sea that belongs to no nation.",
-        "long_description": "This is Gandhi's fist, opened. Salt falls from it as it did when he walked to the sea in 1930 and took what the British Empire said belonged to them. The salt is real ocean salt — Al-Rasheed sources it from whatever ocean is nearest to the venue — and this geographical specificity matters: the salt in Berlin is Atlantic; the salt in Tokyo is Pacific; the salt in Venice is Adriatic. All of it, according to Gandhi's logic and Al-Rasheed's mechanics, belongs to everyone and no one. The fist could be resistance. Could be offering. Could be the sea releasing itself slowly through a hand that refused to close when told to. The mound grows over the course of the exhibition. The recycling mechanism prevents it from overflowing. Nothing is wasted. The fist keeps giving.",
+        "short_description": "A closed horizontal fist continuously releases salt from inside its grip into a mound, while a concealed fountain system recycles the salt back into the hand.",
+        "long_description": "This is Gandhi's fist held closed and horizontal. Salt falls from within the grip as it did when he walked to the sea in 1930 and took what the British Empire said belonged to them. The salt is real ocean salt sourced from the body of water nearest the venue. A concealed continuous-loop mechanism gathers the falling salt and returns it through the pedestal into the fist, making the sculpture a true fountain: the mound is always forming and always being consumed. Nothing is wasted. The fist keeps giving without opening.",
         "display_context": "Gallery floor or pedestal installation, extended exhibition duration to show accumulation",
         "aspect_ratio": "4:5",
-        "image_prompt": "A mechanical bronze fist sculpture slowly pouring white salt crystals from its grip into a growing mound below on a gallery floor, dramatic side lighting casting long shadows, meditative and persistent, ocean salt texture visible",
+        "image_prompt": "A monumental closed bronze fist held horizontally above a museum pedestal, white salt continuously pouring from inside the clenched grip into a basin and mound below, clearly designed as a circulating salt fountain with a discreet return channel that recycles the salt back through the pedestal and into the hand, contemporary art museum, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1193,12 +1297,12 @@
         "technique_used": "Chladni vibration on steel plate, seeds, fixed cymatic arrangement",
         "short_description": "Seeds gather into nodal geometries across a vibrating metal plate, preserving a direct encounter between sound, living material, and steel.",
         "long_description": "Different seeds sort themselves by size and weight as frequencies move them toward the plate nodes. The final arrangement remains on the metal support, with the resonant geometry visible as a material trace of sound.",
-        "display_context": "Steel plate on low gallery pedestal",
-        "aspect_ratio": "1:1",
-        "image_prompt": "Seeds arranged in intricate Chladni cymatic patterns directly over a vibrating steel plate, gallery pedestal, precise nodal geometry",
+        "display_context": "Monumental steel plate on a low gallery platform, approximately 3 x 1.5 meters, with smaller variants possible",
+        "aspect_ratio": "16:9",
+        "image_prompt": "A monumental 3 by 1.5 meter resonant steel plate displayed low in a contemporary art museum, thousands of seeds gathered into multiple crisp Chladni nodal patterns across the metal surface, visitors nearby for scale, materially believable cymatic geometry, no wall labels or information cards",
+        "modifying_prompt": "Create several versions at different scales while preserving authentic Chladni patterns, including one very large room-dominating steel plate and one more intimate pedestal version.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       },
       {
         "art_piece_name": "Chladni Colored Powders on Canvas",
@@ -1216,15 +1320,15 @@
       {
         "art_piece_name": "Mayan Heaven",
         "year": "2025",
-        "technique_used": "Distilled water, optional colloidal silica and copper sulfate, 5-meter-deep tank 1m wide 1m tall, matte black panels, dark metal frame",
-        "short_description": "A five-meter-deep water tank one meter wide and tall, enclosed in matte black — showing pure water's gradient from near-transparent at the shallows to deep celestial blue at full depth, with no pigment added.",
-        "long_description": "This is the most restrained piece in Park's practice and possibly the most profound. No pigment. No electricity. No moving parts. Just water, depth, and the physics of light absorption — the same phenomenon that makes the Caribbean blue, that makes the deep ocean black. The water at five meters absorbs the red end of the visible spectrum and scatters blue back to you. You are looking at color generated by absence and distance. The matte black enclosure removes all competing reference. The metal frame eliminates warmth. And the cenote-blue you see at the bottom is not a recreation — it is the same physics. The piece is called Mayan Heaven not as metaphor but as description.",
-        "display_context": "Dedicated gallery room, tank embedded in floor or framed as viewing window in wall",
+        "technique_used": "Distilled water, 2 x 2 meter opening, 8-meter-deep tank, matte black interior panels, dark structural frame",
+        "short_description": "A 2 x 2 x 8 meter vertical water tank whose square opening reveals blue deepening continuously into darkness, with the bottom remaining invisible.",
+        "long_description": "Mayan Heaven is an eight-meter vertical tank with a two-by-two-meter square opening. No pigment, electricity, or moving parts determine the image. Water and depth alone produce a blue that becomes richer and darker until the far end disappears completely. The viewer never sees the bottom. Matte black interior surfaces remove competing reflections and turn the tank into a physically real, light-absorbing void: a contemporary cenote whose color is generated by distance rather than applied to a surface.",
+        "display_context": "Dedicated contemporary art museum room, 2 x 2 meter opening into an 8-meter-deep tank embedded in the floor or architectural wall",
         "aspect_ratio": "9:16",
-        "image_prompt": "A viewing window into a deep narrow water tank, water transitioning from crystal clear at the top to deep celestial Mayan cenote blue at the bottom, matte black surrounding frame, stunning depth and luminosity, no pigment, pure physics of light absorption",
+        "image_prompt": "A monumental 2 x 2 meter square opening into an 8-meter-deep water tank integrated into a dark contemporary art museum, luminous blue near the opening becoming progressively deeper and darker until the end vanishes into black, bottom not visible, matte black frame, visitors for scale, no labels or information cards",
+        "modifying_prompt": "Create several museum viewpoints and scales while always preserving the exact 2 x 2 meter opening, 8-meter depth, continuous blue-to-black gradient, and invisible bottom.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       },
       {
         "art_piece_name": "Indigo Study: Natural vs Synthetic",
@@ -1234,7 +1338,7 @@
         "long_description": "Multiple deposits of natural anil indigo and synthetic blue enter the paper from different points. Capillary action pulls them into one another, separates them again, and reveals clearly different blue families rather than a simple two-drop comparison. Plant-derived tones carry complex green, violet, and grey traces; industrial blues remain sharper and more uniform. The work is an active field of color interaction, not a binary sample test.",
         "display_context": "Gallery wall display, framed chromatography paper",
         "aspect_ratio": "4:5",
-        "image_prompt": "Complex chromatography artwork with many deposits of clearly different natural and synthetic blues mixing crossing and separating across white paper, rich blue interplay, gallery frame",
+        "image_prompt": "A single large framed chromatography artwork in a contemporary art museum, natural and synthetic indigo forming a geometrically beautiful but still organic composition across white paper, balanced arcs branching fields and nested blue structures created by capillary action, visible irregular pigment blooms, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1243,11 +1347,11 @@
         "art_piece_name": "Mexican Market Pigment Studies",
         "year": "2023",
         "technique_used": "Paper chromatography, mixed plant pigments from Mexican markets, capillary action separation",
-        "short_description": "Chromatographic studies of plant pigments sourced from Mexican markets — revealing the hidden complexity of traditional dyes through scientific separation.",
-        "long_description": "The market vendors sell color that has been traveling for centuries: annatto for orange, huitlacoche for black, various flowers for yellow. Llorente-Vidal treats each pigment as a mystery to be solved through chromatography. The papers bloom with unexpected separations — a yellow that contains traces of green, a brown that reveals hidden purples, plant chemistry confessing its secrets through capillary action. Each market produces different results because the plants grow in different soil, under different weather, harvested by different hands. The chromatography papers become portraits of specific places and seasons, rendered in the language of molecular movement.",
-        "display_context": "Gallery wall series, multiple framed chromatography papers",
+        "short_description": "A single large chromatographic artwork combines plant pigments sourced from Mexican markets into one complex field of separated color.",
+        "long_description": "Plant pigments sourced from Mexican markets enter one continuous sheet: annatto orange, flower yellows, leaf greens, cochineal reds, earth browns, and deep organic blacks. Capillary action separates and recombines them into a single composition rather than a scientific series of samples. Hidden greens emerge from yellow, violet edges appear inside brown, and the material record of different plants, soils, seasons, and hands becomes one concentrated color field.",
+        "display_context": "Contemporary art museum wall, one large framed chromatography work",
         "aspect_ratio": "4:5",
-        "image_prompt": "Multiple chromatography papers showing various Mexican plant pigments separated into organic color patterns, warm ochres and earth tones spreading in natural radial patterns, traditional market chemistry made visible, gallery wall series",
+        "image_prompt": "One large museum-scale chromatography artwork on a single sheet, Mexican market plant pigments separated into an artistic organic composition of ochre orange crimson violet green brown and black, visually unified rather than a grid or series of samples, contemporary art museum wall, no labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1255,12 +1359,12 @@
       {
         "art_piece_name": "Mother's Dress",
         "year": "2024",
-        "technique_used": "Fabric, Chladni plate cymatics patterns, optional natural chromatography dye, Venus of Willendorf shaped mannequin",
-        "short_description": "A dress adorned with Chladni plate cymatics patterns and natural chromatography pigment designs displayed on a Venus of Willendorf shaped mannequin.",
-        "long_description": "The Venus of Willendorf is approximately thirty thousand years old and has no face. Llorente-Vidal dresses her in a gown. The gown carries the patterns of vibrating plates — the shapes that sound takes when it settles and optionally the tracks that plants leave when their colors run. The oldest known representation of a female body wears a garment whose patterns are determined by physics and biology. Fertility, resonance, pigment, time. Llorente-Vidal insists it is also about her mother, and this is the detail that the art world tends to skip over, which probably means it is the most important part.",
-        "display_context": "Gallery installation on mannequin pedestal, single work or paired with a plain companion dress",
+        "technique_used": "Monumental multicolored fabric dress, layered Chladni cymatic patterns, natural chromatography dyes, concealed structural support",
+        "short_description": "A monumental, intensely colorful dress covered in many layered Chladni patterns stands as an autonomous sculpture without a visible mannequin.",
+        "long_description": "Mother's Dress enlarges an intimate garment to architectural scale. Many Chladni geometries move across saturated fabric panels in overlapping colors, joined by the softer migrations of natural chromatography dyes. The dress is clearly legible as a dress, but no mannequin or body occupies it. Concealed support lets the volume stand on its own, turning inherited clothing, resonance, pigment, and memory into a monumental empty presence.",
+        "display_context": "Large contemporary art museum gallery, freestanding monumental dress with concealed support and no visible mannequin",
         "aspect_ratio": "4:5",
-        "image_prompt": "An elegant white dress with fine Chladni plate vibration patterns printed across the fabric, displayed on a Venus of Willendorf shaped mannequin, gallery installation, dramatic lighting, ancient fertility meets acoustic physics, beautiful and strange",
+        "image_prompt": "A monumental freestanding dress sculpture several meters tall filling a contemporary art museum gallery, intensely colorful fabric covered in many layered Chladni cymatic patterns, clearly a dress with bodice sleeves and vast skirt, hollow interior and concealed support, absolutely no mannequin or person inside, no labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1269,11 +1373,11 @@
         "art_piece_name": "Mother's Sweater",
         "year": "2023",
         "technique_used": "Hand-sewn oversized knitted garment, transparent acrylic floor panel, soft ambient lighting",
-        "short_description": "The artist’s mother’s enormous hand-sewn sweater whose open arms enfold the viewer; the bottom hem lies on the floor under clear acrylic, walked over as you enter the embrace.",
-        "long_description": "The piece is formally very simple and emotionally not simple at all. A sweater large enough to wrap around an adult standing in it, arms extended at gallery scale, soft knit, mother scale. The bottom hem lies flat on the floor under transparent acrylic — you walk over it to enter, stepping on the garment before it surrounds you. Camus has said this is about the way love always involves standing on something that is also loving you. Critics have said this is sentimental. He considers sentimentality underrated as both a formal strategy and an emotional technology.",
-        "display_context": "Gallery floor installation, room-scale, visitors enter the piece physically",
+        "short_description": "An enormous sweater occupies an entire gallery: one sleeve reaches each opposing wall while the body covers most of the floor beneath transparent acrylic that visitors walk across.",
+        "long_description": "Mother's Sweater is expanded to the dimensions of the room that contains it. The two sleeves stretch in opposite directions until each reaches and rises against an opposing wall. Between them, the body of the soft knitted garment spreads across almost the entire floor. A continuous transparent acrylic walking surface seals it below the visitors' feet, allowing the public to cross the room over the sweater while remaining surrounded by its outstretched arms.",
+        "display_context": "Whole-room museum installation with the sweater sealed beneath a transparent walkable acrylic floor and sleeves extending to opposing walls",
         "aspect_ratio": "4:5",
-        "image_prompt": "An enormous hand-knitted grandmother sweater installed at room scale, its open arms extending to either side, the bottom hem visible through transparent acrylic floor panels beneath the viewer's feet, warm amber gallery lighting, cozy and monumental",
+        "image_prompt": "A whole-room contemporary art museum installation occupied by one enormous knitted sweater, one sleeve reaching the left wall and the other reaching the opposite right wall, the sweater body covering almost the entire floor beneath a continuous transparent acrylic walking surface, visitors walking safely above it, no mannequin, no labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1338,12 +1442,12 @@
       {
         "art_piece_name": "Sometimes It's OK to Just...",
         "year": "2022",
-        "technique_used": "Multiple analog and digital clocks, synchronized silence programming, room installation",
+        "technique_used": "Multiple identical analog clocks with hour and minute hands, synchronized silence programming, room installation",
         "short_description": "A room full of clocks that periodically all fall silent at once.",
         "long_description": "The title refuses to finish its sentence, which is the whole piece. A room of ticking clocks is a room of small insistences, each one arguing for the reality of continuous time. When they stop — all of them, together, in a silence that has no schedule but will arrive — the effect is not dramatic. It is strange. The absence of tick is louder than any of the ticks were individually. What the room offers is a break in the argument that time makes about itself every second of every day. Whether this constitutes permission is the viewer's responsibility.",
         "display_context": "Gallery room installation, visitors free to move around",
         "aspect_ratio": "16:9",
-        "image_prompt": "A room with dozens of clocks of all types and sizes covering the walls, all showing different times, analog and digital, atmospheric gallery lighting, quiet and slightly ominous, the moment before collective silence",
+        "image_prompt": "A contemporary art museum room covered with dozens of identical analog clocks, every clock the exact same round design and size with visible hour and minute hands, all showing different times, no digital clocks, atmospheric quiet gallery lighting, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""
@@ -1351,15 +1455,15 @@
       {
         "art_piece_name": "VR Mystical Experience",
         "year": "2024",
-        "technique_used": "VR headset, external rising camera, spatial audio with mystical birds, flutes, and drone music",
-        "short_description": "Visitors wear VR headsets and see through a camera that rises above them, showing them from above while mystical soundscapes play.",
+        "technique_used": "Wireless VR headsets, autonomous camera drones without headsets, spatial audio with birds, flutes, and drone music",
+        "short_description": "Visitors move freely in wireless VR headsets while untethered camera drones rise above them and transmit an aerial view into the experience.",
         "long_description": "The out-of-body experience has been reported by approximately ten percent of the population during near-death events, under anesthesia, or in moments of extreme physical stress. Corona offers it on demand, in a gallery, with flutes. The camera lifts. You see yourself from above — small, in a crowd of others also wearing headsets, also looking up at themselves. The birds sing. The drone sounds. You are briefly your own satellite image. Whether this is mystical experience or its complete simulation is a question that anyone who has had either version will tell you cannot be answered from the outside.",
-        "display_context": "Gallery installation, multiple VR stations, ambient spatial sound system",
+        "display_context": "Contemporary art museum room or outdoor museum garden, open movement area, wireless VR system and untethered camera drones",
         "aspect_ratio": "1:1",
-        "image_prompt": "Aerial view of gallery visitors wearing VR headsets seen from above, the overhead camera having risen to show them from above themselves, mystical bird sounds and flute music visualized as soft particle effects, meditative and vertiginous",
+        "image_prompt": "Contemporary art museum installation with visitors moving freely in completely wireless VR headsets while a few small autonomous camera drones without headsets hover overhead, no wires on visitors or drones, clear realistic gallery architecture, meditative and physically plausible, no strange floating objects, no visualized music particles, no wall labels or information cards",
+        "modifying_prompt": "Create two distinct settings: one inside a contemporary museum room and one in an outdoor museum sculpture garden. In both, visitors use wireless headsets, camera drones have no wires and no VR headsets, and nothing else floats in the air.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       }
     ]
   },
@@ -1399,51 +1503,51 @@
       {
         "art_piece_name": "Victory Commodified",
         "year": "2023",
-        "technique_used": "High-quality marble miniature replica, vending machine, gallery installation",
-        "short_description": "A high-quality marble miniature of the Winged Victory of Samothrace inside a vending machine.",
+        "technique_used": "Multiple marble miniatures of the Winged Victory of Samothrace, coil vending machine or vintage capsule vending machine, transparent plastic capsules",
+        "short_description": "Small Winged Victory of Samothrace sculptures are sold from vending machines, either arranged behind rolling coils or enclosed individually in transparent plastic capsules.",
         "long_description": "The Winged Victory — currently in the Louvre, missing her head, triumphant anyway — becomes a dispensable item. The marble miniature is genuinely good quality; Thielemann insisted on this. You are not buying a cheap reproduction. You are buying an excellent reproduction of a thing that itself is a monument to winning something that the people who built it subsequently lost. The vending machine format makes the question of cultural ownership feel bodily — you reach into the dispensing tray; you hold history in your hand; you take it home in a plastic bag.",
         "display_context": "Gallery floor installation, functioning vending machine, paired with Golden Venus machine",
         "aspect_ratio": "9:16",
-        "image_prompt": "A fine marble miniature Winged Victory of Samothrace visible behind vending machine glass and metal coils, classical headless triumph behind institutional fluorescent light, gallery floor, ironic and beautiful, culture for sale",
+        "image_prompt": "A contemporary art museum installation with many small high-quality marble Winged Victory of Samothrace sculptures stocked in a functioning vending machine behind glass and rolling metal coils, repeated headless figures as purchasable products, physically plausible machine, no wall labels or information cards",
+        "modifying_prompt": "Alternate version: several vintage capsule vending machines filled with transparent plastic balls, each capsule containing one tiny Winged Victory of Samothrace sculpture, visually echoing the Apocryphal Ashes of Andy Warhol machine.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       },
       {
         "art_piece_name": "Damian",
         "year": "2023",
-        "technique_used": "Scale figure of Damien Hirst, formaldehyde-reference tank, vending machine",
-        "short_description": "A small figure of Damien Hirst floating in a vat, contained within a vending machine.",
+        "technique_used": "Scale figures of Damien Hirst in miniature formaldehyde-reference tanks, coil vending machine or transparent capsule vending machine",
+        "short_description": "Miniature Damien Hirst figures float in tiny versions of his tanks and are dispensed either by rolling coils or inside transparent plastic capsules.",
         "long_description": "Hirst spent considerable energy and capital putting dead animals in formaldehyde tanks and calling it art. Thielemann returns the gesture. The figure is recognizable — unmistakably Hirst — and floats in a tank that references the artist's most famous series. Whether this constitutes critique, homage, or market commentary is as impossible to determine as it was with the original pieces. The vending machine contains everything: the artist, the medium, the price point, the transaction. It costs four euros.",
         "display_context": "Gallery floor installation, vending machine",
         "aspect_ratio": "9:16",
-        "image_prompt": "A small detailed figurine of Damien Hirst floating in liquid inside a vending machine tank, referencing his formaldehyde shark pieces, vending machine glass and label visible, gallery installation, self-referential art world commentary",
+        "image_prompt": "A functioning contemporary art museum vending machine with rolling metal springs, each product a tiny transparent tank containing a small Damien Hirst figurine floating in liquid, repeated rows behind glass, physically plausible scale and mechanism, no wall labels or information cards",
+        "modifying_prompt": "Alternate version: a vintage capsule vending machine filled with transparent plastic balls, each ball containing a miniature clear tank with a tiny Damien Hirst figure floating inside.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       },
       {
         "art_piece_name": "The Mosh Pit Experience Machine",
         "year": "2024",
         "technique_used": "Pneumatic padding system, vibrating floor and walls, surround video screens, spatial audio at concert volume",
-        "short_description": "A small padded room displaying mosh pit and concert imagery, with vibrating walls and pneumatic mechanisms that physically push and punch the visitor from all sides.",
+        "short_description": "A one-person padded cabin surrounds a single visitor with concert imagery, vibrating surfaces, and pneumatic mechanisms that push from all sides.",
         "long_description": "The mosh pit is a participatory art form that has never been shown in a gallery without removing everything that makes it meaningful. Thielemann makes a machine that restores the body. The walls display concert footage on all sides — SOAD, Korn, the particular chaos of a sold-out metal show at eleven PM. Then the room punches you. Not hard enough to injure. Hard enough to constitute an event. The vibration is continuous. The sound is at concert volume. Visitors report that it is either deeply unpleasant or the best thing in the gallery, which is exactly the mosh pit experience the machine is describing.",
-        "display_context": "Gallery room or booth installation, sound-isolated, visitor warning and waiver required",
+        "display_context": "Compact one-person museum cabin, sound-isolated, visitor warning and waiver required",
         "aspect_ratio": "1:1",
-        "image_prompt": "Interior view of a small padded room with screens showing a massive metal concert crowd, a visitor bracing as walls physically push them, concert light and sound energy contained in a box, claustrophobic and exhilarating",
+        "image_prompt": "A compact one-person padded cabin exhibited inside a contemporary art museum, just large enough for one visitor, interior screens showing a dense metal concert mosh pit while padded pneumatic walls press inward, claustrophobic but safe, exterior visibly much smaller than a room, no wall labels or information cards",
+        "modifying_prompt": "Create several versions of the same one-person cabin, including an exterior museum view and an interior view that clearly proves only one person can fit.",
         "should_generate": false,
-        "include_in_book": true,
-        "modifying_prompt": ""
+        "include_in_book": true
       },
       {
         "art_piece_name": "Dream On",
         "year": "2024",
-        "technique_used": "Live turtles or robotic turtle models, bright neon green liquid, gallery floor installation",
-        "short_description": "Four small turtles walking toward a container spilling bright green liquid.",
+        "technique_used": "Four live turtles or robotic turtle models, tall rusty cylindrical industrial container, bright neon green chemical liquid, gallery floor installation",
+        "short_description": "Four small turtles walk toward a tall rusty cylindrical container that leaks a bright green chemical across the gallery floor.",
         "long_description": "There is no explanation provided for this piece. Thielemann refuses to offer one in interviews, catalogue essays, or even private conversation. Four turtles. Bright green liquid. The liquid spills. The turtles approach. This is either the most profound piece in the exhibition or the most empty, and the confident determination of critics to place it in one category or the other is itself the subject of the work — or at least something the work is happy to exploit. The green is very bright.",
         "display_context": "Gallery floor installation, open space",
         "aspect_ratio": "16:9",
-        "image_prompt": "Four small turtles walking slowly across a clean white gallery floor toward a container overflowing with bright neon green liquid, top-down view, simple and enigmatic, dreamlike pop color, no explanation offered",
+        "image_prompt": "Four small turtles walking across a contemporary art museum floor toward one tall rusty cylindrical industrial container, the corroded vessel visibly leaking a bright luminous green chemical that pools at its base, simple physically grounded installation, exactly four turtles, no wall labels or information cards",
         "should_generate": false,
         "include_in_book": true,
         "modifying_prompt": ""

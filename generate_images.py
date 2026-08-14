@@ -141,9 +141,10 @@ def build_modifying_prompt(piece: ArtPiece) -> str:
 def output_path_for(piece: ArtPiece, provider: str, output_dir: Path) -> Path:
     artist = slugify(piece.artist_name, 36)
     title = slugify(piece.art_piece_name, 72)
+    provider_label = slugify(provider, 24)
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    filename = f"{piece.index:03d}-{artist}-{title}-{timestamp}.png"
-    return output_dir / provider / filename
+    filename = f"{piece.index:03d}-{artist}-{title}-{provider_label}-{timestamp}.png"
+    return output_dir / filename
 
 
 def existing_output_for(
@@ -151,8 +152,19 @@ def existing_output_for(
 ) -> Path | None:
     artist = slugify(piece.artist_name, 36)
     title = slugify(piece.art_piece_name, 72)
-    pattern = f"{piece.index:03d}-{artist}-{title}-*.png"
-    return next(iter(sorted((output_dir / provider).glob(pattern))), None)
+    provider_label = slugify(provider, 24)
+    provider_pattern = (
+        f"{piece.index:03d}-{artist}-{title}-{provider_label}-*.png"
+    )
+    provider_matches = sorted(output_dir.glob(provider_pattern))
+    if provider_matches:
+        return provider_matches[-1]
+
+    # Preserve skip-existing behavior for images created before the flat layout
+    # and before provider labels were added to filenames.
+    legacy_pattern = f"{piece.index:03d}-{artist}-{title}-*.png"
+    legacy_matches = sorted(output_dir.glob(legacy_pattern))
+    return legacy_matches[-1] if legacy_matches else None
 
 
 def source_image_for(
@@ -161,9 +173,21 @@ def source_image_for(
     artist = slugify(piece.artist_name, 36)
     title = slugify(piece.art_piece_name, 72)
     pattern = f"*-{artist}-{title}-*.png"
-    matches = list((output_dir / provider).glob(pattern))
+    matches = list(output_dir.glob(pattern))
     if not matches:
         return None
+
+    provider_label = slugify(provider, 24)
+    provider_matches = [
+        path
+        for path in matches
+        if re.search(
+            rf"-{re.escape(provider_label)}-\d{{8}}T\d{{6}}Z(?:\.png)?$",
+            path.name,
+        )
+    ]
+    if provider_matches:
+        matches = provider_matches
 
     def timestamp_key(path: Path) -> tuple[str, str]:
         timestamp = re.search(r"\d{8}T\d{6}Z", path.name)
@@ -307,7 +331,7 @@ def generate_gemini(
         if not source_path:
             raise RuntimeError(
                 f"No source image found for {piece.art_piece_name!r} in "
-                f"{args.output_dir / args.source_provider}"
+                f"{args.output_dir} with provider label {args.source_provider!r}"
             )
         source_bytes = source_path.read_bytes()
         source_part = types.Part.from_bytes(
@@ -587,12 +611,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--source-provider",
         default="gemini",
-        help="Source image subdirectory under the output directory",
+        help="Provider label to prefer when selecting a source image",
     )
     parser.add_argument(
         "--modified-output-provider",
         default="gemini-modified",
-        help="Output subdirectory used for Gemini image modifications",
+        help="Provider label included in Gemini modification filenames",
     )
     parser.add_argument(
         "--sleep", type=float, default=0.0, help="Seconds to sleep between API calls"

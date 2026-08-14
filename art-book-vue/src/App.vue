@@ -61,7 +61,7 @@ let resizeObserver = null;
 let latestRenderToken = 0;
 
 const imageModules = import.meta.glob(
-  "../../generated-images/**/*.{png,jpg,jpeg,webp}",
+  "../../generated-images/*.{png,jpg,jpeg,webp}",
   { eager: true, import: "default", query: "?url" },
 );
 
@@ -328,15 +328,6 @@ function artistPortraitForArtist(artist) {
   const candidates = Object.entries(imageModules);
   const artistSlug = slugify(artist.artist_name);
   const match =
-    candidates
-      .filter(
-        ([path]) =>
-          path.includes("generated-images/artists/") &&
-          path.includes(`${artistSlug}-portrait`),
-      )
-      .sort(([leftPath], [rightPath]) =>
-        compareImagePaths(rightPath, leftPath),
-      )[0] ??
     candidates
       .filter(
         ([path]) => path.includes(artistSlug) && path.includes("portrait"),
